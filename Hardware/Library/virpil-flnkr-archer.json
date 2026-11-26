@@ -1,0 +1,271 @@
+{
+  "manufacturer": "VIRPIL",
+  "devices": [
+    {"id": "virpil-flnkr-grip","name": "VIRPIL FLNKR GRIP — STOCK CAPS","vendorId": 0,"productId": 0,"layout": "virpil-flnkr-grip"},
+    {"id": "virpil-flnkr-grip-4way","name": "VIRPIL FLNKR GRIP — OPTIONAL 4-WAY CAPS","vendorId": 0,"productId": 0,"layout": "virpil-flnkr-grip-4way"},
+    {"id": "virpil-archer-sf-cyclic","name": "VIRPIL ARCHER-SF CYCLIC GRIP","vendorId": 0,"productId": 0,"layout": "virpil-archer-sf-cyclic"}
+  ],
+  "layouts": [
+    {
+      "id": "virpil-flnkr-grip",
+      "references": [
+        "https://us.virpil-controls.com/products/flnkr-grip",
+        "https://us.dev.virpil-controls.com/vpc-flnkr-grip.html",
+        "https://support.virpil.com/en/support/solutions/articles/47001263594-flnkr-grip-user-manual",
+        "https://support.virpil.com/en/support/solutions/articles/47001263911-vpc-flnkr-grip"
+      ],
+      "referenceNotes": [
+        "FLNKR VPC-015 shares its control geometry and input features across the English and Cyrillic engravings. Photos show the English engraving.",
+        "Ordinary stick X/Y comes from the installed flightstick base. A compatible passive flightstick base is required; its collar is the X/Y selection point.",
+        "Identify Windows input numbers with Learn Input. Firmware can change logical signals; Thrustmaster bases have limited functionality.",
+        "Factory two-direction MANVR and GN hats have a press function. The TASK RESET site is a push button."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Face",
+          "image": "Hardware/Images/virpil-flnkr-grip-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-015_07.jpg?v=1785806065",
+          "hotspots": [
+            {"controlId": "autopilot-off","x": 0.39917,"y": 0.075,"width": 0.04,"height": 0.04},
+            {"controlId": "top-hat-up","x": 0.46,"y": 0.11417,"width": 0.06667,"height": 0.06667},
+            {"controlId": "gray-face-button","x": 0.54333,"y": 0.08667,"width": 0.04667,"height": 0.04417},
+            {"controlId": "cursor-stick-press","x": 0.37417,"y": 0.18667,"width": 0.065,"height": 0.07167},
+            {"controlId": "maneuver-hat-up","x": 0.53833,"y": 0.1975,"width": 0.06667,"height": 0.065},
+            {"controlId": "gun-hat-up","x": 0.66333,"y": 0.1825,"width": 0.0575,"height": 0.06417},
+            {"controlId": "stick-x","x": 0.44417,"y": 0.91833,"width": 0.09167,"height": 0.05083}
+          ]
+        },
+        {
+          "id": "triggers",
+          "name": "Trigger side",
+          "image": "Hardware/Images/virpil-flnkr-grip-trigger.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-015_05.jpg?v=1785806064",
+          "hotspots": [
+            {"controlId": "gun-hat-up","x": 0.53333,"y": 0.22,"width": 0.05917,"height": 0.06417},
+            {"controlId": "front-flip-up","x": 0.7175,"y": 0.3075,"width": 0.0725,"height": 0.04},
+            {"controlId": "weapon-trigger-half","x": 0.62417,"y": 0.38083,"width": 0.05667,"height": 0.035},
+            {"controlId": "autopilot-trigger","x": 0.555,"y": 0.37167,"width": 0.05667,"height": 0.05167},
+            {"controlId": "brake-axis","x": 0.59417,"y": 0.63,"width": 0.085,"height": 0.035},
+            {"controlId": "stick-x","x": 0.44833,"y": 0.8675,"width": 0.09583,"height": 0.05167}
+          ]
+        },
+        {
+          "id": "side",
+          "name": "Task reset side",
+          "image": "Hardware/Images/virpil-flnkr-grip-side.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-015_02.jpg?v=1785806064",
+          "hotspots": [
+            {"controlId": "front-flip-up","x": 0.14083,"y": 0.2525,"width": 0.0575,"height": 0.035},
+            {"controlId": "autopilot-trigger","x": 0.43667,"y": 0.37417,"width": 0.05,"height": 0.04333},
+            {"controlId": "task-reset-press","x": 0.63083,"y": 0.38,"width": 0.0475,"height": 0.045},
+            {"controlId": "lower-side-button","x": 0.59333,"y": 0.5775,"width": 0.045,"height": 0.0425},
+            {"controlId": "brake-axis","x": 0.3675,"y": 0.58583,"width": 0.085,"height": 0.035},
+            {"controlId": "stick-x","x": 0.58083,"y": 0.89667,"width": 0.09667,"height": 0.0525}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "autopilot-off","name": "Red A/P OFF button","kind": "Button"},
+        {"id": "top-hat-up","name": "Upper face hat up","kind": "Button","location": "top-hat"},
+        {"id": "top-hat-right","name": "Upper face hat right","kind": "Button","location": "top-hat"},
+        {"id": "top-hat-down","name": "Upper face hat down","kind": "Button","location": "top-hat"},
+        {"id": "top-hat-left","name": "Upper face hat left","kind": "Button","location": "top-hat"},
+        {"id": "top-hat-press","name": "Upper face hat press","kind": "Button","location": "top-hat"},
+        {"id": "gray-face-button","name": "Upper gray button","kind": "Button"},
+        {"id": "cursor-stick-press","name": "Cursor stick press","kind": "Button","location": "cursor-stick"},
+        {"id": "cursor-stick-x","name": "Cursor stick X","kind": "Axis","location": "cursor-stick"},
+        {"id": "cursor-stick-y","name": "Cursor stick Y","kind": "Axis","location": "cursor-stick"},
+        {"id": "maneuver-hat-up","name": "MANVR hat up","kind": "Button","location": "maneuver-hat"},
+        {"id": "maneuver-hat-down","name": "MANVR hat down","kind": "Button","location": "maneuver-hat"},
+        {"id": "maneuver-hat-press","name": "MANVR hat press","kind": "Button","location": "maneuver-hat"},
+        {"id": "task-reset-press","name": "TASK RESET button","kind": "Button"},
+        {"id": "lower-side-button","name": "Lower silver side button","kind": "Button"},
+        {"id": "gun-hat-up","name": "GN side hat up","kind": "Button","location": "gun-hat"},
+        {"id": "gun-hat-down","name": "GN side hat down","kind": "Button","location": "gun-hat"},
+        {"id": "gun-hat-press","name": "GN side hat press","kind": "Button","location": "gun-hat"},
+        {"id": "front-flip-up","name": "Front flip trigger up position","kind": "Button","location": "front-flip"},
+        {"id": "front-flip-pull","name": "Front flip trigger pull","kind": "Button","location": "front-flip"},
+        {"id": "weapon-trigger-half","name": "Weapon flip trigger first stage","kind": "Button","location": "weapon-trigger"},
+        {"id": "weapon-trigger-full","name": "Weapon flip trigger second stage","kind": "Button","location": "weapon-trigger"},
+        {"id": "autopilot-trigger","name": "A/P trigger","kind": "Button"},
+        {"id": "brake-axis","name": "LINE UP BRAKE axis","kind": "Axis","location": "brake-lever"},
+        {"id": "brake-lever-virtual-button","name": "LINE UP BRAKE virtual button","kind": "Button","location": "brake-lever"},
+        {"id": "stick-x","name": "Stick X (roll)","kind": "Axis","location": "stick-axis"},
+        {"id": "stick-y","name": "Stick Y (pitch)","kind": "Axis","location": "stick-axis"}
+      ]
+    },
+    {
+      "id": "virpil-flnkr-grip-4way",
+      "references": [
+        "https://us.virpil-controls.com/products/flnkr-grip",
+        "https://us.dev.virpil-controls.com/vpc-flnkr-grip.html",
+        "https://support.virpil.com/en/support/solutions/articles/47001263594-flnkr-grip-user-manual",
+        "https://support.virpil.com/en/support/solutions/articles/47001263911-vpc-flnkr-grip"
+      ],
+      "referenceNotes": [
+        "FLNKR VPC-015 shares its control geometry and input features across the English and Cyrillic engravings. Photos show the English engraving.",
+        "Ordinary stick X/Y comes from the installed flightstick base. A compatible passive flightstick base is required; its collar is the X/Y selection point.",
+        "Identify Windows input numbers with Learn Input. Firmware can change logical signals; Thrustmaster bases have limited functionality.",
+        "Use this configuration after installing all three included four-way caps. Photo selection points are the same cap mounts; the gallery shows the factory cap tops."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Face",
+          "image": "Hardware/Images/virpil-flnkr-grip-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-015_07.jpg?v=1785806065",
+          "hotspots": [
+            {"controlId": "autopilot-off","x": 0.39917,"y": 0.075,"width": 0.04,"height": 0.04},
+            {"controlId": "top-hat-up","x": 0.46,"y": 0.11417,"width": 0.06667,"height": 0.06667},
+            {"controlId": "gray-face-button","x": 0.54333,"y": 0.08667,"width": 0.04667,"height": 0.04417},
+            {"controlId": "cursor-stick-press","x": 0.37417,"y": 0.18667,"width": 0.065,"height": 0.07167},
+            {"controlId": "maneuver-hat-up","x": 0.53833,"y": 0.1975,"width": 0.06667,"height": 0.065},
+            {"controlId": "gun-hat-up","x": 0.66333,"y": 0.1825,"width": 0.0575,"height": 0.06417},
+            {"controlId": "stick-x","x": 0.44417,"y": 0.91833,"width": 0.09167,"height": 0.05083}
+          ]
+        },
+        {
+          "id": "triggers",
+          "name": "Trigger side",
+          "image": "Hardware/Images/virpil-flnkr-grip-trigger.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-015_05.jpg?v=1785806064",
+          "hotspots": [
+            {"controlId": "gun-hat-up","x": 0.53333,"y": 0.22,"width": 0.05917,"height": 0.06417},
+            {"controlId": "front-flip-up","x": 0.7175,"y": 0.3075,"width": 0.0725,"height": 0.04},
+            {"controlId": "weapon-trigger-half","x": 0.62417,"y": 0.38083,"width": 0.05667,"height": 0.035},
+            {"controlId": "autopilot-trigger","x": 0.555,"y": 0.37167,"width": 0.05667,"height": 0.05167},
+            {"controlId": "brake-axis","x": 0.59417,"y": 0.63,"width": 0.085,"height": 0.035},
+            {"controlId": "stick-x","x": 0.44833,"y": 0.8675,"width": 0.09583,"height": 0.05167}
+          ]
+        },
+        {
+          "id": "side",
+          "name": "Task reset side",
+          "image": "Hardware/Images/virpil-flnkr-grip-side.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-015_02.jpg?v=1785806064",
+          "hotspots": [
+            {"controlId": "front-flip-up","x": 0.14083,"y": 0.2525,"width": 0.0575,"height": 0.035},
+            {"controlId": "autopilot-trigger","x": 0.43667,"y": 0.37417,"width": 0.05,"height": 0.04333},
+            {"controlId": "task-reset-press","x": 0.63083,"y": 0.38,"width": 0.0475,"height": 0.045},
+            {"controlId": "lower-side-button","x": 0.59333,"y": 0.5775,"width": 0.045,"height": 0.0425},
+            {"controlId": "brake-axis","x": 0.3675,"y": 0.58583,"width": 0.085,"height": 0.035},
+            {"controlId": "stick-x","x": 0.58083,"y": 0.89667,"width": 0.09667,"height": 0.0525}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "autopilot-off","name": "Red A/P OFF button","kind": "Button"},
+        {"id": "top-hat-up","name": "Upper face hat up","kind": "Button","location": "top-hat"},
+        {"id": "top-hat-right","name": "Upper face hat right","kind": "Button","location": "top-hat"},
+        {"id": "top-hat-down","name": "Upper face hat down","kind": "Button","location": "top-hat"},
+        {"id": "top-hat-left","name": "Upper face hat left","kind": "Button","location": "top-hat"},
+        {"id": "top-hat-press","name": "Upper face hat press","kind": "Button","location": "top-hat"},
+        {"id": "gray-face-button","name": "Upper gray button","kind": "Button"},
+        {"id": "cursor-stick-press","name": "Cursor stick press","kind": "Button","location": "cursor-stick"},
+        {"id": "cursor-stick-x","name": "Cursor stick X","kind": "Axis","location": "cursor-stick"},
+        {"id": "cursor-stick-y","name": "Cursor stick Y","kind": "Axis","location": "cursor-stick"},
+        {"id": "maneuver-hat-up","name": "MANVR hat up","kind": "Button","location": "maneuver-hat"},
+        {"id": "maneuver-hat-right","name": "MANVR hat right","kind": "Button","location": "maneuver-hat"},
+        {"id": "maneuver-hat-down","name": "MANVR hat down","kind": "Button","location": "maneuver-hat"},
+        {"id": "maneuver-hat-left","name": "MANVR hat left","kind": "Button","location": "maneuver-hat"},
+        {"id": "maneuver-hat-press","name": "MANVR hat press","kind": "Button","location": "maneuver-hat"},
+        {"id": "task-reset-up","name": "TASK RESET hat up","kind": "Button","location": "task-reset"},
+        {"id": "task-reset-right","name": "TASK RESET hat right","kind": "Button","location": "task-reset"},
+        {"id": "task-reset-down","name": "TASK RESET hat down","kind": "Button","location": "task-reset"},
+        {"id": "task-reset-left","name": "TASK RESET hat left","kind": "Button","location": "task-reset"},
+        {"id": "task-reset-press","name": "TASK RESET hat press","kind": "Button","location": "task-reset"},
+        {"id": "lower-side-button","name": "Lower silver side button","kind": "Button"},
+        {"id": "gun-hat-up","name": "GN side hat up","kind": "Button","location": "gun-hat"},
+        {"id": "gun-hat-right","name": "GN side hat right","kind": "Button","location": "gun-hat"},
+        {"id": "gun-hat-down","name": "GN side hat down","kind": "Button","location": "gun-hat"},
+        {"id": "gun-hat-left","name": "GN side hat left","kind": "Button","location": "gun-hat"},
+        {"id": "gun-hat-press","name": "GN side hat press","kind": "Button","location": "gun-hat"},
+        {"id": "front-flip-up","name": "Front flip trigger up position","kind": "Button","location": "front-flip"},
+        {"id": "front-flip-pull","name": "Front flip trigger pull","kind": "Button","location": "front-flip"},
+        {"id": "weapon-trigger-half","name": "Weapon flip trigger first stage","kind": "Button","location": "weapon-trigger"},
+        {"id": "weapon-trigger-full","name": "Weapon flip trigger second stage","kind": "Button","location": "weapon-trigger"},
+        {"id": "autopilot-trigger","name": "A/P trigger","kind": "Button"},
+        {"id": "brake-axis","name": "LINE UP BRAKE axis","kind": "Axis","location": "brake-lever"},
+        {"id": "brake-lever-virtual-button","name": "LINE UP BRAKE virtual button","kind": "Button","location": "brake-lever"},
+        {"id": "stick-x","name": "Stick X (roll)","kind": "Axis","location": "stick-axis"},
+        {"id": "stick-y","name": "Stick Y (pitch)","kind": "Axis","location": "stick-axis"}
+      ]
+    },
+    {
+      "id": "virpil-archer-sf-cyclic",
+      "references": [
+        "https://us.virpil-controls.com/products/archer-sf-cyclic-grip"
+      ],
+      "referenceNotes": [
+        "The manufacturer lists five 4-way push hats, three momentary buttons, a dual-stage trigger, and a safety guard input. This adds up to 31 grip signals.",
+        "Installed base supplies stick X/Y. Use Learn Input to identify Windows signals."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Face",
+          "image": "Hardware/Images/virpil-archer-sf-cyclic-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/virpil-controls-archer-sf-cyclic-grip.1615.jpg?v=1784073719",
+          "hotspots": [
+            {"controlId": "force-trim-up","x": 0.38203,"y": 0.26094,"width": 0.06406,"height": 0.06172},
+            {"controlId": "weapon-action-up","x": 0.45,"y": 0.20547,"width": 0.06563,"height": 0.06484},
+            {"controlId": "symbology-up","x": 0.55703,"y": 0.19687,"width": 0.06719,"height": 0.06484},
+            {"controlId": "radio-up","x": 0.38125,"y": 0.36562,"width": 0.07031,"height": 0.06094},
+            {"controlId": "thumb-up","x": 0.49141,"y": 0.46875,"width": 0.06875,"height": 0.06094},
+            {"controlId": "red-face-button","x": 0.45391,"y": 0.29375,"width": 0.04531,"height": 0.04141},
+            {"controlId": "stick-x","x": 0.55547,"y": 0.85313,"width": 0.08203,"height": 0.04844}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger side",
+          "image": "Hardware/Images/virpil-archer-sf-cyclic-trigger.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/virpil-controls-archer-sf-cyclic-grip.1617.jpg?v=1784073720",
+          "hotspots": [
+            {"controlId": "trigger-half","x": 0.54531,"y": 0.46016,"width": 0.04063,"height": 0.03906},
+            {"controlId": "trigger-guard","x": 0.58984,"y": 0.48594,"width": 0.05781,"height": 0.03828},
+            {"controlId": "upper-rear-button","x": 0.54844,"y": 0.54297,"width": 0.03047,"height": 0.03047},
+            {"controlId": "lower-rear-button","x": 0.54844,"y": 0.62266,"width": 0.03047,"height": 0.03047},
+            {"controlId": "stick-x","x": 0.44141,"y": 0.80625,"width": 0.08125,"height": 0.05312}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "force-trim-up","name": "Force trim hat up","kind": "Button","location": "force-trim"},
+        {"id": "force-trim-right","name": "Force trim hat right","kind": "Button","location": "force-trim"},
+        {"id": "force-trim-down","name": "Force trim hat down","kind": "Button","location": "force-trim"},
+        {"id": "force-trim-left","name": "Force trim hat left","kind": "Button","location": "force-trim"},
+        {"id": "force-trim-press","name": "Force trim hat press","kind": "Button","location": "force-trim"},
+        {"id": "weapon-action-up","name": "WPN ACTN hat up","kind": "Button","location": "weapon-action"},
+        {"id": "weapon-action-right","name": "WPN ACTN hat right","kind": "Button","location": "weapon-action"},
+        {"id": "weapon-action-down","name": "WPN ACTN hat down","kind": "Button","location": "weapon-action"},
+        {"id": "weapon-action-left","name": "WPN ACTN hat left","kind": "Button","location": "weapon-action"},
+        {"id": "weapon-action-press","name": "WPN ACTN hat press","kind": "Button","location": "weapon-action"},
+        {"id": "symbology-up","name": "SYM SEL hat up","kind": "Button","location": "symbology"},
+        {"id": "symbology-right","name": "SYM SEL hat right","kind": "Button","location": "symbology"},
+        {"id": "symbology-down","name": "SYM SEL hat down","kind": "Button","location": "symbology"},
+        {"id": "symbology-left","name": "SYM SEL hat left","kind": "Button","location": "symbology"},
+        {"id": "symbology-press","name": "SYM SEL hat press","kind": "Button","location": "symbology"},
+        {"id": "radio-up","name": "RADIO / RTS hat up","kind": "Button","location": "radio"},
+        {"id": "radio-right","name": "RADIO / RTS hat right","kind": "Button","location": "radio"},
+        {"id": "radio-down","name": "RADIO / RTS hat down","kind": "Button","location": "radio"},
+        {"id": "radio-left","name": "RADIO / RTS hat left","kind": "Button","location": "radio"},
+        {"id": "radio-press","name": "RADIO / RTS hat press","kind": "Button","location": "radio"},
+        {"id": "thumb-up","name": "Lower thumb hat up","kind": "Button","location": "thumb"},
+        {"id": "thumb-right","name": "Lower thumb hat right","kind": "Button","location": "thumb"},
+        {"id": "thumb-down","name": "Lower thumb hat down","kind": "Button","location": "thumb"},
+        {"id": "thumb-left","name": "Lower thumb hat left","kind": "Button","location": "thumb"},
+        {"id": "thumb-press","name": "Lower thumb hat press","kind": "Button","location": "thumb"},
+        {"id": "red-face-button","name": "Red face button","kind": "Button"},
+        {"id": "upper-rear-button","name": "Upper silver rear button","kind": "Button"},
+        {"id": "lower-rear-button","name": "Lower silver rear button","kind": "Button"},
+        {"id": "trigger-half","name": "Trigger first stage","kind": "Button","location": "trigger"},
+        {"id": "trigger-full","name": "Trigger second stage","kind": "Button","location": "trigger"},
+        {"id": "trigger-guard","name": "Trigger safety guard","kind": "Button"},
+        {"id": "stick-x","name": "Stick X (roll)","kind": "Axis","location": "stick-axis"},
+        {"id": "stick-y","name": "Stick Y (pitch)","kind": "Axis","location": "stick-axis"}
+      ]
+    }
+  ]
+}

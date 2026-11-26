@@ -1,0 +1,278 @@
+{
+  "manufacturer": "Logitech / Saitek",
+  "devices": [
+    {
+      "id": "logitech-x52",
+      "name": "LOGITECH / SAITEK X52 HOTAS",
+      "vendorId": 1699,
+      "productId": 597,
+      "layout": "logitech-x52",
+      "alternateProductIds": [
+        1884
+      ]
+    },
+    {
+      "id": "logitech-x52-pro",
+      "name": "LOGITECH / SAITEK X52 PRO HOTAS",
+      "vendorId": 1699,
+      "productId": 1890,
+      "layout": "logitech-x52-pro"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "logitech-x52",
+      "references": [
+        "https://support.logi.com/hc/en-us/articles/360023462973-X52-Space-Flight-H-O-T-A-S-Technical-Specifications",
+        "https://www.logitech.com/assets/65328/3/x52-hotas.pdf",
+        "https://www.logitechg.com/en-us/shop/p/x52-space-flight-simulator-controller",
+        "https://forum.falcon-bms.com/topic/241/saitek-x-52-profile/12",
+        "https://github.com/nirenjan/libx52/blob/master/kernel_module/hid-saitek-x52.c"
+      ],
+      "views": [
+        {
+          "id": "stick-face",
+          "name": "Stick face and base toggles",
+          "image": "Hardware/Images/logitech-x52-stick-face-cutout.png",
+          "hotspots": [
+            {"controlId": "hat2-up", "x": 0.3896, "y": 0.122, "width": 0.1012, "height": 0.0675},
+            {"controlId": "fire", "x": 0.5031, "y": 0.1201, "width": 0.089, "height": 0.0657},
+            {"controlId": "a", "x": 0.589, "y": 0.122, "width": 0.0644, "height": 0.045},
+            {"controlId": "b", "x": 0.5767, "y": 0.1782, "width": 0.0583, "height": 0.0394},
+            {"controlId": "c", "x": 0.3681, "y": 0.1932, "width": 0.0767, "height": 0.0375},
+            {"controlId": "pov-up", "x": 0.5061, "y": 0.2101, "width": 0.1319, "height": 0.0582},
+            {"controlId": "mode-1", "x": 0.6626, "y": 0.1201, "width": 0.0491, "height": 0.0675},
+            {"controlId": "stick-x", "x": 0.5, "y": 0.6829, "width": 0.2699, "height": 0.0807},
+            {"controlId": "toggle-1-up", "x": 0.2331, "y": 0.8705, "width": 0.1227, "height": 0.0582},
+            {"controlId": "toggle-2-up", "x": 0.365, "y": 0.8705, "width": 0.1227, "height": 0.0582},
+            {"controlId": "toggle-3-up", "x": 0.5, "y": 0.8705, "width": 0.1227, "height": 0.0582}
+          ]
+        },
+        {
+          "id": "stick-side",
+          "name": "Two-stage trigger and pinky switch",
+          "image": "Hardware/Images/logitech-x52-stick-side-cutout.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.5869, "y": 0.2844, "width": 0.0704, "height": 0.0948},
+            {"controlId": "pinky", "x": 0.5493, "y": 0.5483, "width": 0.0399, "height": 0.0502},
+            {"controlId": "twist", "x": 0.4319, "y": 0.5204, "width": 0.1385, "height": 0.0651}
+          ]
+        },
+        {
+          "id": "throttle-thumb",
+          "name": "Throttle thumb controls",
+          "image": "Hardware/Images/logitech-x52-throttle-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "throttle", "x": 0.3605, "y": 0.4897, "width": 0.1833, "height": 0.1458},
+            {"controlId": "slider", "x": 0.611, "y": 0.1321, "width": 0.0672, "height": 0.0547},
+            {"controlId": "d", "x": 0.7149, "y": 0.1048, "width": 0.0611, "height": 0.0592},
+            {"controlId": "clutch", "x": 0.7413, "y": 0.2415, "width": 0.0835, "height": 0.0957},
+            {"controlId": "mouse-stick-up", "x": 0.6578, "y": 0.2642, "width": 0.057, "height": 0.0661},
+            {"controlId": "mouse-click", "x": 0.6151, "y": 0.2756, "width": 0.0305, "height": 0.0456}
+          ]
+        },
+        {
+          "id": "throttle-index",
+          "name": "Throttle hat, wheel, and upper rotary",
+          "image": "Hardware/Images/logitech-x52-throttle-index-cutout.png",
+          "hotspots": [
+            {"controlId": "e", "x": 0.1081, "y": 0.0689, "width": 0.1081, "height": 0.0561},
+            {"controlId": "throttle-hat-up", "x": 0.1454, "y": 0.1939, "width": 0.0864, "height": 0.1122},
+            {"controlId": "scroll-up", "x": 0.2672, "y": 0.2398, "width": 0.0452, "height": 0.1327}
+          ]
+        },
+        {
+          "id": "mfd",
+          "name": "Multifunction display buttons",
+          "image": "Hardware/Images/logitech-x52-mfd-cutout.png",
+          "hotspots": [
+            {"controlId": "mfd-function", "x": 0.2281, "y": 0.8246, "width": 0.1988, "height": 0.1228},
+            {"controlId": "mfd-start-stop", "x": 0.4854, "y": 0.8246, "width": 0.1988, "height": 0.1228},
+            {"controlId": "mfd-reset", "x": 0.7427, "y": 0.8246, "width": 0.1988, "height": 0.1228}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "location": "stick", "suggestedInput": "x"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "location": "stick", "suggestedInput": "y"},
+        {"id": "twist", "name": "Stick twist", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "trigger-first", "name": "Trigger first detent", "kind": "Button", "location": "trigger", "suggestedInput": "button1"},
+        {"id": "trigger-second", "name": "Trigger second detent", "kind": "Button", "location": "trigger", "suggestedInput": "button15"},
+        {"id": "fire", "name": "Fire button under safety cover", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "a", "name": "A grip button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "b", "name": "B grip button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "c", "name": "C grip button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "pinky", "name": "Pinky switch / shift", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "pov-up", "name": "Lower POV 1 hat up", "kind": "Button", "location": "pov", "suggestedInput": "hat1_up"},
+        {"id": "pov-right", "name": "Lower POV 1 hat right", "kind": "Button", "location": "pov", "suggestedInput": "hat1_right"},
+        {"id": "pov-down", "name": "Lower POV 1 hat down", "kind": "Button", "location": "pov", "suggestedInput": "hat1_down"},
+        {"id": "pov-left", "name": "Lower POV 1 hat left", "kind": "Button", "location": "pov", "suggestedInput": "hat1_left"},
+        {"id": "hat2-up", "name": "Upper POV 2 hat up", "kind": "Button", "location": "hat2", "suggestedInput": "button16"},
+        {"id": "hat2-right", "name": "Upper POV 2 hat right", "kind": "Button", "location": "hat2", "suggestedInput": "button17"},
+        {"id": "hat2-down", "name": "Upper POV 2 hat down", "kind": "Button", "location": "hat2", "suggestedInput": "button18"},
+        {"id": "hat2-left", "name": "Upper POV 2 hat left", "kind": "Button", "location": "hat2", "suggestedInput": "button19"},
+        {"id": "mode-1", "name": "Mode selector 1", "kind": "Button", "location": "mode"},
+        {"id": "mode-2", "name": "Mode selector 2", "kind": "Button", "location": "mode"},
+        {"id": "mode-3", "name": "Mode selector 3", "kind": "Button", "location": "mode"},
+        {"id": "toggle-1-up", "name": "T1 · left toggle up", "kind": "Button", "location": "toggle-1", "suggestedInput": "button9"},
+        {"id": "toggle-1-down", "name": "T2 · left toggle down", "kind": "Button", "location": "toggle-1", "suggestedInput": "button10"},
+        {"id": "toggle-2-up", "name": "T3 · middle toggle up", "kind": "Button", "location": "toggle-2", "suggestedInput": "button11"},
+        {"id": "toggle-2-down", "name": "T4 · middle toggle down", "kind": "Button", "location": "toggle-2", "suggestedInput": "button12"},
+        {"id": "toggle-3-up", "name": "T5 · right toggle up", "kind": "Button", "location": "toggle-3", "suggestedInput": "button13"},
+        {"id": "toggle-3-down", "name": "T6 · right toggle down", "kind": "Button", "location": "toggle-3", "suggestedInput": "button14"},
+        {"id": "throttle", "name": "Throttle lever", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "rotary-e", "name": "Upper rotary E axis", "kind": "Axis", "location": "rotary-e"},
+        {"id": "e", "name": "E upper rotary push button", "kind": "Button", "location": "rotary-e", "suggestedInput": "button8"},
+        {"id": "rotary-i", "name": "Lower rotary I axis", "kind": "Axis", "location": "rotary-i"},
+        {"id": "clutch", "name": "I lower rotary clutch button", "kind": "Button", "location": "rotary-i", "suggestedInput": "button30"},
+        {"id": "slider", "name": "Throttle precision slider", "kind": "Axis", "suggestedInput": "slider1"},
+        {"id": "d", "name": "D throttle button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "throttle-hat-up", "name": "Throttle hat up", "kind": "Button", "location": "throttle-hat", "suggestedInput": "button20"},
+        {"id": "throttle-hat-right", "name": "Throttle hat right", "kind": "Button", "location": "throttle-hat", "suggestedInput": "button21"},
+        {"id": "throttle-hat-down", "name": "Throttle hat down", "kind": "Button", "location": "throttle-hat", "suggestedInput": "button22"},
+        {"id": "throttle-hat-left", "name": "Throttle hat left", "kind": "Button", "location": "throttle-hat", "suggestedInput": "button23"},
+        {"id": "mouse-stick-up", "name": "Mouse ministick, programmable hat up", "kind": "Button", "location": "mouse-stick"},
+        {"id": "mouse-stick-right", "name": "Mouse ministick, programmable hat right", "kind": "Button", "location": "mouse-stick"},
+        {"id": "mouse-stick-down", "name": "Mouse ministick, programmable hat down", "kind": "Button", "location": "mouse-stick"},
+        {"id": "mouse-stick-left", "name": "Mouse ministick, programmable hat left", "kind": "Button", "location": "mouse-stick"},
+        {"id": "mouse-click", "name": "Mouse left-click button", "kind": "Button"},
+        {"id": "scroll-up", "name": "Throttle index scroll wheel forward", "kind": "Button", "location": "scroll"},
+        {"id": "scroll-down", "name": "Throttle index scroll wheel back", "kind": "Button", "location": "scroll"},
+        {"id": "scroll-press", "name": "Throttle index scroll wheel press", "kind": "Button", "location": "scroll"},
+        {"id": "mfd-function", "name": "MFD function button", "kind": "Button"},
+        {"id": "mfd-start-stop", "name": "MFD start/stop button", "kind": "Button"},
+        {"id": "mfd-reset", "name": "MFD reset button", "kind": "Button"}
+      ]
+    },
+    {
+      "id": "logitech-x52-pro",
+      "references": [
+        "https://support.logi.com/hc/en-us/articles/360023462793-X52-Professional-Space-Flight-H-O-T-A-S-Technical-Specifications",
+        "https://www.logitech.com/assets/65327/3/x52-professional-hotas.pdf",
+        "https://www.logitechg.com/en-us/shop/p/x52-pro-space-flight-simulator-controller",
+        "https://hacks4ros.github.io/h4r_x52_joyext/doc/doxygen/d3/d14/x52_general.html",
+        "https://github.com/nirenjan/libx52/blob/master/kernel_module/hid-saitek-x52.c"
+      ],
+      "views": [
+        {
+          "id": "stick-face",
+          "name": "Stick face and base toggles",
+          "image": "Hardware/Images/logitech-x52-pro-stick-face-cutout.png",
+          "hotspots": [
+            {"controlId": "hat2-up", "x": 0.3804, "y": 0.1213, "width": 0.1066, "height": 0.0703},
+            {"controlId": "fire", "x": 0.4928, "y": 0.116, "width": 0.0692, "height": 0.0685},
+            {"controlId": "a", "x": 0.5821, "y": 0.1213, "width": 0.0634, "height": 0.0439},
+            {"controlId": "b", "x": 0.5735, "y": 0.1793, "width": 0.0576, "height": 0.0369},
+            {"controlId": "c", "x": 0.3833, "y": 0.2039, "width": 0.0865, "height": 0.0404},
+            {"controlId": "pov-up", "x": 0.4986, "y": 0.2144, "width": 0.1326, "height": 0.051},
+            {"controlId": "mode-1", "x": 0.6542, "y": 0.1195, "width": 0.049, "height": 0.065},
+            {"controlId": "stick-x", "x": 0.4986, "y": 0.7012, "width": 0.2421, "height": 0.0721},
+            {"controlId": "toggle-1-up", "x": 0.2363, "y": 0.8717, "width": 0.1239, "height": 0.0615},
+            {"controlId": "toggle-2-up", "x": 0.3689, "y": 0.8717, "width": 0.1239, "height": 0.0615},
+            {"controlId": "toggle-3-up", "x": 0.4986, "y": 0.8717, "width": 0.1239, "height": 0.0615}
+          ]
+        },
+        {
+          "id": "stick-side",
+          "name": "Two-stage trigger and pinky switch",
+          "image": "Hardware/Images/logitech-x52-pro-stick-side-cutout.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.4248, "y": 0.2663, "width": 0.0719, "height": 0.1023},
+            {"controlId": "pinky", "x": 0.4749, "y": 0.5432, "width": 0.0327, "height": 0.0441},
+            {"controlId": "twist", "x": 0.5926, "y": 0.5115, "width": 0.1285, "height": 0.0617}
+          ]
+        },
+        {
+          "id": "throttle-thumb",
+          "name": "Throttle thumb controls",
+          "image": "Hardware/Images/logitech-x52-pro-throttle-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "throttle", "x": 0.5065, "y": 0.491, "width": 0.1963, "height": 0.1242},
+            {"controlId": "slider", "x": 0.6953, "y": 0.1363, "width": 0.0673, "height": 0.0481},
+            {"controlId": "d", "x": 0.7533, "y": 0.1283, "width": 0.0486, "height": 0.0701},
+            {"controlId": "clutch", "x": 0.6916, "y": 0.2926, "width": 0.0897, "height": 0.1142},
+            {"controlId": "mouse-stick-up", "x": 0.6037, "y": 0.3026, "width": 0.0654, "height": 0.0701},
+            {"controlId": "mouse-click", "x": 0.5234, "y": 0.3327, "width": 0.0449, "height": 0.0561}
+          ]
+        },
+        {
+          "id": "throttle-index",
+          "name": "Throttle hat, wheel, and upper rotary",
+          "image": "Hardware/Images/logitech-x52-pro-throttle-index-cutout.png",
+          "hotspots": [
+            {"controlId": "e", "x": 0.2084, "y": 0.0864, "width": 0.1401, "height": 0.0614},
+            {"controlId": "throttle-hat-up", "x": 0.366, "y": 0.2438, "width": 0.1068, "height": 0.1286},
+            {"controlId": "scroll-up", "x": 0.4711, "y": 0.2706, "width": 0.0595, "height": 0.1324}
+          ]
+        },
+        {
+          "id": "mfd",
+          "name": "Multifunction display wheels and buttons",
+          "image": "Hardware/Images/logitech-x52-pro-mfd-cutout.png",
+          "hotspots": [
+            {"controlId": "mfd-function-press", "x": 0.6616, "y": 0.8063, "width": 0.1061, "height": 0.175},
+            {"controlId": "mfd-start-stop", "x": 0.7273, "y": 0.7375, "width": 0.1162, "height": 0.0875},
+            {"controlId": "mfd-reset", "x": 0.7677, "y": 0.8313, "width": 0.1162, "height": 0.0875},
+            {"controlId": "mfd-select-press", "x": 0.8636, "y": 0.6875, "width": 0.096, "height": 0.1812}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "location": "stick", "suggestedInput": "x"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "location": "stick", "suggestedInput": "y"},
+        {"id": "twist", "name": "Stick twist", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "trigger-first", "name": "Trigger first detent", "kind": "Button", "location": "trigger", "suggestedInput": "button1"},
+        {"id": "trigger-second", "name": "Trigger second detent", "kind": "Button", "location": "trigger", "suggestedInput": "button15"},
+        {"id": "fire", "name": "Fire button under safety cover", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "a", "name": "A grip button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "b", "name": "B grip button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "c", "name": "C grip button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "pinky", "name": "Pinky switch / shift", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "pov-up", "name": "Lower POV 1 hat up", "kind": "Button", "location": "pov", "suggestedInput": "hat1_up"},
+        {"id": "pov-right", "name": "Lower POV 1 hat right", "kind": "Button", "location": "pov", "suggestedInput": "hat1_right"},
+        {"id": "pov-down", "name": "Lower POV 1 hat down", "kind": "Button", "location": "pov", "suggestedInput": "hat1_down"},
+        {"id": "pov-left", "name": "Lower POV 1 hat left", "kind": "Button", "location": "pov", "suggestedInput": "hat1_left"},
+        {"id": "hat2-up", "name": "Upper POV 2 hat up", "kind": "Button", "location": "hat2", "suggestedInput": "button20"},
+        {"id": "hat2-right", "name": "Upper POV 2 hat right", "kind": "Button", "location": "hat2", "suggestedInput": "button21"},
+        {"id": "hat2-down", "name": "Upper POV 2 hat down", "kind": "Button", "location": "hat2", "suggestedInput": "button22"},
+        {"id": "hat2-left", "name": "Upper POV 2 hat left", "kind": "Button", "location": "hat2", "suggestedInput": "button23"},
+        {"id": "mode-1", "name": "Mode selector 1", "kind": "Button", "location": "mode"},
+        {"id": "mode-2", "name": "Mode selector 2", "kind": "Button", "location": "mode"},
+        {"id": "mode-3", "name": "Mode selector 3", "kind": "Button", "location": "mode"},
+        {"id": "toggle-1-up", "name": "T1 · left toggle up", "kind": "Button", "location": "toggle-1", "suggestedInput": "button9"},
+        {"id": "toggle-1-down", "name": "T2 · left toggle down", "kind": "Button", "location": "toggle-1", "suggestedInput": "button10"},
+        {"id": "toggle-2-up", "name": "T3 · middle toggle up", "kind": "Button", "location": "toggle-2", "suggestedInput": "button11"},
+        {"id": "toggle-2-down", "name": "T4 · middle toggle down", "kind": "Button", "location": "toggle-2", "suggestedInput": "button12"},
+        {"id": "toggle-3-up", "name": "T5 · right toggle up", "kind": "Button", "location": "toggle-3", "suggestedInput": "button13"},
+        {"id": "toggle-3-down", "name": "T6 · right toggle down", "kind": "Button", "location": "toggle-3", "suggestedInput": "button14"},
+        {"id": "throttle", "name": "Throttle lever", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "rotary-e", "name": "Upper rotary E axis", "kind": "Axis", "location": "rotary-e"},
+        {"id": "e", "name": "E upper rotary push button", "kind": "Button", "location": "rotary-e", "suggestedInput": "button8"},
+        {"id": "rotary-i", "name": "Lower rotary I axis", "kind": "Axis", "location": "rotary-i"},
+        {"id": "clutch", "name": "I lower rotary clutch button", "kind": "Button", "location": "rotary-i", "suggestedInput": "button31"},
+        {"id": "slider", "name": "Throttle precision slider", "kind": "Axis", "suggestedInput": "slider1"},
+        {"id": "d", "name": "D throttle button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "throttle-hat-up", "name": "Throttle hat up", "kind": "Button", "location": "throttle-hat", "suggestedInput": "button24"},
+        {"id": "throttle-hat-right", "name": "Throttle hat right", "kind": "Button", "location": "throttle-hat", "suggestedInput": "button25"},
+        {"id": "throttle-hat-down", "name": "Throttle hat down", "kind": "Button", "location": "throttle-hat", "suggestedInput": "button26"},
+        {"id": "throttle-hat-left", "name": "Throttle hat left", "kind": "Button", "location": "throttle-hat", "suggestedInput": "button27"},
+        {"id": "mouse-stick-up", "name": "Mouse ministick, programmable hat up", "kind": "Button", "location": "mouse-stick"},
+        {"id": "mouse-stick-right", "name": "Mouse ministick, programmable hat right", "kind": "Button", "location": "mouse-stick"},
+        {"id": "mouse-stick-down", "name": "Mouse ministick, programmable hat down", "kind": "Button", "location": "mouse-stick"},
+        {"id": "mouse-stick-left", "name": "Mouse ministick, programmable hat left", "kind": "Button", "location": "mouse-stick"},
+        {"id": "mouse-click", "name": "Mouse left-click button", "kind": "Button"},
+        {"id": "scroll-up", "name": "Throttle index scroll wheel forward", "kind": "Button", "location": "scroll"},
+        {"id": "scroll-down", "name": "Throttle index scroll wheel back", "kind": "Button", "location": "scroll"},
+        {"id": "scroll-press", "name": "Throttle index scroll wheel press", "kind": "Button", "location": "scroll"},
+        {"id": "mfd-function-up", "name": "MFD function wheel forward", "kind": "Button", "location": "mfd-function"},
+        {"id": "mfd-function-down", "name": "MFD function wheel back", "kind": "Button", "location": "mfd-function"},
+        {"id": "mfd-function-press", "name": "MFD function wheel press", "kind": "Button", "location": "mfd-function"},
+        {"id": "mfd-start-stop", "name": "MFD start/stop button", "kind": "Button"},
+        {"id": "mfd-reset", "name": "MFD reset button", "kind": "Button"},
+        {"id": "mfd-select-up", "name": "MFD select wheel forward", "kind": "Button", "location": "mfd-select"},
+        {"id": "mfd-select-down", "name": "MFD select wheel back", "kind": "Button", "location": "mfd-select"},
+        {"id": "mfd-select-press", "name": "MFD select wheel press", "kind": "Button", "location": "mfd-select"}
+      ]
+    }
+  ]
+}

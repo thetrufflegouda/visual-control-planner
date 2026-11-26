@@ -1,0 +1,728 @@
+{
+  "manufacturer": "Turtle Beach",
+  "devices": [
+    {
+      "id": "turtle-beach-velocityone-flight-yoke",
+      "name": "TURTLE BEACH VELOCITYONE FLIGHT YOKE",
+      "vendorId": 4341,
+      "productId": 0,
+      "layout": "turtle-beach-velocityone-flight-yoke"
+    },
+    {
+      "id": "turtle-beach-velocityone-flight-quadrant",
+      "name": "TURTLE BEACH VELOCITYONE FLIGHT THROTTLE QUADRANT",
+      "vendorId": 4341,
+      "productId": 0,
+      "layout": "turtle-beach-velocityone-flight-quadrant"
+    },
+    {
+      "id": "turtle-beach-velocityone-rudder",
+      "name": "TURTLE BEACH VELOCITYONE RUDDER PEDALS",
+      "vendorId": 4341,
+      "productId": 28690,
+      "layout": "turtle-beach-velocityone-rudder"
+    },
+    {
+      "id": "turtle-beach-velocityone-flightstick",
+      "name": "TURTLE BEACH VELOCITYONE FLIGHTSTICK",
+      "vendorId": 4341,
+      "productId": 28757,
+      "layout": "turtle-beach-velocityone-flightstick"
+    },
+    {
+      "id": "turtle-beach-velocityone-flightstick-ii",
+      "name": "TURTLE BEACH VELOCITYONE FLIGHTSTICK II",
+      "vendorId": 4341,
+      "productId": 0,
+      "layout": "turtle-beach-velocityone-flightstick-ii"
+    },
+    {
+      "id": "turtle-beach-velocityone-dual-throttle",
+      "name": "TURTLE BEACH VELOCITYONE DUAL THROTTLE",
+      "vendorId": 4341,
+      "productId": 0,
+      "layout": "turtle-beach-velocityone-dual-throttle"
+    },
+    {
+      "id": "turtle-beach-velocityone-flightdeck-stick",
+      "name": "TURTLE BEACH VELOCITYONE FLIGHTDECK STICK",
+      "vendorId": 4341,
+      "productId": 28804,
+      "layout": "turtle-beach-velocityone-flightdeck-stick"
+    },
+    {
+      "id": "turtle-beach-velocityone-flightdeck-throttle",
+      "name": "TURTLE BEACH VELOCITYONE FLIGHTDECK THROTTLE",
+      "vendorId": 4341,
+      "productId": 28805,
+      "layout": "turtle-beach-velocityone-flightdeck-throttle"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "turtle-beach-velocityone-flight-yoke",
+      "references": [
+        "https://www.turtlebeach.com/products/velocity-one-flight",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/4409978248603-VelocityOne-Flight-PC-Setup",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/4408092902939-VelocityOne-Flight-List-Of-Programmable-Controls"
+      ],
+      "referenceNotes": [
+        "In PC input mode the yoke and its attached quadrant enumerate as separate devices.",
+        "The left and right rudder triggers are two ends of the same signed axis."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Yoke face and flight axes",
+          "image": "Hardware/Images/turtle-beach-velocityone-flight-yoke-front-cutout.png",
+          "hotspots": [
+            {"controlId": "roll", "x": 0.48694, "y": 0.79468, "width": 0.32779, "height": 0.12548},
+            {"controlId": "face-a", "x": 0.62708, "y": 0.51331, "width": 0.02375, "height": 0.03802},
+            {"controlId": "face-b", "x": 0.63183, "y": 0.55894, "width": 0.02375, "height": 0.03802},
+            {"controlId": "face-x", "x": 0.63183, "y": 0.60837, "width": 0.02375, "height": 0.03802},
+            {"controlId": "face-y", "x": 0.63658, "y": 0.6616, "width": 0.02375, "height": 0.03802},
+            {"controlId": "view", "x": 0.45368, "y": 0.68061, "width": 0.02138, "height": 0.03422},
+            {"controlId": "menu", "x": 0.52494, "y": 0.68061, "width": 0.02138, "height": 0.03422}
+          ]
+        },
+        {
+          "id": "grips",
+          "name": "Yoke handle controls",
+          "image": "Hardware/Images/turtle-beach-velocityone-flight-yoke-grips-cutout.png",
+          "hotspots": [
+            {"controlId": "left-pov-up", "x": 0.23228, "y": 0.2335, "width": 0.13386, "height": 0.17259},
+            {"controlId": "left-hat-up", "x": 0.23228, "y": 0.47208, "width": 0.13386, "height": 0.13198},
+            {"controlId": "left-button", "x": 0.08858, "y": 0.31472, "width": 0.07087, "height": 0.09137},
+            {"controlId": "right-pov-up", "x": 0.75984, "y": 0.2335, "width": 0.13386, "height": 0.17259},
+            {"controlId": "right-hat-up", "x": 0.75984, "y": 0.47208, "width": 0.13386, "height": 0.13198},
+            {"controlId": "right-button", "x": 0.90354, "y": 0.31472, "width": 0.07087, "height": 0.09137}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Rear bumpers and rudder triggers",
+          "image": "Hardware/Images/turtle-beach-velocityone-flight-yoke-rear-cutout.png",
+          "hotspots": [
+            {"controlId": "right-bumper", "x": 0.21781, "y": 0.28896, "width": 0.14384, "height": 0.15584},
+            {"controlId": "rudder", "x": 0.23288, "y": 0.75, "width": 0.12192, "height": 0.25649},
+            {"controlId": "left-bumper", "x": 0.7863, "y": 0.25974, "width": 0.14384, "height": 0.15584},
+            {"controlId": "rudder", "x": 0.77945, "y": 0.76299, "width": 0.12192, "height": 0.25649}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "roll", "name": "Yoke roll axis", "kind": "Axis", "suggestedInput": "x", "location": "yoke"},
+        {"id": "pitch", "name": "Yoke pitch axis", "kind": "Axis", "suggestedInput": "y", "location": "yoke"},
+        {"id": "rudder", "name": "Split rudder trigger axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "face-a", "name": "A button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "face-b", "name": "B button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "face-x", "name": "X button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "face-y", "name": "Y button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "view", "name": "View", "kind": "Button"},
+        {"id": "menu", "name": "Menu", "kind": "Button"},
+        {"id": "left-pov-up", "name": "Left POV up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "left-pov"},
+        {"id": "left-pov-right", "name": "Left POV right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "left-pov"},
+        {"id": "left-pov-down", "name": "Left POV down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "left-pov"},
+        {"id": "left-pov-left", "name": "Left POV left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "left-pov"},
+        {"id": "left-hat-up", "name": "Left trim hat up", "kind": "Hat", "location": "left-hat"},
+        {"id": "left-hat-right", "name": "Left trim hat right", "kind": "Hat", "location": "left-hat"},
+        {"id": "left-hat-down", "name": "Left trim hat down", "kind": "Hat", "location": "left-hat"},
+        {"id": "left-hat-left", "name": "Left trim hat left", "kind": "Hat", "location": "left-hat"},
+        {"id": "left-button", "name": "B1 left grip button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "right-pov-up", "name": "Right POV up", "kind": "Hat", "suggestedInput": "hat2_up", "location": "right-pov"},
+        {"id": "right-pov-right", "name": "Right POV right", "kind": "Hat", "suggestedInput": "hat2_right", "location": "right-pov"},
+        {"id": "right-pov-down", "name": "Right POV down", "kind": "Hat", "suggestedInput": "hat2_down", "location": "right-pov"},
+        {"id": "right-pov-left", "name": "Right POV left", "kind": "Hat", "suggestedInput": "hat2_left", "location": "right-pov"},
+        {"id": "right-hat-up", "name": "Right trim hat up", "kind": "Hat", "location": "right-hat"},
+        {"id": "right-hat-right", "name": "Right trim hat right", "kind": "Hat", "location": "right-hat"},
+        {"id": "right-hat-down", "name": "Right trim hat down", "kind": "Hat", "location": "right-hat"},
+        {"id": "right-hat-left", "name": "Right trim hat left", "kind": "Hat", "location": "right-hat"},
+        {"id": "right-button", "name": "B2 right grip button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "right-bumper", "name": "Right rear bumper", "kind": "Button"},
+        {"id": "left-bumper", "name": "Left rear bumper", "kind": "Button"}
+      ]
+    },
+    {
+      "id": "turtle-beach-velocityone-flight-quadrant",
+      "references": [
+        "https://www.turtlebeach.com/products/velocity-one-flight",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/4409978248603-VelocityOne-Flight-PC-Setup",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/4408092902939-VelocityOne-Flight-List-Of-Programmable-Controls"
+      ],
+      "referenceNotes": [
+        "In PC input mode select the QUAD instance even though it connects through the yoke."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Levers, trim wheel and buttons",
+          "image": "Hardware/Images/turtle-beach-velocityone-flight-quadrant-front-cutout.png",
+          "hotspots": [
+            {"controlId": "trim", "x": 0.23784, "y": 0.3831, "width": 0.06486, "height": 0.22535},
+            {"controlId": "vernier-throttle", "x": 0.18649, "y": 0.77183, "width": 0.1027, "height": 0.12113},
+            {"controlId": "vernier-prop", "x": 0.35135, "y": 0.81972, "width": 0.1027, "height": 0.11831},
+            {"controlId": "vernier-mixture", "x": 0.52432, "y": 0.88169, "width": 0.12162, "height": 0.12113},
+            {"controlId": "lever-1-axis", "x": 0.42703, "y": 0.09014, "width": 0.08108, "height": 0.08451},
+            {"controlId": "lever-2-axis", "x": 0.52162, "y": 0.11268, "width": 0.08108, "height": 0.08451},
+            {"controlId": "lever-3-axis", "x": 0.63514, "y": 0.14366, "width": 0.08108, "height": 0.08451},
+            {"controlId": "lever-4-axis", "x": 0.74865, "y": 0.16901, "width": 0.08108, "height": 0.08451},
+            {"controlId": "button-3", "x": 0.34054, "y": 0.61972, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-4", "x": 0.31622, "y": 0.65634, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-5", "x": 0.41081, "y": 0.63944, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-6", "x": 0.38378, "y": 0.67606, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-7", "x": 0.48108, "y": 0.65634, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-8", "x": 0.45676, "y": 0.69577, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-9", "x": 0.55405, "y": 0.67887, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-10", "x": 0.52973, "y": 0.72113, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-11", "x": 0.62703, "y": 0.69859, "width": 0.05405, "height": 0.0338},
+            {"controlId": "button-12", "x": 0.60811, "y": 0.74085, "width": 0.05405, "height": 0.0338}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trim", "name": "Trim wheel", "kind": "Axis", "suggestedInput": "slider1"},
+        {"id": "vernier-throttle", "name": "Black throttle vernier", "kind": "Axis", "suggestedInput": "x"},
+        {"id": "vernier-prop", "name": "Blue propeller vernier", "kind": "Axis", "suggestedInput": "y"},
+        {"id": "vernier-mixture", "name": "Red mixture vernier", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "lever-1-axis", "name": "Quadrant lever 1", "kind": "Axis", "suggestedInput": "slider2", "location": "lever-1"},
+        {"id": "lever-1-reverse", "name": "Quadrant lever 1 reverse detent", "kind": "Button", "suggestedInput": "button11", "location": "lever-1"},
+        {"id": "lever-2-axis", "name": "Quadrant lever 2", "kind": "Axis", "suggestedInput": "rotx", "location": "lever-2"},
+        {"id": "lever-2-reverse", "name": "Quadrant lever 2 reverse detent", "kind": "Button", "suggestedInput": "button12", "location": "lever-2"},
+        {"id": "lever-3-axis", "name": "Quadrant lever 3", "kind": "Axis", "suggestedInput": "roty", "location": "lever-3"},
+        {"id": "lever-3-reverse", "name": "Quadrant lever 3 reverse detent", "kind": "Button", "suggestedInput": "button13", "location": "lever-3"},
+        {"id": "lever-4-axis", "name": "Quadrant lever 4", "kind": "Axis", "suggestedInput": "rotz", "location": "lever-4"},
+        {"id": "lever-4-reverse", "name": "Quadrant lever 4 reverse detent", "kind": "Button", "suggestedInput": "button14", "location": "lever-4"},
+        {"id": "button-3", "name": "B3 quadrant button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "button-4", "name": "B4 quadrant button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "button-5", "name": "B5 quadrant button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "button-6", "name": "B6 quadrant button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "button-7", "name": "B7 quadrant button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "button-8", "name": "B8 quadrant button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "button-9", "name": "B9 quadrant button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "button-10", "name": "B10 quadrant button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "button-11", "name": "B11 quadrant button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "button-12", "name": "B12 quadrant button", "kind": "Button", "suggestedInput": "button10"}
+      ]
+    },
+    {
+      "id": "turtle-beach-velocityone-rudder",
+      "references": [
+        "https://www.turtlebeach.com/products/velocity-one-rudder",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/VelocityOne-Rudder-PC-Setup",
+        "https://forum.aerosoft.com/index.php?/topic/185759-gel%C3%B6st-rudder-pedals-unter-linux-erkannt-aber-nicht-in-x-plane-udev-berechtigungsproblem/"
+      ],
+      "referenceNotes": [
+        "Use the separate Windows PC USB connection to pair the rudder and two toe-brake axes."
+      ],
+      "views": [
+        {
+          "id": "top",
+          "name": "Pedals and rudder pivot",
+          "image": "Hardware/Images/turtle-beach-velocityone-rudder-top-cutout.png",
+          "hotspots": [
+            {"controlId": "left-brake", "x": 0.1533, "y": 0.20792, "width": 0.18396, "height": 0.2104},
+            {"controlId": "right-brake", "x": 0.83726, "y": 0.20792, "width": 0.18396, "height": 0.2104},
+            {"controlId": "rudder", "x": 0.5, "y": 0.43812, "width": 0.18396, "height": 0.17327}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-brake", "name": "Left toe brake axis", "kind": "Axis"},
+        {"id": "right-brake", "name": "Right toe brake axis", "kind": "Axis"},
+        {"id": "rudder", "name": "Rudder axis", "kind": "Axis"}
+      ]
+    },
+    {
+      "id": "turtle-beach-velocityone-flightstick",
+      "references": [
+        "https://www.turtlebeach.com/products/velocity-one-flight-stick",
+        "https://cdn.turtlebeach.com/device/qig/velocityone--flightstick/velocityone--flightstick_367-6703-v1.pdf",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/VelocityOne-Flightstick-Suggested-Button-Mappings",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/VelocityOne-Flightstick-PC-Setup"
+      ],
+      "referenceNotes": [
+        "Inputs are shown in PC mode. Learning is required for control names that depend on the active orientation or trim setting.",
+        "The touchpad is a mouse controller on Windows. FMD hardware menu navigation stays on the device."
+      ],
+      "views": [
+        {
+          "id": "top",
+          "name": "Stick head and base",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightstick-top-cutout.png",
+          "hotspots": [
+            {"controlId": "roll", "x": 0.50179, "y": 0.55362, "width": 0.13571, "height": 0.09975},
+            {"controlId": "pov-up", "x": 0.45714, "y": 0.32419, "width": 0.03393, "height": 0.04738},
+            {"controlId": "mini-press", "x": 0.5375, "y": 0.32918, "width": 0.03214, "height": 0.04738},
+            {"controlId": "upper-left", "x": 0.4625, "y": 0.38653, "width": 0.025, "height": 0.02993},
+            {"controlId": "upper-right", "x": 0.52857, "y": 0.38653, "width": 0.025, "height": 0.02993},
+            {"controlId": "trim-axis", "x": 0.50179, "y": 0.39152, "width": 0.03036, "height": 0.06484},
+            {"controlId": "left-lever-axis", "x": 0.25179, "y": 0.33666, "width": 0.06786, "height": 0.08479},
+            {"controlId": "base-1", "x": 0.26607, "y": 0.49626, "width": 0.04107, "height": 0.03741},
+            {"controlId": "base-2", "x": 0.26607, "y": 0.5611, "width": 0.04107, "height": 0.03741},
+            {"controlId": "base-3", "x": 0.26607, "y": 0.62095, "width": 0.04107, "height": 0.03741},
+            {"controlId": "base-4", "x": 0.26607, "y": 0.68579, "width": 0.04107, "height": 0.03741},
+            {"controlId": "right-lever-axis", "x": 0.74464, "y": 0.33666, "width": 0.06786, "height": 0.08479},
+            {"controlId": "base-5", "x": 0.73036, "y": 0.49626, "width": 0.04107, "height": 0.03741},
+            {"controlId": "base-6", "x": 0.73036, "y": 0.5611, "width": 0.04107, "height": 0.03741},
+            {"controlId": "base-7", "x": 0.73036, "y": 0.62095, "width": 0.04107, "height": 0.03741},
+            {"controlId": "base-8", "x": 0.73036, "y": 0.68579, "width": 0.04107, "height": 0.03741},
+            {"controlId": "view", "x": 0.46786, "y": 0.79052, "width": 0.01786, "height": 0.02494},
+            {"controlId": "menu", "x": 0.53214, "y": 0.79052, "width": 0.01786, "height": 0.02494}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Rear trigger",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightstick-trigger-cutout.png",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.59202, "y": 0.24256, "width": 0.07539, "height": 0.1167}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "roll", "name": "Stick roll axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "pitch", "name": "Stick pitch axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "twist", "name": "Stick twist axis", "kind": "Axis", "suggestedInput": "z", "location": "stick"},
+        {"id": "pov-up", "name": "Digital POV up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "pov"},
+        {"id": "pov-right", "name": "Digital POV right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "pov"},
+        {"id": "pov-down", "name": "Digital POV down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "pov"},
+        {"id": "pov-left", "name": "Digital POV left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "pov"},
+        {"id": "mini-x", "name": "Analog POV horizontal axis", "kind": "Axis", "location": "mini"},
+        {"id": "mini-y", "name": "Analog POV vertical axis", "kind": "Axis", "location": "mini"},
+        {"id": "mini-press", "name": "Analog POV press", "kind": "Button", "location": "mini"},
+        {"id": "upper-left", "name": "B16 upper left button", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "upper-right", "name": "B17 upper right button", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "trim-axis", "name": "Trim wheel axis", "kind": "Axis", "location": "trim"},
+        {"id": "trim-up", "name": "Trim wheel up", "kind": "Button", "location": "trim"},
+        {"id": "trim-down", "name": "Trim wheel down", "kind": "Button", "location": "trim"},
+        {"id": "left-lever-axis", "name": "Left lever", "kind": "Axis", "location": "left-lever"},
+        {"id": "left-lever-upper", "name": "Left lever upper detent", "kind": "Button", "suggestedInput": "button9", "location": "left-lever"},
+        {"id": "left-lever-lower", "name": "Left lever lower detent", "kind": "Button", "suggestedInput": "button10", "location": "left-lever"},
+        {"id": "base-1", "name": "B1 Left A", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "base-2", "name": "B2 Left B", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "base-3", "name": "B3 Left X", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "base-4", "name": "B4 Left Y", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "right-lever-axis", "name": "Right lever", "kind": "Axis", "location": "right-lever"},
+        {"id": "right-lever-upper", "name": "Right lever upper detent", "kind": "Button", "suggestedInput": "button11", "location": "right-lever"},
+        {"id": "right-lever-lower", "name": "Right lever lower detent", "kind": "Button", "suggestedInput": "button12", "location": "right-lever"},
+        {"id": "base-5", "name": "B5 Right A", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "base-6", "name": "B6 Right B", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "base-7", "name": "B7 Right X", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "base-8", "name": "B8 Right Y", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "view", "name": "View", "kind": "Button"},
+        {"id": "menu", "name": "Menu", "kind": "Button"},
+        {"id": "trigger", "name": "Rear trigger", "kind": "Button"}
+      ]
+    },
+    {
+      "id": "turtle-beach-velocityone-flightstick-ii",
+      "references": [
+        "https://www.turtlebeach.com/products/velocity-one-flight-stick-ii",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/velocityone-flightstick-ii-default-functions-and-controls-on-pc",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/velocityone-flightstick-ii-flight-management-display",
+        "https://www.turtlebeach.com/products/velocity-one-hotas?Platform=PC"
+      ],
+      "referenceNotes": [
+        "The Flightstick II uses a separate USB connection in the PC HOTAS bundle.",
+        "Map shown in standard right-handed PC mode. The left-handed firmware setting swaps base numbering."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Stick head, levers and base",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightstick-ii-front-cutout.png",
+          "hotspots": [
+            {"controlId": "roll", "x": 0.5, "y": 0.73402, "width": 0.31073, "height": 0.06186},
+            {"controlId": "pov-press", "x": 0.44633, "y": 0.14639, "width": 0.0565, "height": 0.04124},
+            {"controlId": "hat-up", "x": 0.54802, "y": 0.14639, "width": 0.05932, "height": 0.0433},
+            {"controlId": "left-thumb", "x": 0.42938, "y": 0.22268, "width": 0.03955, "height": 0.03093},
+            {"controlId": "right-thumb", "x": 0.5565, "y": 0.22268, "width": 0.03955, "height": 0.03093},
+            {"controlId": "secondary", "x": 0.49435, "y": 0.19794, "width": 0.03955, "height": 0.03093},
+            {"controlId": "scroll-axis", "x": 0.49435, "y": 0.26186, "width": 0.04237, "height": 0.03093},
+            {"controlId": "left-lever-axis", "x": 0.16102, "y": 0.59381, "width": 0.08757, "height": 0.05567},
+            {"controlId": "right-lever-axis", "x": 0.80791, "y": 0.59381, "width": 0.08757, "height": 0.05567},
+            {"controlId": "base-1", "x": 0.18644, "y": 0.75876, "width": 0.06215, "height": 0.01649},
+            {"controlId": "base-2", "x": 0.17514, "y": 0.77938, "width": 0.06215, "height": 0.01649},
+            {"controlId": "base-3", "x": 0.16949, "y": 0.8, "width": 0.06215, "height": 0.01649},
+            {"controlId": "base-4", "x": 0.16384, "y": 0.82268, "width": 0.06215, "height": 0.01649},
+            {"controlId": "base-27", "x": 0.80791, "y": 0.75876, "width": 0.06215, "height": 0.01649},
+            {"controlId": "base-28", "x": 0.81921, "y": 0.77938, "width": 0.06215, "height": 0.01649},
+            {"controlId": "base-29", "x": 0.82486, "y": 0.8, "width": 0.06215, "height": 0.01649},
+            {"controlId": "base-30", "x": 0.83333, "y": 0.82268, "width": 0.06215, "height": 0.01649},
+            {"controlId": "guide", "x": 0.13277, "y": 0.89278, "width": 0.02542, "height": 0.02268},
+            {"controlId": "view", "x": 0.19492, "y": 0.89278, "width": 0.02542, "height": 0.02268},
+            {"controlId": "share", "x": 0.23446, "y": 0.89278, "width": 0.02542, "height": 0.02268},
+            {"controlId": "menu", "x": 0.27684, "y": 0.89278, "width": 0.02542, "height": 0.02268},
+            {"controlId": "autopilot-1-increase", "x": 0.49435, "y": 0.81237, "width": 0.12147, "height": 0.04124}
+          ]
+        },
+        {
+          "id": "triggers",
+          "name": "Bumper and trigger",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightstick-ii-triggers-cutout.png",
+          "hotspots": [
+            {"controlId": "bumper", "x": 0.20312, "y": 0.22268, "width": 0.03795, "height": 0.03505},
+            {"controlId": "trigger", "x": 0.26339, "y": 0.31134, "width": 0.04911, "height": 0.06804}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "roll", "name": "Stick roll axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "pitch", "name": "Stick pitch axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "twist", "name": "Stick twist axis", "kind": "Axis", "suggestedInput": "z", "location": "stick"},
+        {"id": "pov-x", "name": "Analog POV horizontal axis", "kind": "Axis", "suggestedInput": "rotx", "location": "pov"},
+        {"id": "pov-y", "name": "Analog POV vertical axis", "kind": "Axis", "suggestedInput": "roty", "location": "pov"},
+        {"id": "pov-press", "name": "Analog POV press", "kind": "Button", "suggestedInput": "button18", "location": "pov"},
+        {"id": "hat-up", "name": "Digital hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "hat"},
+        {"id": "hat-right", "name": "Digital hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "hat"},
+        {"id": "hat-down", "name": "Digital hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "hat"},
+        {"id": "hat-left", "name": "Digital hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "hat"},
+        {"id": "left-thumb", "name": "Left grip button", "kind": "Button", "suggestedInput": "button23"},
+        {"id": "right-thumb", "name": "Right grip button", "kind": "Button", "suggestedInput": "button24"},
+        {"id": "secondary", "name": "Center grip button", "kind": "Button", "suggestedInput": "button25"},
+        {"id": "scroll-axis", "name": "Thumb wheel analog mode", "kind": "Axis", "suggestedInput": "slider2", "location": "scroll"},
+        {"id": "scroll-increase", "name": "Thumb wheel increase", "kind": "Button", "suggestedInput": "button19", "location": "scroll"},
+        {"id": "scroll-decrease", "name": "Thumb wheel decrease", "kind": "Button", "suggestedInput": "button20", "location": "scroll"},
+        {"id": "scroll-press", "name": "Thumb wheel press", "kind": "Button", "suggestedInput": "button21", "location": "scroll"},
+        {"id": "left-lever-axis", "name": "Left lever", "kind": "Axis", "suggestedInput": "rotz", "location": "left-lever"},
+        {"id": "left-lever-upper", "name": "Left lever upper detent", "kind": "Button", "suggestedInput": "button5", "location": "left-lever"},
+        {"id": "left-lever-lower", "name": "Left lever lower detent", "kind": "Button", "suggestedInput": "button6", "location": "left-lever"},
+        {"id": "right-lever-axis", "name": "Right lever", "kind": "Axis", "suggestedInput": "slider1", "location": "right-lever"},
+        {"id": "right-lever-upper", "name": "Right lever upper detent", "kind": "Button", "suggestedInput": "button7", "location": "right-lever"},
+        {"id": "right-lever-lower", "name": "Right lever lower detent", "kind": "Button", "suggestedInput": "button8", "location": "right-lever"},
+        {"id": "base-1", "name": "Base button 1", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "base-2", "name": "Base button 2", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "base-3", "name": "Base button 3", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "base-4", "name": "Base button 4", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "base-27", "name": "Base button 27", "kind": "Button", "suggestedInput": "button27"},
+        {"id": "base-28", "name": "Base button 28", "kind": "Button", "suggestedInput": "button28"},
+        {"id": "base-29", "name": "Base button 29", "kind": "Button", "suggestedInput": "button29"},
+        {"id": "base-30", "name": "Base button 30", "kind": "Button", "suggestedInput": "button30"},
+        {"id": "guide", "name": "Guide", "kind": "Button", "suggestedInput": "button31"},
+        {"id": "view", "name": "View", "kind": "Button", "suggestedInput": "button32"},
+        {"id": "share", "name": "Share", "kind": "Button", "suggestedInput": "button33"},
+        {"id": "menu", "name": "Menu", "kind": "Button", "suggestedInput": "button34"},
+        {"id": "autopilot-1-increase", "name": "Autopilot dial mode 1 increase", "kind": "Button", "suggestedInput": "button9", "location": "autopilot"},
+        {"id": "autopilot-1-decrease", "name": "Autopilot dial mode 1 decrease", "kind": "Button", "suggestedInput": "button10", "location": "autopilot"},
+        {"id": "autopilot-1-press", "name": "Autopilot dial mode 1 press", "kind": "Button", "suggestedInput": "button11", "location": "autopilot"},
+        {"id": "autopilot-2-increase", "name": "Autopilot dial mode 2 increase", "kind": "Button", "suggestedInput": "button12", "location": "autopilot"},
+        {"id": "autopilot-2-decrease", "name": "Autopilot dial mode 2 decrease", "kind": "Button", "suggestedInput": "button13", "location": "autopilot"},
+        {"id": "autopilot-2-press", "name": "Autopilot dial mode 2 press", "kind": "Button", "suggestedInput": "button14", "location": "autopilot"},
+        {"id": "autopilot-3-increase", "name": "Autopilot dial mode 3 increase", "kind": "Button", "suggestedInput": "button15", "location": "autopilot"},
+        {"id": "autopilot-3-decrease", "name": "Autopilot dial mode 3 decrease", "kind": "Button", "suggestedInput": "button16", "location": "autopilot"},
+        {"id": "autopilot-3-press", "name": "Autopilot dial mode 3 press", "kind": "Button", "suggestedInput": "button17", "location": "autopilot"},
+        {"id": "bumper", "name": "Rear bumper", "kind": "Button", "suggestedInput": "button22"},
+        {"id": "trigger", "name": "Rear trigger", "kind": "Button", "suggestedInput": "button26"}
+      ]
+    },
+    {
+      "id": "turtle-beach-velocityone-dual-throttle",
+      "references": [
+        "https://www.turtlebeach.com/products/velocity-one-dual-throttle",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/velocityone-dual-throttle-default-functions-and-controls-on-pc",
+        "https://acpv.prod.turtlebeach.com/support/v2/additional-files/us/45/VelocityOne-Dual-Throttle-en.pdf",
+        "https://www.turtlebeach.com/products/velocity-one-hotas?Platform=PC"
+      ],
+      "referenceNotes": [
+        "This is the independent Dual Throttle module used in the newer VelocityOne HOTAS bundle.",
+        "Default numbers follow the PC profile. The throttle grip lock and mechanical detent cartridge are hardware adjustments."
+      ],
+      "views": [
+        {
+          "id": "base",
+          "name": "Dual levers and base switches",
+          "image": "Hardware/Images/turtle-beach-velocityone-dual-throttle-base-cutout.png",
+          "hotspots": [
+            {"controlId": "left-throttle-axis", "x": 0.38973, "y": 0.20403, "width": 0.08745, "height": 0.09824},
+            {"controlId": "right-throttle-axis", "x": 0.54183, "y": 0.22922, "width": 0.08745, "height": 0.09824},
+            {"controlId": "lever-axis", "x": 0.61977, "y": 0.57683, "width": 0.08745, "height": 0.09824},
+            {"controlId": "toggle-1-up", "x": 0.24144, "y": 0.56675, "width": 0.04373, "height": 0.06801},
+            {"controlId": "toggle-2-up", "x": 0.31749, "y": 0.58942, "width": 0.04373, "height": 0.06801},
+            {"controlId": "toggle-3-up", "x": 0.38973, "y": 0.60453, "width": 0.04373, "height": 0.06801},
+            {"controlId": "base-12", "x": 0.20913, "y": 0.61713, "width": 0.05703, "height": 0.03275},
+            {"controlId": "base-13", "x": 0.28707, "y": 0.64232, "width": 0.05703, "height": 0.03275},
+            {"controlId": "base-14", "x": 0.35932, "y": 0.66751, "width": 0.05703, "height": 0.03275},
+            {"controlId": "base-dial-press", "x": 0.47338, "y": 0.65995, "width": 0.07605, "height": 0.07557}
+          ]
+        },
+        {
+          "id": "thumb",
+          "name": "Throttle thumb controls",
+          "image": "Hardware/Images/turtle-beach-velocityone-dual-throttle-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "mini-press", "x": 0.58512, "y": 0.18734, "width": 0.06281, "height": 0.11646},
+            {"controlId": "thumb-hat-up", "x": 0.67934, "y": 0.16456, "width": 0.0876, "height": 0.15949},
+            {"controlId": "thumb-2", "x": 0.63306, "y": 0.30886, "width": 0.03636, "height": 0.05063},
+            {"controlId": "thumb-3", "x": 0.60496, "y": 0.39241, "width": 0.03636, "height": 0.05063},
+            {"controlId": "thumb-4", "x": 0.64463, "y": 0.4, "width": 0.03636, "height": 0.05063}
+          ]
+        },
+        {
+          "id": "fingers",
+          "name": "Throttle finger controls",
+          "image": "Hardware/Images/turtle-beach-velocityone-dual-throttle-fingers-cutout.png",
+          "hotspots": [
+            {"controlId": "finger-hat-up", "x": 0.32185, "y": 0.50901, "width": 0.10728, "height": 0.18018},
+            {"controlId": "finger-wheel-axis", "x": 0.46093, "y": 0.52477, "width": 0.05166, "height": 0.17568},
+            {"controlId": "rear-ring", "x": 0.6106, "y": 0.5473, "width": 0.09007, "height": 0.08784},
+            {"controlId": "rear-pinky", "x": 0.72053, "y": 0.54279, "width": 0.09007, "height": 0.08784}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-throttle-axis", "name": "Left throttle", "kind": "Axis", "suggestedInput": "x", "location": "left-throttle"},
+        {"id": "left-throttle-upper", "name": "Left throttle upper detent", "kind": "Button", "suggestedInput": "button24", "location": "left-throttle"},
+        {"id": "left-throttle-lower", "name": "Left throttle lower detent", "kind": "Button", "suggestedInput": "button25", "location": "left-throttle"},
+        {"id": "right-throttle-axis", "name": "Right throttle", "kind": "Axis", "suggestedInput": "y", "location": "right-throttle"},
+        {"id": "right-throttle-upper", "name": "Right throttle upper detent", "kind": "Button", "suggestedInput": "button26", "location": "right-throttle"},
+        {"id": "right-throttle-lower", "name": "Right throttle lower detent", "kind": "Button", "suggestedInput": "button27", "location": "right-throttle"},
+        {"id": "lever-axis", "name": "Small right lever", "kind": "Axis", "suggestedInput": "z", "location": "lever"},
+        {"id": "lever-upper", "name": "Small right lever upper detent", "kind": "Button", "suggestedInput": "button10", "location": "lever"},
+        {"id": "lever-lower", "name": "Small right lever lower detent", "kind": "Button", "suggestedInput": "button11", "location": "lever"},
+        {"id": "toggle-1-up", "name": "Toggle 1 up", "kind": "Switch", "suggestedInput": "button15", "location": "toggle-1"},
+        {"id": "toggle-1-down", "name": "Toggle 1 down", "kind": "Switch", "suggestedInput": "button16", "location": "toggle-1"},
+        {"id": "toggle-2-up", "name": "Toggle 2 up", "kind": "Switch", "suggestedInput": "button17", "location": "toggle-2"},
+        {"id": "toggle-2-down", "name": "Toggle 2 down", "kind": "Switch", "suggestedInput": "button18", "location": "toggle-2"},
+        {"id": "toggle-3-up", "name": "Toggle 3 up", "kind": "Switch", "suggestedInput": "button19", "location": "toggle-3"},
+        {"id": "toggle-3-down", "name": "Toggle 3 down", "kind": "Switch", "suggestedInput": "button20", "location": "toggle-3"},
+        {"id": "base-12", "name": "Base button 12", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "base-13", "name": "Base button 13", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "base-14", "name": "Base button 14", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "base-dial-press", "name": "Base dial press", "kind": "Button", "suggestedInput": "button23", "location": "base-dial"},
+        {"id": "base-dial-decrease", "name": "Base dial decrease", "kind": "Button", "suggestedInput": "button22", "location": "base-dial"},
+        {"id": "base-dial-increase", "name": "Base dial increase", "kind": "Button", "suggestedInput": "button21", "location": "base-dial"},
+        {"id": "mini-x", "name": "Analog POV horizontal axis", "kind": "Axis", "suggestedInput": "rotx", "location": "mini"},
+        {"id": "mini-y", "name": "Analog POV vertical axis", "kind": "Axis", "suggestedInput": "roty", "location": "mini"},
+        {"id": "thumb-wheel", "name": "Outer thumb rotary axis", "kind": "Axis", "suggestedInput": "rotz", "location": "thumb-hat"},
+        {"id": "mini-press", "name": "Analog POV press", "kind": "Button", "suggestedInput": "button1", "location": "mini"},
+        {"id": "thumb-hat-up", "name": "Thumb hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "thumb-hat"},
+        {"id": "thumb-hat-right", "name": "Thumb hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "thumb-hat"},
+        {"id": "thumb-hat-down", "name": "Thumb hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "thumb-hat"},
+        {"id": "thumb-hat-left", "name": "Thumb hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "thumb-hat"},
+        {"id": "thumb-2", "name": "Thumb button 2", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "thumb-3", "name": "Thumb button 3", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "thumb-4", "name": "Thumb button 4", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "finger-wheel-axis", "name": "Finger wheel analog mode", "kind": "Axis", "suggestedInput": "slider2", "location": "finger-wheel"},
+        {"id": "finger-wheel-increase", "name": "Finger wheel increase", "kind": "Button", "suggestedInput": "button5", "location": "finger-wheel"},
+        {"id": "finger-wheel-decrease", "name": "Finger wheel decrease", "kind": "Button", "suggestedInput": "button6", "location": "finger-wheel"},
+        {"id": "finger-wheel-press", "name": "Finger wheel press", "kind": "Button", "suggestedInput": "button7", "location": "finger-wheel"},
+        {"id": "finger-hat-up", "name": "Finger hat up", "kind": "Hat", "suggestedInput": "hat2_up", "location": "finger-hat"},
+        {"id": "finger-hat-right", "name": "Finger hat right", "kind": "Hat", "suggestedInput": "hat2_right", "location": "finger-hat"},
+        {"id": "finger-hat-down", "name": "Finger hat down", "kind": "Hat", "suggestedInput": "hat2_down", "location": "finger-hat"},
+        {"id": "finger-hat-left", "name": "Finger hat left", "kind": "Hat", "suggestedInput": "hat2_left", "location": "finger-hat"},
+        {"id": "rear-ring", "name": "Ring finger button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "rear-pinky", "name": "Pinky finger button", "kind": "Button", "suggestedInput": "button9"}
+      ]
+    },
+    {
+      "id": "turtle-beach-velocityone-flightdeck-stick",
+      "references": [
+        "https://www.turtlebeach.com/products/velocity-one-flight-deck",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/VelocityOne-Flightdeck-Suggested-Button-Mappings-For-Microsoft-Flight-Sim-2020-MSFS2020-Stick-Module",
+        "https://steamcommunity.com/app/2000890/discussions/0/4691153988132228108/"
+      ],
+      "referenceNotes": [
+        "This is the separately enumerated stick of the VelocityOne Flightdeck.",
+        "The Windows touchpad movement is a mouse input. Physical press is included where the vendor maps it to a controller button."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Flightdeck grip and base",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightdeck-stick-face-cutout.png",
+          "hotspots": [
+            {"controlId": "roll", "x": 0.47839, "y": 0.64871, "width": 0.17291, "height": 0.08899},
+            {"controlId": "mini-press", "x": 0.49856, "y": 0.19438, "width": 0.04323, "height": 0.0445},
+            {"controlId": "hat-one-up", "x": 0.55908, "y": 0.15691, "width": 0.04323, "height": 0.03279},
+            {"controlId": "hat-two-up", "x": 0.58501, "y": 0.2178, "width": 0.04611, "height": 0.0445},
+            {"controlId": "fire", "x": 0.51873, "y": 0.26464, "width": 0.04323, "height": 0.03747},
+            {"controlId": "dpad-up", "x": 0.44669, "y": 0.28571, "width": 0.04611, "height": 0.03981},
+            {"controlId": "wheel-axis", "x": 0.5072, "y": 0.33021, "width": 0.04323, "height": 0.0445},
+            {"controlId": "gear-forward", "x": 0.35735, "y": 0.48712, "width": 0.06916, "height": 0.0726},
+            {"controlId": "base-dial-press", "x": 0.8098, "y": 0.60422, "width": 0.12968, "height": 0.06323},
+            {"controlId": "toggle-1-forward", "x": 0.14986, "y": 0.72365, "width": 0.04611, "height": 0.04215},
+            {"controlId": "toggle-2-forward", "x": 0.20749, "y": 0.7377, "width": 0.04611, "height": 0.04215},
+            {"controlId": "toggle-3-forward", "x": 0.26225, "y": 0.76581, "width": 0.04611, "height": 0.04215},
+            {"controlId": "bank-11", "x": 0.51585, "y": 0.79625, "width": 0.04899, "height": 0.03279},
+            {"controlId": "bank-12", "x": 0.57637, "y": 0.8103, "width": 0.04899, "height": 0.03279},
+            {"controlId": "bank-13", "x": 0.63977, "y": 0.8267, "width": 0.04899, "height": 0.03279},
+            {"controlId": "bank-14", "x": 0.48415, "y": 0.83372, "width": 0.04899, "height": 0.03279},
+            {"controlId": "bank-15", "x": 0.61383, "y": 0.8548, "width": 0.04899, "height": 0.03279},
+            {"controlId": "shortcut-1", "x": 0.33718, "y": 0.8267, "width": 0.02882, "height": 0.02108},
+            {"controlId": "shortcut-2", "x": 0.28818, "y": 0.85714, "width": 0.02882, "height": 0.02108},
+            {"controlId": "shortcut-3", "x": 0.31988, "y": 0.86885, "width": 0.02882, "height": 0.02108},
+            {"controlId": "shortcut-4", "x": 0.36023, "y": 0.87119, "width": 0.02882, "height": 0.02108}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Trigger, shaft button and pinky lever",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightdeck-stick-rear-cutout.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.37473, "y": 0.30238, "width": 0.04357, "height": 0.05714},
+            {"controlId": "shaft-button", "x": 0.49673, "y": 0.36905, "width": 0.04139, "height": 0.04048},
+            {"controlId": "pinky-axis", "x": 0.42266, "y": 0.54524, "width": 0.07625, "height": 0.10238}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "roll", "name": "Stick roll", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "pitch", "name": "Stick pitch", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "twist", "name": "Stick twist", "kind": "Axis", "suggestedInput": "z", "location": "stick"},
+        {"id": "mini-x", "name": "Analog POV horizontal", "kind": "Axis", "suggestedInput": "rotx", "location": "mini"},
+        {"id": "mini-y", "name": "Analog POV vertical", "kind": "Axis", "suggestedInput": "roty", "location": "mini"},
+        {"id": "wheel-axis", "name": "Grip wheel analog mode", "kind": "Axis", "suggestedInput": "slider1", "location": "wheel"},
+        {"id": "pinky-axis", "name": "Pinky lever", "kind": "Axis", "suggestedInput": "rotz", "location": "pinky"},
+        {"id": "mini-press", "name": "Analog POV press", "kind": "Button", "suggestedInput": "button3", "location": "mini"},
+        {"id": "hat-one-up", "name": "Upper digital POV up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "hat-one"},
+        {"id": "hat-one-right", "name": "Upper digital POV right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "hat-one"},
+        {"id": "hat-one-down", "name": "Upper digital POV down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "hat-one"},
+        {"id": "hat-one-left", "name": "Upper digital POV left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "hat-one"},
+        {"id": "hat-two-up", "name": "Right digital POV up", "kind": "Hat", "suggestedInput": "hat2_up", "location": "hat-two"},
+        {"id": "hat-two-right", "name": "Right digital POV right", "kind": "Hat", "suggestedInput": "hat2_right", "location": "hat-two"},
+        {"id": "hat-two-down", "name": "Right digital POV down", "kind": "Hat", "suggestedInput": "hat2_down", "location": "hat-two"},
+        {"id": "hat-two-left", "name": "Right digital POV left", "kind": "Hat", "suggestedInput": "hat2_left", "location": "hat-two"},
+        {"id": "fire", "name": "Touchpad / FIRE controller press", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "dpad-up", "name": "Shaft D-pad up", "kind": "Hat", "suggestedInput": "button4", "location": "dpad"},
+        {"id": "dpad-right", "name": "Shaft D-pad right", "kind": "Hat", "suggestedInput": "button5", "location": "dpad"},
+        {"id": "dpad-down", "name": "Shaft D-pad down", "kind": "Hat", "suggestedInput": "button6", "location": "dpad"},
+        {"id": "dpad-left", "name": "Shaft D-pad left", "kind": "Hat", "suggestedInput": "button7", "location": "dpad"},
+        {"id": "gear-forward", "name": "Gear lever forward", "kind": "Switch", "suggestedInput": "button23", "location": "gear"},
+        {"id": "gear-back", "name": "Gear lever back", "kind": "Switch", "suggestedInput": "button24", "location": "gear"},
+        {"id": "base-dial-press", "name": "Base dial press", "kind": "Button", "suggestedInput": "button27", "location": "base-dial"},
+        {"id": "base-dial-decrease", "name": "Base dial decrease", "kind": "Button", "suggestedInput": "button25", "location": "base-dial"},
+        {"id": "base-dial-increase", "name": "Base dial increase", "kind": "Button", "suggestedInput": "button26", "location": "base-dial"},
+        {"id": "wheel-press", "name": "Grip wheel press", "kind": "Button", "suggestedInput": "button8", "location": "wheel"},
+        {"id": "wheel-up", "name": "Grip wheel up", "kind": "Button", "suggestedInput": "button29", "location": "wheel"},
+        {"id": "wheel-down", "name": "Grip wheel down", "kind": "Button", "suggestedInput": "button30", "location": "wheel"},
+        {"id": "toggle-1-forward", "name": "Base toggle 1 forward", "kind": "Switch", "suggestedInput": "button16", "location": "toggle-1"},
+        {"id": "toggle-1-back", "name": "Base toggle 1 back", "kind": "Switch", "suggestedInput": "button17", "location": "toggle-1"},
+        {"id": "toggle-2-forward", "name": "Base toggle 2 forward", "kind": "Switch", "suggestedInput": "button18", "location": "toggle-2"},
+        {"id": "toggle-2-back", "name": "Base toggle 2 back", "kind": "Switch", "suggestedInput": "button19", "location": "toggle-2"},
+        {"id": "toggle-3-forward", "name": "Base toggle 3 forward", "kind": "Switch", "suggestedInput": "button20", "location": "toggle-3"},
+        {"id": "toggle-3-back", "name": "Base toggle 3 back", "kind": "Switch", "suggestedInput": "button21", "location": "toggle-3"},
+        {"id": "bank-11", "name": "Base bank button 11", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "bank-12", "name": "Base bank button 12", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "bank-13", "name": "Base bank button 13", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "bank-14", "name": "Base bank button 14", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "bank-15", "name": "Base bank button 15", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "shortcut-1", "name": "Shortcut button 1", "kind": "Button", "suggestedInput": "button22"},
+        {"id": "shortcut-2", "name": "Shortcut button 2", "kind": "Button", "suggestedInput": "button31"},
+        {"id": "shortcut-3", "name": "Shortcut button 3", "kind": "Button", "suggestedInput": "button32"},
+        {"id": "shortcut-4", "name": "Shortcut button 4", "kind": "Button", "suggestedInput": "button33"},
+        {"id": "pinky-detent", "name": "Pinky lever end of travel", "kind": "Button", "suggestedInput": "button10", "location": "pinky"},
+        {"id": "trigger-first", "name": "Rear trigger first stage", "kind": "Button", "suggestedInput": "button28", "location": "trigger"},
+        {"id": "trigger-second", "name": "Rear trigger second stage", "kind": "Button", "suggestedInput": "button2", "location": "trigger"},
+        {"id": "shaft-button", "name": "Rear shaft button", "kind": "Button", "suggestedInput": "button9"}
+      ]
+    },
+    {
+      "id": "turtle-beach-velocityone-flightdeck-throttle",
+      "references": [
+        "https://www.turtlebeach.com/products/velocity-one-flight-deck",
+        "https://support.turtlebeach.com/articles/en_US/Knowledge/VelocityOne-Flightdeck-Suggested-Button-Mappings-For-Microsoft-Flight-Sim-2020-MSFS2020-Throttle-Module",
+        "https://steamcommunity.com/app/2000890/discussions/0/4691153988132228108/"
+      ],
+      "referenceNotes": [
+        "This is the independently enumerated Flightdeck throttle.",
+        "Virtual detents and rotary button modes depend on the active Hangar configuration."
+      ],
+      "views": [
+        {
+          "id": "base",
+          "name": "Throttle levers, flap lever and base",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightdeck-throttle-base-cutout.png",
+          "hotspots": [
+            {"controlId": "left-throttle-axis", "x": 0.24671, "y": 0.28125, "width": 0.13158, "height": 0.11458},
+            {"controlId": "right-throttle-axis", "x": 0.49013, "y": 0.24306, "width": 0.13158, "height": 0.11458},
+            {"controlId": "flaps-axis", "x": 0.21053, "y": 0.67361, "width": 0.13158, "height": 0.11458},
+            {"controlId": "red-button", "x": 0.63158, "y": 0.36111, "width": 0.08882, "height": 0.07292},
+            {"controlId": "altitude-axis", "x": 0.69737, "y": 0.41667, "width": 0.06579, "height": 0.07986},
+            {"controlId": "heading-press", "x": 0.75987, "y": 0.50694, "width": 0.07895, "height": 0.07292},
+            {"controlId": "speed-press", "x": 0.8125, "y": 0.59028, "width": 0.09211, "height": 0.07986}
+          ]
+        },
+        {
+          "id": "thumb",
+          "name": "Throttle grip thumb controls",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightdeck-throttle-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "mini-press", "x": 0.70502, "y": 0.18043, "width": 0.15063, "height": 0.23242},
+            {"controlId": "thumb-hat-up", "x": 0.61715, "y": 0.34557, "width": 0.06485, "height": 0.10092},
+            {"controlId": "thumb-2", "x": 0.57322, "y": 0.22936, "width": 0.03347, "height": 0.05505},
+            {"controlId": "thumb-3", "x": 0.56485, "y": 0.30581, "width": 0.03347, "height": 0.05505},
+            {"controlId": "thumb-4", "x": 0.55649, "y": 0.38532, "width": 0.03347, "height": 0.05505},
+            {"controlId": "thumb-slider-left", "x": 0.67155, "y": 0.50153, "width": 0.06276, "height": 0.07034}
+          ]
+        },
+        {
+          "id": "fingers",
+          "name": "Throttle grip finger controls",
+          "image": "Hardware/Images/turtle-beach-velocityone-flightdeck-throttle-fingers-cutout.png",
+          "hotspots": [
+            {"controlId": "dpad-up", "x": 0.38667, "y": 0.65972, "width": 0.09778, "height": 0.15278},
+            {"controlId": "rear-press", "x": 0.45778, "y": 0.73611, "width": 0.06222, "height": 0.08333},
+            {"controlId": "finger-wheel-axis", "x": 0.48, "y": 0.58333, "width": 0.05778, "height": 0.15972},
+            {"controlId": "rear-rocker-1-up", "x": 0.60889, "y": 0.59722, "width": 0.08, "height": 0.125},
+            {"controlId": "rear-rocker-2-up", "x": 0.72444, "y": 0.5625, "width": 0.08, "height": 0.125}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-throttle-axis", "name": "Left throttle", "kind": "Axis", "suggestedInput": "x", "location": "left-throttle"},
+        {"id": "left-throttle-maximum", "name": "Left throttle maximum detent", "kind": "Button", "suggestedInput": "button19", "location": "left-throttle"},
+        {"id": "left-throttle-minimum", "name": "Left throttle minimum detent", "kind": "Button", "suggestedInput": "button20", "location": "left-throttle"},
+        {"id": "left-throttle-forward", "name": "Left throttle forward detent", "kind": "Button", "suggestedInput": "button34", "location": "left-throttle"},
+        {"id": "left-throttle-middle", "name": "Left throttle middle detent", "kind": "Button", "suggestedInput": "button35", "location": "left-throttle"},
+        {"id": "left-throttle-back", "name": "Left throttle back detent", "kind": "Button", "suggestedInput": "button36", "location": "left-throttle"},
+        {"id": "right-throttle-axis", "name": "Right throttle", "kind": "Axis", "suggestedInput": "y", "location": "right-throttle"},
+        {"id": "right-throttle-maximum", "name": "Right throttle maximum detent", "kind": "Button", "suggestedInput": "button21", "location": "right-throttle"},
+        {"id": "right-throttle-minimum", "name": "Right throttle minimum detent", "kind": "Button", "suggestedInput": "button22", "location": "right-throttle"},
+        {"id": "right-throttle-forward", "name": "Right throttle forward detent", "kind": "Button", "suggestedInput": "button37", "location": "right-throttle"},
+        {"id": "right-throttle-middle", "name": "Right throttle middle detent", "kind": "Button", "suggestedInput": "button38", "location": "right-throttle"},
+        {"id": "right-throttle-back", "name": "Right throttle back detent", "kind": "Button", "suggestedInput": "button39", "location": "right-throttle"},
+        {"id": "flaps-axis", "name": "Flap lever", "kind": "Axis", "suggestedInput": "slider1", "location": "flaps"},
+        {"id": "flaps-maximum", "name": "Flap lever maximum detent", "kind": "Button", "suggestedInput": "button16", "location": "flaps"},
+        {"id": "flaps-minimum", "name": "Flap lever minimum detent", "kind": "Button", "suggestedInput": "button17", "location": "flaps"},
+        {"id": "red-button", "name": "Red base button", "kind": "Button", "suggestedInput": "button18"},
+        {"id": "altitude-axis", "name": "Altitude outer dial axis", "kind": "Axis", "suggestedInput": "z", "location": "altitude"},
+        {"id": "altitude-press", "name": "Altitude dial press", "kind": "Button", "suggestedInput": "button23", "location": "altitude"},
+        {"id": "altitude-outer-left", "name": "Altitude dial outer decrease", "kind": "Button", "suggestedInput": "button24", "location": "altitude"},
+        {"id": "altitude-outer-right", "name": "Altitude dial outer increase", "kind": "Button", "suggestedInput": "button25", "location": "altitude"},
+        {"id": "altitude-inner-left", "name": "Altitude dial inner decrease", "kind": "Button", "suggestedInput": "button26", "location": "altitude"},
+        {"id": "altitude-inner-right", "name": "Altitude dial inner increase", "kind": "Button", "suggestedInput": "button27", "location": "altitude"},
+        {"id": "heading-press", "name": "Heading dial press", "kind": "Button", "suggestedInput": "button28", "location": "heading"},
+        {"id": "heading-decrease", "name": "Heading dial decrease", "kind": "Button", "suggestedInput": "button29", "location": "heading"},
+        {"id": "heading-increase", "name": "Heading dial increase", "kind": "Button", "suggestedInput": "button30", "location": "heading"},
+        {"id": "speed-press", "name": "Speed dial press", "kind": "Button", "suggestedInput": "button31", "location": "speed"},
+        {"id": "speed-decrease", "name": "Speed dial decrease", "kind": "Button", "suggestedInput": "button32", "location": "speed"},
+        {"id": "speed-increase", "name": "Speed dial increase", "kind": "Button", "suggestedInput": "button33", "location": "speed"},
+        {"id": "mini-x", "name": "Analog POV horizontal", "kind": "Axis", "suggestedInput": "rotx", "location": "mini"},
+        {"id": "mini-y", "name": "Analog POV vertical", "kind": "Axis", "suggestedInput": "roty", "location": "mini"},
+        {"id": "mini-wheel", "name": "Thumb wheel rotary", "kind": "Axis", "suggestedInput": "rotz", "location": "mini"},
+        {"id": "mini-press", "name": "Analog POV press", "kind": "Button", "suggestedInput": "button1", "location": "mini"},
+        {"id": "thumb-hat-up", "name": "Thumb POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "thumb-hat"},
+        {"id": "thumb-hat-right", "name": "Thumb POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "thumb-hat"},
+        {"id": "thumb-hat-down", "name": "Thumb POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "thumb-hat"},
+        {"id": "thumb-hat-left", "name": "Thumb POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "thumb-hat"},
+        {"id": "thumb-2", "name": "Thumb side button 2", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "thumb-3", "name": "Thumb side button 3", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "thumb-4", "name": "Thumb side button 4", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "thumb-slider-left", "name": "Thumb slider left", "kind": "Switch", "suggestedInput": "button6", "location": "thumb-slider"},
+        {"id": "thumb-slider-right", "name": "Thumb slider right", "kind": "Switch", "suggestedInput": "button5", "location": "thumb-slider"},
+        {"id": "dpad-up", "name": "Rear D-pad up", "kind": "Hat", "suggestedInput": "button7", "location": "dpad"},
+        {"id": "dpad-right", "name": "Rear D-pad right", "kind": "Hat", "suggestedInput": "button8", "location": "dpad"},
+        {"id": "dpad-down", "name": "Rear D-pad down", "kind": "Hat", "suggestedInput": "button9", "location": "dpad"},
+        {"id": "dpad-left", "name": "Rear D-pad left", "kind": "Hat", "suggestedInput": "button10", "location": "dpad"},
+        {"id": "rear-press", "name": "Rear grip button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "finger-wheel-axis", "name": "Finger wheel analog mode", "kind": "Axis", "suggestedInput": "slider2", "location": "finger-wheel"},
+        {"id": "finger-wheel-up", "name": "Finger wheel up", "kind": "Button", "suggestedInput": "button40", "location": "finger-wheel"},
+        {"id": "finger-wheel-down", "name": "Finger wheel down", "kind": "Button", "suggestedInput": "button41", "location": "finger-wheel"},
+        {"id": "rear-rocker-1-up", "name": "Rear rocker 1 up", "kind": "Switch", "suggestedInput": "button12", "location": "rear-rocker-1"},
+        {"id": "rear-rocker-1-down", "name": "Rear rocker 1 down", "kind": "Switch", "suggestedInput": "button13", "location": "rear-rocker-1"},
+        {"id": "rear-rocker-2-up", "name": "Rear rocker 2 up", "kind": "Switch", "suggestedInput": "button14", "location": "rear-rocker-2"},
+        {"id": "rear-rocker-2-down", "name": "Rear rocker 2 down", "kind": "Switch", "suggestedInput": "button15", "location": "rear-rocker-2"}
+      ]
+    }
+  ]
+}

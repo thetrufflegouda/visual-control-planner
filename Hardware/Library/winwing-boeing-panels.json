@@ -1,0 +1,284 @@
+{
+  "manufacturer": "WINWING / WINCTRL",
+  "devices": [
+    {"id": "winwing-pap-3", "name": "WINCTRL PAP 3 / PAP 3 MAG", "vendorId": 16536, "productId": 48911, "layout": "winwing-pap-3"},
+    {
+      "id": "winwing-3n-pdc",
+      "name": "WINCTRL 3N PDC",
+      "vendorId": 16536,
+      "productId": 47969,
+      "alternateProductIds": [
+        47970
+      ],
+      "layout": "winwing-3n-pdc"
+    },
+    {
+      "id": "winwing-3m-pdc",
+      "name": "WINCTRL 3M PDC",
+      "vendorId": 16536,
+      "productId": 47953,
+      "alternateProductIds": [
+        47954
+      ],
+      "layout": "winwing-3m-pdc"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "winwing-pap-3",
+      "references": [
+        "https://winctrl.com/view/goods-details.html?id=1065",
+        "https://winctrl.com/static/download/QmQ3MAbsCgakVsUz2aEXFJ9vrChyFgL1kiyMUd5zZNMTFn?filename=Panel+of+Auto+Pilot+3+User+Manual+20250523.pdf",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/winwing/winwing_pap3.joystick.json"
+      ],
+      "referenceNotes": [
+        "PAP 3 and PAP 3 MAG share their visible controls. The magnetic switch option changes how A/T ARM latches."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front controls",
+          "image": "Hardware/Images/winwing-pap-3-face.jpg",
+          "source": "https://winctrl.com/static/ipfs/QmdGdvcxKgumM3gsnuEd82gZDUs5cdTc7LwrYEvi87HbTv",
+          "hotspots": [
+            {"controlId": "control-18", "x": 0.10091, "y": 0.34182, "width": 0.04818, "height": 0.04364},
+            {"controlId": "control-41", "x": 0.16091, "y": 0.34636, "width": 0.03545, "height": 0.03273},
+            {"controlId": "control-28", "x": 0.13, "y": 0.38636, "width": 0.01909, "height": 0.02818},
+            {"controlId": "control-1", "x": 0.15273, "y": 0.40182, "width": 0.02727, "height": 0.03364},
+            {"controlId": "control-2", "x": 0.18455, "y": 0.41727, "width": 0.02818, "height": 0.03545},
+            {"controlId": "control-3", "x": 0.29, "y": 0.37091, "width": 0.03364, "height": 0.03636},
+            {"controlId": "control-4", "x": 0.27364, "y": 0.45455, "width": 0.03091, "height": 0.03636},
+            {"controlId": "control-5", "x": 0.32, "y": 0.47364, "width": 0.03, "height": 0.03909},
+            {"controlId": "control-6", "x": 0.38727, "y": 0.40273, "width": 0.03727, "height": 0.03818},
+            {"controlId": "control-7", "x": 0.37636, "y": 0.45182, "width": 0.03273, "height": 0.03909},
+            {"controlId": "control-8", "x": 0.36545, "y": 0.49455, "width": 0.03455, "height": 0.04273},
+            {"controlId": "control-9", "x": 0.43455, "y": 0.53, "width": 0.03727, "height": 0.03909},
+            {"controlId": "control-10", "x": 0.47455, "y": 0.54818, "width": 0.03818, "height": 0.04},
+            {"controlId": "control-11", "x": 0.64182, "y": 0.52636, "width": 0.04, "height": 0.04273},
+            {"controlId": "control-12", "x": 0.62818, "y": 0.57545, "width": 0.04, "height": 0.04455},
+            {"controlId": "control-13", "x": 0.69, "y": 0.54727, "width": 0.04091, "height": 0.04455},
+            {"controlId": "control-14", "x": 0.67727, "y": 0.59727, "width": 0.03909, "height": 0.04545},
+            {"controlId": "control-15", "x": 0.20727, "y": 0.38, "width": 0.02455, "height": 0.03091},
+            {"controlId": "control-16", "x": 0.26727, "y": 0.40636, "width": 0.02727, "height": 0.03727},
+            {"controlId": "control-17", "x": 0.48182, "y": 0.50273, "width": 0.03182, "height": 0.03818},
+            {"controlId": "control-20", "x": 0.22091, "y": 0.40727, "width": 0.04455, "height": 0.04},
+            {"controlId": "control-22", "x": 0.31545, "y": 0.43182, "width": 0.06455, "height": 0.05},
+            {"controlId": "control-24", "x": 0.43182, "y": 0.48636, "width": 0.05, "height": 0.04},
+            {"controlId": "control-26", "x": 0.74455, "y": 0.62727, "width": 0.05273, "height": 0.05273},
+            {"controlId": "control-30", "x": 0.70727, "y": 0.65455, "width": 0.02273, "height": 0.03273},
+            {"controlId": "control-32", "x": 0.63091, "y": 0.64364, "width": 0.07364, "height": 0.04273},
+            {"controlId": "control-39", "x": 0.56727, "y": 0.56364, "width": 0.03364, "height": 0.06091}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "control-1", "name": "N1 Button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "control-2", "name": "SPEED Button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "control-3", "name": "VNAV Button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "control-4", "name": "LVL CHG Button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "control-5", "name": "HDG SEL Button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "control-6", "name": "LNAV Button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "control-7", "name": "VOR LOC Button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "control-8", "name": "APP Button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "control-9", "name": "ALT HLD Button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "control-10", "name": "V/S Button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "control-11", "name": "CMD A Button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "control-12", "name": "CWS A Button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "control-13", "name": "CMD B Button", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "control-14", "name": "CWS B Button", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "control-15", "name": "C/O Button", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "control-16", "name": "SPD INTV Button", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "control-17", "name": "ALT INTV Button", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "control-18", "name": "CRS DEC Left", "kind": "Encoder", "suggestedInput": "button18", "location": "course-left"},
+        {"id": "control-19", "name": "CRS INC Left", "kind": "Encoder", "suggestedInput": "button19", "location": "course-left"},
+        {"id": "control-20", "name": "SPD DEC", "kind": "Encoder", "suggestedInput": "button20", "location": "speed"},
+        {"id": "control-21", "name": "SPD INC", "kind": "Encoder", "suggestedInput": "button21", "location": "speed"},
+        {"id": "control-22", "name": "HDG DEC", "kind": "Encoder", "suggestedInput": "button22", "location": "heading-and-bank"},
+        {"id": "control-23", "name": "HDG INC", "kind": "Encoder", "suggestedInput": "button23", "location": "heading-and-bank"},
+        {"id": "control-24", "name": "ALT DEC", "kind": "Encoder", "suggestedInput": "button24", "location": "altitude"},
+        {"id": "control-25", "name": "ALT INC", "kind": "Encoder", "suggestedInput": "button25", "location": "altitude"},
+        {"id": "control-26", "name": "CRS DEC Right", "kind": "Encoder", "suggestedInput": "button26", "location": "course-right"},
+        {"id": "control-27", "name": "CRS INC Right", "kind": "Encoder", "suggestedInput": "button27", "location": "course-right"},
+        {"id": "control-28", "name": "F/D ON Left", "kind": "Switch", "suggestedInput": "button28", "location": "flight-director-left"},
+        {"id": "control-29", "name": "F/D OFF Left", "kind": "Switch", "suggestedInput": "button29", "location": "flight-director-left"},
+        {"id": "control-30", "name": "F/D ON Right", "kind": "Switch", "suggestedInput": "button30", "location": "flight-director-right"},
+        {"id": "control-31", "name": "F/D OFF Right", "kind": "Switch", "suggestedInput": "button31", "location": "flight-director-right"},
+        {"id": "control-32", "name": "Disengage Up", "kind": "Switch", "suggestedInput": "button32", "location": "disengage"},
+        {"id": "control-33", "name": "Disengage Down", "kind": "Switch", "suggestedInput": "button33", "location": "disengage"},
+        {"id": "control-34", "name": "Bank Angle 10", "kind": "Encoder", "suggestedInput": "button34", "location": "heading-and-bank"},
+        {"id": "control-35", "name": "Bank Angle 15", "kind": "Encoder", "suggestedInput": "button35", "location": "heading-and-bank"},
+        {"id": "control-36", "name": "Bank Angle 20", "kind": "Encoder", "suggestedInput": "button36", "location": "heading-and-bank"},
+        {"id": "control-37", "name": "Bank Angle 25", "kind": "Encoder", "suggestedInput": "button37", "location": "heading-and-bank"},
+        {"id": "control-38", "name": "Bank Angle 30", "kind": "Encoder", "suggestedInput": "button38", "location": "heading-and-bank"},
+        {"id": "control-39", "name": "VS DN", "kind": "Encoder", "suggestedInput": "button39", "location": "vertical-speed"},
+        {"id": "control-40", "name": "VS UP", "kind": "Encoder", "suggestedInput": "button40", "location": "vertical-speed"},
+        {"id": "control-41", "name": "A/T ARM", "kind": "Switch", "suggestedInput": "button41", "location": "autothrottle"},
+        {"id": "control-42", "name": "A/T Off", "kind": "Switch", "suggestedInput": "button42", "location": "autothrottle"}
+      ]
+    },
+    {
+      "id": "winwing-3n-pdc",
+      "references": [
+        "https://winctrl.com/view/goods-details.html?id=1265",
+        "https://winctrl.com/static/download/QmUCdN2byoGPYV7Ayz82cEhLG96zQ48H6a4ZuDosFViZ9B?filename=WINCTRL+3N+PDC+1.0-User+Manual+EN+V1.1-20250711.pdf",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/winwing/winwing_3npdc_left.joystick.json",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/winwing/winwing_3npdc_right.joystick.json"
+      ],
+      "referenceNotes": [
+        "The 3N has a stepped range selector. The left and right glare-shield fittings use the same face and control map."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front controls",
+          "image": "Hardware/Images/winwing-3n-pdc-face.jpg",
+          "source": "https://winctrl.com/static/ipfs/QmcckiBv5j4WkY5KvFZCSkMTx2FeH3WyvqtjoUuVgfjiYV",
+          "hotspots": [
+            {"controlId": "control-1", "x": 0.52125, "y": 0.3575, "width": 0.045, "height": 0.0525},
+            {"controlId": "control-2", "x": 0.60625, "y": 0.32375, "width": 0.0525, "height": 0.0625},
+            {"controlId": "control-3", "x": 0.42375, "y": 0.62875, "width": 0.04625, "height": 0.0525},
+            {"controlId": "control-4", "x": 0.48375, "y": 0.60125, "width": 0.04625, "height": 0.05875},
+            {"controlId": "control-5", "x": 0.5475, "y": 0.5775, "width": 0.04875, "height": 0.0575},
+            {"controlId": "control-6", "x": 0.60875, "y": 0.56, "width": 0.04625, "height": 0.05625},
+            {"controlId": "control-7", "x": 0.66625, "y": 0.5325, "width": 0.05125, "height": 0.0525},
+            {"controlId": "control-8", "x": 0.725, "y": 0.5125, "width": 0.04875, "height": 0.05625},
+            {"controlId": "control-9", "x": 0.78375, "y": 0.48625, "width": 0.0525, "height": 0.055},
+            {"controlId": "control-10", "x": 0.39125, "y": 0.525, "width": 0.03375, "height": 0.05125},
+            {"controlId": "control-13", "x": 0.77, "y": 0.39875, "width": 0.0325, "height": 0.05},
+            {"controlId": "control-16", "x": 0.4725, "y": 0.43375, "width": 0.15625, "height": 0.0875},
+            {"controlId": "control-17", "x": 0.56125, "y": 0.505, "width": 0.10125, "height": 0.06375},
+            {"controlId": "control-18", "x": 0.66125, "y": 0.46125, "width": 0.11, "height": 0.06875},
+            {"controlId": "control-19", "x": 0.7625, "y": 0.32125, "width": 0.1775, "height": 0.08625}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "control-1", "name": "FPV Button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "control-2", "name": "MTRS Button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "control-3", "name": "WXR Button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "control-4", "name": "STA Button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "control-5", "name": "WPT Button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "control-6", "name": "ARPT Button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "control-7", "name": "DATA Button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "control-8", "name": "POS Button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "control-9", "name": "TERR Button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "control-10", "name": "NAV1 VOR", "kind": "Switch", "suggestedInput": "button10", "location": "nav1"},
+        {"id": "control-11", "name": "NAV1 OFF", "kind": "Switch", "suggestedInput": "button11", "location": "nav1"},
+        {"id": "control-12", "name": "NAV1 ADF", "kind": "Switch", "suggestedInput": "button12", "location": "nav1"},
+        {"id": "control-13", "name": "NAV2 VOR", "kind": "Switch", "suggestedInput": "button13", "location": "nav2"},
+        {"id": "control-14", "name": "NAV2 OFF", "kind": "Switch", "suggestedInput": "button14", "location": "nav2"},
+        {"id": "control-15", "name": "NAV2 ADF", "kind": "Switch", "suggestedInput": "button15", "location": "nav2"},
+        {"id": "control-16", "name": "MINS RST Button", "kind": "Encoder", "suggestedInput": "button16", "location": "mins"},
+        {"id": "control-17", "name": "ND CTR Button", "kind": "Switch", "suggestedInput": "button17", "location": "nd"},
+        {"id": "control-18", "name": "RANGE TFC Button", "kind": "Switch", "suggestedInput": "button18", "location": "range"},
+        {"id": "control-19", "name": "BARO STD Button", "kind": "Encoder", "suggestedInput": "button19", "location": "baro"},
+        {"id": "control-20", "name": "MINS DEC Full", "kind": "Encoder", "suggestedInput": "button20", "location": "mins"},
+        {"id": "control-21", "name": "MINS INC Full", "kind": "Encoder", "suggestedInput": "button21", "location": "mins"},
+        {"id": "control-22", "name": "BARO DEC Full", "kind": "Encoder", "suggestedInput": "button22", "location": "baro"},
+        {"id": "control-23", "name": "BARO INC Full", "kind": "Encoder", "suggestedInput": "button23", "location": "baro"},
+        {"id": "control-24", "name": "MINS RADIO", "kind": "Encoder", "suggestedInput": "button24", "location": "mins"},
+        {"id": "control-25", "name": "MINS BARO", "kind": "Encoder", "suggestedInput": "button25", "location": "mins"},
+        {"id": "control-26", "name": "BARO IN", "kind": "Encoder", "suggestedInput": "button26", "location": "baro"},
+        {"id": "control-27", "name": "BARO HPA", "kind": "Encoder", "suggestedInput": "button27", "location": "baro"},
+        {"id": "control-28", "name": "ND APP", "kind": "Switch", "suggestedInput": "button28", "location": "nd"},
+        {"id": "control-29", "name": "ND VOR", "kind": "Switch", "suggestedInput": "button29", "location": "nd"},
+        {"id": "control-30", "name": "ND MAP", "kind": "Switch", "suggestedInput": "button30", "location": "nd"},
+        {"id": "control-31", "name": "ND PLN", "kind": "Switch", "suggestedInput": "button31", "location": "nd"},
+        {"id": "control-32", "name": "RANGE 5", "kind": "Switch", "suggestedInput": "button32", "location": "range"},
+        {"id": "control-33", "name": "RANGE 10", "kind": "Switch", "suggestedInput": "button33", "location": "range"},
+        {"id": "control-34", "name": "RANGE 20", "kind": "Switch", "suggestedInput": "button34", "location": "range"},
+        {"id": "control-35", "name": "RANGE 40", "kind": "Switch", "suggestedInput": "button35", "location": "range"},
+        {"id": "control-36", "name": "RANGE 80", "kind": "Switch", "suggestedInput": "button36", "location": "range"},
+        {"id": "control-37", "name": "RANGE 160", "kind": "Switch", "suggestedInput": "button37", "location": "range"},
+        {"id": "control-38", "name": "RANGE 320", "kind": "Switch", "suggestedInput": "button38", "location": "range"},
+        {"id": "control-39", "name": "RANGE 640", "kind": "Switch", "suggestedInput": "button39", "location": "range"},
+        {"id": "control-40", "name": "MINS DEC", "kind": "Encoder", "suggestedInput": "button40", "location": "mins"},
+        {"id": "control-41", "name": "MINS NEUTRAL", "kind": "Encoder", "suggestedInput": "button41", "location": "mins"},
+        {"id": "control-42", "name": "MINS INC", "kind": "Encoder", "suggestedInput": "button42", "location": "mins"},
+        {"id": "control-43", "name": "BARO DEC", "kind": "Encoder", "suggestedInput": "button43", "location": "baro"},
+        {"id": "control-44", "name": "BARO NEUTRAL", "kind": "Encoder", "suggestedInput": "button44", "location": "baro"},
+        {"id": "control-45", "name": "BARO INC", "kind": "Encoder", "suggestedInput": "button45", "location": "baro"}
+      ]
+    },
+    {
+      "id": "winwing-3m-pdc",
+      "references": [
+        "https://winctrl.com/view/goods-details.html?id=1245",
+        "https://eu.winctrl.com/view/goods-details.html?id=1545",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/winwing/winwing_3mpdc_left.joystick.json",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/winwing/winwing_3mpdc_right.joystick.json"
+      ],
+      "referenceNotes": [
+        "The 3M has a continuous range encoder and VSD button. The left and right glare-shield fittings use the same face and control map."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front controls",
+          "image": "Hardware/Images/winwing-3m-pdc-face.jpg",
+          "source": "https://winctrl.com/static/ipfs/QmQUYM3uhKFDuP9RCsC2ZECi3K1mQnTcA7PkwTBQc94FXH",
+          "hotspots": [
+            {"controlId": "control-1", "x": 0.49125, "y": 0.32, "width": 0.04875, "height": 0.06},
+            {"controlId": "control-2", "x": 0.58875, "y": 0.29, "width": 0.05375, "height": 0.06125},
+            {"controlId": "control-3", "x": 0.54875, "y": 0.35625, "width": 0.05375, "height": 0.0475},
+            {"controlId": "control-4", "x": 0.37875, "y": 0.61125, "width": 0.0525, "height": 0.05375},
+            {"controlId": "control-5", "x": 0.44875, "y": 0.58875, "width": 0.05125, "height": 0.0575},
+            {"controlId": "control-6", "x": 0.5125, "y": 0.55875, "width": 0.05375, "height": 0.05},
+            {"controlId": "control-7", "x": 0.58125, "y": 0.53625, "width": 0.0475, "height": 0.0525},
+            {"controlId": "control-8", "x": 0.6475, "y": 0.51625, "width": 0.05, "height": 0.0525},
+            {"controlId": "control-9", "x": 0.71, "y": 0.49, "width": 0.0475, "height": 0.05375},
+            {"controlId": "control-10", "x": 0.77125, "y": 0.4625, "width": 0.05, "height": 0.0525},
+            {"controlId": "control-11", "x": 0.34875, "y": 0.50625, "width": 0.03625, "height": 0.065},
+            {"controlId": "control-14", "x": 0.75875, "y": 0.36, "width": 0.0325, "height": 0.045},
+            {"controlId": "control-17", "x": 0.44375, "y": 0.39875, "width": 0.18875, "height": 0.09625},
+            {"controlId": "control-18", "x": 0.5175, "y": 0.4825, "width": 0.11375, "height": 0.07625},
+            {"controlId": "control-19", "x": 0.63625, "y": 0.42625, "width": 0.11125, "height": 0.08},
+            {"controlId": "control-20", "x": 0.7475, "y": 0.28, "width": 0.1775, "height": 0.095}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "control-1", "name": "FPV Button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "control-2", "name": "MTRS Button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "control-3", "name": "VSD Button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "control-4", "name": "WXR Button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "control-5", "name": "STA Button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "control-6", "name": "WPT Button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "control-7", "name": "ARPT Button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "control-8", "name": "DATA Button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "control-9", "name": "POS Button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "control-10", "name": "TERR Button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "control-11", "name": "NAV1 VOR", "kind": "Switch", "suggestedInput": "button11", "location": "nav1"},
+        {"id": "control-12", "name": "NAV1 OFF", "kind": "Switch", "suggestedInput": "button12", "location": "nav1"},
+        {"id": "control-13", "name": "NAV1 ADF", "kind": "Switch", "suggestedInput": "button13", "location": "nav1"},
+        {"id": "control-14", "name": "NAV2 VOR", "kind": "Switch", "suggestedInput": "button14", "location": "nav2"},
+        {"id": "control-15", "name": "NAV2 OFF", "kind": "Switch", "suggestedInput": "button15", "location": "nav2"},
+        {"id": "control-16", "name": "NAV2 ADF", "kind": "Switch", "suggestedInput": "button16", "location": "nav2"},
+        {"id": "control-17", "name": "MINS RST Button", "kind": "Encoder", "suggestedInput": "button17", "location": "mins"},
+        {"id": "control-18", "name": "ND CTR Button", "kind": "Switch", "suggestedInput": "button18", "location": "nd"},
+        {"id": "control-19", "name": "RANGE TFC Button", "kind": "Encoder", "suggestedInput": "button19", "location": "range"},
+        {"id": "control-20", "name": "BARO STD Button", "kind": "Encoder", "suggestedInput": "button20", "location": "baro"},
+        {"id": "control-21", "name": "RANGE DEC", "kind": "Encoder", "suggestedInput": "button21", "location": "range"},
+        {"id": "control-22", "name": "RANGE INC", "kind": "Encoder", "suggestedInput": "button22", "location": "range"},
+        {"id": "control-23", "name": "BARO DEC Full", "kind": "Encoder", "suggestedInput": "button23", "location": "baro"},
+        {"id": "control-24", "name": "BARO INC Full", "kind": "Encoder", "suggestedInput": "button24", "location": "baro"},
+        {"id": "control-25", "name": "MINS RADIO", "kind": "Encoder", "suggestedInput": "button25", "location": "mins"},
+        {"id": "control-26", "name": "MINS BARO", "kind": "Encoder", "suggestedInput": "button26", "location": "mins"},
+        {"id": "control-27", "name": "BARO IN", "kind": "Encoder", "suggestedInput": "button27", "location": "baro"},
+        {"id": "control-28", "name": "BARO HPA", "kind": "Encoder", "suggestedInput": "button28", "location": "baro"},
+        {"id": "control-29", "name": "ND APP", "kind": "Switch", "suggestedInput": "button29", "location": "nd"},
+        {"id": "control-30", "name": "ND VOR", "kind": "Switch", "suggestedInput": "button30", "location": "nd"},
+        {"id": "control-31", "name": "ND MAP", "kind": "Switch", "suggestedInput": "button31", "location": "nd"},
+        {"id": "control-32", "name": "ND PLN", "kind": "Switch", "suggestedInput": "button32", "location": "nd"},
+        {"id": "control-33", "name": "MINS DEC Full", "kind": "Encoder", "suggestedInput": "button33", "location": "mins"},
+        {"id": "control-34", "name": "MINS DEC", "kind": "Encoder", "suggestedInput": "button34", "location": "mins"},
+        {"id": "control-35", "name": "MINS NEUTRAL", "kind": "Encoder", "suggestedInput": "button35", "location": "mins"},
+        {"id": "control-36", "name": "MINS INC", "kind": "Encoder", "suggestedInput": "button36", "location": "mins"},
+        {"id": "control-37", "name": "MINS INC Full", "kind": "Encoder", "suggestedInput": "button37", "location": "mins"},
+        {"id": "control-38", "name": "BARO DEC", "kind": "Encoder", "suggestedInput": "button38", "location": "baro"},
+        {"id": "control-39", "name": "BARO NEUTRAL", "kind": "Encoder", "suggestedInput": "button39", "location": "baro"},
+        {"id": "control-40", "name": "BARO INC", "kind": "Encoder", "suggestedInput": "button40", "location": "baro"}
+      ]
+    }
+  ]
+}

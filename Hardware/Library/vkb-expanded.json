@@ -1,0 +1,312 @@
+{
+  "manufacturer": "VKB",
+  "devices": [
+    {"id":"vkb-gnx-thq","name":"VKB GNX THQ — THROTTLE QUADRANT","vendorId":0,"productId":0,"layout":"vkb-gnx-thq"},
+    {"id":"vkb-gnx-sem","name":"VKB GNX SEM — SIDE EXTENSION MODULE","vendorId":0,"productId":0,"layout":"vkb-gnx-sem"},
+    {"id":"vkb-gnx-fsm-ga","name":"VKB GNX FSM-GA — FRONT SWITCHBOARD","vendorId":0,"productId":0,"layout":"vkb-gnx-fsm-ga"},
+    {"id":"vkb-gnx-sem-v","name":"VKB GNX SEM-V — VERTICAL SIDE EXTENSION","vendorId":0,"productId":0,"layout":"vkb-gnx-sem-v"},
+    {"id":"vkb-gnx-thq-v","name":"VKB GNX THQ-V — VERTICAL THROTTLE QUADRANT","vendorId":0,"productId":0,"layout":"vkb-gnx-thq-v"}
+  ],
+  "layouts": [
+    {
+      "id":"vkb-gnx-thq",
+      "references":[
+        "https://vkbsimcontrollers.com/products/gnx-thq-throttle-quadrant-us",
+        "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/VKB-THQ-v1.0.pdf?v=1769327122"
+      ],
+      "referenceNotes":[
+        "Stand-alone Windows pairing requires the separately installed GNX USB Controller (HID-Main).",
+        "The lever heads are interchangeable. Physical names refer to their left, center, and right positions.",
+        "Use Input Learn for the button and axis numbers exposed by the current GNX setup."
+      ],
+      "views":[
+        {
+          "id":"top",
+          "name":"Levers and buttons",
+          "image":"Hardware/Images/vkb-gnx-thq-top.png",
+          "source":"https://vkbsimcontrollers.com/cdn/shop/files/15_THQ_4SH_750_4.webp?v=1769865742",
+          "hotspots":[
+            {"controlId":"lever-left","x":0.303,"y":0.380,"width":0.124,"height":0.106},
+            {"controlId":"lever-center","x":0.523,"y":0.379,"width":0.098,"height":0.135},
+            {"controlId":"lever-right","x":0.737,"y":0.394,"width":0.112,"height":0.105},
+            {"controlId":"a1","x":0.311,"y":0.572,"width":0.061,"height":0.065},
+            {"controlId":"a2","x":0.435,"y":0.560,"width":0.059,"height":0.062},
+            {"controlId":"a3","x":0.602,"y":0.561,"width":0.062,"height":0.063},
+            {"controlId":"a4","x":0.725,"y":0.572,"width":0.063,"height":0.065},
+            {"controlId":"b1","x":0.316,"y":0.693,"width":0.055,"height":0.048},
+            {"controlId":"b2","x":0.716,"y":0.694,"width":0.055,"height":0.047},
+            {"controlId":"c1","x":0.434,"y":0.696,"width":0.067,"height":0.056},
+            {"controlId":"c2","x":0.599,"y":0.696,"width":0.067,"height":0.056}
+          ]
+        }
+      ],
+      "controls":[
+        {"id":"lever-left","name":"Left throttle lever axis","kind":"Axis"},
+        {"id":"lever-center","name":"Center throttle lever axis","kind":"Axis"},
+        {"id":"lever-right","name":"Right throttle lever axis","kind":"Axis"},
+        {"id":"a1","name":"A1 button","kind":"Button"},
+        {"id":"a2","name":"A2 button","kind":"Button"},
+        {"id":"a3","name":"A3 button","kind":"Button"},
+        {"id":"a4","name":"A4 button","kind":"Button"},
+        {"id":"b1","name":"B1 button","kind":"Button"},
+        {"id":"b2","name":"B2 button","kind":"Button"},
+        {"id":"c1","name":"C1 button","kind":"Button"},
+        {"id":"c2","name":"C2 button","kind":"Button"}
+      ]
+    },
+    {
+      "id":"vkb-gnx-sem",
+      "references":[
+        "https://vkbsimcontrollers.com/products/gnx-sem-side-extension-module-us",
+        "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/VKB-SEM-v1.0.pdf?v=1769327122"
+      ],
+      "referenceNotes":[
+        "Stand-alone Windows pairing requires the separately installed GNX USB Controller (HID-Main).",
+        "The flap and gear levers can expose individual detent buttons or analog axes. Learn the signals emitted by the selected configuration."
+      ],
+      "views":[
+        {
+          "id":"front",
+          "name":"Front panel",
+          "image":"Hardware/Images/vkb-gnx-sem-front.png",
+          "source":"https://vkbsimcontrollers.com/cdn/shop/files/14_SEM_4SH_750_1.webp?v=1769865326",
+          "hotspots":[
+            {"controlId":"a1","x":0.304,"y":0.324,"width":0.051,"height":0.032},
+            {"controlId":"a2","x":0.300,"y":0.363,"width":0.051,"height":0.033},
+            {"controlId":"start","x":0.343,"y":0.444,"width":0.049,"height":0.038},
+            {"controlId":"b1","x":0.437,"y":0.446,"width":0.055,"height":0.050},
+            {"controlId":"b2","x":0.511,"y":0.446,"width":0.055,"height":0.050},
+            {"controlId":"b3","x":0.585,"y":0.446,"width":0.054,"height":0.050},
+            {"controlId":"sw1-up","x":0.455,"y":0.352,"width":0.058,"height":0.080},
+            {"controlId":"sw2-up","x":0.542,"y":0.352,"width":0.058,"height":0.080},
+            {"controlId":"c1","x":0.520,"y":0.589,"width":0.056,"height":0.056},
+            {"controlId":"mode-1","x":0.376,"y":0.580,"width":0.090,"height":0.087},
+            {"controlId":"flaps-1","x":0.700,"y":0.280,"width":0.125,"height":0.076},
+            {"controlId":"gear-up","x":0.702,"y":0.574,"width":0.063,"height":0.073}
+          ]
+        },
+        {
+          "id":"angled",
+          "name":"Levers and switches",
+          "image":"Hardware/Images/vkb-gnx-sem-angled.png",
+          "source":"https://vkbsimcontrollers.com/cdn/shop/files/14_SEM_4SH_750_1_2.webp?v=1769865326",
+          "hotspots":[
+            {"controlId":"a1","x":0.279,"y":0.412,"width":0.059,"height":0.040},
+            {"controlId":"a2","x":0.330,"y":0.451,"width":0.058,"height":0.038},
+            {"controlId":"start","x":0.448,"y":0.500,"width":0.046,"height":0.042},
+            {"controlId":"b1","x":0.515,"y":0.461,"width":0.055,"height":0.054},
+            {"controlId":"b2","x":0.567,"y":0.434,"width":0.055,"height":0.049},
+            {"controlId":"b3","x":0.620,"y":0.404,"width":0.057,"height":0.048},
+            {"controlId":"sw1-up","x":0.415,"y":0.383,"width":0.096,"height":0.071},
+            {"controlId":"sw2-up","x":0.482,"y":0.353,"width":0.091,"height":0.074},
+            {"controlId":"c1","x":0.655,"y":0.567,"width":0.045,"height":0.073},
+            {"controlId":"mode-1","x":0.571,"y":0.617,"width":0.102,"height":0.082},
+            {"controlId":"flaps-1","x":0.619,"y":0.220,"width":0.118,"height":0.091},
+            {"controlId":"gear-up","x":0.792,"y":0.476,"width":0.100,"height":0.035}
+          ]
+        }
+      ],
+      "controls":[
+        {"id":"a1","name":"A1 button","kind":"Button"},
+        {"id":"a2","name":"A2 button","kind":"Button"},
+        {"id":"b1","name":"B1 button","kind":"Button"},
+        {"id":"b2","name":"B2 button","kind":"Button"},
+        {"id":"b3","name":"B3 button","kind":"Button"},
+        {"id":"c1","name":"C1 button","kind":"Button"},
+        {"id":"start","name":"Start button","kind":"Button"},
+        {"id":"sw1-up","name":"SW1 up","kind":"Button","location":"sw1"},
+        {"id":"sw1-press","name":"SW1 center press","kind":"Button","location":"sw1"},
+        {"id":"sw1-down","name":"SW1 down","kind":"Button","location":"sw1"},
+        {"id":"sw2-up","name":"SW2 up","kind":"Button","location":"sw2"},
+        {"id":"sw2-press","name":"SW2 center press","kind":"Button","location":"sw2"},
+        {"id":"sw2-down","name":"SW2 down","kind":"Button","location":"sw2"},
+        {"id":"mode-1","name":"Mode dial position 1","kind":"Button","location":"mode-selector"},
+        {"id":"mode-2","name":"Mode dial position 2","kind":"Button","location":"mode-selector"},
+        {"id":"mode-3","name":"Mode dial position 3","kind":"Button","location":"mode-selector"},
+        {"id":"mode-4","name":"Mode dial position 4","kind":"Button","location":"mode-selector"},
+        {"id":"flaps-1","name":"Flaps lever position 1","kind":"Button","location":"flaps"},
+        {"id":"flaps-2","name":"Flaps lever position 2","kind":"Button","location":"flaps"},
+        {"id":"flaps-3","name":"Flaps lever position 3","kind":"Button","location":"flaps"},
+        {"id":"flaps-4","name":"Flaps lever position 4","kind":"Button","location":"flaps"},
+        {"id":"flaps-axis","name":"Flaps lever axis","kind":"Axis","location":"flaps"},
+        {"id":"gear-up","name":"Landing gear lever up","kind":"Button","location":"gear"},
+        {"id":"gear-middle","name":"Landing gear lever middle","kind":"Button","location":"gear"},
+        {"id":"gear-down","name":"Landing gear lever down","kind":"Button","location":"gear"},
+        {"id":"gear-axis","name":"Landing gear lever axis","kind":"Axis","location":"gear"}
+      ]
+    },
+    {
+      "id":"vkb-gnx-fsm-ga",
+      "references":[
+        "https://vkbsimcontrollers.com/products/gnx-fsm-ga-front-switchboard-module-general-aviation-us",
+        "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/VKB-FSM-GA-v1.0.pdf?v=1769327122"
+      ],
+      "referenceNotes":[
+        "Stand-alone Windows pairing requires the separately installed GNX USB Controller (HID-Main).",
+        "HDG / TRK and ALT SEL knobs rotate and press. The VS wheel scrolls up and down."
+      ],
+      "views":[
+        {
+          "id":"front",
+          "name":"Face and encoders",
+          "image":"Hardware/Images/vkb-gnx-fsm-ga-front.png",
+          "source":"https://vkbsimcontrollers.com/cdn/shop/files/16_FSM-GA_4SH_750_2.webp?v=1769347364",
+          "hotspots":[
+            {"controlId":"hdg","x":0.168,"y":0.397,"width":0.055,"height":0.047},
+            {"controlId":"trk","x":0.168,"y":0.465,"width":0.055,"height":0.048},
+            {"controlId":"nav","x":0.168,"y":0.533,"width":0.055,"height":0.048},
+            {"controlId":"apr","x":0.168,"y":0.602,"width":0.055,"height":0.048},
+            {"controlId":"alt","x":0.837,"y":0.397,"width":0.053,"height":0.045},
+            {"controlId":"lvl","x":0.838,"y":0.465,"width":0.053,"height":0.045},
+            {"controlId":"vnav","x":0.838,"y":0.533,"width":0.053,"height":0.047},
+            {"controlId":"ias","x":0.838,"y":0.602,"width":0.053,"height":0.047},
+            {"controlId":"ap","x":0.432,"y":0.363,"width":0.07,"height":0.048},
+            {"controlId":"fd","x":0.572,"y":0.363,"width":0.07,"height":0.048},
+            {"controlId":"yd","x":0.502,"y":0.45,"width":0.072,"height":0.048},
+            {"controlId":"vs","x":0.463,"y":0.555,"width":0.07,"height":0.048},
+            {"controlId":"avionic","x":0.32,"y":0.677,"width":0.072,"height":0.048},
+            {"controlId":"landing-lights","x":0.44,"y":0.675,"width":0.073,"height":0.048},
+            {"controlId":"strobe","x":0.563,"y":0.675,"width":0.072,"height":0.048},
+            {"controlId":"nav-lights","x":0.687,"y":0.675,"width":0.073,"height":0.048},
+            {"controlId":"heading-encoder-press","x":0.333,"y":0.428,"width":0.09,"height":0.092},
+            {"controlId":"altitude-encoder-press","x":0.67,"y":0.43,"width":0.093,"height":0.092},
+            {"controlId":"vertical-speed-wheel-up","x":0.562,"y":0.555,"width":0.057,"height":0.11}
+          ]
+        }
+      ],
+      "controls":[
+        {"id":"hdg","name":"HDG button","kind":"Button"},
+        {"id":"trk","name":"TRK button","kind":"Button"},
+        {"id":"nav","name":"NAV button","kind":"Button"},
+        {"id":"apr","name":"APR button","kind":"Button"},
+        {"id":"alt","name":"ALT button","kind":"Button"},
+        {"id":"lvl","name":"LVL button","kind":"Button"},
+        {"id":"vnav","name":"VNAV button","kind":"Button"},
+        {"id":"ias","name":"IAS button","kind":"Button"},
+        {"id":"ap","name":"AP button","kind":"Button"},
+        {"id":"fd","name":"FD button","kind":"Button"},
+        {"id":"yd","name":"YD button","kind":"Button"},
+        {"id":"vs","name":"VS button","kind":"Button"},
+        {"id":"avionic","name":"AVIONIC button","kind":"Button"},
+        {"id":"landing-lights","name":"LANDING LIGHTS button","kind":"Button"},
+        {"id":"strobe","name":"STROBE button","kind":"Button"},
+        {"id":"nav-lights","name":"NAV LIGHTS button","kind":"Button"},
+        {"id":"heading-encoder-press","name":"HDG / TRK encoder center press","kind":"Button","location":"heading-encoder"},
+        {"id":"heading-encoder-cw","name":"HDG / TRK encoder clockwise","kind":"Button","location":"heading-encoder"},
+        {"id":"heading-encoder-ccw","name":"HDG / TRK encoder counterclockwise","kind":"Button","location":"heading-encoder"},
+        {"id":"altitude-encoder-press","name":"ALT SEL encoder center press","kind":"Button","location":"altitude-encoder"},
+        {"id":"altitude-encoder-cw","name":"ALT SEL encoder clockwise","kind":"Button","location":"altitude-encoder"},
+        {"id":"altitude-encoder-ccw","name":"ALT SEL encoder counterclockwise","kind":"Button","location":"altitude-encoder"},
+        {"id":"vertical-speed-wheel-up","name":"VS wheel up","kind":"Button","location":"vertical-speed-wheel"},
+        {"id":"vertical-speed-wheel-down","name":"VS wheel down","kind":"Button","location":"vertical-speed-wheel"}
+      ]
+    },
+    {
+      "id":"vkb-gnx-sem-v",
+      "references":[
+        "https://vkbsimcontrollers.com/products/gnx-sem-v-side-extension-module-vertical-us",
+        "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/VKB-SEM-V-v1.0.pdf?v=1769327122"
+      ],
+      "referenceNotes":[
+        "Stand-alone Windows pairing requires the separately installed GNX USB Controller (HID-Main).",
+        "The flap and gear levers can expose individual detent buttons or analog axes. Learn the signals emitted by the selected configuration."
+      ],
+      "views":[
+        {
+          "id":"front",
+          "name":"Switches and levers",
+          "image":"Hardware/Images/vkb-gnx-sem-v-front.png",
+          "source":"https://vkbsimcontrollers.com/cdn/shop/files/17_SEM-V_4SH_1024_2.webp?v=1769865853",
+          "hotspots":[
+            {"controlId":"a1","x":0.753,"y":0.555,"width":0.068,"height":0.057},
+            {"controlId":"a2","x":0.753,"y":0.65,"width":0.068,"height":0.057},
+            {"controlId":"start","x":0.69,"y":0.428,"width":0.07,"height":0.072},
+            {"controlId":"b1","x":0.41,"y":0.427,"width":0.07,"height":0.068},
+            {"controlId":"b2","x":0.498,"y":0.427,"width":0.07,"height":0.068},
+            {"controlId":"b3","x":0.585,"y":0.427,"width":0.07,"height":0.068},
+            {"controlId":"sw1-up","x":0.568,"y":0.603,"width":0.075,"height":0.148},
+            {"controlId":"sw2-up","x":0.462,"y":0.603,"width":0.075,"height":0.148},
+            {"controlId":"c1","x":0.485,"y":0.298,"width":0.08,"height":0.065},
+            {"controlId":"mode-1","x":0.643,"y":0.268,"width":0.1,"height":0.112},
+            {"controlId":"flaps-1","x":0.273,"y":0.472,"width":0.165,"height":0.088},
+            {"controlId":"gear-up","x":0.277,"y":0.248,"width":0.083,"height":0.103}
+          ]
+        }
+      ],
+      "controls":[
+        {"id":"a1","name":"A1 button","kind":"Button"},
+        {"id":"a2","name":"A2 button","kind":"Button"},
+        {"id":"b1","name":"B1 button","kind":"Button"},
+        {"id":"b2","name":"B2 button","kind":"Button"},
+        {"id":"b3","name":"B3 button","kind":"Button"},
+        {"id":"c1","name":"C1 button","kind":"Button"},
+        {"id":"start","name":"Start button","kind":"Button"},
+        {"id":"sw1-up","name":"SW1 up","kind":"Button","location":"sw1"},
+        {"id":"sw1-press","name":"SW1 center press","kind":"Button","location":"sw1"},
+        {"id":"sw1-down","name":"SW1 down","kind":"Button","location":"sw1"},
+        {"id":"sw2-up","name":"SW2 up","kind":"Button","location":"sw2"},
+        {"id":"sw2-press","name":"SW2 center press","kind":"Button","location":"sw2"},
+        {"id":"sw2-down","name":"SW2 down","kind":"Button","location":"sw2"},
+        {"id":"mode-1","name":"Mode dial position 1","kind":"Button","location":"mode-selector"},
+        {"id":"mode-2","name":"Mode dial position 2","kind":"Button","location":"mode-selector"},
+        {"id":"mode-3","name":"Mode dial position 3","kind":"Button","location":"mode-selector"},
+        {"id":"mode-4","name":"Mode dial position 4","kind":"Button","location":"mode-selector"},
+        {"id":"flaps-1","name":"Flaps lever position 1","kind":"Button","location":"flaps"},
+        {"id":"flaps-2","name":"Flaps lever position 2","kind":"Button","location":"flaps"},
+        {"id":"flaps-3","name":"Flaps lever position 3","kind":"Button","location":"flaps"},
+        {"id":"flaps-4","name":"Flaps lever position 4","kind":"Button","location":"flaps"},
+        {"id":"flaps-axis","name":"Flaps lever axis","kind":"Axis","location":"flaps"},
+        {"id":"gear-up","name":"Landing gear lever up","kind":"Button","location":"gear"},
+        {"id":"gear-middle","name":"Landing gear lever middle","kind":"Button","location":"gear"},
+        {"id":"gear-down","name":"Landing gear lever down","kind":"Button","location":"gear"},
+        {"id":"gear-axis","name":"Landing gear lever axis","kind":"Axis","location":"gear"}
+      ]
+    },
+    {
+      "id":"vkb-gnx-thq-v",
+      "references":[
+        "https://vkbsimcontrollers.com/products/gnx-thq-v-throttle-quadrant-vertical-us",
+        "https://cdn.shopify.com/s/files/1/0551/4739/7238/files/VKB-THQ-V-v1.0.pdf?v=1733172045"
+      ],
+      "referenceNotes":[
+        "Stand-alone Windows pairing requires the separately installed GNX USB Controller (HID-Main).",
+        "The lever heads are interchangeable. Physical names refer to their left, center, and right positions.",
+        "Use Input Learn for the button and axis numbers exposed by the current GNX setup."
+      ],
+      "views":[
+        {
+          "id":"front",
+          "name":"Levers and buttons",
+          "image":"Hardware/Images/vkb-gnx-thq-v-front.png",
+          "source":"https://vkbsimcontrollers.com/cdn/shop/files/18_THQ-V_4SH_750_2.webp?v=1769865540",
+          "hotspots":[
+            {"controlId":"lever-left","x":0.283,"y":0.628,"width":0.142,"height":0.125},
+            {"controlId":"lever-center","x":0.513,"y":0.645,"width":0.12,"height":0.152},
+            {"controlId":"lever-right","x":0.728,"y":0.628,"width":0.143,"height":0.125},
+            {"controlId":"a1","x":0.73,"y":0.427,"width":0.063,"height":0.065},
+            {"controlId":"a2","x":0.598,"y":0.44,"width":0.063,"height":0.062},
+            {"controlId":"a3","x":0.415,"y":0.442,"width":0.062,"height":0.06},
+            {"controlId":"a4","x":0.283,"y":0.425,"width":0.062,"height":0.067},
+            {"controlId":"b1","x":0.725,"y":0.288,"width":0.068,"height":0.05},
+            {"controlId":"b2","x":0.287,"y":0.288,"width":0.068,"height":0.05},
+            {"controlId":"c1","x":0.595,"y":0.295,"width":0.077,"height":0.067},
+            {"controlId":"c2","x":0.413,"y":0.295,"width":0.073,"height":0.067}
+          ]
+        }
+      ],
+      "controls":[
+        {"id":"lever-left","name":"Left throttle lever axis","kind":"Axis"},
+        {"id":"lever-center","name":"Center throttle lever axis","kind":"Axis"},
+        {"id":"lever-right","name":"Right throttle lever axis","kind":"Axis"},
+        {"id":"a1","name":"A1 button","kind":"Button"},
+        {"id":"a2","name":"A2 button","kind":"Button"},
+        {"id":"a3","name":"A3 button","kind":"Button"},
+        {"id":"a4","name":"A4 button","kind":"Button"},
+        {"id":"b1","name":"B1 button","kind":"Button"},
+        {"id":"b2","name":"B2 button","kind":"Button"},
+        {"id":"c1","name":"C1 button","kind":"Button"},
+        {"id":"c2","name":"C2 button","kind":"Button"}
+      ]
+    }
+  ]
+}

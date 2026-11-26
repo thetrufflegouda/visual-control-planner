@@ -1,0 +1,111 @@
+{
+  "manufacturer": "WINWING / WINCTRL",
+  "devices": [
+    {"id": "winwing-pcr","name": "WINWING PCR PANEL OF COMBAT READY","vendorId": 16536,"productId": 0,"layout": "winwing-pcr"}
+  ],
+  "layouts": [
+    {
+      "id": "winwing-pcr",
+      "references": [
+        "https://en.winwing.cn/static/file/PCR-COMBAT%20READY%20PANEL-MANUAL%20EN%20V%201.0.pdf",
+        "https://winctrl.com/static/assets/files/en/SIMAPP%20Pro%201.9.11-User%20Manual%20EN%20V1.2.pdf",
+        "https://winctrl.com/upload/picture/2022-06-15/upload_bb56f9bfc8b1eec284578ceeebecb16b.jpg"
+      ],
+      "referenceNotes": [
+        "The Panel of Combat Ready is the standalone PCR. The original PTO and PTO2 have different physical layouts.",
+        "All 56 discrete inputs follow the manufacturer control chart. NORM on the INS plate groups CV and GND.",
+        "The OEM gesture chart and installed DCS preset differ on some reported buttons. Confirm each control using Learn Input."
+      ],
+      "views": [
+        {
+          "id": "panel",
+          "name": "Combat ready panel",
+          "image": "Hardware/Images/winwing-pcr-combat-ready-front-cutout.png",
+          "source": "https://winctrl.com/upload/picture/2022-06-15/upload_bb56f9bfc8b1eec284578ceeebecb16b.jpg",
+          "hotspots": [
+            {"controlId": "emergency-jettison","x": 0.20187,"y": 0.26375,"width": 0.03938,"height": 0.0375},
+            {"controlId": "air-to-air","x": 0.1975,"y": 0.3275,"width": 0.04,"height": 0.03938},
+            {"controlId": "air-to-ground","x": 0.18188,"y": 0.3875,"width": 0.03938,"height": 0.03875},
+            {"controlId": "master-arm-arm","x": 0.1575,"y": 0.48938,"width": 0.04063,"height": 0.03687},
+            {"controlId": "flir-on","x": 0.28937,"y": 0.32188,"width": 0.04063,"height": 0.03875},
+            {"controlId": "ltd-r-arm","x": 0.37125,"y": 0.35313,"width": 0.04063,"height": 0.03812},
+            {"controlId": "lst-nflr-on","x": 0.45937,"y": 0.38312,"width": 0.03938,"height": 0.03875},
+            {"controlId": "radar-off","x": 0.27375,"y": 0.43625,"width": 0.05063,"height": 0.04875},
+            {"controlId": "ins-off","x": 0.4025,"y": 0.48125,"width": 0.0525,"height": 0.04813},
+            {"controlId": "dispenser-on","x": 0.235,"y": 0.5675,"width": 0.04063,"height": 0.03875},
+            {"controlId": "ecm-off","x": 0.335,"y": 0.605,"width": 0.05375,"height": 0.04875},
+            {"controlId": "alr-67-power","x": 0.42312,"y": 0.62625,"width": 0.04437,"height": 0.04625},
+            {"controlId": "heading-left","x": 0.54937,"y": 0.42688,"width": 0.04312,"height": 0.03938},
+            {"controlId": "altitude-baro","x": 0.59875,"y": 0.50938,"width": 0.04375,"height": 0.04},
+            {"controlId": "course-left","x": 0.69437,"y": 0.4775,"width": 0.04437,"height": 0.03938},
+            {"controlId": "station-center","x": 0.5725,"y": 0.57688,"width": 0.04562,"height": 0.04875},
+            {"controlId": "station-left-inboard","x": 0.52625,"y": 0.63,"width": 0.04375,"height": 0.04562},
+            {"controlId": "station-right-inboard","x": 0.58125,"y": 0.655,"width": 0.0425,"height": 0.045},
+            {"controlId": "station-left-outboard","x": 0.50938,"y": 0.69625,"width": 0.045,"height": 0.045},
+            {"controlId": "station-right-outboard","x": 0.56437,"y": 0.725,"width": 0.04375,"height": 0.04625},
+            {"controlId": "comm1-ccw","x": 0.67875,"y": 0.60875,"width": 0.05125,"height": 0.0475},
+            {"controlId": "comm2-ccw","x": 0.6525,"y": 0.71375,"width": 0.05125,"height": 0.04813}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "emergency-jettison","name": "Emergency jettison","kind": "Button"},
+        {"id": "air-to-air","name": "A/A master mode","kind": "Button"},
+        {"id": "air-to-ground","name": "A/G master mode","kind": "Button"},
+        {"id": "master-arm-arm","name": "MASTER ARM ARM","kind": "Button","location": "master-arm"},
+        {"id": "master-arm-center","name": "MASTER ARM Center","kind": "Button","location": "master-arm"},
+        {"id": "master-arm-safe","name": "MASTER ARM SAFE","kind": "Button","location": "master-arm"},
+        {"id": "flir-on","name": "FLIR ON","kind": "Button","location": "flir"},
+        {"id": "flir-stby","name": "FLIR STBY","kind": "Button","location": "flir"},
+        {"id": "flir-off","name": "FLIR OFF","kind": "Button","location": "flir"},
+        {"id": "ltd-r-arm","name": "LTD/R ARM","kind": "Button","location": "ltd-r"},
+        {"id": "ltd-r-center","name": "LTD/R Center","kind": "Button","location": "ltd-r"},
+        {"id": "ltd-r-safe","name": "LTD/R SAFE","kind": "Button","location": "ltd-r"},
+        {"id": "lst-nflr-on","name": "LST/NFLR ON","kind": "Button","location": "lst-nflr"},
+        {"id": "lst-nflr-center","name": "LST/NFLR Center","kind": "Button","location": "lst-nflr"},
+        {"id": "lst-nflr-off","name": "LST/NFLR OFF","kind": "Button","location": "lst-nflr"},
+        {"id": "radar-off","name": "RADAR OFF","kind": "Button","location": "radar"},
+        {"id": "radar-stby","name": "RADAR STBY","kind": "Button","location": "radar"},
+        {"id": "radar-opr","name": "RADAR OPR","kind": "Button","location": "radar"},
+        {"id": "radar-unlock","name": "RADAR UNLOCK","kind": "Button","location": "radar"},
+        {"id": "radar-emerg","name": "RADAR EMERG","kind": "Button","location": "radar"},
+        {"id": "ins-off","name": "INS OFF","kind": "Button","location": "ins"},
+        {"id": "ins-cv","name": "INS CV","kind": "Button","location": "ins"},
+        {"id": "ins-gnd","name": "INS GND","kind": "Button","location": "ins"},
+        {"id": "ins-nav","name": "INS NAV","kind": "Button","location": "ins"},
+        {"id": "ins-ifa","name": "INS IFA","kind": "Button","location": "ins"},
+        {"id": "ins-gyro","name": "INS GYRO","kind": "Button","location": "ins"},
+        {"id": "ins-gb","name": "INS GB","kind": "Button","location": "ins"},
+        {"id": "ins-test","name": "INS TEST","kind": "Button","location": "ins"},
+        {"id": "dispenser-on","name": "DISPENSER ON","kind": "Button","location": "dispenser"},
+        {"id": "dispenser-bypass","name": "DISPENSER BYPASS","kind": "Button","location": "dispenser"},
+        {"id": "dispenser-off","name": "DISPENSER OFF","kind": "Button","location": "dispenser"},
+        {"id": "ecm-off","name": "ECM OFF","kind": "Button","location": "ecm"},
+        {"id": "ecm-stby","name": "ECM STBY","kind": "Button","location": "ecm"},
+        {"id": "ecm-bit","name": "ECM BIT","kind": "Button","location": "ecm"},
+        {"id": "ecm-rec","name": "ECM REC","kind": "Button","location": "ecm"},
+        {"id": "ecm-xmit","name": "ECM XMIT","kind": "Button","location": "ecm"},
+        {"id": "alr-67-power","name": "ALR-67 power","kind": "Button"},
+        {"id": "heading-left","name": "HDG Left","kind": "Button","location": "heading"},
+        {"id": "heading-center","name": "HDG Center","kind": "Button","location": "heading"},
+        {"id": "heading-right","name": "HDG Right","kind": "Button","location": "heading"},
+        {"id": "altitude-baro","name": "ALT BARO","kind": "Button","location": "altitude"},
+        {"id": "altitude-rdr","name": "ALT RDR","kind": "Button","location": "altitude"},
+        {"id": "course-left","name": "CRS Left","kind": "Button","location": "course"},
+        {"id": "course-center","name": "CRS Center","kind": "Button","location": "course"},
+        {"id": "course-right","name": "CRS Right","kind": "Button","location": "course"},
+        {"id": "station-center","name": "Jettison station CTR","kind": "Button"},
+        {"id": "station-left-inboard","name": "Jettison station LI","kind": "Button"},
+        {"id": "station-right-inboard","name": "Jettison station RI","kind": "Button"},
+        {"id": "station-left-outboard","name": "Jettison station LO","kind": "Button"},
+        {"id": "station-right-outboard","name": "Jettison station RO","kind": "Button"},
+        {"id": "comm1-ccw","name": "COMM 1 CCW","kind": "Button","location": "comm1"},
+        {"id": "comm1-cw","name": "COMM 1 CW","kind": "Button","location": "comm1"},
+        {"id": "comm1-press","name": "COMM 1 Press","kind": "Button","location": "comm1"},
+        {"id": "comm2-ccw","name": "COMM 2 CCW","kind": "Button","location": "comm2"},
+        {"id": "comm2-cw","name": "COMM 2 CW","kind": "Button","location": "comm2"},
+        {"id": "comm2-press","name": "COMM 2 Press","kind": "Button","location": "comm2"}
+      ]
+    }
+  ]
+}

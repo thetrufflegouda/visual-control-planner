@@ -1,0 +1,45 @@
+{
+  "manufacturer": "Thrustmaster",
+  "devices": [
+    {"id": "thrustmaster-tpr", "name": "THRUSTMASTER TPR PENDULAR RUDDER", "vendorId": 1103, "productId": 46735, "layout": "thrustmaster-tpr"}
+  ],
+  "layouts": [
+    {
+      "id": "thrustmaster-tpr",
+      "references": [
+        "https://support.thrustmaster.com/en/product/tpr-en/",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TPR/TPR_Rudder_User_Manual.pdf",
+        "https://github.com/tfindley/Thrustmaster-Linux"
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Pedal face and pendular linkage",
+          "image": "Hardware/Images/tm-tpr-oem-front.jpg",
+          "source": "https://shop.thrustmaster.com/media/catalog/product/t/p/tpr_1000x100-1.jpg",
+          "hotspots": [
+            {"controlId": "left-brake", "x": 0.173, "y": 0.625, "width": 0.211, "height": 0.105},
+            {"controlId": "right-brake", "x": 0.803, "y": 0.693, "width": 0.228, "height": 0.110},
+            {"controlId": "rudder", "x": 0.517, "y": 0.310, "width": 0.255, "height": 0.138}
+          ]
+        },
+        {
+          "id": "overhead",
+          "name": "Pedals from above",
+          "image": "Hardware/Images/tm-tpr-oem-overhead.jpg",
+          "source": "https://shop.thrustmaster.com/media/catalog/product/t/p/tpr_1000x100-2.jpg",
+          "hotspots": [
+            {"controlId": "left-brake", "x": 0.170, "y": 0.640, "width": 0.238, "height": 0.105},
+            {"controlId": "right-brake", "x": 0.835, "y": 0.640, "width": 0.218, "height": 0.105},
+            {"controlId": "rudder", "x": 0.505, "y": 0.495, "width": 0.260, "height": 0.305}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-brake", "name": "Left toe brake axis", "kind": "Axis", "suggestedInput": "y"},
+        {"id": "rudder", "name": "Pendular rudder axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "right-brake", "name": "Right toe brake axis", "kind": "Axis", "suggestedInput": "x"}
+      ]
+    }
+  ]
+}

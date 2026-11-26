@@ -1,0 +1,105 @@
+{
+  "manufacturer": "Thrustmaster",
+  "devices": [
+    {"id": "thrustmaster-airbus-grip-a3xx", "name": "THRUSTMASTER AIRBUS ADD-ON GRIP — A3XX",
+     "vendorId": 0, "productId": 0, "layout": "thrustmaster-airbus-grip-a3xx"},
+    {"id": "thrustmaster-airbus-grip-a400m", "name": "THRUSTMASTER AIRBUS ADD-ON GRIP — A400M",
+     "vendorId": 0, "productId": 0, "layout": "thrustmaster-airbus-grip-a400m"}
+  ],
+  "layouts": [
+    {
+      "id": "thrustmaster-airbus-grip-a3xx",
+      "references": [
+        "https://eshop.thrustmaster.com/airbus-add-on-grip.html",
+        "https://support.thrustmaster.com/en/product/airbus-add-on-grip-en/",
+        "https://ts.thrustmaster.com/download/accessories/manuals/Airbus_grip/AIRBUS_GRIP_Instruction_Manual.pdf",
+        "https://msfsaddons.com/2026/09/15/thrustmaster-airbus-add-on-grip-review-i-really-wished-this-was-a-metal-sidestick/"
+      ],
+      "notes": [
+        "Left-hand captain's grip. The A3XX configuration uses the supplied side cover. The mini-stick remains available with either supplied travel plate.",
+        "The trigger can report a switch or an axis. The mode lever and twist lock are mechanical."
+      ],
+      "views": [
+        {
+          "id": "face", "name": "A3XX controls", "image": "Hardware/Images/thrustmaster-airbus-a3xx-grip.jpg",
+          "hotspots": [
+            {"controlId": "ministick-press", "x": 0.439, "y": 0.182, "width": 0.082, "height": 0.074},
+            {"controlId": "disconnect", "x": 0.616, "y": 0.241, "width": 0.055, "height": 0.058},
+            {"controlId": "twist", "x": 0.494, "y": 0.717, "width": 0.127, "height": 0.064},
+            {"controlId": "stick-x", "x": 0.495, "y": 0.860, "width": 0.180, "height": 0.066}
+          ]
+        },
+        {
+          "id": "side", "name": "Right side controls", "image": "Hardware/Images/thrustmaster-airbus-grip-right-side.jpg",
+          "hotspots": [
+            {"controlId": "ministick-press", "x": 0.537, "y": 0.194, "width": 0.081, "height": 0.052},
+            {"controlId": "disconnect", "x": 0.606, "y": 0.278, "width": 0.048, "height": 0.052},
+            {"controlId": "trigger-button", "x": 0.682, "y": 0.313, "width": 0.037, "height": 0.132},
+            {"controlId": "side-grey", "x": 0.536, "y": 0.415, "width": 0.030, "height": 0.037},
+            {"controlId": "twist", "x": 0.447, "y": 0.641, "width": 0.118, "height": 0.055},
+            {"controlId": "stick-x", "x": 0.459, "y": 0.758, "width": 0.151, "height": 0.067}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "ministick-press", "name": "Face ministick press", "kind": "Button", "location": "ministick"},
+        {"id": "ministick-x", "name": "Face ministick X axis", "kind": "Axis", "location": "ministick"},
+        {"id": "ministick-y", "name": "Face ministick Y axis", "kind": "Axis", "location": "ministick"},
+        {"id": "disconnect", "name": "Red autopilot disconnect button", "kind": "Button"},
+        {"id": "side-grey", "name": "Right side grey push button", "kind": "Button"},
+        {"id": "trigger-button", "name": "Index trigger button", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-axis", "name": "Index trigger axis", "kind": "Axis", "location": "trigger"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"},
+        {"id": "stick-x", "name": "Base stick X axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Base stick Y axis", "kind": "Axis", "location": "stick"}
+      ]
+    },
+    {
+      "id": "thrustmaster-airbus-grip-a400m",
+      "references": [
+        "https://eshop.thrustmaster.com/airbus-add-on-grip.html",
+        "https://support.thrustmaster.com/en/product/airbus-add-on-grip-en/",
+        "https://ts.thrustmaster.com/download/accessories/manuals/Airbus_grip/AIRBUS_GRIP_Instruction_Manual.pdf",
+        "https://msfsaddons.com/2026/09/15/thrustmaster-airbus-add-on-grip-review-i-really-wished-this-was-a-metal-sidestick/"
+      ],
+      "notes": [
+        "Left-hand captain's grip with the supplied A400M side button and red-button guard installed. The guard is mechanical.",
+        "The right-side photograph shows the shared body controls. AVA, HOTAS Warthog MKII and Sol-R are supported. The original HOTAS Warthog requires the Warthog Converter and has limited grip functionality."
+      ],
+      "views": [
+        {
+          "id": "face", "name": "A400M controls", "image": "Hardware/Images/thrustmaster-airbus-a400m-grip.jpg",
+          "hotspots": [
+            {"controlId": "a400m-button", "x": 0.328, "y": 0.189, "width": 0.069, "height": 0.073},
+            {"controlId": "ministick-press", "x": 0.454, "y": 0.172, "width": 0.079, "height": 0.070},
+            {"controlId": "disconnect", "x": 0.626, "y": 0.238, "width": 0.053, "height": 0.057},
+            {"controlId": "twist", "x": 0.496, "y": 0.717, "width": 0.128, "height": 0.066},
+            {"controlId": "stick-x", "x": 0.502, "y": 0.854, "width": 0.178, "height": 0.063}
+          ]
+        },
+        {
+          "id": "side", "name": "Shared right side controls", "image": "Hardware/Images/thrustmaster-airbus-grip-right-side.jpg",
+          "hotspots": [
+            {"controlId": "trigger-button", "x": 0.682, "y": 0.313, "width": 0.037, "height": 0.132},
+            {"controlId": "side-grey", "x": 0.536, "y": 0.415, "width": 0.030, "height": 0.037},
+            {"controlId": "twist", "x": 0.447, "y": 0.641, "width": 0.118, "height": 0.055},
+            {"controlId": "stick-x", "x": 0.459, "y": 0.758, "width": 0.151, "height": 0.067}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "a400m-button", "name": "A400M removable side button", "kind": "Button"},
+        {"id": "ministick-press", "name": "Face ministick press", "kind": "Button", "location": "ministick"},
+        {"id": "ministick-x", "name": "Face ministick X axis", "kind": "Axis", "location": "ministick"},
+        {"id": "ministick-y", "name": "Face ministick Y axis", "kind": "Axis", "location": "ministick"},
+        {"id": "disconnect", "name": "Guarded red face button", "kind": "Button"},
+        {"id": "side-grey", "name": "Right side grey push button", "kind": "Button"},
+        {"id": "trigger-button", "name": "Index trigger button", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-axis", "name": "Index trigger axis", "kind": "Axis", "location": "trigger"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"},
+        {"id": "stick-x", "name": "Base stick X axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Base stick Y axis", "kind": "Axis", "location": "stick"}
+      ]
+    }
+  ]
+}

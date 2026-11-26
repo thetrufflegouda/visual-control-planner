@@ -1,0 +1,110 @@
+{
+  "manufacturer": "VKB",
+  "devices": [
+    {"id": "vkb-gunfighter-scg-premium-left", "name": "VKB GUNFIGHTER SCG PREMIUM SIDE HAT — LEFT HAND", "vendorId": 8989, "productId": 0, "layout": "vkb-gunfighter-scg-premium", "mirrorGrip": true},
+    {"id": "vkb-gunfighter-scg-premium-right", "name": "VKB GUNFIGHTER SCG PREMIUM SIDE HAT — RIGHT HAND", "vendorId": 8989, "productId": 0, "layout": "vkb-gunfighter-scg-premium"}
+  ],
+  "layouts": [
+    {
+      "id": "vkb-gunfighter-scg-premium",
+      "references": [
+        "https://vkbsimcontrollers.com/products/scg-add-on-grip-for-gunfighter-mk-iv-us",
+        "https://vkbsimcontrollers.com/products/scg-add-on-grip-for-gunfighter-iv-copy",
+        "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/VKB-Gunfighter-SCG-LH-v1.0.pdf?v=1769327134",
+        "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/VKB-Gunfighter-SCG-RH-v1.0.pdf?v=1769327134"
+      ],
+      "referenceNotes": [
+        "Stock Premium configuration with C1 side hat, A1 ministick and bidirectional rapid-fire trigger.",
+        "A1 supports analog X/Y and digital hat modes. Learn the signals from its selected mode.",
+        "Above-base control layout is shared by the Mk.II/III and Mk.IV stock Premium grips. The physical connectors differ.",
+        "The left card mirrors the right manufacturer photos.",
+        "Input Learn assigns firmware-dependent button, POV and auxiliary axis reports. The Gunfighter X/Y movement shares the grip layout."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face and thumb hat",
+          "image": "Hardware/Images/vkb-gunfighter-scg-premium-face.png",
+          "source": "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/SCG-R-P_For_GF_1200_02_4269d6df-80ba-4b3e-a544-c7085e5cf10c.webp?v=1769871977",
+          "hotspots": [
+            {"controlId": "a1-press", "x": 0.393, "y": 0.21, "width": 0.065, "height": 0.06},
+            {"controlId": "a2", "x": 0.382, "y": 0.303, "width": 0.05, "height": 0.047},
+            {"controlId": "a3-press", "x": 0.468, "y": 0.28, "width": 0.075, "height": 0.07},
+            {"controlId": "a4-press", "x": 0.517, "y": 0.202, "width": 0.06, "height": 0.058},
+            {"controlId": "c1-press", "x": 0.435, "y": 0.487, "width": 0.067, "height": 0.053},
+            {"controlId": "stick-x", "x": 0.547, "y": 0.625, "width": 0.17, "height": 0.133},
+            {"controlId": "twist", "x": 0.548, "y": 0.85, "width": 0.123, "height": 0.06}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Thumb hat and triggers",
+          "image": "Hardware/Images/vkb-gunfighter-scg-premium-trigger.png",
+          "source": "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/SCG-R-P_For_GF_1200_04_1f4ea01f-8414-4fae-813d-d777fea1c8bb.webp?v=1769872524",
+          "hotspots": [
+            {"controlId": "c1-press", "x": 0.593, "y": 0.497, "width": 0.072, "height": 0.055},
+            {"controlId": "trigger-first", "x": 0.365, "y": 0.452, "width": 0.072, "height": 0.095},
+            {"controlId": "rapid-fire-up", "x": 0.263, "y": 0.418, "width": 0.04, "height": 0.068},
+            {"controlId": "twist", "x": 0.615, "y": 0.853, "width": 0.123, "height": 0.058}
+          ]
+        },
+        {
+          "id": "index-side",
+          "name": "Index button and triggers",
+          "image": "Hardware/Images/vkb-gunfighter-scg-premium-index-side.png",
+          "source": "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/SCG-R-P_For_GF_1200_05_48ee0969-4ee8-48f5-a9c2-82d6b078cd7d.webp?v=1769871977",
+          "hotspots": [
+            {"controlId": "b1", "x": 0.754, "y": 0.327, "width": 0.045, "height": 0.054},
+            {"controlId": "rapid-fire-up", "x": 0.753, "y": 0.418, "width": 0.039, "height": 0.061},
+            {"controlId": "trigger-first", "x": 0.637, "y": 0.445, "width": 0.072, "height": 0.086},
+            {"controlId": "twist", "x": 0.391, "y": 0.868, "width": 0.141, "height": 0.053}
+          ]
+        },
+        {
+          "id": "pinky",
+          "name": "Pinky button detail",
+          "image": "Hardware/Images/vkb-gunfighter-scg-premium-pinky.png",
+          "source": "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/SCG-R-P_For_GF_1200_06_5a723e92-2f89-4cdc-a0ed-fd2ebea75729.webp?v=1769871977",
+          "hotspots": [
+            {"controlId": "d1", "x": 0.745, "y": 0.518, "width": 0.137, "height": 0.142},
+            {"controlId": "twist", "x": 0.613, "y": 0.844, "width": 0.335, "height": 0.174}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "rapid-fire-up", "name": "Rapid-fire trigger up", "kind": "Button", "location": "rapid-fire"},
+        {"id": "rapid-fire-down", "name": "Rapid-fire trigger down", "kind": "Button", "location": "rapid-fire"},
+        {"id": "a1-press", "name": "A1 ministick center press", "kind": "Button", "location": "a1"},
+        {"id": "a1-up", "name": "A1 ministick up (digital mode)", "kind": "Hat", "location": "a1"},
+        {"id": "a1-right", "name": "A1 ministick right (digital mode)", "kind": "Hat", "location": "a1"},
+        {"id": "a1-down", "name": "A1 ministick down (digital mode)", "kind": "Hat", "location": "a1"},
+        {"id": "a1-left", "name": "A1 ministick left (digital mode)", "kind": "Hat", "location": "a1"},
+        {"id": "a1-x", "name": "A1 ministick X axis (analog mode)", "kind": "Axis", "location": "a1"},
+        {"id": "a1-y", "name": "A1 ministick Y axis (analog mode)", "kind": "Axis", "location": "a1"},
+        {"id": "a2", "name": "A2 red face button", "kind": "Button"},
+        {"id": "a3-press", "name": "A3 center hat center press", "kind": "Button", "location": "a3"},
+        {"id": "a3-up", "name": "A3 center hat up", "kind": "Button", "location": "a3"},
+        {"id": "a3-right", "name": "A3 center hat right", "kind": "Button", "location": "a3"},
+        {"id": "a3-down", "name": "A3 center hat down", "kind": "Button", "location": "a3"},
+        {"id": "a3-left", "name": "A3 center hat left", "kind": "Button", "location": "a3"},
+        {"id": "a4-press", "name": "A4 top hat center press", "kind": "Button", "location": "a4"},
+        {"id": "a4-up", "name": "A4 top hat up", "kind": "Button", "location": "a4"},
+        {"id": "a4-right", "name": "A4 top hat right", "kind": "Button", "location": "a4"},
+        {"id": "a4-down", "name": "A4 top hat down", "kind": "Button", "location": "a4"},
+        {"id": "a4-left", "name": "A4 top hat left", "kind": "Button", "location": "a4"},
+        {"id": "b1", "name": "B1 index button", "kind": "Button"},
+        {"id": "c1-press", "name": "C1 side hat center press", "kind": "Button", "location": "c1"},
+        {"id": "c1-up", "name": "C1 side hat up", "kind": "Button", "location": "c1"},
+        {"id": "c1-right", "name": "C1 side hat right", "kind": "Button", "location": "c1"},
+        {"id": "c1-down", "name": "C1 side hat down", "kind": "Button", "location": "c1"},
+        {"id": "c1-left", "name": "C1 side hat left", "kind": "Button", "location": "c1"},
+        {"id": "d1", "name": "D1 pinky button", "kind": "Button"},
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"}
+      ]
+    }
+  ]
+}

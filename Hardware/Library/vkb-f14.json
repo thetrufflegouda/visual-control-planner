@@ -1,0 +1,146 @@
+{
+  "manufacturer": "VKB",
+  "devices": [
+    {"id": "vkb-f14-tomcat-gnx", "name": "VKB F-14 TOMCAT GRIP — GLADIATOR GNX",
+     "vendorId": 0, "productId": 0, "layout": "vkb-f14-tomcat-gnx",
+     "compatibleBaseIds": ["vkb-gladiator-evo-button-base"]},
+    {"id": "vkb-f14-tomcat-gunfighter-revb", "name": "VKB F-14 TOMCAT GRIP — GUNFIGHTER MK.II / III",
+     "vendorId": 0, "productId": 0, "layout": "vkb-f14-tomcat-gunfighter"},
+    {"id": "vkb-f14-tomcat-gunfighter-revc", "name": "VKB F-14 TOMCAT GRIP — GUNFIGHTER MK.IV",
+     "vendorId": 0, "productId": 0, "layout": "vkb-f14-tomcat-gunfighter"}
+  ],
+  "layouts": [
+    {
+      "id": "vkb-f14-tomcat-gnx",
+      "references": [
+        "https://vkbsimcontrollers.com/products/gnx-f-14-add-on-grip-us",
+        "https://flightsimcontrols.com/product/gladiator-nxt-evo-f-14-combat-edition/",
+        "https://www.youtube.com/watch?v=rDOKT5_zViI"
+      ],
+      "notes": [
+        "The grip fits Gladiator NXT and NXT EVO. Select the NXT EVO button base if installed. Original NXT base controls differ."
+      ],
+      "views": [
+        {
+          "id": "face", "name": "Grip face", "image": "Hardware/Images/vkb-f14-gnx-face.jpg",
+          "hotspots": [
+            {"controlId": "weapon-selector-sp-ph", "x": 0.375, "y": 0.169, "width": 0.066, "height": 0.079},
+            {"controlId": "trim-press", "x": 0.515, "y": 0.143, "width": 0.086, "height": 0.073},
+            {"controlId": "release", "x": 0.615, "y": 0.158, "width": 0.042, "height": 0.044},
+            {"controlId": "dlc-button", "x": 0.401, "y": 0.461, "width": 0.037, "height": 0.045},
+            {"controlId": "twist", "x": 0.524, "y": 0.738, "width": 0.118, "height": 0.046}
+          ]
+        },
+        {
+          "id": "thumb", "name": "Thumb side", "image": "Hardware/Images/vkb-f14-gnx-thumb-side.jpg",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.365, "y": 0.378, "width": 0.074, "height": 0.078},
+            {"controlId": "dlc-axis", "x": 0.532, "y": 0.386, "width": 0.063, "height": 0.031},
+            {"controlId": "dlc-button", "x": 0.570, "y": 0.490, "width": 0.057, "height": 0.052},
+            {"controlId": "nosewheel", "x": 0.474, "y": 0.612, "width": 0.045, "height": 0.043},
+            {"controlId": "paddle", "x": 0.394, "y": 0.653, "width": 0.060, "height": 0.137},
+            {"controlId": "twist", "x": 0.588, "y": 0.756, "width": 0.116, "height": 0.051}
+          ]
+        },
+        {
+          "id": "trigger", "name": "Trigger and paddle", "image": "Hardware/Images/vkb-f14-gnx-trigger.jpg",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.548, "y": 0.365, "width": 0.103, "height": 0.097},
+            {"controlId": "nosewheel", "x": 0.512, "y": 0.602, "width": 0.052, "height": 0.049},
+            {"controlId": "paddle", "x": 0.542, "y": 0.653, "width": 0.054, "height": 0.073},
+            {"controlId": "twist", "x": 0.366, "y": 0.751, "width": 0.102, "height": 0.056}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "weapon-selector-sp-ph", "name": "Weapon selector SP / PH position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-sw", "name": "Weapon selector SW position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-gun", "name": "Weapon selector GUN position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-off", "name": "Weapon selector OFF position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-press", "name": "Weapon selector press", "kind": "Button", "location": "weapon-selector"},
+        {"id": "trim-up", "name": "Trim up", "kind": "Button", "location": "trim"},
+        {"id": "trim-right", "name": "Trim right", "kind": "Button", "location": "trim"},
+        {"id": "trim-down", "name": "Trim down", "kind": "Button", "location": "trim"},
+        {"id": "trim-left", "name": "Trim left", "kind": "Button", "location": "trim"},
+        {"id": "trim-press", "name": "Trim press", "kind": "Button", "location": "trim"},
+        {"id": "release", "name": "Red face push button", "kind": "Button"},
+        {"id": "dlc-axis", "name": "DLC thumbwheel axis", "kind": "Axis"},
+        {"id": "dlc-button", "name": "DLC / chaff push button", "kind": "Button"},
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "nosewheel", "name": "Autopilot reference / nosewheel steering button", "kind": "Button"},
+        {"id": "paddle", "name": "Emergency autopilot disengage paddle", "kind": "Button"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"}
+      ]
+    },
+    {
+      "id": "vkb-f14-tomcat-gunfighter",
+      "references": [
+        "https://vkbsimcontrollers.com/products/f-14-add-on-grip-for-gunfighter-mk-iii",
+        "https://vkbsimcontrollers.com/products/f-14-add-on-grip-for-gunfighter-mk-iv-us",
+        "https://flightsimcontrols.com/product/f-14-combat-grip-stand-alone/",
+        "https://vkbsimcontrollers.com/products/f-14-grip-upgrade-kit-revb-to-revc"
+      ],
+      "notes": [
+        "Gunfighter Mk.II / III and Mk.IV use different grip connectors. They share the documented above-collar control geometry. X/Y are on the Gunfighter gimbal."
+      ],
+      "views": [
+        {
+          "id": "face", "name": "Grip face", "image": "Hardware/Images/vkb-f14-gunfighter-face.jpg",
+          "hotspots": [
+            {"controlId": "weapon-selector-sp-ph", "x": 0.371, "y": 0.195, "width": 0.071, "height": 0.079},
+            {"controlId": "trim-press", "x": 0.529, "y": 0.155, "width": 0.084, "height": 0.070},
+            {"controlId": "release", "x": 0.640, "y": 0.178, "width": 0.045, "height": 0.047},
+            {"controlId": "dlc-button", "x": 0.399, "y": 0.521, "width": 0.042, "height": 0.049},
+            {"controlId": "twist", "x": 0.534, "y": 0.784, "width": 0.132, "height": 0.055},
+            {"controlId": "stick-x", "x": 0.536, "y": 0.855, "width": 0.121, "height": 0.055}
+          ]
+        },
+        {
+          "id": "thumb", "name": "Thumb side", "image": "Hardware/Images/vkb-f14-gunfighter-thumb-side.jpg",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.346, "y": 0.435, "width": 0.095, "height": 0.094},
+            {"controlId": "dlc-axis", "x": 0.534, "y": 0.443, "width": 0.069, "height": 0.032},
+            {"controlId": "dlc-button", "x": 0.572, "y": 0.556, "width": 0.053, "height": 0.052},
+            {"controlId": "nosewheel", "x": 0.469, "y": 0.690, "width": 0.049, "height": 0.050},
+            {"controlId": "paddle", "x": 0.379, "y": 0.743, "width": 0.058, "height": 0.143},
+            {"controlId": "twist", "x": 0.577, "y": 0.816, "width": 0.143, "height": 0.044},
+            {"controlId": "stick-x", "x": 0.589, "y": 0.879, "width": 0.130, "height": 0.052}
+          ]
+        },
+        {
+          "id": "trigger", "name": "Trigger and paddle", "image": "Hardware/Images/vkb-f14-gunfighter-trigger.jpg",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.611, "y": 0.419, "width": 0.097, "height": 0.113},
+            {"controlId": "nosewheel", "x": 0.565, "y": 0.673, "width": 0.050, "height": 0.047},
+            {"controlId": "paddle", "x": 0.603, "y": 0.742, "width": 0.057, "height": 0.100},
+            {"controlId": "twist", "x": 0.406, "y": 0.814, "width": 0.125, "height": 0.050},
+            {"controlId": "stick-x", "x": 0.403, "y": 0.877, "width": 0.124, "height": 0.057}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "weapon-selector-sp-ph", "name": "Weapon selector SP / PH position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-sw", "name": "Weapon selector SW position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-gun", "name": "Weapon selector GUN position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-off", "name": "Weapon selector OFF position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-press", "name": "Weapon selector press", "kind": "Button", "location": "weapon-selector"},
+        {"id": "trim-up", "name": "Trim up", "kind": "Button", "location": "trim"},
+        {"id": "trim-right", "name": "Trim right", "kind": "Button", "location": "trim"},
+        {"id": "trim-down", "name": "Trim down", "kind": "Button", "location": "trim"},
+        {"id": "trim-left", "name": "Trim left", "kind": "Button", "location": "trim"},
+        {"id": "trim-press", "name": "Trim press", "kind": "Button", "location": "trim"},
+        {"id": "release", "name": "Red face push button", "kind": "Button"},
+        {"id": "dlc-axis", "name": "DLC thumbwheel axis", "kind": "Axis"},
+        {"id": "dlc-button", "name": "DLC / chaff push button", "kind": "Button"},
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "nosewheel", "name": "Autopilot reference / nosewheel steering button", "kind": "Button"},
+        {"id": "paddle", "name": "Emergency autopilot disengage paddle", "kind": "Button"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"},
+        {"id": "stick-x", "name": "Base stick X axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Base stick Y axis", "kind": "Axis", "location": "stick"}
+      ]
+    }
+  ]
+}

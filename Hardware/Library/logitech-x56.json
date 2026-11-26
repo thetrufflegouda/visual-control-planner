@@ -1,0 +1,205 @@
+{
+  "manufacturer": "Logitech / Saitek",
+  "devices": [
+    {
+      "id": "logitech-x56-stick",
+      "name": "LOGITECH G X56 HOTAS STICK",
+      "vendorId": 1848,
+      "productId": 8737,
+      "layout": "logitech-x56-stick"
+    },
+    {
+      "id": "logitech-x56-throttle",
+      "name": "LOGITECH G X56 HOTAS THROTTLE",
+      "vendorId": 1848,
+      "productId": 41505,
+      "layout": "logitech-x56-throttle"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "logitech-x56-stick",
+      "references": [
+        "https://support.logi.com/hc/en-us/articles/360023302854-X56-Space-Flight-H-O-T-A-S-Technical-Specifications",
+        "https://www.logitech.com/assets/65324/x56-hotas.pdf",
+        "https://www.logitechg.com/en-us/shop/p/x56-space-flight-vr-simulator-controller",
+        "https://www.sportys.com/media/pdf/buttonconfig.pdf",
+        "https://gist.github.com/Eearslya/0af768ee30f42f7696790f4183e7280e"
+      ],
+      "views": [
+        {
+          "id": "stick-face",
+          "name": "Stick face and base",
+          "image": "Hardware/Images/logitech-x56-stick-face-cutout.png",
+          "hotspots": [
+            {"controlId": "pov-up", "x": 0.3877, "y": 0.0999, "width": 0.0851, "height": 0.0695},
+            {"controlId": "a", "x": 0.4022, "y": 0.0521, "width": 0.0453, "height": 0.0347},
+            {"controlId": "h1-up", "x": 0.4764, "y": 0.0507, "width": 0.0761, "height": 0.0622},
+            {"controlId": "h2-up", "x": 0.5145, "y": 0.1172, "width": 0.0833, "height": 0.0637},
+            {"controlId": "ministick-press", "x": 0.3406, "y": 0.2894, "width": 0.0525, "height": 0.0405},
+            {"controlId": "trigger", "x": 0.3804, "y": 0.246, "width": 0.0326, "height": 0.0564},
+            {"controlId": "pinky-lever", "x": 0.3388, "y": 0.411, "width": 0.038, "height": 0.0738},
+            {"controlId": "twist", "x": 0.4583, "y": 0.4718, "width": 0.1268, "height": 0.0709},
+            {"controlId": "stick-x", "x": 0.4746, "y": 0.6324, "width": 0.2138, "height": 0.0709}
+          ]
+        },
+        {
+          "id": "stick-index",
+          "name": "B button and index trigger",
+          "image": "Hardware/Images/logitech-x56-stick-index-cutout.png",
+          "hotspots": [
+            {"controlId": "b", "x": 0.8506, "y": 0.3161, "width": 0.0881, "height": 0.0851},
+            {"controlId": "trigger", "x": 0.59, "y": 0.5532, "width": 0.069, "height": 0.1185},
+            {"controlId": "a", "x": 0.4176, "y": 0.1155, "width": 0.069, "height": 0.0608}
+          ]
+        },
+        {
+          "id": "stick-pinky",
+          "name": "D button and flying pinky",
+          "image": "Hardware/Images/logitech-x56-stick-pinky-cutout.png",
+          "hotspots": [
+            {"controlId": "d", "x": 0.3436, "y": 0.3398, "width": 0.1233, "height": 0.2524},
+            {"controlId": "pinky-lever", "x": 0.837, "y": 0.4078, "width": 0.141, "height": 0.2718}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "location": "stick", "suggestedInput": "x"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "location": "stick", "suggestedInput": "y"},
+        {"id": "twist", "name": "Stick twist", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "trigger", "name": "Main trigger", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "a", "name": "A upper face button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "b", "name": "B side button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "ministick-press", "name": "C ministick press", "kind": "Button", "location": "ministick", "suggestedInput": "button4"},
+        {"id": "ministick-x", "name": "C ministick horizontal axis", "kind": "Axis", "location": "ministick", "suggestedInput": "rotx"},
+        {"id": "ministick-y", "name": "C ministick vertical axis", "kind": "Axis", "location": "ministick", "suggestedInput": "roty"},
+        {"id": "d", "name": "D pinky button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "pinky-lever", "name": "Flying pinky lever", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "h1-up", "name": "H1 upper right hat up", "kind": "Button", "location": "h1", "suggestedInput": "button7"},
+        {"id": "h1-right", "name": "H1 upper right hat right", "kind": "Button", "location": "h1", "suggestedInput": "button8"},
+        {"id": "h1-down", "name": "H1 upper right hat down", "kind": "Button", "location": "h1", "suggestedInput": "button9"},
+        {"id": "h1-left", "name": "H1 upper right hat left", "kind": "Button", "location": "h1", "suggestedInput": "button10"},
+        {"id": "h2-up", "name": "H2 lower right hat up", "kind": "Button", "location": "h2", "suggestedInput": "button11"},
+        {"id": "h2-right", "name": "H2 lower right hat right", "kind": "Button", "location": "h2", "suggestedInput": "button12"},
+        {"id": "h2-down", "name": "H2 lower right hat down", "kind": "Button", "location": "h2", "suggestedInput": "button13"},
+        {"id": "h2-left", "name": "H2 lower right hat left", "kind": "Button", "location": "h2", "suggestedInput": "button14"},
+        {"id": "pov-up", "name": "Silver POV hat up", "kind": "Button", "location": "pov", "suggestedInput": "hat1_up"},
+        {"id": "pov-right", "name": "Silver POV hat right", "kind": "Button", "location": "pov", "suggestedInput": "hat1_right"},
+        {"id": "pov-down", "name": "Silver POV hat down", "kind": "Button", "location": "pov", "suggestedInput": "hat1_down"},
+        {"id": "pov-left", "name": "Silver POV hat left", "kind": "Button", "location": "pov", "suggestedInput": "hat1_left"}
+      ]
+    },
+    {
+      "id": "logitech-x56-throttle",
+      "references": [
+        "https://support.logi.com/hc/en-us/articles/360023302854-X56-Space-Flight-H-O-T-A-S-Technical-Specifications",
+        "https://www.logitech.com/assets/65324/x56-hotas.pdf",
+        "https://www.logitechg.com/en-us/shop/p/x56-space-flight-vr-simulator-controller",
+        "https://www.sportys.com/media/pdf/buttonconfig.pdf",
+        "https://gist.github.com/Eearslya/0af768ee30f42f7696790f4183e7280e",
+        "https://www.gamersky.com/hardware/201802/1011268_7.shtml"
+      ],
+      "views": [
+        {
+          "id": "throttle-thumb",
+          "name": "Throttle controls and base",
+          "image": "Hardware/Images/logitech-x56-throttle-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "throttle-left", "x": 0.4063, "y": 0.2715, "width": 0.1343, "height": 0.1367},
+            {"controlId": "throttle-right", "x": 0.5439, "y": 0.1992, "width": 0.1244, "height": 0.1348},
+            {"controlId": "f", "x": 0.7363, "y": 0.0547, "width": 0.1028, "height": 0.0625},
+            {"controlId": "slider", "x": 0.6667, "y": 0.2305, "width": 0.063, "height": 0.0527},
+            {"controlId": "g", "x": 0.7413, "y": 0.2793, "width": 0.0746, "height": 0.0527},
+            {"controlId": "e", "x": 0.6053, "y": 0.334, "width": 0.0481, "height": 0.0488},
+            {"controlId": "h3-up", "x": 0.6833, "y": 0.3477, "width": 0.0381, "height": 0.0566},
+            {"controlId": "h4-up", "x": 0.6667, "y": 0.416, "width": 0.0398, "height": 0.0488},
+            {"controlId": "ministick-press", "x": 0.5788, "y": 0.3945, "width": 0.0481, "height": 0.0547},
+            {"controlId": "mode-1", "x": 0.1343, "y": 0.4902, "width": 0.0697, "height": 0.0684},
+            {"controlId": "sw-1-up", "x": 0.2554, "y": 0.5742, "width": 0.0415, "height": 0.0566},
+            {"controlId": "sw-2-up", "x": 0.3416, "y": 0.6133, "width": 0.0415, "height": 0.0586},
+            {"controlId": "sw-3-up", "x": 0.4328, "y": 0.6484, "width": 0.0415, "height": 0.0586},
+            {"controlId": "tgl-1-up", "x": 0.67, "y": 0.5078, "width": 0.0365, "height": 0.0664},
+            {"controlId": "tgl-2-up", "x": 0.7662, "y": 0.5156, "width": 0.0365, "height": 0.0723},
+            {"controlId": "tgl-3-up", "x": 0.7745, "y": 0.4727, "width": 0.0332, "height": 0.0566},
+            {"controlId": "tgl-4-up", "x": 0.864, "y": 0.459, "width": 0.0381, "height": 0.0762},
+            {"controlId": "rotary-3", "x": 0.6617, "y": 0.5977, "width": 0.0779, "height": 0.084},
+            {"controlId": "rotary-4", "x": 0.5556, "y": 0.5996, "width": 0.073, "height": 0.0898}
+          ]
+        },
+        {
+          "id": "throttle-base",
+          "name": "Overhead switch panel and scroll wheel",
+          "image": "Hardware/Images/logitech-x56-throttle-base-cutout.png",
+          "hotspots": [
+            {"controlId": "throttle-left", "x": 0.2982, "y": 0.4859, "width": 0.1513, "height": 0.1168},
+            {"controlId": "throttle-right", "x": 0.5548, "y": 0.484, "width": 0.1491, "height": 0.1205},
+            {"controlId": "scroll-up", "x": 0.1667, "y": 0.3729, "width": 0.0461, "height": 0.0829},
+            {"controlId": "mode-1", "x": 0.1645, "y": 0.8192, "width": 0.136, "height": 0.096},
+            {"controlId": "sw-1-up", "x": 0.4254, "y": 0.8399, "width": 0.0855, "height": 0.0716},
+            {"controlId": "sw-2-up", "x": 0.568, "y": 0.8399, "width": 0.0855, "height": 0.0716},
+            {"controlId": "sw-3-up", "x": 0.7105, "y": 0.8399, "width": 0.0855, "height": 0.0716},
+            {"controlId": "tgl-4-up", "x": 0.8355, "y": 0.2429, "width": 0.0658, "height": 0.0603},
+            {"controlId": "rotary-3", "x": 0.8268, "y": 0.6158, "width": 0.0943, "height": 0.0829},
+            {"controlId": "rotary-4", "x": 0.75, "y": 0.693, "width": 0.0965, "height": 0.0829}
+          ]
+        },
+        {
+          "id": "throttle-index",
+          "name": "Index buttons and K1 rocker",
+          "image": "Hardware/Images/logitech-x56-throttle-index-cutout.png",
+          "hotspots": [
+            {"controlId": "h", "x": 0.3729, "y": 0.6953, "width": 0.0768, "height": 0.1398},
+            {"controlId": "i", "x": 0.5174, "y": 0.6308, "width": 0.0713, "height": 0.1326},
+            {"controlId": "k1-up", "x": 0.777, "y": 0.5269, "width": 0.0932, "height": 0.1649}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "throttle-left", "name": "Left throttle lever", "kind": "Axis"},
+        {"id": "throttle-right", "name": "Right throttle lever", "kind": "Axis"},
+        {"id": "e", "name": "E thumb button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "rotary-f", "name": "F upper thumb rotary", "kind": "Axis", "location": "rotary-f", "suggestedInput": "z"},
+        {"id": "f", "name": "F upper rotary press", "kind": "Button", "location": "rotary-f", "suggestedInput": "button2"},
+        {"id": "rotary-g", "name": "G lower thumb rotary", "kind": "Axis", "location": "rotary-g", "suggestedInput": "rotz"},
+        {"id": "g", "name": "G lower rotary press", "kind": "Button", "location": "rotary-g", "suggestedInput": "button3"},
+        {"id": "h", "name": "H index-finger button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "i", "name": "I middle-finger button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "slider", "name": "SLD two-position switch", "kind": "Button", "suggestedInput": "button33"},
+        {"id": "ministick-x", "name": "Throttle ministick horizontal axis", "kind": "Axis", "location": "ministick", "suggestedInput": "rotx"},
+        {"id": "ministick-y", "name": "Throttle ministick vertical axis", "kind": "Axis", "location": "ministick", "suggestedInput": "roty"},
+        {"id": "ministick-press", "name": "Throttle ministick press", "kind": "Button", "location": "ministick", "suggestedInput": "button32"},
+        {"id": "h3-up", "name": "H3 upper throttle hat up", "kind": "Button", "location": "h3", "suggestedInput": "button20"},
+        {"id": "h3-right", "name": "H3 upper throttle hat right", "kind": "Button", "location": "h3", "suggestedInput": "button21"},
+        {"id": "h3-down", "name": "H3 upper throttle hat down", "kind": "Button", "location": "h3", "suggestedInput": "button22"},
+        {"id": "h3-left", "name": "H3 upper throttle hat left", "kind": "Button", "location": "h3", "suggestedInput": "button23"},
+        {"id": "h4-up", "name": "H4 lower throttle hat up", "kind": "Button", "location": "h4", "suggestedInput": "button24"},
+        {"id": "h4-right", "name": "H4 lower throttle hat right", "kind": "Button", "location": "h4", "suggestedInput": "button25"},
+        {"id": "h4-down", "name": "H4 lower throttle hat down", "kind": "Button", "location": "h4", "suggestedInput": "button26"},
+        {"id": "h4-left", "name": "H4 lower throttle hat left", "kind": "Button", "location": "h4", "suggestedInput": "button27"},
+        {"id": "k1-up", "name": "K1 pinky rocker up", "kind": "Button", "location": "k1", "suggestedInput": "button28"},
+        {"id": "k1-down", "name": "K1 pinky rocker down", "kind": "Button", "location": "k1", "suggestedInput": "button29"},
+        {"id": "scroll-up", "name": "Left throttle scroll wheel forward", "kind": "Button", "location": "scroll", "suggestedInput": "button30"},
+        {"id": "scroll-down", "name": "Left throttle scroll wheel back", "kind": "Button", "location": "scroll", "suggestedInput": "button31"},
+        {"id": "mode-1", "name": "Mode selector M1", "kind": "Button", "location": "mode", "suggestedInput": "button34"},
+        {"id": "mode-2", "name": "Mode selector M2", "kind": "Button", "location": "mode", "suggestedInput": "button35"},
+        {"id": "mode-3", "name": "Mode selector S1", "kind": "Button", "location": "mode", "suggestedInput": "button36"},
+        {"id": "sw-1-up", "name": "SW1 · guarded toggle 1 up", "kind": "Button", "location": "sw-1", "suggestedInput": "button6"},
+        {"id": "sw-1-down", "name": "SW2 · guarded toggle 1 down", "kind": "Button", "location": "sw-1", "suggestedInput": "button7"},
+        {"id": "sw-2-up", "name": "SW3 · guarded toggle 2 up", "kind": "Button", "location": "sw-2", "suggestedInput": "button8"},
+        {"id": "sw-2-down", "name": "SW4 · guarded toggle 2 down", "kind": "Button", "location": "sw-2", "suggestedInput": "button9"},
+        {"id": "sw-3-up", "name": "SW5 · guarded toggle 3 up", "kind": "Button", "location": "sw-3", "suggestedInput": "button10"},
+        {"id": "sw-3-down", "name": "SW6 · guarded toggle 3 down", "kind": "Button", "location": "sw-3", "suggestedInput": "button11"},
+        {"id": "tgl-1-up", "name": "TGL 1 up", "kind": "Button", "location": "tgl-1", "suggestedInput": "button12"},
+        {"id": "tgl-1-down", "name": "TGL 1 down", "kind": "Button", "location": "tgl-1", "suggestedInput": "button13"},
+        {"id": "tgl-2-up", "name": "TGL 2 up", "kind": "Button", "location": "tgl-2", "suggestedInput": "button14"},
+        {"id": "tgl-2-down", "name": "TGL 2 down", "kind": "Button", "location": "tgl-2", "suggestedInput": "button15"},
+        {"id": "tgl-3-up", "name": "TGL 3 up", "kind": "Button", "location": "tgl-3", "suggestedInput": "button16"},
+        {"id": "tgl-3-down", "name": "TGL 3 down", "kind": "Button", "location": "tgl-3", "suggestedInput": "button17"},
+        {"id": "tgl-4-up", "name": "TGL 4 up", "kind": "Button", "location": "tgl-4", "suggestedInput": "button18"},
+        {"id": "tgl-4-down", "name": "TGL 4 down", "kind": "Button", "location": "tgl-4", "suggestedInput": "button19"},
+        {"id": "rotary-3", "name": "RTY 3 upper base rotary", "kind": "Axis", "suggestedInput": "slider1"},
+        {"id": "rotary-4", "name": "RTY 4 lower base rotary", "kind": "Axis", "suggestedInput": "slider2"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "manufacturer": "THRUSTMASTER",
+  "devices": [
+    {"id": "tm-tca-yoke-boeing","name": "THRUSTMASTER TCA YOKE BOEING EDITION","vendorId": 1103,"productId": 1033,"layout": "tm-tca-yoke-boeing"},
+    {"id": "tm-tca-quadrant-boeing","name": "THRUSTMASTER TCA QUADRANT BOEING EDITION","vendorId": 1103,"productId": 1034,"layout": "tm-tca-quadrant-boeing","alternateProductIds": [1035,1277,1278]},
+    {"id": "tm-tca-sky-yoke","name": "THRUSTMASTER TCA SKY YOKE","vendorId": 1103,"productId": 10245,"layout": "tm-tca-sky-yoke"}
+  ],
+  "layouts": [
+    {
+      "id": "tm-tca-yoke-boeing",
+      "references": [
+        "https://www.thrustmaster.com/en-us/products/tca-yoke-boeing-edition/",
+        "https://support.thrustmaster.com/product/tca-yoke-boeing-edition/",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Yoke_Boeing/TCA_Yoke_Boeing_Edition_user_manual.pdf",
+        "https://ts.thrustmaster.com/download/pictures/Mappings/MappingTCAyokePack_PC.PDF",
+        "https://ts.thrustmaster.com/download/pub/webupdate/TFlightHotas/2026_TFHT_3.exe"
+      ],
+      "referenceNotes": [
+        "18 numbered PC buttons, a POV hat, roll and pitch, two base levers and an analog ministick.",
+        "F1/F2 are rear triggers. Their markers follow the maker PC diagram and are projected onto the two corresponding grips in the face view.",
+        "The physical hat has eight directions. This layout provides the separately supported cardinal directions.",
+        "External pedals and external throttle quadrants have their own control surfaces."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Yoke face and base",
+          "image": "Hardware/Images/tm-tca-boeing-yoke-front-cutout.png",
+          "source": "https://ts.thrustmaster.com/download/pictures/Mappings/MappingTCAyokePack_PC.PDF",
+          "hotspots": [
+            {"controlId": "f1-trigger","x": 0.212,"y": 0.197,"width": 0.052,"height": 0.066},
+            {"controlId": "previous","x": 0.18,"y": 0.081,"width": 0.037,"height": 0.033},
+            {"controlId": "left-x-rocker-up","x": 0.239,"y": 0.071,"width": 0.033,"height": 0.06},
+            {"controlId": "left-y-rocker-up","x": 0.268,"y": 0.076,"width": 0.033,"height": 0.06},
+            {"controlId": "pov-up","x": 0.305,"y": 0.14,"width": 0.043,"height": 0.049},
+            {"controlId": "f2-trigger","x": 0.798,"y": 0.194,"width": 0.052,"height": 0.071},
+            {"controlId": "right-a-rocker-up","x": 0.745,"y": 0.064,"width": 0.038,"height": 0.044},
+            {"controlId": "right-b-rocker-up","x": 0.766,"y": 0.082,"width": 0.038,"height": 0.046},
+            {"controlId": "next","x": 0.827,"y": 0.08,"width": 0.034,"height": 0.034},
+            {"controlId": "ministick-press","x": 0.705,"y": 0.142,"width": 0.043,"height": 0.05},
+            {"controlId": "stick-x","x": 0.502,"y": 0.364,"width": 0.112,"height": 0.109},
+            {"controlId": "view","x": 0.472,"y": 0.458,"width": 0.026,"height": 0.034},
+            {"controlId": "share","x": 0.505,"y": 0.458,"width": 0.026,"height": 0.034},
+            {"controlId": "menu","x": 0.538,"y": 0.457,"width": 0.026,"height": 0.034},
+            {"controlId": "guide","x": 0.365,"y": 0.575,"width": 0.035,"height": 0.046},
+            {"controlId": "gear","x": 0.652,"y": 0.578,"width": 0.042,"height": 0.082},
+            {"controlId": "base-lever-left","x": 0.479,"y": 0.837,"width": 0.041,"height": 0.056},
+            {"controlId": "base-lever-right","x": 0.527,"y": 0.915,"width": 0.047,"height": 0.056}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x","name": "Yoke X (roll)","kind": "Axis","suggestedInput": "x","location": "yoke-axis"},
+        {"id": "stick-y","name": "Yoke Y (pitch)","kind": "Axis","suggestedInput": "y","location": "yoke-axis"},
+        {"id": "f1-trigger","name": "F1 left rear trigger","kind": "Button","suggestedInput": "button1"},
+        {"id": "previous","name": "PREV button","kind": "Button","suggestedInput": "button2"},
+        {"id": "left-x-rocker-up","name": "X rocker up","kind": "Button","suggestedInput": "button3","location": "left-x-rocker"},
+        {"id": "left-x-rocker-down","name": "X rocker down","kind": "Button","suggestedInput": "button4","location": "left-x-rocker"},
+        {"id": "left-y-rocker-up","name": "Y rocker up","kind": "Button","suggestedInput": "button5","location": "left-y-rocker"},
+        {"id": "left-y-rocker-down","name": "Y rocker down","kind": "Button","suggestedInput": "button6","location": "left-y-rocker"},
+        {"id": "pov-up","name": "POV hat up","kind": "Hat","suggestedInput": "hat1_up","location": "pov"},
+        {"id": "pov-right","name": "POV hat right","kind": "Hat","suggestedInput": "hat1_right","location": "pov"},
+        {"id": "pov-down","name": "POV hat down","kind": "Hat","suggestedInput": "hat1_down","location": "pov"},
+        {"id": "pov-left","name": "POV hat left","kind": "Hat","suggestedInput": "hat1_left","location": "pov"},
+        {"id": "right-a-rocker-up","name": "A rocker up","kind": "Button","suggestedInput": "button7","location": "right-a-rocker"},
+        {"id": "right-a-rocker-down","name": "A rocker down","kind": "Button","suggestedInput": "button8","location": "right-a-rocker"},
+        {"id": "right-b-rocker-up","name": "B rocker up","kind": "Button","suggestedInput": "button9","location": "right-b-rocker"},
+        {"id": "right-b-rocker-down","name": "B rocker down","kind": "Button","suggestedInput": "button10","location": "right-b-rocker"},
+        {"id": "next","name": "NEXT button","kind": "Button","suggestedInput": "button11"},
+        {"id": "f2-trigger","name": "F2 right rear trigger","kind": "Button","suggestedInput": "button12"},
+        {"id": "ministick-press","name": "Ministick press","kind": "Button","suggestedInput": "button13","location": "ministick"},
+        {"id": "ministick-x","name": "Ministick X","kind": "Axis","suggestedInput": "rotx","location": "ministick"},
+        {"id": "ministick-y","name": "Ministick Y","kind": "Axis","suggestedInput": "roty","location": "ministick"},
+        {"id": "menu","name": "MENU button","kind": "Button","suggestedInput": "button14"},
+        {"id": "share","name": "SHARE button","kind": "Button","suggestedInput": "button15"},
+        {"id": "view","name": "VIEW button","kind": "Button","suggestedInput": "button16"},
+        {"id": "guide","name": "Xbox guide button","kind": "Button","suggestedInput": "button17"},
+        {"id": "gear","name": "Gear lever","kind": "Button","suggestedInput": "button18"},
+        {"id": "base-lever-left","name": "Left base lever","kind": "Axis","suggestedInput": "rotz"},
+        {"id": "base-lever-right","name": "Right base lever","kind": "Axis","suggestedInput": "z"}
+      ]
+    },
+    {
+      "id": "tm-tca-quadrant-boeing",
+      "references": [
+        "https://www.thrustmaster.com/en-us/products/tca-quadrant-boeing-edition/",
+        "https://support.thrustmaster.com/product/tca-quadrant-boeing-edition/",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Quadrant_Boeing/TCA_Quadrant_Boeing_Edition_user_manual.pdf",
+        "https://ts.thrustmaster.com/download/pictures/Mappings/MappingTCAyokePack_PC.PDF",
+        "https://ts.thrustmaster.com/download/pub/webupdate/TFlightHotas/2026_TFHT_3.exe"
+      ],
+      "referenceNotes": [
+        "One physical quadrant covers the 1–2 and 3–4 selector modes and the Windows virtual identities published by the driver.",
+        "The pictured normal setup uses one speed brake and two replaceable thrust handles. The OEM control diagram shows all three axis slots with example thrust handles.",
+        "Thrust-handled slots can provide the corresponding handle switch and thrust-reverser button. The flaps and speed-brake handles do not carry a thrust-lever push button.",
+        "Five panel buttons plus the outer three-position autopilot selector and the inner rotary encoder with push complete the board."
+      ],
+      "views": [
+        {
+          "id": "throttle",
+          "name": "Quadrant",
+          "image": "Hardware/Images/tm-tca-boeing-quadrant-angled-cutout.png",
+          "source": "https://www.thrustmaster.com/wp-content/uploads/2023/03/TCABoeingEdition_6-removebg-preview.webp",
+          "hotspots": [
+            {"controlId": "slot-1-axis","x": 0.248,"y": 0.247,"width": 0.104,"height": 0.104},
+            {"controlId": "slot-2-axis","x": 0.379,"y": 0.118,"width": 0.118,"height": 0.094},
+            {"controlId": "slot-3-axis","x": 0.531,"y": 0.102,"width": 0.118,"height": 0.088},
+            {"controlId": "panel-button-7","x": 0.514,"y": 0.61,"width": 0.059,"height": 0.054},
+            {"controlId": "panel-button-8","x": 0.63,"y": 0.55,"width": 0.058,"height": 0.054},
+            {"controlId": "panel-button-9","x": 0.745,"y": 0.492,"width": 0.061,"height": 0.053},
+            {"controlId": "panel-button-10","x": 0.595,"y": 0.706,"width": 0.065,"height": 0.06},
+            {"controlId": "panel-button-11","x": 0.824,"y": 0.574,"width": 0.056,"height": 0.052},
+            {"controlId": "autopilot-selector-ias-mach","x": 0.719,"y": 0.641,"width": 0.073,"height": 0.063},
+            {"controlId": "autopilot-dial-press","x": 0.765,"y": 0.586,"width": 0.055,"height": 0.059}
+          ]
+        },
+        {
+          "id": "top",
+          "name": "Lever positions and panel",
+          "image": "Hardware/Images/tm-tca-boeing-quadrant-top-cutout.png",
+          "source": "https://ts.thrustmaster.com/download/pictures/Mappings/MappingTCAyokePack_PC.PDF",
+          "hotspots": [
+            {"controlId": "slot-1-axis","x": 0.215,"y": 0.301,"width": 0.154,"height": 0.111},
+            {"controlId": "slot-2-axis","x": 0.491,"y": 0.3,"width": 0.16,"height": 0.11},
+            {"controlId": "slot-3-axis","x": 0.77,"y": 0.301,"width": 0.161,"height": 0.111},
+            {"controlId": "panel-button-7","x": 0.219,"y": 0.755,"width": 0.063,"height": 0.045},
+            {"controlId": "panel-button-8","x": 0.493,"y": 0.754,"width": 0.064,"height": 0.046},
+            {"controlId": "panel-button-9","x": 0.773,"y": 0.753,"width": 0.066,"height": 0.045},
+            {"controlId": "panel-button-10","x": 0.219,"y": 0.869,"width": 0.065,"height": 0.045},
+            {"controlId": "panel-button-11","x": 0.772,"y": 0.867,"width": 0.064,"height": 0.046},
+            {"controlId": "autopilot-selector-ias-mach","x": 0.487,"y": 0.858,"width": 0.105,"height": 0.046},
+            {"controlId": "autopilot-dial-press","x": 0.493,"y": 0.925,"width": 0.08,"height": 0.049}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "slot-1-axis","name": "Left lever axis","kind": "Axis","suggestedInput": "rotx","location": "slot-1"},
+        {"id": "slot-1-button","name": "Left thrust lever push button","kind": "Button","suggestedInput": "button1","location": "slot-1"},
+        {"id": "slot-1-reverser","name": "Left thrust reverser position","kind": "Button","suggestedInput": "button4","location": "slot-1"},
+        {"id": "slot-2-axis","name": "Center lever axis","kind": "Axis","suggestedInput": "roty","location": "slot-2"},
+        {"id": "slot-2-button","name": "Center thrust lever push button","kind": "Button","suggestedInput": "button2","location": "slot-2"},
+        {"id": "slot-2-reverser","name": "Center thrust reverser position","kind": "Button","suggestedInput": "button5","location": "slot-2"},
+        {"id": "slot-3-axis","name": "Right lever axis","kind": "Axis","suggestedInput": "rotz","location": "slot-3"},
+        {"id": "slot-3-button","name": "Right thrust lever push button","kind": "Button","suggestedInput": "button3","location": "slot-3"},
+        {"id": "slot-3-reverser","name": "Right thrust reverser position","kind": "Button","suggestedInput": "button6","location": "slot-3"},
+        {"id": "panel-button-7","name": "Upper left panel button","kind": "Button","suggestedInput": "button7"},
+        {"id": "panel-button-8","name": "Upper center panel button","kind": "Button","suggestedInput": "button8"},
+        {"id": "panel-button-9","name": "Upper right panel button","kind": "Button","suggestedInput": "button9"},
+        {"id": "panel-button-10","name": "Lower left panel button","kind": "Button","suggestedInput": "button10"},
+        {"id": "panel-button-11","name": "Lower right panel button","kind": "Button","suggestedInput": "button11"},
+        {"id": "autopilot-selector-ias-mach","name": "Autopilot selector IAS/MACH","kind": "Button","suggestedInput": "button12","location": "autopilot-selector"},
+        {"id": "autopilot-selector-hdg-trk","name": "Autopilot selector HDG/TRK","kind": "Button","suggestedInput": "button13","location": "autopilot-selector"},
+        {"id": "autopilot-selector-altitude","name": "Autopilot selector ALTITUDE","kind": "Button","suggestedInput": "button14","location": "autopilot-selector"},
+        {"id": "autopilot-dial-ccw","name": "Autopilot dial counterclockwise","kind": "Button","suggestedInput": "button15","location": "autopilot-dial"},
+        {"id": "autopilot-dial-cw","name": "Autopilot dial clockwise","kind": "Button","suggestedInput": "button16","location": "autopilot-dial"},
+        {"id": "autopilot-dial-press","name": "Autopilot dial press","kind": "Button","suggestedInput": "button17","location": "autopilot-dial"}
+      ]
+    },
+    {
+      "id": "tm-tca-sky-yoke",
+      "references": [
+        "https://www.thrustmaster.com/en-us/products/tca-sky-yoke-xbox-pc/",
+        "https://www.thrustmaster.com/en-us/products/tca-sky-yoke-playstation-pc/",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Sky_Yoke_X/TCA_Sky_Yoke_XBOX.pdf",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Sky_Yoke_P/TCA_Sky_Yoke_PS.pdf",
+        "https://ts.thrustmaster.com/download/pictures/PCMAC/TCA_Sky_Yoke/Mappings/Mapping_TCASkyYoke-MFSF-PC.jpg",
+        "https://ts.thrustmaster.com/download/pub/webupdate/TFlightHotas/2026_TFHT_3.exe"
+      ],
+      "referenceNotes": [
+        "Xbox/PC and PlayStation/PC share the same PC geometry, control diagram and Windows product ID. The console icons and the leftmost compatibility control differ.",
+        "OEM documents 24 PC buttons, including two numbered scroll actions for the trim wheel. The fifth front control is the five-position selector.",
+        "Left and right analog triggers are opposite ends of one Windows RZ rudder axis. The right ministick is RX/RY in the OEM MSFS PC guide.",
+        "The physical hat has eight directions. This layout provides the separately supported cardinal directions."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Face (Xbox/PC)",
+          "image": "Hardware/Images/tm-tca-sky-yoke-face.jpg",
+          "source": "https://support.thrustmaster.com/wp-content/uploads/TCA_Sky_Yoke_Xbox.jpg",
+          "hotspots": [
+            {"controlId": "left-outer-rocker-up","x": 0.164,"y": 0.114,"width": 0.029,"height": 0.045},
+            {"controlId": "left-inner-rocker-up","x": 0.191,"y": 0.122,"width": 0.03,"height": 0.045},
+            {"controlId": "pov-up","x": 0.237,"y": 0.134,"width": 0.04,"height": 0.051},
+            {"controlId": "zoom-wheel-up","x": 0.167,"y": 0.176,"width": 0.036,"height": 0.048},
+            {"controlId": "left-face-button","x": 0.211,"y": 0.184,"width": 0.034,"height": 0.041},
+            {"controlId": "ministick-press","x": 0.716,"y": 0.126,"width": 0.044,"height": 0.051},
+            {"controlId": "right-face-button","x": 0.784,"y": 0.106,"width": 0.033,"height": 0.041},
+            {"controlId": "right-upper-rocker-up","x": 0.775,"y": 0.166,"width": 0.036,"height": 0.028},
+            {"controlId": "right-lower-rocker-up","x": 0.78,"y": 0.197,"width": 0.035,"height": 0.032},
+            {"controlId": "stick-x","x": 0.476,"y": 0.424,"width": 0.082,"height": 0.131},
+            {"controlId": "view-create","x": 0.431,"y": 0.634,"width": 0.03,"height": 0.048},
+            {"controlId": "home","x": 0.479,"y": 0.63,"width": 0.036,"height": 0.059},
+            {"controlId": "menu-options","x": 0.527,"y": 0.634,"width": 0.03,"height": 0.048},
+            {"controlId": "selector-off","x": 0.583,"y": 0.634,"width": 0.047,"height": 0.07}
+          ]
+        },
+        {
+          "id": "side",
+          "name": "Throttle and trim (PS/PC)",
+          "image": "Hardware/Images/tm-tca-sky-yoke-side.jpg",
+          "source": "https://support.thrustmaster.com/wp-content/uploads/TCA_Sky_Yoke_PS.jpg",
+          "hotspots": [
+            {"controlId": "base-throttle","x": 0.831,"y": 0.447,"width": 0.125,"height": 0.175},
+            {"controlId": "trim-wheel-up","x": 0.718,"y": 0.458,"width": 0.04,"height": 0.124}
+          ]
+        },
+        {
+          "id": "rudder",
+          "name": "Rudder trigger detail",
+          "image": "Hardware/Images/tm-tca-sky-yoke-trigger-cutout.png",
+          "source": "https://ts.thrustmaster.com/download/pictures/PCMAC/TCA_Sky_Yoke/Mappings/Mapping_TCASkyYoke-MFSF-PC.jpg",
+          "hotspots": [
+            {"controlId": "rudder-triggers","x": 0.27,"y": 0.536,"width": 0.29,"height": 0.23}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x","name": "Yoke X (roll)","kind": "Axis","suggestedInput": "x","location": "yoke-axis"},
+        {"id": "stick-y","name": "Yoke Y (pitch)","kind": "Axis","suggestedInput": "y","location": "yoke-axis"},
+        {"id": "left-outer-rocker-up","name": "Left outer rocker up","kind": "Button","suggestedInput": "button1","location": "left-outer-rocker"},
+        {"id": "left-outer-rocker-down","name": "Left outer rocker down","kind": "Button","suggestedInput": "button2","location": "left-outer-rocker"},
+        {"id": "left-inner-rocker-up","name": "Left inner rocker up","kind": "Button","suggestedInput": "button3","location": "left-inner-rocker"},
+        {"id": "left-inner-rocker-down","name": "Left inner rocker down","kind": "Button","suggestedInput": "button4","location": "left-inner-rocker"},
+        {"id": "left-face-button","name": "Left thumb button","kind": "Button","suggestedInput": "button5"},
+        {"id": "zoom-wheel-up","name": "Left scroll wheel up","kind": "Button","suggestedInput": "button6","location": "zoom-wheel"},
+        {"id": "zoom-wheel-down","name": "Left scroll wheel down","kind": "Button","suggestedInput": "button7","location": "zoom-wheel"},
+        {"id": "zoom-wheel-press","name": "Left scroll wheel press","kind": "Button","suggestedInput": "button8","location": "zoom-wheel"},
+        {"id": "pov-up","name": "POV hat up","kind": "Hat","suggestedInput": "hat1_up","location": "pov"},
+        {"id": "pov-right","name": "POV hat right","kind": "Hat","suggestedInput": "hat1_right","location": "pov"},
+        {"id": "pov-down","name": "POV hat down","kind": "Hat","suggestedInput": "hat1_down","location": "pov"},
+        {"id": "pov-left","name": "POV hat left","kind": "Hat","suggestedInput": "hat1_left","location": "pov"},
+        {"id": "ministick-press","name": "Ministick press","kind": "Button","suggestedInput": "button9","location": "ministick"},
+        {"id": "ministick-x","name": "Ministick X","kind": "Axis","suggestedInput": "rotx","location": "ministick"},
+        {"id": "ministick-y","name": "Ministick Y","kind": "Axis","suggestedInput": "roty","location": "ministick"},
+        {"id": "right-face-button","name": "Right thumb button","kind": "Button","suggestedInput": "button10"},
+        {"id": "right-upper-rocker-up","name": "Right upper rocker up","kind": "Button","suggestedInput": "button11","location": "right-upper-rocker"},
+        {"id": "right-upper-rocker-down","name": "Right upper rocker down","kind": "Button","suggestedInput": "button12","location": "right-upper-rocker"},
+        {"id": "right-lower-rocker-up","name": "Right lower rocker up","kind": "Button","suggestedInput": "button13","location": "right-lower-rocker"},
+        {"id": "right-lower-rocker-down","name": "Right lower rocker down","kind": "Button","suggestedInput": "button14","location": "right-lower-rocker"},
+        {"id": "selector-off","name": "Five-position selector OFF","kind": "Button","suggestedInput": "button15","location": "selector"},
+        {"id": "selector-right","name": "Five-position selector R","kind": "Button","suggestedInput": "button16","location": "selector"},
+        {"id": "selector-left","name": "Five-position selector L","kind": "Button","suggestedInput": "button17","location": "selector"},
+        {"id": "selector-both","name": "Five-position selector BOTH","kind": "Button","suggestedInput": "button18","location": "selector"},
+        {"id": "selector-start","name": "Five-position selector START","kind": "Button","suggestedInput": "button19","location": "selector"},
+        {"id": "trim-wheel-up","name": "Trim wheel up","kind": "Button","suggestedInput": "button20","location": "trim-wheel"},
+        {"id": "trim-wheel-down","name": "Trim wheel down","kind": "Button","suggestedInput": "button21","location": "trim-wheel"},
+        {"id": "view-create","name": "VIEW / CREATE button","kind": "Button","suggestedInput": "button22"},
+        {"id": "menu-options","name": "MENU / OPTIONS button","kind": "Button","suggestedInput": "button23"},
+        {"id": "home","name": "Xbox / PlayStation button","kind": "Button","suggestedInput": "button24"},
+        {"id": "base-throttle","name": "Throttle grip","kind": "Axis","suggestedInput": "z"},
+        {"id": "rudder-triggers","name": "Rudder axis (both rear triggers)","kind": "Axis","suggestedInput": "rotz"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Visual Control Planner",
+  "version": "1.0",
+  "builtAt": "2026-11-26",
+  "assets": [
+    {
+      "platform": "Windows x64",
+      "asset": "VCP-1.0-Windows-x64.zip",
+      "assetBytes": 131650029,
+      "uncompressedBytes": 230661767,
+      "entryCount": 295,
+      "sha256": "2bbc980ef27b021d9673d1a1319a770b25b7fba14387fe577be9d3574a7d82ad",
+      "downloadUrl": "https://github.com/thetrufflegouda/visual-control-planner/releases/download/v1.0/VCP-1.0-Windows-x64.zip"
+    }
+  ],
+  "releaseUrl": "https://github.com/thetrufflegouda/visual-control-planner/releases/tag/v1.0"
+}

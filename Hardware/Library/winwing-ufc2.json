@@ -1,0 +1,102 @@
+{
+  "manufacturer": "WINWING / WINCTRL",
+  "devices": [
+    {"id": "winwing-carrierace-ufc2", "name": "WINCTRL CARRIERACE UFC 2.0", "vendorId": 16536, "productId": 0, "layout": "winwing-carrierace-ufc2"}
+  ],
+  "layouts": [
+    {
+      "id": "winwing-carrierace-ufc2",
+      "references": [
+        "https://winctrl.com/view/goods-details.html?id=2085",
+        "https://winctrl.com/static/download/QmNjs6oJuxhJ5KPNn5qAh84VkD6mMPkt6FLx4xwP6YDhfS?filename=WINCTRL+CarrierAce+UFC+2.0+20260512.pdf"
+      ],
+      "referenceNotes": [
+        "Standalone USB connection and manufacturer button numbers from section 3.2. An attached HUD shares the UFC's USB connection. Use Learn input for the channel axes and configurable firmware modes."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "UFC face and radio controls",
+          "image": "Hardware/Images/winwing-carrierace-ufc2-face.jpg",
+          "source": "https://winctrl.com/static/ipfs/QmRcJSzB6RoMNWUSCRkJz1MFqUXFLwLvTKCr8GdxwZLwnK",
+          "hotspots": [
+            {"controlId": "input-1", "x": 0.125, "y": 0.223, "width": 0.035, "height": 0.042},
+            {"controlId": "input-2", "x": 0.208, "y": 0.331, "width": 0.039, "height": 0.044},
+            {"controlId": "input-3", "x": 0.263, "y": 0.367, "width": 0.039, "height": 0.045},
+            {"controlId": "input-4", "x": 0.321, "y": 0.396, "width": 0.04, "height": 0.05},
+            {"controlId": "input-5", "x": 0.211, "y": 0.405, "width": 0.039, "height": 0.048},
+            {"controlId": "input-6", "x": 0.267, "y": 0.435, "width": 0.038, "height": 0.051},
+            {"controlId": "input-7", "x": 0.322, "y": 0.464, "width": 0.041, "height": 0.049},
+            {"controlId": "input-8", "x": 0.212, "y": 0.471, "width": 0.042, "height": 0.05},
+            {"controlId": "input-9", "x": 0.269, "y": 0.506, "width": 0.039, "height": 0.049},
+            {"controlId": "input-10", "x": 0.326, "y": 0.536, "width": 0.039, "height": 0.048},
+            {"controlId": "input-11", "x": 0.213, "y": 0.534, "width": 0.043, "height": 0.049},
+            {"controlId": "input-12", "x": 0.269, "y": 0.572, "width": 0.04, "height": 0.049},
+            {"controlId": "input-13", "x": 0.325, "y": 0.597, "width": 0.048, "height": 0.052},
+            {"controlId": "input-14", "x": 0.381, "y": 0.345, "width": 0.033, "height": 0.039},
+            {"controlId": "input-15", "x": 0.382, "y": 0.42, "width": 0.032, "height": 0.041},
+            {"controlId": "input-16", "x": 0.384, "y": 0.496, "width": 0.031, "height": 0.044},
+            {"controlId": "input-17", "x": 0.384, "y": 0.568, "width": 0.033, "height": 0.045},
+            {"controlId": "input-18", "x": 0.384, "y": 0.641, "width": 0.033, "height": 0.046},
+            {"controlId": "input-19", "x": 0.613, "y": 0.56, "width": 0.047, "height": 0.053},
+            {"controlId": "input-20", "x": 0.247, "y": 0.624, "width": 0.037, "height": 0.044},
+            {"controlId": "input-21", "x": 0.297, "y": 0.649, "width": 0.038, "height": 0.04},
+            {"controlId": "input-22", "x": 0.346, "y": 0.678, "width": 0.037, "height": 0.044},
+            {"controlId": "input-23", "x": 0.398, "y": 0.704, "width": 0.036, "height": 0.045},
+            {"controlId": "input-24", "x": 0.447, "y": 0.735, "width": 0.038, "height": 0.043},
+            {"controlId": "input-25", "x": 0.498, "y": 0.763, "width": 0.039, "height": 0.046},
+            {"controlId": "input-26", "x": 0.545, "y": 0.788, "width": 0.039, "height": 0.044},
+            {"controlId": "input-39", "x": 0.128, "y": 0.29, "width": 0.044, "height": 0.035},
+            {"controlId": "input-27", "x": 0.172, "y": 0.602, "width": 0.048, "height": 0.053},
+            {"controlId": "input-30", "x": 0.621, "y": 0.865, "width": 0.056, "height": 0.047},
+            {"controlId": "comm1-volume", "x": 0.129, "y": 0.391, "width": 0.07, "height": 0.055},
+            {"controlId": "comm2-volume", "x": 0.602, "y": 0.653, "width": 0.076, "height": 0.067},
+            {"controlId": "brightness", "x": 0.602, "y": 0.493, "width": 0.074, "height": 0.063}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "input-1", "name": "I/P", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "input-2", "name": "Keypad 1", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "input-3", "name": "Keypad 2", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "input-4", "name": "Keypad 3", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "input-5", "name": "Keypad 4", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "input-6", "name": "Keypad 5", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "input-7", "name": "Keypad 6", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "input-8", "name": "Keypad 7", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "input-9", "name": "Keypad 8", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "input-10", "name": "Keypad 9", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "input-11", "name": "Keypad CLR", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "input-12", "name": "Keypad 0", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "input-13", "name": "Keypad ENT", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "input-14", "name": "Option selector 1", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "input-15", "name": "Option selector 2", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "input-16", "name": "Option selector 3", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "input-17", "name": "Option selector 4", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "input-18", "name": "Option selector 5", "kind": "Button", "suggestedInput": "button18"},
+        {"id": "input-19", "name": "Emergency communications", "kind": "Button", "suggestedInput": "button19"},
+        {"id": "input-20", "name": "A/P", "kind": "Button", "suggestedInput": "button20"},
+        {"id": "input-21", "name": "IFF", "kind": "Button", "suggestedInput": "button21"},
+        {"id": "input-22", "name": "TCN", "kind": "Button", "suggestedInput": "button22"},
+        {"id": "input-23", "name": "ILS", "kind": "Button", "suggestedInput": "button23"},
+        {"id": "input-24", "name": "D/L", "kind": "Button", "suggestedInput": "button24"},
+        {"id": "input-25", "name": "BCN", "kind": "Button", "suggestedInput": "button25"},
+        {"id": "input-26", "name": "ON/OFF", "kind": "Button", "suggestedInput": "button26"},
+        {"id": "input-39", "name": "ADF selector upper", "kind": "Switch", "suggestedInput": "button39", "location": "adf"},
+        {"id": "input-40", "name": "ADF selector center", "kind": "Switch", "suggestedInput": "button40", "location": "adf"},
+        {"id": "input-41", "name": "ADF selector lower", "kind": "Switch", "suggestedInput": "button41", "location": "adf"},
+        {"id": "input-27", "name": "COMM 1 channel lower", "kind": "Button", "suggestedInput": "button27", "location": "comm1"},
+        {"id": "input-29", "name": "COMM 1 channel center", "kind": "Button", "suggestedInput": "button29", "location": "comm1"},
+        {"id": "input-28", "name": "COMM 1 channel higher", "kind": "Button", "suggestedInput": "button28", "location": "comm1"},
+        {"id": "input-30", "name": "COMM 2 channel lower", "kind": "Button", "suggestedInput": "button30", "location": "comm2"},
+        {"id": "input-32", "name": "COMM 2 channel center", "kind": "Button", "suggestedInput": "button32", "location": "comm2"},
+        {"id": "input-31", "name": "COMM 2 channel higher", "kind": "Button", "suggestedInput": "button31", "location": "comm2"},
+        {"id": "comm1-volume", "name": "COMM 1 volume axis", "kind": "Axis", "suggestedInput": "rotx"},
+        {"id": "comm2-volume", "name": "COMM 2 volume axis", "kind": "Axis", "suggestedInput": "roty"},
+        {"id": "brightness", "name": "Brightness axis", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "comm1-channel-axis", "name": "COMM 1 channel axis", "kind": "Axis", "location": "comm1"},
+        {"id": "comm2-channel-axis", "name": "COMM 2 channel axis", "kind": "Axis", "location": "comm2"}
+      ]
+    }
+  ]
+}

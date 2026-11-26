@@ -1,0 +1,142 @@
+{
+  "manufacturer": "WINWING / WINCTRL",
+  "devices": [
+    {
+      "id": "winwing-strikeace-ex-ii-throttle",
+      "name": "WINCTRL STRIKEACE EX II METAL THROTTLE GRIP",
+      "vendorId": 16536,
+      "productId": 0,
+      "layout": "winwing-strikeace-ex-ii-throttle",
+      "compatibleBaseIds": [
+        "winwing-orion2-throttle-base"
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "id": "winwing-strikeace-ex-ii-throttle",
+      "references": [
+        "https://eu.winctrl.com/view/goods-details.html?id=471",
+        "https://winctrl.com/upload/editor/image/20230709/1688885184240964058.jpg",
+        "https://winctrl.com/view/goods-details.html?id=334"
+      ],
+      "referenceNotes": [
+        "57 grip inputs come from the manufacturer's StrikeAce EX II controller diagram. The Orion2 base adds the two throttle-lever axes and base controls.",
+        "Use Input Learn for Windows axis assignments and grip controls with different firmware modes. The numbered positions of the Hall wheels and ministick are available in their supported button modes."
+      ],
+      "views": [
+        {
+          "id": "thumb",
+          "name": "Right thumb controls",
+          "image": "Hardware/Images/winwing-strikeace-ex-ii-throttle-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "right-upper-center", "x": 0.11746, "y": 0.40719, "width": 0.11746, "height": 0.12176},
+            {"controlId": "right-round-press", "x": 0.06667, "y": 0.51697, "width": 0.09312, "height": 0.08583},
+            {"controlId": "right-middle-press", "x": 0.20317, "y": 0.57285, "width": 0.10794, "height": 0.10579},
+            {"controlId": "right-push", "x": 0.05079, "y": 0.62375, "width": 0.04444, "height": 0.04491},
+            {"controlId": "right-lower-hat-press", "x": 0.17143, "y": 0.7495, "width": 0.11852, "height": 0.10878},
+            {"controlId": "right-lower-center", "x": 0.12063, "y": 0.86327, "width": 0.12593, "height": 0.07984},
+            {"controlId": "right-selector-position-3", "x": 0.42751, "y": 0.42914, "width": 0.11958, "height": 0.12176}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Rear controls on both grips",
+          "image": "Hardware/Images/winwing-strikeace-ex-ii-throttle-rear-cutout.png",
+          "hotspots": [
+            {"controlId": "right-rear-hat-press", "x": 0.11165, "y": 0.36419, "width": 0.08965, "height": 0.13033},
+            {"controlId": "right-slew-press", "x": 0.24613, "y": 0.43605, "width": 0.10024, "height": 0.14129},
+            {"controlId": "right-wheel-axis", "x": 0.35289, "y": 0.44336, "width": 0.03586, "height": 0.12789},
+            {"controlId": "left-inboard-push", "x": 0.49307, "y": 0.5408, "width": 0.02608, "height": 0.04507},
+            {"controlId": "left-rear-hat-press", "x": 0.54931, "y": 0.60049, "width": 0.0652, "height": 0.09501},
+            {"controlId": "left-outboard-push", "x": 0.68215, "y": 0.63216, "width": 0.0326, "height": 0.05359},
+            {"controlId": "left-wheel-axis", "x": 0.81826, "y": 0.581, "width": 0.0815, "height": 0.2363},
+            {"controlId": "left-toggle-center", "x": 0.89894, "y": 0.78319, "width": 0.09046, "height": 0.05847}
+          ]
+        },
+        {
+          "id": "left",
+          "name": "Left outer wheel and toggle",
+          "image": "Hardware/Images/winwing-strikeace-ex-ii-throttle-left-cutout.png",
+          "hotspots": [
+            {"controlId": "left-wheel-axis", "x": 0.14547, "y": 0.62594, "width": 0.16785, "height": 0.16823},
+            {"controlId": "left-toggle-center", "x": 0.24212, "y": 0.83459, "width": 0.11495, "height": 0.08929}
+          ]
+        },
+        {
+          "id": "right",
+          "name": "Right thumb controls from the front",
+          "image": "Hardware/Images/winwing-strikeace-ex-ii-throttle-right-cutout.png",
+          "hotspots": [
+            {"controlId": "right-selector-position-3", "x": 0.95379, "y": 0.13118, "width": 0.0401, "height": 0.07634},
+            {"controlId": "right-upper-center", "x": 0.89015, "y": 0.31183, "width": 0.06713, "height": 0.12258},
+            {"controlId": "right-middle-press", "x": 0.87533, "y": 0.45269, "width": 0.05929, "height": 0.08925},
+            {"controlId": "right-round-press", "x": 0.77332, "y": 0.55484, "width": 0.05667, "height": 0.09785},
+            {"controlId": "right-push", "x": 0.76024, "y": 0.68602, "width": 0.03487, "height": 0.05161},
+            {"controlId": "right-lower-hat-press", "x": 0.86574, "y": 0.67742, "width": 0.07934, "height": 0.12366},
+            {"controlId": "right-lower-center", "x": 0.84743, "y": 0.88172, "width": 0.07323, "height": 0.1172}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "right-upper-left", "name": "Right upper silver rocker left", "kind": "Switch", "location": "right-upper", "suggestedInput": "button24"},
+        {"id": "right-upper-center", "name": "Right upper silver rocker center", "kind": "Switch", "location": "right-upper", "suggestedInput": "button23"},
+        {"id": "right-upper-right", "name": "Right upper silver rocker right", "kind": "Switch", "location": "right-upper", "suggestedInput": "button22"},
+        {"id": "right-round-press", "name": "Right outer round hat press", "kind": "Hat", "location": "right-round", "suggestedInput": "button16"},
+        {"id": "right-round-up", "name": "Right outer round hat up", "kind": "Hat", "location": "right-round", "suggestedInput": "button12"},
+        {"id": "right-round-right", "name": "Right outer round hat right", "kind": "Hat", "location": "right-round", "suggestedInput": "button13"},
+        {"id": "right-round-down", "name": "Right outer round hat down", "kind": "Hat", "location": "right-round", "suggestedInput": "button14"},
+        {"id": "right-round-left", "name": "Right outer round hat left", "kind": "Hat", "location": "right-round", "suggestedInput": "button15"},
+        {"id": "right-middle-press", "name": "Right outer upper paddle hat press", "kind": "Hat", "location": "right-middle", "suggestedInput": "button21"},
+        {"id": "right-middle-up", "name": "Right outer upper paddle hat up", "kind": "Hat", "location": "right-middle", "suggestedInput": "button17"},
+        {"id": "right-middle-right", "name": "Right outer upper paddle hat right", "kind": "Hat", "location": "right-middle", "suggestedInput": "button18"},
+        {"id": "right-middle-down", "name": "Right outer upper paddle hat down", "kind": "Hat", "location": "right-middle", "suggestedInput": "button19"},
+        {"id": "right-middle-left", "name": "Right outer upper paddle hat left", "kind": "Hat", "location": "right-middle", "suggestedInput": "button20"},
+        {"id": "right-push", "name": "Right outer thumb push", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "right-lower-hat-press", "name": "Right outer lower paddle hat press", "kind": "Hat", "location": "right-lower-hat", "suggestedInput": "button10"},
+        {"id": "right-lower-hat-up", "name": "Right outer lower paddle hat up", "kind": "Hat", "location": "right-lower-hat", "suggestedInput": "button6"},
+        {"id": "right-lower-hat-right", "name": "Right outer lower paddle hat right", "kind": "Hat", "location": "right-lower-hat", "suggestedInput": "button7"},
+        {"id": "right-lower-hat-down", "name": "Right outer lower paddle hat down", "kind": "Hat", "location": "right-lower-hat", "suggestedInput": "button8"},
+        {"id": "right-lower-hat-left", "name": "Right outer lower paddle hat left", "kind": "Hat", "location": "right-lower-hat", "suggestedInput": "button9"},
+        {"id": "right-lower-left", "name": "Right lower silver rocker left", "kind": "Switch", "location": "right-lower", "suggestedInput": "button5"},
+        {"id": "right-lower-center", "name": "Right lower silver rocker center", "kind": "Switch", "location": "right-lower", "suggestedInput": "button4"},
+        {"id": "right-lower-right", "name": "Right lower silver rocker right", "kind": "Switch", "location": "right-lower", "suggestedInput": "button3"},
+        {"id": "right-selector-position-1", "name": "Right indexed rotary position 1", "kind": "Switch", "location": "right-selector", "suggestedInput": "button43"},
+        {"id": "right-selector-position-2", "name": "Right indexed rotary position 2", "kind": "Switch", "location": "right-selector", "suggestedInput": "button25"},
+        {"id": "right-selector-position-3", "name": "Right indexed rotary position 3", "kind": "Switch", "location": "right-selector", "suggestedInput": "button26"},
+        {"id": "right-selector-position-4", "name": "Right indexed rotary position 4", "kind": "Switch", "location": "right-selector", "suggestedInput": "button27"},
+        {"id": "right-selector-position-5", "name": "Right indexed rotary position 5", "kind": "Switch", "location": "right-selector", "suggestedInput": "button44"},
+        {"id": "right-rear-hat-press", "name": "Right rear round hat press", "kind": "Hat", "location": "right-rear-hat", "suggestedInput": "button34"},
+        {"id": "right-rear-hat-up", "name": "Right rear round hat up", "kind": "Hat", "location": "right-rear-hat", "suggestedInput": "button28"},
+        {"id": "right-rear-hat-right", "name": "Right rear round hat right", "kind": "Hat", "location": "right-rear-hat", "suggestedInput": "button29"},
+        {"id": "right-rear-hat-down", "name": "Right rear round hat down", "kind": "Hat", "location": "right-rear-hat", "suggestedInput": "button32"},
+        {"id": "right-rear-hat-left", "name": "Right rear round hat left", "kind": "Hat", "location": "right-rear-hat", "suggestedInput": "button33"},
+        {"id": "right-slew-press", "name": "Right rear slew ministick press", "kind": "Hat", "location": "right-slew", "suggestedInput": "button35"},
+        {"id": "right-slew-up", "name": "Right rear slew ministick up", "kind": "Hat", "location": "right-slew", "suggestedInput": "button36"},
+        {"id": "right-slew-right", "name": "Right rear slew ministick right", "kind": "Hat", "location": "right-slew", "suggestedInput": "button37"},
+        {"id": "right-slew-down", "name": "Right rear slew ministick down", "kind": "Hat", "location": "right-slew", "suggestedInput": "button38"},
+        {"id": "right-slew-left", "name": "Right rear slew ministick left", "kind": "Hat", "location": "right-slew", "suggestedInput": "button39"},
+        {"id": "right-slew-x", "name": "Right rear slew horizontal axis", "kind": "Axis", "location": "right-slew"},
+        {"id": "right-slew-y", "name": "Right rear slew vertical axis", "kind": "Axis", "location": "right-slew"},
+        {"id": "right-wheel-axis", "name": "Right rear Hall thumbwheel axis", "kind": "Axis", "location": "right-wheel"},
+        {"id": "right-wheel-minimum", "name": "Right rear Hall thumbwheel minimum", "kind": "Switch", "location": "right-wheel", "suggestedInput": "button40"},
+        {"id": "right-wheel-middle", "name": "Right rear Hall thumbwheel middle", "kind": "Switch", "location": "right-wheel", "suggestedInput": "button41"},
+        {"id": "right-wheel-maximum", "name": "Right rear Hall thumbwheel maximum", "kind": "Switch", "location": "right-wheel", "suggestedInput": "button42"},
+        {"id": "left-inboard-push", "name": "Left rear inboard push", "kind": "Button", "suggestedInput": "button50"},
+        {"id": "left-rear-hat-press", "name": "Left rear hat press", "kind": "Hat", "location": "left-rear-hat", "suggestedInput": "button55"},
+        {"id": "left-rear-hat-up", "name": "Left rear hat up", "kind": "Hat", "location": "left-rear-hat", "suggestedInput": "button51"},
+        {"id": "left-rear-hat-right", "name": "Left rear hat right", "kind": "Hat", "location": "left-rear-hat", "suggestedInput": "button52"},
+        {"id": "left-rear-hat-down", "name": "Left rear hat down", "kind": "Hat", "location": "left-rear-hat", "suggestedInput": "button53"},
+        {"id": "left-rear-hat-left", "name": "Left rear hat left", "kind": "Hat", "location": "left-rear-hat", "suggestedInput": "button54"},
+        {"id": "left-outboard-push", "name": "Left rear outboard push", "kind": "Button", "suggestedInput": "button56"},
+        {"id": "left-toggle-up", "name": "Left outer toggle up", "kind": "Switch", "location": "left-toggle", "suggestedInput": "button57"},
+        {"id": "left-toggle-center", "name": "Left outer toggle center", "kind": "Switch", "location": "left-toggle", "suggestedInput": "button58"},
+        {"id": "left-toggle-down", "name": "Left outer toggle down", "kind": "Switch", "location": "left-toggle", "suggestedInput": "button59"},
+        {"id": "left-wheel-axis", "name": "Left outer Hall thumbwheel axis", "kind": "Axis", "location": "left-wheel"},
+        {"id": "left-wheel-minimum", "name": "Left outer Hall thumbwheel minimum", "kind": "Switch", "location": "left-wheel", "suggestedInput": "button60"},
+        {"id": "left-wheel-middle", "name": "Left outer Hall thumbwheel middle", "kind": "Switch", "location": "left-wheel", "suggestedInput": "button61"},
+        {"id": "left-wheel-maximum", "name": "Left outer Hall thumbwheel maximum", "kind": "Switch", "location": "left-wheel", "suggestedInput": "button62"}
+      ]
+    }
+  ]
+}

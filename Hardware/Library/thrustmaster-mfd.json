@@ -1,0 +1,81 @@
+{
+  "manufacturer": "Thrustmaster",
+  "devices": [
+    {"id": "thrustmaster-mfd-cougar", "name": "THRUSTMASTER MFD COUGAR", "vendorId": 1103, "productId": 45905, "alternateProductIds": [45906], "layout": "thrustmaster-mfd-cougar"}
+  ],
+  "layouts": [
+    {
+      "id": "thrustmaster-mfd-cougar",
+      "references": [
+        "https://eshop.thrustmaster.com/en_us/products-joysticks/mfd-cougar-pack.html",
+        "https://ts.thrustmaster.com/download/accessories/pc/MFD/MFD_COUGAR_Pack_User%20Manual.pdf",
+        "https://cdn.falcon-bms.com/docs/4.38/BMS-Technical-Manual.pdf",
+        "https://www.reliancedigital.in/product/thrustmaster-mfd-cougar-joystick-l9i3vg"
+      ],
+      "referenceNotes": ["Each bezel is one USB controller. Add a separate card per connected MFD.", "Physical button numbers follow the stock manufacturer control diagram."],
+      "views": [
+        {
+          "id": "bezel",
+          "name": "Bezel",
+          "image": "Hardware/Images/thrustmaster-mfd-cougar-bezel.jpg",
+          "hotspots": [
+            {"controlId": "osb-1", "x": 0.292, "y": 0.173, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-2", "x": 0.362, "y": 0.167, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-3", "x": 0.431, "y": 0.163, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-4", "x": 0.503, "y": 0.158, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-5", "x": 0.575, "y": 0.154, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-6", "x": 0.679, "y": 0.298, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-7", "x": 0.669, "y": 0.374, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-8", "x": 0.658, "y": 0.448, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-9", "x": 0.646, "y": 0.526, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-10", "x": 0.633, "y": 0.603, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-11", "x": 0.472, "y": 0.77, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-12", "x": 0.399, "y": 0.767, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-13", "x": 0.326, "y": 0.763, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-14", "x": 0.251, "y": 0.759, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-15", "x": 0.181, "y": 0.755, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-16", "x": 0.093, "y": 0.61, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-17", "x": 0.107, "y": 0.536, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-18", "x": 0.121, "y": 0.464, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-19", "x": 0.135, "y": 0.393, "width": 0.048, "height": 0.048},
+            {"controlId": "osb-20", "x": 0.148, "y": 0.323, "width": 0.048, "height": 0.048},
+            {"controlId": "sym-up", "x": 0.694, "y": 0.207, "width": 0.051, "height": 0.085},
+            {"controlId": "con-up", "x": 0.613, "y": 0.688, "width": 0.051, "height": 0.085},
+            {"controlId": "brt-up", "x": 0.072, "y": 0.686, "width": 0.051, "height": 0.085},
+            {"controlId": "gain-up", "x": 0.158, "y": 0.239, "width": 0.051, "height": 0.085}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "osb-1", "name": "OSB 1", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "osb-2", "name": "OSB 2", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "osb-3", "name": "OSB 3", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "osb-4", "name": "OSB 4", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "osb-5", "name": "OSB 5", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "osb-6", "name": "OSB 6", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "osb-7", "name": "OSB 7", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "osb-8", "name": "OSB 8", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "osb-9", "name": "OSB 9", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "osb-10", "name": "OSB 10", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "osb-11", "name": "OSB 11", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "osb-12", "name": "OSB 12", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "osb-13", "name": "OSB 13", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "osb-14", "name": "OSB 14", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "osb-15", "name": "OSB 15", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "osb-16", "name": "OSB 16", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "osb-17", "name": "OSB 17", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "osb-18", "name": "OSB 18", "kind": "Button", "suggestedInput": "button18"},
+        {"id": "osb-19", "name": "OSB 19", "kind": "Button", "suggestedInput": "button19"},
+        {"id": "osb-20", "name": "OSB 20", "kind": "Button", "suggestedInput": "button20"},
+        {"id": "sym-up", "name": "SYM up", "kind": "Button", "suggestedInput": "button21", "location": "sym"},
+        {"id": "sym-down", "name": "SYM down", "kind": "Button", "suggestedInput": "button22", "location": "sym"},
+        {"id": "con-up", "name": "CON up", "kind": "Button", "suggestedInput": "button23", "location": "con"},
+        {"id": "con-down", "name": "CON down", "kind": "Button", "suggestedInput": "button24", "location": "con"},
+        {"id": "brt-up", "name": "BRT up", "kind": "Button", "suggestedInput": "button25", "location": "brt"},
+        {"id": "brt-down", "name": "BRT down", "kind": "Button", "suggestedInput": "button26", "location": "brt"},
+        {"id": "gain-up", "name": "GAIN up", "kind": "Button", "suggestedInput": "button27", "location": "gain"},
+        {"id": "gain-down", "name": "GAIN down", "kind": "Button", "suggestedInput": "button28", "location": "gain"}
+      ]
+    }
+  ]
+}

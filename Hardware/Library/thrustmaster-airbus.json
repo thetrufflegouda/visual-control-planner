@@ -1,0 +1,418 @@
+{
+  "manufacturer": "Thrustmaster",
+  "devices": [
+    {"id": "thrustmaster-tca-sidestick", "name": "THRUSTMASTER TCA SIDESTICK AIRBUS EDITION — PILOT", "vendorId": 1103, "productId": 1029, "layout": "thrustmaster-tca-sidestick"},
+    {"id": "thrustmaster-tca-sidestick-copilot", "name": "THRUSTMASTER TCA SIDESTICK AIRBUS EDITION — COPILOT", "vendorId": 1103, "productId": 1030, "layout": "thrustmaster-tca-sidestick-copilot"},
+    {"id": "thrustmaster-tca-sidestick-x", "name": "THRUSTMASTER TCA SIDESTICK X AIRBUS EDITION — PILOT", "vendorId": 1103, "productId": 1038, "layout": "thrustmaster-tca-sidestick-x"},
+    {"id": "thrustmaster-tca-quadrant", "name": "THRUSTMASTER TCA QUADRANT AIRBUS EDITION", "vendorId": 1103, "productId": 1031, "layout": "thrustmaster-tca-quadrant"},
+    {"id": "thrustmaster-tca-quadrant-addon", "name": "THRUSTMASTER TCA QUADRANT AIRBUS EDITION WITH ADD-ON", "vendorId": 1103, "productId": 1031, "layout": "thrustmaster-tca-quadrant-addon"}
+  ],
+  "layouts": [
+    {
+      "id": "thrustmaster-tca-sidestick",
+      "references": [
+        "https://eshop.thrustmaster.com/en_us/tca-sidestick-airbus-edition.html",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Sidestick/TCA_Sidestick_AE_User_Manual.pdf"
+      ],
+      "referenceNotes": [
+        "Pilot configuration is the left-hand selector setting. Base button banks change numbers with the physical selector.",
+        "The standard mapped POV is shown with the four cardinal inputs available in the planner.",
+        "Reverse detent is the virtual button reported by the throttle slider."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip and base controls",
+          "image": "Hardware/Images/tm-tca-sidestick-pilot-face.jpg",
+          "source": "https://www.advancedsimracing.com/cdn/shop/files/TCASidestick_3_2000_b6bd5055-a71e-4320-b2b8-9e5c1a8fd959.jpg?v=1745929813&width=2000",
+          "hotspots": [
+            {"controlId": "grip-left", "x": 0.41, "y": 0.146, "width": 0.029, "height": 0.031},
+            {"controlId": "grip-right", "x": 0.609, "y": 0.147, "width": 0.038, "height": 0.033},
+            {"controlId": "pov-up", "x": 0.499, "y": 0.12, "width": 0.052, "height": 0.045},
+            {"controlId": "stick-twist", "x": 0.502, "y": 0.556, "width": 0.126, "height": 0.058},
+            {"controlId": "stick-x", "x": 0.5, "y": 0.637, "width": 0.096, "height": 0.032},
+            {"controlId": "throttle-slider", "x": 0.5, "y": 0.771, "width": 0.075, "height": 0.087},
+            {"controlId": "base-left-upper-outer", "x": 0.259, "y": 0.61, "width": 0.035, "height": 0.02},
+            {"controlId": "base-left-upper-middle", "x": 0.294, "y": 0.608, "width": 0.037, "height": 0.022},
+            {"controlId": "base-left-upper-inner", "x": 0.332, "y": 0.607, "width": 0.039, "height": 0.025},
+            {"controlId": "base-left-lower-outer", "x": 0.245, "y": 0.646, "width": 0.036, "height": 0.03},
+            {"controlId": "base-left-lower-middle", "x": 0.281, "y": 0.647, "width": 0.034, "height": 0.033},
+            {"controlId": "base-left-lower-inner", "x": 0.322, "y": 0.659, "width": 0.046, "height": 0.052},
+            {"controlId": "base-right-upper-outer", "x": 0.743, "y": 0.61, "width": 0.036, "height": 0.02},
+            {"controlId": "base-right-upper-middle", "x": 0.707, "y": 0.608, "width": 0.037, "height": 0.022},
+            {"controlId": "base-right-upper-inner", "x": 0.665, "y": 0.607, "width": 0.041, "height": 0.025},
+            {"controlId": "base-right-lower-outer", "x": 0.755, "y": 0.646, "width": 0.038, "height": 0.031},
+            {"controlId": "base-right-lower-middle", "x": 0.718, "y": 0.647, "width": 0.035, "height": 0.032},
+            {"controlId": "base-right-lower-inner", "x": 0.678, "y": 0.657, "width": 0.049, "height": 0.052}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Index controls",
+          "image": "Hardware/Images/tm-tca-sidestick-trigger.jpg",
+          "source": "https://www.advancedsimracing.com/cdn/shop/files/TCASidestick_4_2000_24d69e04-dda3-4439-836b-6184257dcc53.jpg?v=1745929813&width=2000",
+          "hotspots": [
+            {"controlId": "trigger-main", "x": 0.764, "y": 0.5182, "width": 0.073, "height": 0.2518}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger-main", "name": "Main trigger", "kind": "Button", "suggestedInput": "button1", "location": "trigger"},
+        {"id": "trigger-short", "name": "Short trigger button", "kind": "Button", "suggestedInput": "button2", "location": "trigger"},
+        {"id": "grip-left", "name": "Left grip button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "grip-right", "name": "Right grip button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "pov-up", "name": "POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "pov"},
+        {"id": "pov-right", "name": "POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "pov"},
+        {"id": "pov-down", "name": "POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "pov"},
+        {"id": "pov-left", "name": "POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "pov"},
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "stick-twist", "name": "Grip twist axis", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "throttle-slider", "name": "Throttle slider axis", "kind": "Axis", "suggestedInput": "slider1", "location": "slider"},
+        {"id": "throttle-reverse", "name": "Throttle reverse detent", "kind": "Button", "suggestedInput": "button17", "location": "slider"},
+        {"id": "base-left-upper-outer", "name": "Base left upper outer button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "base-left-upper-middle", "name": "Base left upper middle button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "base-left-upper-inner", "name": "Base left upper inner button", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "base-left-lower-outer", "name": "Base left lower outer button", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "base-left-lower-middle", "name": "Base left lower middle button", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "base-left-lower-inner", "name": "Base left lower inner button", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "base-right-upper-outer", "name": "Base right upper outer button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "base-right-upper-middle", "name": "Base right upper middle button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "base-right-upper-inner", "name": "Base right upper inner button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "base-right-lower-outer", "name": "Base right lower outer button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "base-right-lower-middle", "name": "Base right lower middle button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "base-right-lower-inner", "name": "Base right lower inner button", "kind": "Button", "suggestedInput": "button8"}
+      ]
+    },
+    {
+      "id": "thrustmaster-tca-sidestick-copilot",
+      "references": [
+        "https://eshop.thrustmaster.com/en_us/tca-sidestick-airbus-edition.html",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Sidestick/TCA_Sidestick_AE_User_Manual.pdf"
+      ],
+      "referenceNotes": [
+        "Copilot configuration is the right-hand selector setting. Base button banks change numbers with the physical selector.",
+        "The standard mapped POV is shown with the four cardinal inputs available in the planner.",
+        "Reverse detent is the virtual button reported by the throttle slider."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip and base controls",
+          "image": "Hardware/Images/tm-tca-sidestick-copilot-face.jpg",
+          "source": "https://www.advancedsimracing.com/cdn/shop/files/TCASidestick_2_2000_66fb9256-0d81-4ea2-a539-526f5b56ba03.jpg?v=1745929813",
+          "hotspots": [
+            {"controlId": "grip-left", "x": 0.393, "y": 0.146, "width": 0.037, "height": 0.031},
+            {"controlId": "grip-right", "x": 0.591, "y": 0.147, "width": 0.028, "height": 0.033},
+            {"controlId": "pov-up", "x": 0.499, "y": 0.12, "width": 0.052, "height": 0.045},
+            {"controlId": "stick-twist", "x": 0.502, "y": 0.556, "width": 0.126, "height": 0.058},
+            {"controlId": "stick-x", "x": 0.5, "y": 0.637, "width": 0.096, "height": 0.032},
+            {"controlId": "throttle-slider", "x": 0.5, "y": 0.771, "width": 0.075, "height": 0.087},
+            {"controlId": "base-left-upper-outer", "x": 0.259, "y": 0.61, "width": 0.035, "height": 0.02},
+            {"controlId": "base-left-upper-middle", "x": 0.294, "y": 0.608, "width": 0.037, "height": 0.022},
+            {"controlId": "base-left-upper-inner", "x": 0.332, "y": 0.607, "width": 0.039, "height": 0.025},
+            {"controlId": "base-left-lower-outer", "x": 0.245, "y": 0.646, "width": 0.036, "height": 0.03},
+            {"controlId": "base-left-lower-middle", "x": 0.281, "y": 0.647, "width": 0.034, "height": 0.033},
+            {"controlId": "base-left-lower-inner", "x": 0.322, "y": 0.659, "width": 0.046, "height": 0.052},
+            {"controlId": "base-right-upper-outer", "x": 0.743, "y": 0.61, "width": 0.036, "height": 0.02},
+            {"controlId": "base-right-upper-middle", "x": 0.707, "y": 0.608, "width": 0.037, "height": 0.022},
+            {"controlId": "base-right-upper-inner", "x": 0.665, "y": 0.607, "width": 0.041, "height": 0.025},
+            {"controlId": "base-right-lower-outer", "x": 0.755, "y": 0.646, "width": 0.038, "height": 0.031},
+            {"controlId": "base-right-lower-middle", "x": 0.718, "y": 0.647, "width": 0.035, "height": 0.032},
+            {"controlId": "base-right-lower-inner", "x": 0.678, "y": 0.657, "width": 0.049, "height": 0.052}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Index controls",
+          "image": "Hardware/Images/tm-tca-sidestick-trigger.jpg",
+          "source": "https://www.advancedsimracing.com/cdn/shop/files/TCASidestick_4_2000_24d69e04-dda3-4439-836b-6184257dcc53.jpg?v=1745929813&width=2000",
+          "hotspots": [
+            {"controlId": "trigger-main", "x": 0.764, "y": 0.5182, "width": 0.073, "height": 0.2518}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger-main", "name": "Main trigger", "kind": "Button", "suggestedInput": "button1", "location": "trigger"},
+        {"id": "trigger-short", "name": "Short trigger button", "kind": "Button", "suggestedInput": "button2", "location": "trigger"},
+        {"id": "grip-left", "name": "Left grip button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "grip-right", "name": "Right grip button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "pov-up", "name": "POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "pov"},
+        {"id": "pov-right", "name": "POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "pov"},
+        {"id": "pov-down", "name": "POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "pov"},
+        {"id": "pov-left", "name": "POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "pov"},
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "stick-twist", "name": "Grip twist axis", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "throttle-slider", "name": "Throttle slider axis", "kind": "Axis", "suggestedInput": "slider1", "location": "slider"},
+        {"id": "throttle-reverse", "name": "Throttle reverse detent", "kind": "Button", "suggestedInput": "button17", "location": "slider"},
+        {"id": "base-left-upper-outer", "name": "Base left upper outer button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "base-left-upper-middle", "name": "Base left upper middle button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "base-left-upper-inner", "name": "Base left upper inner button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "base-left-lower-outer", "name": "Base left lower outer button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "base-left-lower-middle", "name": "Base left lower middle button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "base-left-lower-inner", "name": "Base left lower inner button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "base-right-upper-outer", "name": "Base right upper outer button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "base-right-upper-middle", "name": "Base right upper middle button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "base-right-upper-inner", "name": "Base right upper inner button", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "base-right-lower-outer", "name": "Base right lower outer button", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "base-right-lower-middle", "name": "Base right lower middle button", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "base-right-lower-inner", "name": "Base right lower inner button", "kind": "Button", "suggestedInput": "button14"}
+      ]
+    },
+    {
+      "id": "thrustmaster-tca-sidestick-x",
+      "references": [
+        "https://eshop.thrustmaster.com/en_us/tca-sidestick-x-airbus-edition.html",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_sidestick_X/TCA_Sidestick_X_AE_User_manual.pdf",
+        "https://devsupport.flightsimulator.com/t/inputapp-does-not-work/12144"
+      ],
+      "referenceNotes": [
+        "Use the PC switch position and the Pilot grip configuration shown. The rear controls are the three mapped buttons in the PC manual.",
+        "This standard PC layout includes the stick controls. Attach the TCA Quadrant as its own controller layout."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip and base controls",
+          "image": "Hardware/Images/tm-tca-sidestick-x-face.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/c/tcasidestickx-1000-4.jpg",
+          "hotspots": [
+            {"controlId": "grip-left", "x": 0.404, "y": 0.163, "width": 0.03, "height": 0.03},
+            {"controlId": "grip-right", "x": 0.594, "y": 0.165, "width": 0.036, "height": 0.034},
+            {"controlId": "pov-up", "x": 0.491, "y": 0.143, "width": 0.052, "height": 0.048},
+            {"controlId": "stick-twist", "x": 0.492, "y": 0.549, "width": 0.126, "height": 0.061},
+            {"controlId": "stick-x", "x": 0.492, "y": 0.643, "width": 0.088, "height": 0.035},
+            {"controlId": "throttle-slider", "x": 0.489, "y": 0.773, "width": 0.067, "height": 0.083},
+            {"controlId": "base-left-upper-outer", "x": 0.251, "y": 0.603, "width": 0.035, "height": 0.026},
+            {"controlId": "base-left-upper-middle", "x": 0.291, "y": 0.602, "width": 0.034, "height": 0.027},
+            {"controlId": "base-left-upper-inner", "x": 0.333, "y": 0.605, "width": 0.039, "height": 0.031},
+            {"controlId": "base-left-lower-outer", "x": 0.236, "y": 0.651, "width": 0.035, "height": 0.026},
+            {"controlId": "base-left-lower-middle", "x": 0.274, "y": 0.652, "width": 0.036, "height": 0.03},
+            {"controlId": "base-left-lower-inner", "x": 0.321, "y": 0.661, "width": 0.044, "height": 0.037},
+            {"controlId": "base-right-upper-outer", "x": 0.752, "y": 0.603, "width": 0.036, "height": 0.026},
+            {"controlId": "base-right-upper-middle", "x": 0.709, "y": 0.603, "width": 0.037, "height": 0.027},
+            {"controlId": "base-right-upper-inner", "x": 0.663, "y": 0.605, "width": 0.043, "height": 0.034},
+            {"controlId": "base-right-lower-outer", "x": 0.758, "y": 0.651, "width": 0.036, "height": 0.028},
+            {"controlId": "base-right-lower-middle", "x": 0.718, "y": 0.653, "width": 0.036, "height": 0.029},
+            {"controlId": "base-right-lower-inner", "x": 0.666, "y": 0.661, "width": 0.046, "height": 0.037},
+            {"controlId": "base-left-extra", "x": 0.319, "y": 0.713, "width": 0.043, "height": 0.027},
+            {"controlId": "base-right-extra", "x": 0.667, "y": 0.711, "width": 0.045, "height": 0.027}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Index and rear controls",
+          "image": "Hardware/Images/tm-tca-sidestick-x-rear.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/c/tcasidestickx-1000-3.jpg",
+          "hotspots": [
+            {"controlId": "trigger-main", "x": 0.595, "y": 0.282, "width": 0.027, "height": 0.094},
+            {"controlId": "trigger-short", "x": 0.621, "y": 0.196, "width": 0.029, "height": 0.045},
+            {"controlId": "base-menu", "x": 0.544, "y": 0.72, "width": 0.034, "height": 0.025},
+            {"controlId": "base-xbox", "x": 0.613, "y": 0.715, "width": 0.032, "height": 0.027},
+            {"controlId": "base-view", "x": 0.666, "y": 0.697, "width": 0.032, "height": 0.025}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger-main", "name": "Main trigger", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "trigger-short", "name": "Short trigger button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "grip-left", "name": "Left grip button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "grip-right", "name": "Right grip button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "pov-up", "name": "POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "pov"},
+        {"id": "pov-right", "name": "POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "pov"},
+        {"id": "pov-down", "name": "POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "pov"},
+        {"id": "pov-left", "name": "POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "pov"},
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "stick-twist", "name": "Grip twist axis", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "throttle-slider", "name": "Throttle slider axis", "kind": "Axis", "suggestedInput": "slider1", "location": "slider"},
+        {"id": "throttle-reverse", "name": "Throttle reverse detent", "kind": "Button", "suggestedInput": "button17", "location": "slider"},
+        {"id": "base-left-upper-outer", "name": "Base left upper outer button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "base-left-upper-middle", "name": "Base left upper middle button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "base-left-upper-inner", "name": "Base left upper inner button", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "base-left-lower-outer", "name": "Base left lower outer button", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "base-left-lower-middle", "name": "Base left lower middle button", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "base-left-lower-inner", "name": "Base left lower inner button", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "base-right-upper-outer", "name": "Base right upper outer button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "base-right-upper-middle", "name": "Base right upper middle button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "base-right-upper-inner", "name": "Base right upper inner button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "base-right-lower-outer", "name": "Base right lower outer button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "base-right-lower-middle", "name": "Base right lower middle button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "base-right-lower-inner", "name": "Base right lower inner button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "base-left-extra", "name": "Left front auxiliary button", "kind": "Button", "suggestedInput": "button18"},
+        {"id": "base-right-extra", "name": "Right front auxiliary button", "kind": "Button", "suggestedInput": "button19"},
+        {"id": "base-view", "name": "View button", "kind": "Button", "suggestedInput": "button20"},
+        {"id": "base-xbox", "name": "Xbox button", "kind": "Button", "suggestedInput": "button21"},
+        {"id": "base-menu", "name": "Menu button", "kind": "Button", "suggestedInput": "button22"}
+      ]
+    },
+    {
+      "id": "thrustmaster-tca-quadrant",
+      "references": [
+        "https://eshop.thrustmaster.com/en_us/tca-quadrant-airbus-edition.html",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Quadrant/TCA_Quadrant_Airbus_Edition_user_manual.pdf",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Quadrant/Microsoft_Flight_Simulator_Thrustmaster_Abnormal_Procedure_-_TCA_Quadrant_and_TCA_Officer_Pack_Airbus_Edition_-_22_10_2020.pdf",
+        "https://support.thrustmaster.com/en/product/tca-quadrant-airbus-edition-en/",
+        "https://devsupport.flightsimulator.com/t/inputapp-does-not-work/12144"
+      ],
+      "referenceNotes": [
+        "This Windows USB layout is for the ENG 1&2 selector position.",
+        "The driver can enable or disable virtual detent buttons. The levers also report analog axes."
+      ],
+      "views": [
+        {
+          "id": "panel",
+          "name": "Levers and panel",
+          "image": "Hardware/Images/tm-tca-quadrant-panel.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/c/tcaquadrant_0_1000x1000.jpg",
+          "hotspots": [
+            {"controlId": "throttle-left-axis", "x": 0.432, "y": 0.206, "width": 0.093, "height": 0.086},
+            {"controlId": "throttle-right-axis", "x": 0.524, "y": 0.236, "width": 0.083, "height": 0.086},
+            {"controlId": "throttle-right-button", "x": 0.607, "y": 0.257, "width": 0.034, "height": 0.039},
+            {"controlId": "engine-master-left", "x": 0.265, "y": 0.573, "width": 0.051, "height": 0.081},
+            {"controlId": "engine-master-right", "x": 0.374, "y": 0.611, "width": 0.05, "height": 0.08},
+            {"controlId": "panel-left", "x": 0.172, "y": 0.646, "width": 0.025, "height": 0.013},
+            {"controlId": "panel-right", "x": 0.299, "y": 0.681, "width": 0.047, "height": 0.017},
+            {"controlId": "engine-mode-crank", "x": 0.22, "y": 0.644, "width": 0.06, "height": 0.056}
+          ]
+        },
+        {
+          "id": "left-grip",
+          "name": "Left thrust lever outer button",
+          "image": "Hardware/Images/tm-tca-quadrant-left-button.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/c/tcaquadrant_3_1000x1000.jpg",
+          "hotspots": [
+            {"controlId": "throttle-left-button", "x": 0.5028, "y": 0.3444, "width": 0.2301, "height": 0.1971}
+          ]
+        },
+        {
+          "id": "right-grip",
+          "name": "Right thrust lever outer button",
+          "image": "Hardware/Images/tm-tca-quadrant-right-button.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/c/tcaquadrant_2_1000x1000.jpg",
+          "hotspots": [
+            {"controlId": "throttle-right-button", "x": 0.533, "y": 0.583, "width": 0.2005, "height": 0.1556}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "throttle-left-axis", "name": "Left thrust lever axis", "kind": "Axis", "suggestedInput": "x", "location": "throttle-left"},
+        {"id": "throttle-right-axis", "name": "Right thrust lever axis", "kind": "Axis", "suggestedInput": "y", "location": "throttle-right"},
+        {"id": "throttle-left-button", "name": "Left thrust lever outer button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "throttle-right-button", "name": "Right thrust lever outer button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "engine-master-left", "name": "Left engine master switch", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "engine-master-right", "name": "Right engine master switch", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "panel-left", "name": "Left panel push button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "panel-right", "name": "Right panel push button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "engine-mode-crank", "name": "Engine mode CRANK position", "kind": "Button", "suggestedInput": "button7", "location": "engine-mode"},
+        {"id": "engine-mode-start", "name": "Engine mode IGN/START position", "kind": "Button", "suggestedInput": "button8", "location": "engine-mode"},
+        {"id": "throttle-left-detent-1", "name": "Left thrust lever virtual detent 1", "kind": "Button", "suggestedInput": "button9", "location": "throttle-left"},
+        {"id": "throttle-left-detent-2", "name": "Left thrust lever virtual detent 2", "kind": "Button", "suggestedInput": "button10", "location": "throttle-left"},
+        {"id": "throttle-left-detent-3", "name": "Left thrust lever virtual detent 3", "kind": "Button", "suggestedInput": "button11", "location": "throttle-left"},
+        {"id": "throttle-left-detent-4", "name": "Left thrust lever virtual detent 4", "kind": "Button", "suggestedInput": "button12", "location": "throttle-left"},
+        {"id": "throttle-right-detent-1", "name": "Right thrust lever virtual detent 1", "kind": "Button", "suggestedInput": "button13", "location": "throttle-right"},
+        {"id": "throttle-right-detent-2", "name": "Right thrust lever virtual detent 2", "kind": "Button", "suggestedInput": "button14", "location": "throttle-right"},
+        {"id": "throttle-right-detent-3", "name": "Right thrust lever virtual detent 3", "kind": "Button", "suggestedInput": "button15", "location": "throttle-right"},
+        {"id": "throttle-right-detent-4", "name": "Right thrust lever virtual detent 4", "kind": "Button", "suggestedInput": "button16", "location": "throttle-right"}
+      ]
+    },
+    {
+      "id": "thrustmaster-tca-quadrant-addon",
+      "references": [
+        "https://eshop.thrustmaster.com/en_us/tca-quadrant-airbus-edition.html",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Quadrant/TCA_Quadrant_Airbus_Edition_user_manual.pdf",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Quadrant/Microsoft_Flight_Simulator_Thrustmaster_Abnormal_Procedure_-_TCA_Quadrant_and_TCA_Officer_Pack_Airbus_Edition_-_22_10_2020.pdf",
+        "https://support.thrustmaster.com/en/product/tca-quadrant-airbus-edition-en/",
+        "https://devsupport.flightsimulator.com/t/inputapp-does-not-work/12144",
+        "https://eshop.thrustmaster.com/en_us/tca-quadrant-add-on-airbus-edition.html",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TCA_Quadrant/TCA_Quadrant_Add-On_Airbus_Edition_user_manual.pdf",
+        "https://support.thrustmaster.com/en/kb/1766-en/"
+      ],
+      "referenceNotes": [
+        "This Windows USB layout is for the ENG 1&2 selector position.",
+        "The driver can enable or disable virtual detent buttons. The levers also report analog axes.",
+        "Both add-on modules report through this quadrant when connected via SATA cables."
+      ],
+      "views": [
+        {
+          "id": "panel",
+          "name": "Quadrant and add-on modules",
+          "image": "Hardware/Images/tm-tca-quadrant-addon-front.jpg",
+          "source": "https://www.advancedsimracing.com/cdn/shop/files/TCAQuadrant-AddOn_4aba71cb-78f8-47d1-80d0-1ffb92a3d4a7.jpg?v=1745929782&width=2000",
+          "hotspots": [
+            {"controlId": "throttle-left-axis", "x": 0.402, "y": 0.189, "width": 0.111, "height": 0.094},
+            {"controlId": "throttle-right-axis", "x": 0.571, "y": 0.189, "width": 0.108, "height": 0.094},
+            {"controlId": "engine-master-left", "x": 0.405, "y": 0.604, "width": 0.047, "height": 0.077},
+            {"controlId": "engine-master-right", "x": 0.582, "y": 0.602, "width": 0.048, "height": 0.078},
+            {"controlId": "panel-left", "x": 0.406, "y": 0.708, "width": 0.044, "height": 0.023},
+            {"controlId": "panel-right", "x": 0.584, "y": 0.708, "width": 0.044, "height": 0.024},
+            {"controlId": "engine-mode-crank", "x": 0.499, "y": 0.699, "width": 0.06, "height": 0.067},
+            {"controlId": "speed-brake-axis", "x": 0.199, "y": 0.284, "width": 0.089, "height": 0.104},
+            {"controlId": "flaps-axis", "x": 0.756, "y": 0.185, "width": 0.113, "height": 0.092},
+            {"controlId": "landing-gear", "x": 0.202, "y": 0.551, "width": 0.038, "height": 0.102},
+            {"controlId": "autobrake-detent-1", "x": 0.203, "y": 0.686, "width": 0.051, "height": 0.067},
+            {"controlId": "rudder-trim-reset", "x": 0.733, "y": 0.62, "width": 0.04, "height": 0.021},
+            {"controlId": "rudder-trim-position-1", "x": 0.815, "y": 0.61, "width": 0.061, "height": 0.065},
+            {"controlId": "parking-brake", "x": 0.792, "y": 0.674, "width": 0.177, "height": 0.029}
+          ]
+        },
+        {
+          "id": "left-grip",
+          "name": "Left thrust lever outer button",
+          "image": "Hardware/Images/tm-tca-quadrant-left-button.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/c/tcaquadrant_3_1000x1000.jpg",
+          "hotspots": [
+            {"controlId": "throttle-left-button", "x": 0.5028, "y": 0.3444, "width": 0.2301, "height": 0.1971}
+          ]
+        },
+        {
+          "id": "right-grip",
+          "name": "Right thrust lever outer button",
+          "image": "Hardware/Images/tm-tca-quadrant-right-button.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/c/tcaquadrant_2_1000x1000.jpg",
+          "hotspots": [
+            {"controlId": "throttle-right-button", "x": 0.533, "y": 0.583, "width": 0.2005, "height": 0.1556}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "throttle-left-axis", "name": "Left thrust lever axis", "kind": "Axis", "suggestedInput": "x", "location": "throttle-left"},
+        {"id": "throttle-right-axis", "name": "Right thrust lever axis", "kind": "Axis", "suggestedInput": "y", "location": "throttle-right"},
+        {"id": "throttle-left-button", "name": "Left thrust lever outer button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "throttle-right-button", "name": "Right thrust lever outer button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "engine-master-left", "name": "Left engine master switch", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "engine-master-right", "name": "Right engine master switch", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "panel-left", "name": "Left panel push button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "panel-right", "name": "Right panel push button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "engine-mode-crank", "name": "Engine mode CRANK position", "kind": "Button", "suggestedInput": "button7", "location": "engine-mode"},
+        {"id": "engine-mode-start", "name": "Engine mode IGN/START position", "kind": "Button", "suggestedInput": "button8", "location": "engine-mode"},
+        {"id": "throttle-left-detent-1", "name": "Left thrust lever virtual detent 1", "kind": "Button", "suggestedInput": "button9", "location": "throttle-left"},
+        {"id": "throttle-left-detent-2", "name": "Left thrust lever virtual detent 2", "kind": "Button", "suggestedInput": "button10", "location": "throttle-left"},
+        {"id": "throttle-left-detent-3", "name": "Left thrust lever virtual detent 3", "kind": "Button", "suggestedInput": "button11", "location": "throttle-left"},
+        {"id": "throttle-left-detent-4", "name": "Left thrust lever virtual detent 4", "kind": "Button", "suggestedInput": "button12", "location": "throttle-left"},
+        {"id": "throttle-right-detent-1", "name": "Right thrust lever virtual detent 1", "kind": "Button", "suggestedInput": "button13", "location": "throttle-right"},
+        {"id": "throttle-right-detent-2", "name": "Right thrust lever virtual detent 2", "kind": "Button", "suggestedInput": "button14", "location": "throttle-right"},
+        {"id": "throttle-right-detent-3", "name": "Right thrust lever virtual detent 3", "kind": "Button", "suggestedInput": "button15", "location": "throttle-right"},
+        {"id": "throttle-right-detent-4", "name": "Right thrust lever virtual detent 4", "kind": "Button", "suggestedInput": "button16", "location": "throttle-right"},
+        {"id": "speed-brake-axis", "name": "Speed brake lever axis", "kind": "Axis", "suggestedInput": "rotz", "location": "speed-brake"},
+        {"id": "flaps-axis", "name": "Flaps lever axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "rudder-trim-reset", "name": "Rudder trim reset button", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "rudder-trim-position-1", "name": "Rudder trim position 1", "kind": "Button", "suggestedInput": "button18", "location": "rudder-trim"},
+        {"id": "rudder-trim-position-2", "name": "Rudder trim position 2", "kind": "Button", "suggestedInput": "button19", "location": "rudder-trim"},
+        {"id": "parking-brake", "name": "Parking brake handle", "kind": "Button", "suggestedInput": "button20"},
+        {"id": "landing-gear", "name": "Landing gear lever", "kind": "Button", "suggestedInput": "button21"},
+        {"id": "autobrake-detent-1", "name": "Autobrake selector detent 1", "kind": "Button", "suggestedInput": "button22", "location": "autobrake"},
+        {"id": "autobrake-detent-2", "name": "Autobrake selector detent 2", "kind": "Button", "suggestedInput": "button23", "location": "autobrake"},
+        {"id": "autobrake-detent-3", "name": "Autobrake selector detent 3", "kind": "Button", "suggestedInput": "button24", "location": "autobrake"},
+        {"id": "autobrake-detent-4", "name": "Autobrake selector detent 4", "kind": "Button", "suggestedInput": "button25", "location": "autobrake"},
+        {"id": "autobrake-detent-5", "name": "Autobrake selector detent 5", "kind": "Button", "suggestedInput": "button26", "location": "autobrake"},
+        {"id": "speed-brake-detent-1", "name": "Speed brake lever virtual detent 1", "kind": "Button", "suggestedInput": "button27", "location": "speed-brake"},
+        {"id": "speed-brake-detent-2", "name": "Speed brake lever virtual detent 2", "kind": "Button", "suggestedInput": "button28", "location": "speed-brake"},
+        {"id": "speed-brake-detent-3", "name": "Speed brake lever virtual detent 3", "kind": "Button", "suggestedInput": "button29", "location": "speed-brake"},
+        {"id": "speed-brake-detent-4", "name": "Speed brake lever virtual detent 4", "kind": "Button", "suggestedInput": "button30", "location": "speed-brake"},
+        {"id": "speed-brake-detent-5", "name": "Speed brake lever virtual detent 5", "kind": "Button", "suggestedInput": "button31", "location": "speed-brake"}
+      ]
+    }
+  ]
+}

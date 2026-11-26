@@ -1,0 +1,90 @@
+{
+  "manufacturer": "WINWING / WINCTRL",
+  "devices": [
+    {"id": "winctrl-32-agp-metal","name": "WINCTRL 32 AGP METAL","vendorId": 16536,"productId": 48000,"layout": "winctrl-32-agp-metal"}
+  ],
+  "layouts": [
+    {
+      "id": "winctrl-32-agp-metal",
+      "references": [
+        "https://eu.winctrl.com/view/goods-details.html?id=1585",
+        "https://eu.winctrl.com/static/download/QmVKXy8jQzVyfdmWFSTxkc9hXAwpMMmSBYMN4YEFAgazcL?filename=WINCTRL+32+AGP+Metal+1.0+-User+Manual+EN+V1.1-20251120.pdf",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/winwing/winwing_agp.joystick.json"
+      ],
+      "referenceNotes": [
+        "Both installation views depict the same USB panel with its gear lever mounted below or at its left side.",
+        "The Hall sensor in the gear assembly reports two digital inputs through the panel. The three gear indicators and the clock display are output only.",
+        "Manual section 3.2 and the observed Windows joystick map agree on the 25 numbered inputs."
+      ],
+      "views": [
+        {
+          "id": "desktop",
+          "name": "Gear mounted below",
+          "image": "Hardware/Images/winctrl-32-agp-metal-desktop.jpg",
+          "source": "https://winctrl.com/static/ipfs/QmTc2ZEC5qPNpS9dgJASkchQAy3ukft8PzG9WMg6yHg7WT",
+          "hotspots": [
+            {"controlId": "brake-fan-on","x": 0.56812,"y": 0.16062,"width": 0.045,"height": 0.0625},
+            {"controlId": "autobrake-low","x": 0.3675,"y": 0.25125,"width": 0.04312,"height": 0.05375},
+            {"controlId": "autobrake-medium","x": 0.41063,"y": 0.26,"width": 0.0425,"height": 0.05563},
+            {"controlId": "autobrake-maximum","x": 0.47125,"y": 0.27,"width": 0.04312,"height": 0.05563},
+            {"controlId": "antiskid-on","x": 0.50375,"y": 0.29563,"width": 0.05563,"height": 0.03875},
+            {"controlId": "clock-reset-press","x": 0.30125,"y": 0.37625,"width": 0.04125,"height": 0.0325},
+            {"controlId": "chronometer-press","x": 0.435,"y": 0.40875,"width": 0.04125,"height": 0.03375},
+            {"controlId": "date-set-press","x": 0.28875,"y": 0.43688,"width": 0.04,"height": 0.0325},
+            {"controlId": "utc-gps","x": 0.41875,"y": 0.46875,"width": 0.04,"height": 0.04063},
+            {"controlId": "elapsed-time-run","x": 0.40563,"y": 0.53375,"width": 0.04125,"height": 0.04125},
+            {"controlId": "terrain","x": 0.515,"y": 0.47,"width": 0.04562,"height": 0.05375},
+            {"controlId": "landing-gear-up","x": 0.1925,"y": 0.84875,"width": 0.06563,"height": 0.06625}
+          ]
+        },
+        {
+          "id": "cockpit",
+          "name": "Gear mounted to the left",
+          "image": "Hardware/Images/winctrl-32-agp-metal-cockpit.jpg",
+          "source": "https://winctrl.com/static/ipfs/QmPRBnPYePe4iDGRB3AxWjfzHkAZPCS3fD4WqV3wvyhAat",
+          "hotspots": [
+            {"controlId": "brake-fan-on","x": 0.685,"y": 0.19,"width": 0.04688,"height": 0.06375},
+            {"controlId": "autobrake-low","x": 0.44875,"y": 0.25062,"width": 0.0425,"height": 0.05563},
+            {"controlId": "autobrake-medium","x": 0.5025,"y": 0.2675,"width": 0.04375,"height": 0.05688},
+            {"controlId": "autobrake-maximum","x": 0.56875,"y": 0.29063,"width": 0.04375,"height": 0.05563},
+            {"controlId": "antiskid-on","x": 0.61813,"y": 0.33937,"width": 0.05875,"height": 0.0425},
+            {"controlId": "clock-reset-press","x": 0.37375,"y": 0.3775,"width": 0.0425,"height": 0.03313},
+            {"controlId": "chronometer-press","x": 0.52,"y": 0.43688,"width": 0.04188,"height": 0.035},
+            {"controlId": "date-set-press","x": 0.34813,"y": 0.44312,"width": 0.04375,"height": 0.03438},
+            {"controlId": "utc-gps","x": 0.50875,"y": 0.49188,"width": 0.04125,"height": 0.04188},
+            {"controlId": "elapsed-time-run","x": 0.48938,"y": 0.56312,"width": 0.04125,"height": 0.04312},
+            {"controlId": "terrain","x": 0.60625,"y": 0.505,"width": 0.04688,"height": 0.05688},
+            {"controlId": "landing-gear-up","x": 0.1775,"y": 0.51187,"width": 0.06813,"height": 0.07125}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "brake-fan-on","name": "BRK FAN ON","kind": "Button","suggestedInput": "button1","location": "brake-fan"},
+        {"id": "brake-fan-off","name": "BRK FAN OFF","kind": "Button","suggestedInput": "button2","location": "brake-fan"},
+        {"id": "autobrake-low","name": "AUTO BRK LO","kind": "Button","suggestedInput": "button3"},
+        {"id": "autobrake-medium","name": "AUTO BRK MED","kind": "Button","suggestedInput": "button4"},
+        {"id": "autobrake-maximum","name": "AUTO BRK MAX","kind": "Button","suggestedInput": "button5"},
+        {"id": "antiskid-on","name": "A/SKID & N/W STRG ON","kind": "Button","suggestedInput": "button6","location": "antiskid"},
+        {"id": "antiskid-off","name": "A/SKID & N/W STRG OFF","kind": "Button","suggestedInput": "button7","location": "antiskid"},
+        {"id": "clock-reset-ccw","name": "RST encoder counterclockwise","kind": "Button","suggestedInput": "button8","location": "clock-reset"},
+        {"id": "clock-reset-press","name": "RST encoder press","kind": "Button","suggestedInput": "button9","location": "clock-reset"},
+        {"id": "clock-reset-cw","name": "RST encoder clockwise","kind": "Button","suggestedInput": "button10","location": "clock-reset"},
+        {"id": "chronometer-ccw","name": "CHR encoder counterclockwise","kind": "Button","suggestedInput": "button11","location": "chronometer"},
+        {"id": "chronometer-press","name": "CHR encoder press","kind": "Button","suggestedInput": "button12","location": "chronometer"},
+        {"id": "chronometer-cw","name": "CHR encoder clockwise","kind": "Button","suggestedInput": "button13","location": "chronometer"},
+        {"id": "date-set-ccw","name": "DATE / SET encoder counterclockwise","kind": "Button","suggestedInput": "button14","location": "date-set"},
+        {"id": "date-set-press","name": "DATE / SET encoder press","kind": "Button","suggestedInput": "button15","location": "date-set"},
+        {"id": "date-set-cw","name": "DATE / SET encoder clockwise","kind": "Button","suggestedInput": "button16","location": "date-set"},
+        {"id": "utc-gps","name": "UTC selector GPS","kind": "Button","suggestedInput": "button17","location": "utc"},
+        {"id": "utc-int","name": "UTC selector INT","kind": "Button","suggestedInput": "button18","location": "utc"},
+        {"id": "utc-set","name": "UTC selector SET","kind": "Button","suggestedInput": "button19","location": "utc"},
+        {"id": "elapsed-time-run","name": "ET selector RUN","kind": "Button","suggestedInput": "button20","location": "elapsed-time"},
+        {"id": "elapsed-time-stop","name": "ET selector STP","kind": "Button","suggestedInput": "button21","location": "elapsed-time"},
+        {"id": "elapsed-time-reset","name": "ET selector RST","kind": "Button","suggestedInput": "button22","location": "elapsed-time"},
+        {"id": "terrain","name": "TERR ON ND","kind": "Button","suggestedInput": "button23"},
+        {"id": "landing-gear-up","name": "Landing gear lever UP","kind": "Button","suggestedInput": "button24","location": "landing-gear"},
+        {"id": "landing-gear-down","name": "Landing gear lever DOWN","kind": "Button","suggestedInput": "button25","location": "landing-gear"}
+      ]
+    }
+  ]
+}

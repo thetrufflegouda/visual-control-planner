@@ -1,0 +1,222 @@
+{
+  "manufacturer": "VIRPIL",
+  "devices": [
+    {"id": "virpil-vmax-prime", "name": "VIRPIL VMAX PRIME THROTTLE", "vendorId": 13124, "productId": 406, "layout": "virpil-vmax-prime"},
+    {"id": "virpil-cdt-vmax", "name": "VIRPIL CDT-VMAX THROTTLE", "vendorId": 13124, "productId": 0, "layout": "virpil-cdt-vmax"}
+  ],
+  "layouts": [
+    {
+      "id": "virpil-vmax-prime",
+      "references": [
+        "https://us.virpil-controls.com/products/vpc-vmax-prime-throttle",
+        "https://support.virpil.com/en/support/solutions/articles/47001285238-vpc-vmax-prime-throttle",
+        "https://support.virpil.com/en/support/solutions/articles/47001263544-vmax-prime-throttle-user-manual",
+        "https://github.com/libsdl-org/SDL/blob/main/src/joystick/SDL_joystick.c"
+      ],
+      "referenceNotes": [
+        "Windows suggestions follow the OEM standard profile with the supplied control modules.",
+        "The five-way firmware profile changes button reports for B1 through B6 and T3 through T5. Use Input Learn for a five-way or customized profile.",
+        "The factory chart duplicates the T1 position number and labels the digital dial generically. Learn those reports on the connected device."
+      ],
+      "views": [
+        {
+          "id": "panel",
+          "name": "Base panel and throttle travel",
+          "image": "Hardware/Images/virpil-vmax-prime-panel.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/virpil-controls-vmax-prime-throttle.1222.png?v=1784073724&width=1500",
+          "hotspots": [
+            {"controlId": "b1", "x": 0.313, "y": 0.546, "width": 0.038, "height": 0.044},
+            {"controlId": "b2", "x": 0.38, "y": 0.546, "width": 0.04, "height": 0.045},
+            {"controlId": "b3", "x": 0.446, "y": 0.546, "width": 0.039, "height": 0.044},
+            {"controlId": "b4", "x": 0.311, "y": 0.6, "width": 0.037, "height": 0.043},
+            {"controlId": "b5", "x": 0.38, "y": 0.6, "width": 0.039, "height": 0.044},
+            {"controlId": "b6", "x": 0.446, "y": 0.6, "width": 0.04, "height": 0.044},
+            {"controlId": "b7", "x": 0.525, "y": 0.526, "width": 0.048, "height": 0.039},
+            {"controlId": "t1-up", "x": 0.588, "y": 0.523, "width": 0.028, "height": 0.062},
+            {"controlId": "t2-up", "x": 0.65, "y": 0.516, "width": 0.03, "height": 0.063},
+            {"controlId": "apu", "x": 0.302, "y": 0.676, "width": 0.048, "height": 0.05},
+            {"controlId": "mode-1", "x": 0.407, "y": 0.68, "width": 0.111, "height": 0.056},
+            {"controlId": "encoder-1-press", "x": 0.539, "y": 0.605, "width": 0.049, "height": 0.047},
+            {"controlId": "encoder-2-press", "x": 0.644, "y": 0.602, "width": 0.049, "height": 0.052},
+            {"controlId": "t3-up", "x": 0.539, "y": 0.663, "width": 0.03, "height": 0.056},
+            {"controlId": "t4-up", "x": 0.603, "y": 0.657, "width": 0.034, "height": 0.062},
+            {"controlId": "t5-up", "x": 0.668, "y": 0.658, "width": 0.024, "height": 0.06},
+            {"controlId": "outer-slider-press", "x": 0.228, "y": 0.187, "width": 0.051, "height": 0.063},
+            {"controlId": "top-dial-press", "x": 0.574, "y": 0.045, "width": 0.058, "height": 0.035},
+            {"controlId": "left-throttle", "x": 0.349, "y": 0.374, "width": 0.082, "height": 0.112},
+            {"controlId": "right-throttle", "x": 0.483, "y": 0.368, "width": 0.087, "height": 0.122},
+            {"controlId": "auxiliary-axis", "x": 0.682, "y": 0.299, "width": 0.076, "height": 0.066}
+          ]
+        },
+        {
+          "id": "thumb",
+          "name": "Thumb controls and grip buttons",
+          "image": "Hardware/Images/virpil-vmax-prime-thumb.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/virpil-controls-vmax-prime-throttle.1219.png?v=1784073723&width=1500",
+          "hotspots": [
+            {"controlId": "top-dial-press", "x": 0.819, "y": 0.15, "width": 0.085, "height": 0.056},
+            {"controlId": "thumb-upper-press", "x": 0.746, "y": 0.254, "width": 0.061, "height": 0.059},
+            {"controlId": "thumb-mini-press", "x": 0.811, "y": 0.274, "width": 0.065, "height": 0.065},
+            {"controlId": "thumb-ring", "x": 0.699, "y": 0.294, "width": 0.038, "height": 0.038},
+            {"controlId": "palm-button", "x": 0.644, "y": 0.307, "width": 0.04, "height": 0.034},
+            {"controlId": "thumb-lower-press", "x": 0.753, "y": 0.322, "width": 0.057, "height": 0.048},
+            {"controlId": "left-throttle", "x": 0.475, "y": 0.365, "width": 0.067, "height": 0.092},
+            {"controlId": "right-throttle", "x": 0.573, "y": 0.405, "width": 0.076, "height": 0.082},
+            {"controlId": "auxiliary-axis", "x": 0.752, "y": 0.448, "width": 0.091, "height": 0.062}
+          ]
+        },
+        {
+          "id": "index",
+          "name": "Index controls and side slider",
+          "image": "Hardware/Images/virpil-vmax-prime-index.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/virpil-controls-vmax-prime-throttle.1221.png?v=1784073724&width=1500",
+          "hotspots": [
+            {"controlId": "top-dial-press", "x": 0.103, "y": 0.281, "width": 0.078, "height": 0.069},
+            {"controlId": "index-hat-press", "x": 0.126, "y": 0.403, "width": 0.065, "height": 0.061},
+            {"controlId": "inner-index", "x": 0.221, "y": 0.45, "width": 0.032, "height": 0.026},
+            {"controlId": "outer-index", "x": 0.338, "y": 0.468, "width": 0.038, "height": 0.043},
+            {"controlId": "outer-slider-press", "x": 0.483, "y": 0.487, "width": 0.093, "height": 0.084},
+            {"controlId": "left-throttle", "x": 0.405, "y": 0.621, "width": 0.082, "height": 0.1},
+            {"controlId": "right-throttle", "x": 0.267, "y": 0.566, "width": 0.076, "height": 0.124}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "outer-slider-press", "name": "Outer grip wheel press", "kind": "Button", "suggestedInput": "button1", "location": "outer-slider"},
+        {"id": "outer-slider-axis", "name": "Outer grip slider axis", "kind": "Axis", "suggestedInput": "slider1", "location": "outer-slider"},
+        {"id": "outer-index", "name": "Silver outer index button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "inner-index", "name": "Inner index button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "index-hat-up", "name": "Index hat up", "kind": "Button", "suggestedInput": "button5", "location": "index-hat"},
+        {"id": "index-hat-right", "name": "Index hat right", "kind": "Button", "suggestedInput": "button6", "location": "index-hat"},
+        {"id": "index-hat-down", "name": "Index hat down", "kind": "Button", "suggestedInput": "button7", "location": "index-hat"},
+        {"id": "index-hat-left", "name": "Index hat left", "kind": "Button", "suggestedInput": "button8", "location": "index-hat"},
+        {"id": "index-hat-press", "name": "Index hat center press", "kind": "Button", "suggestedInput": "button4", "location": "index-hat"},
+        {"id": "top-dial-press", "name": "Top grip dial press", "kind": "Button", "suggestedInput": "button9", "location": "top-dial"},
+        {"id": "top-dial-axis", "name": "Top grip dial axis", "kind": "Axis", "location": "top-dial"},
+        {"id": "thumb-mini-press", "name": "Thumb ministick press", "kind": "Button", "suggestedInput": "button13", "location": "thumb-mini"},
+        {"id": "thumb-mini-x", "name": "Thumb ministick X axis", "kind": "Axis", "suggestedInput": "rotx", "location": "thumb-mini"},
+        {"id": "thumb-mini-y", "name": "Thumb ministick Y axis", "kind": "Axis", "suggestedInput": "roty", "location": "thumb-mini"},
+        {"id": "thumb-ring", "name": "Thumb-face ring button", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "palm-button", "name": "Lower grip button", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "left-throttle", "name": "Left throttle lever axis", "kind": "Axis", "suggestedInput": "x"},
+        {"id": "right-throttle", "name": "Right throttle lever axis", "kind": "Axis", "suggestedInput": "y"},
+        {"id": "auxiliary-axis", "name": "Auxiliary lever axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "thumb-upper-press", "name": "Upper thumb rocker press", "kind": "Button", "suggestedInput": "button10", "location": "thumb-upper"},
+        {"id": "thumb-upper-up", "name": "Upper thumb rocker up", "kind": "Button", "suggestedInput": "button11", "location": "thumb-upper"},
+        {"id": "thumb-upper-down", "name": "Upper thumb rocker down", "kind": "Button", "suggestedInput": "button12", "location": "thumb-upper"},
+        {"id": "thumb-lower-up", "name": "Lower thumb hat up", "kind": "Button", "suggestedInput": "button17", "location": "thumb-lower"},
+        {"id": "thumb-lower-right", "name": "Lower thumb hat right", "kind": "Button", "suggestedInput": "button18", "location": "thumb-lower"},
+        {"id": "thumb-lower-down", "name": "Lower thumb hat down", "kind": "Button", "suggestedInput": "button19", "location": "thumb-lower"},
+        {"id": "thumb-lower-left", "name": "Lower thumb hat left", "kind": "Button", "suggestedInput": "button20", "location": "thumb-lower"},
+        {"id": "thumb-lower-press", "name": "Lower thumb hat center press", "kind": "Button", "suggestedInput": "button16", "location": "thumb-lower"},
+        {"id": "b1", "name": "Keyboard B1", "kind": "Button", "suggestedInput": "button21"},
+        {"id": "b2", "name": "Keyboard B2", "kind": "Button", "suggestedInput": "button22"},
+        {"id": "b3", "name": "Keyboard B3", "kind": "Button", "suggestedInput": "button23"},
+        {"id": "b4", "name": "Keyboard B4", "kind": "Button", "suggestedInput": "button24"},
+        {"id": "b5", "name": "Keyboard B5", "kind": "Button", "suggestedInput": "button25"},
+        {"id": "b6", "name": "Keyboard B6", "kind": "Button", "suggestedInput": "button26"},
+        {"id": "b7", "name": "Red B7 emergency button", "kind": "Button", "suggestedInput": "button27"},
+        {"id": "t1-up", "name": "Toggle T1 up", "kind": "Button", "suggestedInput": "button29", "location": "t1"},
+        {"id": "t1-down", "name": "Toggle T1 down", "kind": "Button", "location": "t1"},
+        {"id": "t2-up", "name": "Toggle T2 up", "kind": "Button", "suggestedInput": "button30", "location": "t2"},
+        {"id": "t2-down", "name": "Toggle T2 down", "kind": "Button", "suggestedInput": "button31", "location": "t2"},
+        {"id": "encoder-1-press", "name": "Encoder E1 press", "kind": "Button", "suggestedInput": "button32", "location": "encoder-1"},
+        {"id": "encoder-1-clockwise", "name": "Encoder E1 clockwise", "kind": "Button", "suggestedInput": "button33", "location": "encoder-1"},
+        {"id": "encoder-1-counterclockwise", "name": "Encoder E1 counterclockwise", "kind": "Button", "suggestedInput": "button34", "location": "encoder-1"},
+        {"id": "encoder-2-press", "name": "Encoder E2 press", "kind": "Button", "suggestedInput": "button35", "location": "encoder-2"},
+        {"id": "encoder-2-clockwise", "name": "Encoder E2 clockwise", "kind": "Button", "suggestedInput": "button36", "location": "encoder-2"},
+        {"id": "encoder-2-counterclockwise", "name": "Encoder E2 counterclockwise", "kind": "Button", "suggestedInput": "button37", "location": "encoder-2"},
+        {"id": "apu", "name": "APU push button", "kind": "Button", "suggestedInput": "button38"},
+        {"id": "mode-1", "name": "Mode dial position 1", "kind": "Button", "suggestedInput": "button39", "location": "mode"},
+        {"id": "mode-2", "name": "Mode dial position 2", "kind": "Button", "suggestedInput": "button40", "location": "mode"},
+        {"id": "mode-3", "name": "Mode dial position 3", "kind": "Button", "suggestedInput": "button41", "location": "mode"},
+        {"id": "mode-4", "name": "Mode dial position 4", "kind": "Button", "suggestedInput": "button42", "location": "mode"},
+        {"id": "mode-5", "name": "Mode dial position 5", "kind": "Button", "suggestedInput": "button43", "location": "mode"},
+        {"id": "t3-up", "name": "Toggle T3 up", "kind": "Button", "suggestedInput": "button44", "location": "t3"},
+        {"id": "t3-down", "name": "Toggle T3 down", "kind": "Button", "suggestedInput": "button45", "location": "t3"},
+        {"id": "t4-up", "name": "Toggle T4 up", "kind": "Button", "suggestedInput": "button46", "location": "t4"},
+        {"id": "t4-down", "name": "Toggle T4 down", "kind": "Button", "suggestedInput": "button47", "location": "t4"},
+        {"id": "t5-up", "name": "Toggle T5 up", "kind": "Button", "suggestedInput": "button48", "location": "t5"},
+        {"id": "t5-down", "name": "Toggle T5 down", "kind": "Button", "suggestedInput": "button49", "location": "t5"}
+      ]
+    },
+    {
+      "id": "virpil-cdt-vmax",
+      "references": [
+        "https://us.virpil-controls.com/products/cdt-vmax-throttle",
+        "https://support.virpil.com/en/support/solutions/articles/47001285229-vpc-cdt-vmax-throttle",
+        "https://support.virpil.com/en/support/solutions/articles/47001260812-cdt-vmax-throttle-user-manual"
+      ],
+      "referenceNotes": [
+        "OEM numbered grip controls and seven axes. The digital dial report uses Input Learn.",
+        "Pair the throttle explicitly and verify its reports against your firmware profile."
+      ],
+      "views": [
+        {
+          "id": "main",
+          "name": "Thumb controls, throttles and auxiliary lever",
+          "image": "Hardware/Images/virpil-vmax-cdt-main.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/virpil-controls-cdt-vmax-throttle.1047.jpg?v=1784073722&width=1500",
+          "hotspots": [
+            {"controlId": "top-dial-press", "x": 0.746, "y": 0.127, "width": 0.097, "height": 0.059},
+            {"controlId": "auxiliary-axis", "x": 0.713, "y": 0.472, "width": 0.109, "height": 0.069},
+            {"controlId": "left-throttle", "x": 0.372, "y": 0.35, "width": 0.073, "height": 0.107},
+            {"controlId": "right-throttle", "x": 0.491, "y": 0.386, "width": 0.077, "height": 0.105},
+            {"controlId": "thumb-upper-press", "x": 0.679, "y": 0.216, "width": 0.064, "height": 0.061},
+            {"controlId": "thumb-mini-press", "x": 0.748, "y": 0.264, "width": 0.068, "height": 0.067},
+            {"controlId": "thumb-ring", "x": 0.621, "y": 0.3, "width": 0.04, "height": 0.04},
+            {"controlId": "palm-button", "x": 0.558, "y": 0.341, "width": 0.042, "height": 0.034},
+            {"controlId": "thumb-lower-press", "x": 0.675, "y": 0.332, "width": 0.056, "height": 0.049}
+          ]
+        },
+        {
+          "id": "index",
+          "name": "Index controls and side slider",
+          "image": "Hardware/Images/virpil-vmax-cdt-index.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/virpil-controls-cdt-vmax-throttle.1049.jpg?v=1784073722&width=1500",
+          "hotspots": [
+            {"controlId": "top-dial-press", "x": 0.262, "y": 0.144, "width": 0.089, "height": 0.077},
+            {"controlId": "index-hat-press", "x": 0.307, "y": 0.272, "width": 0.07, "height": 0.061},
+            {"controlId": "inner-index", "x": 0.406, "y": 0.342, "width": 0.037, "height": 0.029},
+            {"controlId": "outer-index", "x": 0.572, "y": 0.315, "width": 0.04, "height": 0.045},
+            {"controlId": "outer-slider-press", "x": 0.726, "y": 0.334, "width": 0.094, "height": 0.09},
+            {"controlId": "left-throttle", "x": 0.602, "y": 0.428, "width": 0.072, "height": 0.106},
+            {"controlId": "right-throttle", "x": 0.48, "y": 0.393, "width": 0.067, "height": 0.083},
+            {"controlId": "auxiliary-axis", "x": 0.407, "y": 0.395, "width": 0.067, "height": 0.072}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "outer-slider-press", "name": "Outer grip wheel press", "kind": "Button", "suggestedInput": "button1", "location": "outer-slider"},
+        {"id": "outer-slider-axis", "name": "Outer grip slider axis", "kind": "Axis", "suggestedInput": "slider1", "location": "outer-slider"},
+        {"id": "outer-index", "name": "Silver outer index button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "inner-index", "name": "Inner index button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "index-hat-up", "name": "Index hat up", "kind": "Button", "suggestedInput": "button5", "location": "index-hat"},
+        {"id": "index-hat-right", "name": "Index hat right", "kind": "Button", "suggestedInput": "button6", "location": "index-hat"},
+        {"id": "index-hat-down", "name": "Index hat down", "kind": "Button", "suggestedInput": "button7", "location": "index-hat"},
+        {"id": "index-hat-left", "name": "Index hat left", "kind": "Button", "suggestedInput": "button8", "location": "index-hat"},
+        {"id": "index-hat-press", "name": "Index hat center press", "kind": "Button", "suggestedInput": "button4", "location": "index-hat"},
+        {"id": "top-dial-press", "name": "Top grip dial press", "kind": "Button", "suggestedInput": "button9", "location": "top-dial"},
+        {"id": "top-dial-axis", "name": "Top grip dial axis", "kind": "Axis", "location": "top-dial"},
+        {"id": "thumb-mini-press", "name": "Thumb ministick press", "kind": "Button", "suggestedInput": "button15", "location": "thumb-mini"},
+        {"id": "thumb-mini-x", "name": "Thumb ministick X axis", "kind": "Axis", "suggestedInput": "rotx", "location": "thumb-mini"},
+        {"id": "thumb-mini-y", "name": "Thumb ministick Y axis", "kind": "Axis", "suggestedInput": "roty", "location": "thumb-mini"},
+        {"id": "thumb-ring", "name": "Thumb-face ring button", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "palm-button", "name": "Lower grip button", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "left-throttle", "name": "Left throttle lever axis", "kind": "Axis", "suggestedInput": "x"},
+        {"id": "right-throttle", "name": "Right throttle lever axis", "kind": "Axis", "suggestedInput": "y"},
+        {"id": "auxiliary-axis", "name": "Auxiliary lever axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "thumb-upper-up", "name": "Upper thumb hat up", "kind": "Button", "suggestedInput": "button11", "location": "thumb-upper"},
+        {"id": "thumb-upper-right", "name": "Upper thumb hat right", "kind": "Button", "suggestedInput": "button12", "location": "thumb-upper"},
+        {"id": "thumb-upper-down", "name": "Upper thumb hat down", "kind": "Button", "suggestedInput": "button13", "location": "thumb-upper"},
+        {"id": "thumb-upper-left", "name": "Upper thumb hat left", "kind": "Button", "suggestedInput": "button14", "location": "thumb-upper"},
+        {"id": "thumb-upper-press", "name": "Upper thumb hat center press", "kind": "Button", "suggestedInput": "button10", "location": "thumb-upper"},
+        {"id": "thumb-lower-up", "name": "Lower thumb hat up", "kind": "Button", "suggestedInput": "button19", "location": "thumb-lower"},
+        {"id": "thumb-lower-right", "name": "Lower thumb hat right", "kind": "Button", "suggestedInput": "button20", "location": "thumb-lower"},
+        {"id": "thumb-lower-down", "name": "Lower thumb hat down", "kind": "Button", "suggestedInput": "button21", "location": "thumb-lower"},
+        {"id": "thumb-lower-left", "name": "Lower thumb hat left", "kind": "Button", "suggestedInput": "button22", "location": "thumb-lower"},
+        {"id": "thumb-lower-press", "name": "Lower thumb hat center press", "kind": "Button", "suggestedInput": "button18", "location": "thumb-lower"}
+      ]
+    }
+  ]
+}

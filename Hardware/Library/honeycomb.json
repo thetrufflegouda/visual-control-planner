@@ -1,0 +1,903 @@
+{
+  "manufacturer": "Honeycomb Aeronautical",
+  "devices": [
+    {"id": "honeycomb-alpha", "name": "HONEYCOMB ALPHA FLIGHT CONTROLS / XPC", "vendorId": 10571, "productId": 6400, "layout": "honeycomb-alpha", "alternateProductIds": [6484]},
+    {"id": "honeycomb-alpha-lite", "name": "HONEYCOMB ALPHA FLIGHT CONTROLS LITE", "vendorId": 10571, "productId": 6412, "layout": "honeycomb-alpha-lite"},
+    {"id": "honeycomb-charlie", "name": "HONEYCOMB CHARLIE RUDDER PEDALS", "vendorId": 10571, "productId": 6403, "layout": "honeycomb-charlie"},
+    {"id": "honeycomb-sierra", "name": "HONEYCOMB SIERRA TPM MODULE", "vendorId": 10571, "productId": 6413, "layout": "honeycomb-sierra"},
+    {"id": "honeycomb-bravo", "name": "HONEYCOMB BRAVO THROTTLE QUADRANT", "vendorId": 10571, "productId": 6401, "layout": "honeycomb-bravo"},
+    {"id": "honeycomb-bravo-lite", "name": "HONEYCOMB BRAVO THROTTLE QUADRANT LITE", "vendorId": 10571, "productId": 6409, "layout": "honeycomb-bravo-lite"},
+    {"id": "honeycomb-echo", "name": "HONEYCOMB ECHO AVIATION CONTROLLER / XPC", "vendorId": 10571, "productId": 6414, "layout": "honeycomb-echo"},
+    {"id": "honeycomb-foxtrot", "name": "HONEYCOMB FOXTROT AVIATION STICK", "vendorId": 10571, "productId": 6422, "layout": "honeycomb-foxtrot"},
+    {"id": "honeycomb-foxtrot-throttle-box", "name": "HONEYCOMB FOXTROT THROTTLE BOX", "vendorId": 10571, "productId": 6470, "layout": "honeycomb-foxtrot-throttle-box"},
+    {"id": "honeycomb-foxtrot-linked", "name": "HONEYCOMB FOXTROT TAKEOFF KIT — LINKED MODE", "vendorId": 10571, "productId": 6454, "layout": "honeycomb-foxtrot-linked"}
+  ],
+  "layouts": [
+    {
+      "id": "honeycomb-alpha",
+      "references": [
+        "https://flyhoneycomb.com/products/alpha-flight-controls",
+        "https://www.flightsimulator.com/microsoft-flight-simulator-2024/",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/honeycomb/honeycomb_alpha.joystick.json",
+        "https://flyhoneycomb.com/products/alpha-flight-controls-xpc"
+      ],
+      "referenceNotes": [
+        "Original Alpha and Alpha XPC in PC switch mode have the same buttons and axes. The white PTT sits behind the left grip face."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Yoke and switch panel",
+          "image": "Hardware/Images/honeycomb-alpha-face.jpg",
+          "source": "https://images.mypilotstore.com/hr/13520-highres.jpg",
+          "hotspots": [
+            {"controlId": "ptt", "x": 0.0767, "y": 0.236, "width": 0.0253, "height": 0.0355},
+            {"controlId": "left-white", "x": 0.1687, "y": 0.2493, "width": 0.0173, "height": 0.0311},
+            {"controlId": "right-white", "x": 0.8427, "y": 0.2529, "width": 0.0173, "height": 0.0293},
+            {"controlId": "right-red", "x": 0.8813, "y": 0.2023, "width": 0.0407, "height": 0.0399},
+            {"controlId": "left-outer-rocker-down", "x": 0.094, "y": 0.2875, "width": 0.0287, "height": 0.0577},
+            {"controlId": "left-inner-rocker-down", "x": 0.1267, "y": 0.299, "width": 0.028, "height": 0.0603},
+            {"controlId": "right-upper-rocker-left", "x": 0.89, "y": 0.2618, "width": 0.044, "height": 0.0328},
+            {"controlId": "right-lower-rocker-left", "x": 0.9013, "y": 0.3088, "width": 0.0473, "height": 0.0346},
+            {"controlId": "look-up", "x": 0.1313, "y": 0.1952, "width": 0.05, "height": 0.0524},
+            {"controlId": "yoke-roll", "x": 0.4987, "y": 0.504, "width": 0.048, "height": 0.0728},
+            {"controlId": "alternator-up", "x": 0.264, "y": 0.449, "width": 0.0187, "height": 0.0719},
+            {"controlId": "battery-up", "x": 0.3027, "y": 0.449, "width": 0.0187, "height": 0.0719},
+            {"controlId": "avionics-1-up", "x": 0.3453, "y": 0.449, "width": 0.0193, "height": 0.0728},
+            {"controlId": "avionics-2-up", "x": 0.384, "y": 0.449, "width": 0.0187, "height": 0.0719},
+            {"controlId": "beacon-up", "x": 0.2087, "y": 0.5466, "width": 0.0313, "height": 0.0435},
+            {"controlId": "landing-up", "x": 0.254, "y": 0.5492, "width": 0.0307, "height": 0.0426},
+            {"controlId": "taxi-up", "x": 0.298, "y": 0.5492, "width": 0.0307, "height": 0.0426},
+            {"controlId": "navigation-up", "x": 0.3447, "y": 0.5492, "width": 0.03, "height": 0.0426},
+            {"controlId": "strobe-up", "x": 0.3893, "y": 0.5501, "width": 0.0287, "height": 0.0417},
+            {"controlId": "ignition-off", "x": 0.7707, "y": 0.5075, "width": 0.0447, "height": 0.0568}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "ptt", "name": "Left rear PTT button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "left-white", "name": "Left front white button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "right-white", "name": "Right white button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "right-red", "name": "Right red button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "left-outer-rocker-down", "name": "Left grip outer rocker Down", "kind": "Button", "suggestedInput": "button5", "location": "left-outer-rocker"},
+        {"id": "left-outer-rocker-up", "name": "Left grip outer rocker Up", "kind": "Button", "suggestedInput": "button6", "location": "left-outer-rocker"},
+        {"id": "left-inner-rocker-down", "name": "Left grip inner rocker Down", "kind": "Button", "suggestedInput": "button7", "location": "left-inner-rocker"},
+        {"id": "left-inner-rocker-up", "name": "Left grip inner rocker Up", "kind": "Button", "suggestedInput": "button8", "location": "left-inner-rocker"},
+        {"id": "right-upper-rocker-left", "name": "Right grip upper rocker Left", "kind": "Button", "suggestedInput": "button9", "location": "right-upper-rocker"},
+        {"id": "right-upper-rocker-right", "name": "Right grip upper rocker Right", "kind": "Button", "suggestedInput": "button10", "location": "right-upper-rocker"},
+        {"id": "right-lower-rocker-left", "name": "Right grip lower rocker Left", "kind": "Button", "suggestedInput": "button11", "location": "right-lower-rocker"},
+        {"id": "right-lower-rocker-right", "name": "Right grip lower rocker Right", "kind": "Button", "suggestedInput": "button12", "location": "right-lower-rocker"},
+        {"id": "look-up", "name": "Left grip POV up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "look"},
+        {"id": "look-right", "name": "Left grip POV right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "look"},
+        {"id": "look-down", "name": "Left grip POV down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "look"},
+        {"id": "look-left", "name": "Left grip POV left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "look"},
+        {"id": "yoke-roll", "name": "Yoke roll axis", "kind": "Axis", "suggestedInput": "x", "location": "yoke-motion"},
+        {"id": "yoke-pitch", "name": "Yoke pitch axis", "kind": "Axis", "suggestedInput": "y", "location": "yoke-motion"},
+        {"id": "alternator-up", "name": "Master alternator Up", "kind": "Button", "suggestedInput": "button13", "location": "alternator"},
+        {"id": "alternator-down", "name": "Master alternator Down", "kind": "Button", "suggestedInput": "button14", "location": "alternator"},
+        {"id": "battery-up", "name": "Master battery Up", "kind": "Button", "suggestedInput": "button15", "location": "battery"},
+        {"id": "battery-down", "name": "Master battery Down", "kind": "Button", "suggestedInput": "button16", "location": "battery"},
+        {"id": "avionics-1-up", "name": "Avionics bus 1 Up", "kind": "Button", "suggestedInput": "button17", "location": "avionics-1"},
+        {"id": "avionics-1-down", "name": "Avionics bus 1 Down", "kind": "Button", "suggestedInput": "button18", "location": "avionics-1"},
+        {"id": "avionics-2-up", "name": "Avionics bus 2 Up", "kind": "Button", "suggestedInput": "button19", "location": "avionics-2"},
+        {"id": "avionics-2-down", "name": "Avionics bus 2 Down", "kind": "Button", "suggestedInput": "button20", "location": "avionics-2"},
+        {"id": "beacon-up", "name": "Beacon lights Up", "kind": "Button", "suggestedInput": "button21", "location": "beacon"},
+        {"id": "beacon-down", "name": "Beacon lights Down", "kind": "Button", "suggestedInput": "button22", "location": "beacon"},
+        {"id": "landing-up", "name": "Landing lights Up", "kind": "Button", "suggestedInput": "button23", "location": "landing"},
+        {"id": "landing-down", "name": "Landing lights Down", "kind": "Button", "suggestedInput": "button24", "location": "landing"},
+        {"id": "taxi-up", "name": "Taxi lights Up", "kind": "Button", "suggestedInput": "button25", "location": "taxi"},
+        {"id": "taxi-down", "name": "Taxi lights Down", "kind": "Button", "suggestedInput": "button26", "location": "taxi"},
+        {"id": "navigation-up", "name": "Navigation lights Up", "kind": "Button", "suggestedInput": "button27", "location": "navigation"},
+        {"id": "navigation-down", "name": "Navigation lights Down", "kind": "Button", "suggestedInput": "button28", "location": "navigation"},
+        {"id": "strobe-up", "name": "Strobe lights Up", "kind": "Button", "suggestedInput": "button29", "location": "strobe"},
+        {"id": "strobe-down", "name": "Strobe lights Down", "kind": "Button", "suggestedInput": "button30", "location": "strobe"},
+        {"id": "ignition-off", "name": "Ignition Off", "kind": "Button", "suggestedInput": "button31", "location": "ignition"},
+        {"id": "ignition-right", "name": "Ignition Right", "kind": "Button", "suggestedInput": "button32", "location": "ignition"},
+        {"id": "ignition-left", "name": "Ignition Left", "kind": "Button", "suggestedInput": "button33", "location": "ignition"},
+        {"id": "ignition-both", "name": "Ignition Both", "kind": "Button", "suggestedInput": "button34", "location": "ignition"},
+        {"id": "ignition-start", "name": "Ignition Start", "kind": "Button", "suggestedInput": "button35", "location": "ignition"}
+      ]
+    },
+    {
+      "id": "honeycomb-alpha-lite",
+      "references": [
+        "https://flyhoneycomb.com/products/alpha-flight-controls-lite",
+        "https://media.canto.global/b/K42S6",
+        "https://media.canto.global/b/MJHUI"
+      ],
+      "referenceNotes": [
+        "The LITE uses one two-way rocker per grip. The white PTT button sits behind the left grip and the official chart illustrates it from the side."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Yoke grips",
+          "image": "Hardware/Images/honeycomb-alpha-lite-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC003851_AlphaFlightControlsLite_2.jpg?v=1756653514&width=1600",
+          "hotspots": [
+            {"controlId": "ptt", "x": 0.1744, "y": 0.2975, "width": 0.0256, "height": 0.0325},
+            {"controlId": "left-white", "x": 0.2331, "y": 0.2969, "width": 0.0156, "height": 0.0219},
+            {"controlId": "right-white", "x": 0.7706, "y": 0.2994, "width": 0.0156, "height": 0.0219},
+            {"controlId": "right-red", "x": 0.8031, "y": 0.2744, "width": 0.0338, "height": 0.0269},
+            {"controlId": "left-rocker-down", "x": 0.1919, "y": 0.32, "width": 0.045, "height": 0.0362},
+            {"controlId": "right-rocker-left", "x": 0.8081, "y": 0.3181, "width": 0.0494, "height": 0.0381},
+            {"controlId": "look-up", "x": 0.2037, "y": 0.2712, "width": 0.0387, "height": 0.0294},
+            {"controlId": "yoke-roll", "x": 0.5012, "y": 0.5231, "width": 0.045, "height": 0.035}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "ptt", "name": "Left rear PTT button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "left-white", "name": "Left front white button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "right-white", "name": "Right white button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "right-red", "name": "Right red button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "look-up", "name": "Left grip POV up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "look"},
+        {"id": "look-right", "name": "Left grip POV right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "look"},
+        {"id": "look-down", "name": "Left grip POV down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "look"},
+        {"id": "look-left", "name": "Left grip POV left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "look"},
+        {"id": "yoke-roll", "name": "Yoke roll axis", "kind": "Axis", "suggestedInput": "x", "location": "yoke-motion"},
+        {"id": "yoke-pitch", "name": "Yoke pitch axis", "kind": "Axis", "suggestedInput": "y", "location": "yoke-motion"},
+        {"id": "left-rocker-down", "name": "Left grip rocker Down", "kind": "Button", "suggestedInput": "button5", "location": "left-rocker"},
+        {"id": "left-rocker-up", "name": "Left grip rocker Up", "kind": "Button", "suggestedInput": "button6", "location": "left-rocker"},
+        {"id": "right-rocker-left", "name": "Right grip rocker Left", "kind": "Button", "suggestedInput": "button9", "location": "right-rocker"},
+        {"id": "right-rocker-right", "name": "Right grip rocker Right", "kind": "Button", "suggestedInput": "button10", "location": "right-rocker"}
+      ]
+    },
+    {
+      "id": "honeycomb-charlie",
+      "references": [
+        "https://flyhoneycomb.com/products/charlie-rudder-pedals",
+        "https://www.flightsimulator.com/microsoft-flight-simulator-2024/"
+      ],
+      "referenceNotes": [
+        "Stock PC profile maps the left brake to X, right brake to Y and rudder travel to Z."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Toe brakes and rudder travel",
+          "image": "Hardware/Images/honeycomb-charlie-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC003073_CHARLIERUDDERPEDALS_2.png?v=1756653139&width=1600",
+          "hotspots": [
+            {"controlId": "left-brake", "x": 0.1963, "y": 0.3713, "width": 0.1469, "height": 0.1369},
+            {"controlId": "right-brake", "x": 0.6481, "y": 0.3063, "width": 0.1131, "height": 0.1231},
+            {"controlId": "rudder", "x": 0.5006, "y": 0.4094, "width": 0.1606, "height": 0.115}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-brake", "name": "Left toe brake axis", "kind": "Axis", "suggestedInput": "x"},
+        {"id": "right-brake", "name": "Right toe brake axis", "kind": "Axis", "suggestedInput": "y"},
+        {"id": "rudder", "name": "Rudder axis", "kind": "Axis", "suggestedInput": "z"}
+      ]
+    },
+    {
+      "id": "honeycomb-sierra",
+      "references": [
+        "https://flyhoneycomb.com/products/sierra-tpm-module",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/honeycomb/sierra.joystick.json",
+        "https://media.canto.global/b/N5A0P"
+      ],
+      "referenceNotes": [
+        "The official PC profile maps throttle Z, propeller Y and mixture X."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Verniers and panel",
+          "image": "Hardware/Images/honeycomb-sierra-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC003998_SIERRATPMMODULE_Thumbnails_1_54ea60b6-1390-4afe-981c-a2ee2e8f6905.webp?v=1774817921&width=1600",
+          "hotspots": [
+            {"controlId": "trim-down", "x": 0.1481, "y": 0.5194, "width": 0.025, "height": 0.1519},
+            {"controlId": "throttle-axis", "x": 0.2744, "y": 0.5613, "width": 0.0663, "height": 0.0663},
+            {"controlId": "propeller-axis", "x": 0.4256, "y": 0.5619, "width": 0.0762, "height": 0.075},
+            {"controlId": "mixture-axis", "x": 0.5775, "y": 0.565, "width": 0.0737, "height": 0.0712},
+            {"controlId": "flaps-up", "x": 0.72, "y": 0.4494, "width": 0.0638, "height": 0.0331},
+            {"controlId": "parking-brake-engaged", "x": 0.7238, "y": 0.6056, "width": 0.0813, "height": 0.0762},
+            {"controlId": "gear-up", "x": 0.8762, "y": 0.6969, "width": 0.055, "height": 0.0663}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trim-down", "name": "Trim wheel nose Down", "kind": "Button", "suggestedInput": "button1", "location": "trim"},
+        {"id": "trim-up", "name": "Trim wheel nose Up", "kind": "Button", "suggestedInput": "button2", "location": "trim"},
+        {"id": "flaps-up", "name": "Flaps Up", "kind": "Button", "suggestedInput": "button3", "location": "flaps"},
+        {"id": "flaps-down", "name": "Flaps Down", "kind": "Button", "suggestedInput": "button4", "location": "flaps"},
+        {"id": "parking-brake-engaged", "name": "Parking brake Engaged", "kind": "Button", "suggestedInput": "button5", "location": "parking-brake"},
+        {"id": "parking-brake-released", "name": "Parking brake Released", "kind": "Button", "suggestedInput": "button6", "location": "parking-brake"},
+        {"id": "gear-up", "name": "Landing gear Up", "kind": "Button", "suggestedInput": "button7", "location": "gear"},
+        {"id": "gear-down", "name": "Landing gear Down", "kind": "Button", "suggestedInput": "button8", "location": "gear"},
+        {"id": "throttle-axis", "name": "Throttle vernier axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "propeller-axis", "name": "Propeller vernier axis", "kind": "Axis", "suggestedInput": "y"},
+        {"id": "mixture-axis", "name": "Mixture vernier axis", "kind": "Axis", "suggestedInput": "x"}
+      ]
+    },
+    {
+      "id": "honeycomb-bravo",
+      "references": [
+        "https://flyhoneycomb.com/products/bravo-throttle-quadrant",
+        "https://www.flightsimulator.com/microsoft-flight-simulator-2024/",
+        "https://github.com/MobiFlight/MobiFlight-Connector/blob/main/src/MobiFlightConnector/Joysticks/honeycomb/honeycomb_bravo.joystick.json"
+      ],
+      "referenceNotes": [
+        "Six lever slots with interchangeable general-aviation and commercial handles. Handle buttons and reversers depend on the fitted levers."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Lever axes, gear and autopilot",
+          "image": "Hardware/Images/honeycomb-bravo-face.jpg",
+          "source": "https://i5.walmartimages.com/seo/Honeycomb-Aeronautical-Bravo-Throttle-Quadrant_b0111bf5-21df-4031-b614-0d1717375d86.61af342598e6ec97c892f3ad38850133.jpeg",
+          "hotspots": [
+            {"controlId": "ap-selector-ias", "x": 0.3453, "y": 0.3083, "width": 0.0258, "height": 0.0417},
+            {"controlId": "ap-hdg", "x": 0.3957, "y": 0.2995, "width": 0.0211, "height": 0.0271},
+            {"controlId": "ap-nav", "x": 0.4297, "y": 0.2995, "width": 0.0211, "height": 0.0271},
+            {"controlId": "ap-apr", "x": 0.4641, "y": 0.2995, "width": 0.0211, "height": 0.0271},
+            {"controlId": "ap-rev", "x": 0.4984, "y": 0.2995, "width": 0.0211, "height": 0.0271},
+            {"controlId": "ap-alt", "x": 0.5328, "y": 0.2995, "width": 0.0211, "height": 0.0271},
+            {"controlId": "ap-vs", "x": 0.5668, "y": 0.2995, "width": 0.0211, "height": 0.0271},
+            {"controlId": "ap-ias", "x": 0.6016, "y": 0.2995, "width": 0.0211, "height": 0.0271},
+            {"controlId": "ap-knob-increase", "x": 0.652, "y": 0.3052, "width": 0.032, "height": 0.0422},
+            {"controlId": "autopilot-master", "x": 0.7281, "y": 0.2974, "width": 0.025, "height": 0.0391},
+            {"controlId": "gear-up", "x": 0.2285, "y": 0.6042, "width": 0.0441, "height": 0.0651},
+            {"controlId": "trim-down", "x": 0.2613, "y": 0.7891, "width": 0.0293, "height": 0.237},
+            {"controlId": "flaps-up", "x": 0.7637, "y": 0.4651, "width": 0.0559, "height": 0.0453},
+            {"controlId": "lever-1-axis", "x": 0.2906, "y": 0.3771, "width": 0.0434, "height": 0.0693},
+            {"controlId": "lever-2-axis", "x": 0.3582, "y": 0.3776, "width": 0.0434, "height": 0.0693},
+            {"controlId": "lever-3-axis", "x": 0.4637, "y": 0.4271, "width": 0.0434, "height": 0.0693},
+            {"controlId": "lever-4-axis", "x": 0.5309, "y": 0.4271, "width": 0.0434, "height": 0.0693},
+            {"controlId": "lever-5-axis", "x": 0.6246, "y": 0.4417, "width": 0.0434, "height": 0.0693},
+            {"controlId": "lever-6-axis", "x": 0.6926, "y": 0.4417, "width": 0.0434, "height": 0.0693}
+          ]
+        },
+        {
+          "id": "switches",
+          "name": "Programmable switch bank",
+          "image": "Hardware/Images/honeycomb-bravo-switches-cutout.png",
+          "source": "https://www.flightsimulator.com/microsoft-flight-simulator-2024/",
+          "hotspots": [
+            {"controlId": "panel-switch-1-up", "x": 0.3892, "y": 0.4308, "width": 0.0158, "height": 0.0383},
+            {"controlId": "panel-switch-2-up", "x": 0.4117, "y": 0.4392, "width": 0.0158, "height": 0.0383},
+            {"controlId": "panel-switch-3-up", "x": 0.4325, "y": 0.4475, "width": 0.0158, "height": 0.0383},
+            {"controlId": "panel-switch-4-up", "x": 0.4533, "y": 0.455, "width": 0.0158, "height": 0.0383},
+            {"controlId": "panel-switch-5-up", "x": 0.4775, "y": 0.4642, "width": 0.0158, "height": 0.0383},
+            {"controlId": "panel-switch-6-up", "x": 0.5017, "y": 0.4733, "width": 0.0158, "height": 0.0383},
+            {"controlId": "panel-switch-7-up", "x": 0.5283, "y": 0.4858, "width": 0.0158, "height": 0.0383}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "ap-hdg", "name": "Autopilot HDG", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "ap-nav", "name": "Autopilot NAV", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "ap-apr", "name": "Autopilot APR", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "ap-rev", "name": "Autopilot REV", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "ap-alt", "name": "Autopilot ALT", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "ap-vs", "name": "Autopilot VS", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "ap-ias", "name": "Autopilot IAS", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "autopilot-master", "name": "Autopilot master", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "ap-knob-increase", "name": "Autopilot adjustment Increase", "kind": "Button", "suggestedInput": "button13", "location": "ap-knob"},
+        {"id": "ap-knob-decrease", "name": "Autopilot adjustment Decrease", "kind": "Button", "suggestedInput": "button14", "location": "ap-knob"},
+        {"id": "flaps-down", "name": "Flaps Down", "kind": "Button", "suggestedInput": "button15", "location": "flaps"},
+        {"id": "flaps-up", "name": "Flaps Up", "kind": "Button", "suggestedInput": "button16", "location": "flaps"},
+        {"id": "ap-selector-ias", "name": "Autopilot selector Ias", "kind": "Button", "suggestedInput": "button17", "location": "ap-selector"},
+        {"id": "ap-selector-crs", "name": "Autopilot selector Crs", "kind": "Button", "suggestedInput": "button18", "location": "ap-selector"},
+        {"id": "ap-selector-hdg", "name": "Autopilot selector Hdg", "kind": "Button", "suggestedInput": "button19", "location": "ap-selector"},
+        {"id": "ap-selector-vs", "name": "Autopilot selector Vs", "kind": "Button", "suggestedInput": "button20", "location": "ap-selector"},
+        {"id": "ap-selector-alt", "name": "Autopilot selector Alt", "kind": "Button", "suggestedInput": "button21", "location": "ap-selector"},
+        {"id": "trim-down", "name": "Trim wheel nose Down", "kind": "Button", "suggestedInput": "button22", "location": "trim"},
+        {"id": "trim-up", "name": "Trim wheel nose Up", "kind": "Button", "suggestedInput": "button23", "location": "trim"},
+        {"id": "gear-up", "name": "Landing gear Up", "kind": "Button", "suggestedInput": "button31", "location": "gear"},
+        {"id": "gear-down", "name": "Landing gear Down", "kind": "Button", "suggestedInput": "button32", "location": "gear"},
+        {"id": "panel-switch-1-up", "name": "Panel switch 1 Up", "kind": "Button", "suggestedInput": "button34", "location": "panel-switch-1"},
+        {"id": "panel-switch-1-down", "name": "Panel switch 1 Down", "kind": "Button", "suggestedInput": "button35", "location": "panel-switch-1"},
+        {"id": "panel-switch-2-up", "name": "Panel switch 2 Up", "kind": "Button", "suggestedInput": "button36", "location": "panel-switch-2"},
+        {"id": "panel-switch-2-down", "name": "Panel switch 2 Down", "kind": "Button", "suggestedInput": "button37", "location": "panel-switch-2"},
+        {"id": "panel-switch-3-up", "name": "Panel switch 3 Up", "kind": "Button", "suggestedInput": "button38", "location": "panel-switch-3"},
+        {"id": "panel-switch-3-down", "name": "Panel switch 3 Down", "kind": "Button", "suggestedInput": "button39", "location": "panel-switch-3"},
+        {"id": "panel-switch-4-up", "name": "Panel switch 4 Up", "kind": "Button", "suggestedInput": "button40", "location": "panel-switch-4"},
+        {"id": "panel-switch-4-down", "name": "Panel switch 4 Down", "kind": "Button", "suggestedInput": "button41", "location": "panel-switch-4"},
+        {"id": "panel-switch-5-up", "name": "Panel switch 5 Up", "kind": "Button", "suggestedInput": "button42", "location": "panel-switch-5"},
+        {"id": "panel-switch-5-down", "name": "Panel switch 5 Down", "kind": "Button", "suggestedInput": "button43", "location": "panel-switch-5"},
+        {"id": "panel-switch-6-up", "name": "Panel switch 6 Up", "kind": "Button", "suggestedInput": "button44", "location": "panel-switch-6"},
+        {"id": "panel-switch-6-down", "name": "Panel switch 6 Down", "kind": "Button", "suggestedInput": "button45", "location": "panel-switch-6"},
+        {"id": "panel-switch-7-up", "name": "Panel switch 7 Up", "kind": "Button", "suggestedInput": "button46", "location": "panel-switch-7"},
+        {"id": "panel-switch-7-down", "name": "Panel switch 7 Down", "kind": "Button", "suggestedInput": "button47", "location": "panel-switch-7"},
+        {"id": "lever-1-axis", "name": "Lever 1 axis", "kind": "Axis", "suggestedInput": "y", "location": "lever-1"},
+        {"id": "lever-1-detent", "name": "Lever 1 detent", "kind": "Button", "suggestedInput": "button24", "location": "lever-1"},
+        {"id": "lever-1-button", "name": "Lever 1 handle button", "kind": "Button", "suggestedInput": "button29", "location": "lever-1"},
+        {"id": "lever-2-axis", "name": "Lever 2 axis", "kind": "Axis", "suggestedInput": "x", "location": "lever-2"},
+        {"id": "lever-2-detent", "name": "Lever 2 detent", "kind": "Button", "suggestedInput": "button25", "location": "lever-2"},
+        {"id": "lever-2-button", "name": "Lever 2 handle button", "kind": "Button", "suggestedInput": "button9", "location": "lever-2"},
+        {"id": "lever-3-axis", "name": "Lever 3 axis", "kind": "Axis", "suggestedInput": "rotz", "location": "lever-3"},
+        {"id": "lever-3-detent", "name": "Lever 3 detent", "kind": "Button", "suggestedInput": "button26", "location": "lever-3"},
+        {"id": "lever-3-button", "name": "Lever 3 handle button", "kind": "Button", "suggestedInput": "button10", "location": "lever-3"},
+        {"id": "lever-3-reverse", "name": "Lever 3 thrust reverser", "kind": "Button", "suggestedInput": "button30", "location": "lever-3"},
+        {"id": "lever-4-axis", "name": "Lever 4 axis", "kind": "Axis", "suggestedInput": "roty", "location": "lever-4"},
+        {"id": "lever-4-detent", "name": "Lever 4 detent", "kind": "Button", "suggestedInput": "button27", "location": "lever-4"},
+        {"id": "lever-4-button", "name": "Lever 4 handle button", "kind": "Button", "suggestedInput": "button11", "location": "lever-4"},
+        {"id": "lever-4-reverse", "name": "Lever 4 thrust reverser", "kind": "Button", "suggestedInput": "button48", "location": "lever-4"},
+        {"id": "lever-5-axis", "name": "Lever 5 axis", "kind": "Axis", "suggestedInput": "rotx", "location": "lever-5"},
+        {"id": "lever-5-detent", "name": "Lever 5 detent", "kind": "Button", "suggestedInput": "button28", "location": "lever-5"},
+        {"id": "lever-5-button", "name": "Lever 5 handle button", "kind": "Button", "suggestedInput": "button12", "location": "lever-5"},
+        {"id": "lever-6-axis", "name": "Lever 6 axis", "kind": "Axis", "suggestedInput": "z", "location": "lever-6"},
+        {"id": "lever-6-detent", "name": "Lever 6 detent", "kind": "Button", "suggestedInput": "button33", "location": "lever-6"}
+      ]
+    },
+    {
+      "id": "honeycomb-bravo-lite",
+      "references": [
+        "https://flyhoneycomb.com/products/bravo-throttle-quadrant-lite",
+        "https://media.canto.global/b/UVSPD"
+      ],
+      "referenceNotes": [
+        "The official GA and airliner profiles identify the four axes and mapped buttons. Go-around and reverse presses depend on fitted handles."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Four levers, gear and trim",
+          "image": "Hardware/Images/honeycomb-bravo-lite-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC003790_BRAVOTHROTTLEQUADRANTLITE_1.webp?v=1762765801&width=1600",
+          "hotspots": [
+            {"controlId": "lever-1-axis", "x": 0.3519, "y": 0.3806, "width": 0.0387, "height": 0.09},
+            {"controlId": "lever-2-axis", "x": 0.4056, "y": 0.15, "width": 0.1119, "height": 0.0656},
+            {"controlId": "lever-3-axis", "x": 0.595, "y": 0.1487, "width": 0.11, "height": 0.0669},
+            {"controlId": "lever-4-axis", "x": 0.6138, "y": 0.3744, "width": 0.0537, "height": 0.0275},
+            {"controlId": "trim-down", "x": 0.2025, "y": 0.6531, "width": 0.0231, "height": 0.1444},
+            {"controlId": "parking-brake-engaged", "x": 0.2056, "y": 0.475, "width": 0.075, "height": 0.0288},
+            {"controlId": "gear-up", "x": 0.815, "y": 0.7425, "width": 0.0569, "height": 0.0587}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "gear-up", "name": "Landing gear Up", "kind": "Button", "suggestedInput": "button6", "location": "gear"},
+        {"id": "gear-down", "name": "Landing gear Down", "kind": "Button", "suggestedInput": "button7", "location": "gear"},
+        {"id": "trim-down", "name": "Trim wheel nose Down", "kind": "Button", "suggestedInput": "button13", "location": "trim"},
+        {"id": "trim-up", "name": "Trim wheel nose Up", "kind": "Button", "suggestedInput": "button14", "location": "trim"},
+        {"id": "parking-brake-engaged", "name": "Parking brake lever", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "lever-1-axis", "name": "Lever 1 axis", "kind": "Axis", "suggestedInput": "y", "location": "lever-1"},
+        {"id": "lever-2-axis", "name": "Lever 2 axis", "kind": "Axis", "suggestedInput": "rotz", "location": "lever-2"},
+        {"id": "lever-3-axis", "name": "Lever 3 axis", "kind": "Axis", "suggestedInput": "roty", "location": "lever-3"},
+        {"id": "lever-4-axis", "name": "Lever 4 axis", "kind": "Axis", "suggestedInput": "z", "location": "lever-4"},
+        {"id": "lever-1-toga", "name": "Lever 1 go-around button", "kind": "Button", "suggestedInput": "button2", "location": "lever-1"},
+        {"id": "lever-2-toga", "name": "Lever 2 go-around button", "kind": "Button", "suggestedInput": "button3", "location": "lever-2"},
+        {"id": "lever-2-detent", "name": "Lever 2 reverse detent", "kind": "Button", "suggestedInput": "button4", "location": "lever-2"},
+        {"id": "lever-3-detent", "name": "Lever 3 reverse detent", "kind": "Button", "suggestedInput": "button5", "location": "lever-3"},
+        {"id": "lever-2-reverse", "name": "Lever 2 reverse handle", "kind": "Button", "suggestedInput": "button10", "location": "lever-2"},
+        {"id": "lever-3-reverse", "name": "Lever 3 reverse handle", "kind": "Button", "suggestedInput": "button11", "location": "lever-3"}
+      ]
+    },
+    {
+      "id": "honeycomb-echo",
+      "references": [
+        "https://flyhoneycomb.com/products/echo-aviation-controller",
+        "https://flyhoneycomb.com/products/echo-xpc-aviation-controller",
+        "https://media.canto.global/b/VPRHM",
+        "https://media.canto.global/b/MFCNB"
+      ],
+      "referenceNotes": [
+        "The original Echo chart documents the 25 numbered PC inputs. Echo XPC has the corresponding control positions with Xbox legends. Pair explicitly and verify the reported inputs for your USB, wireless, or XPC mode."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Front switches and sliders",
+          "image": "Hardware/Images/honeycomb-echo-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC003981_EchoAviationController_1.webp?v=1774814963&width=1600",
+          "hotspots": [
+            {"controlId": "face-south", "x": 0.3606, "y": 0.3825, "width": 0.0488, "height": 0.0462},
+            {"controlId": "face-east", "x": 0.4019, "y": 0.3419, "width": 0.0469, "height": 0.0462},
+            {"controlId": "face-west", "x": 0.3212, "y": 0.3425, "width": 0.0475, "height": 0.0462},
+            {"controlId": "face-north", "x": 0.3606, "y": 0.3019, "width": 0.0469, "height": 0.0462},
+            {"controlId": "system-lower", "x": 0.4988, "y": 0.2863, "width": 0.0775, "height": 0.0231},
+            {"controlId": "system-right", "x": 0.5681, "y": 0.2756, "width": 0.025, "height": 0.0312},
+            {"controlId": "system-upper", "x": 0.5038, "y": 0.2556, "width": 0.0875, "height": 0.0281},
+            {"controlId": "system-left", "x": 0.4369, "y": 0.2775, "width": 0.0269, "height": 0.0338},
+            {"controlId": "look-up", "x": 0.225, "y": 0.3706, "width": 0.0938, "height": 0.0963},
+            {"controlId": "thumb-roll", "x": 0.3575, "y": 0.5012, "width": 0.1412, "height": 0.1263},
+            {"controlId": "slider-1-axis", "x": 0.5219, "y": 0.4338, "width": 0.0519, "height": 0.1019},
+            {"controlId": "slider-2-axis", "x": 0.5813, "y": 0.4369, "width": 0.0519, "height": 0.1037},
+            {"controlId": "slider-3-axis", "x": 0.6369, "y": 0.4375, "width": 0.0519, "height": 0.1031},
+            {"controlId": "slider-4-axis", "x": 0.6969, "y": 0.4394, "width": 0.0506, "height": 0.1037},
+            {"controlId": "trim-up", "x": 0.7744, "y": 0.3975, "width": 0.03, "height": 0.0956},
+            {"controlId": "parking-brake-out", "x": 0.375, "y": 0.6894, "width": 0.07, "height": 0.0213},
+            {"controlId": "gear-up", "x": 0.4994, "y": 0.705, "width": 0.0369, "height": 0.0694},
+            {"controlId": "flaps-up", "x": 0.6256, "y": 0.71, "width": 0.0494, "height": 0.0625}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Shoulder buttons and rudder paddles",
+          "image": "Hardware/Images/honeycomb-echo-rear.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC003981_EchoAviationController_2.webp?v=1774814963&width=1600",
+          "hotspots": [
+            {"controlId": "right-bumper-front", "x": 0.2969, "y": 0.215, "width": 0.0956, "height": 0.0219},
+            {"controlId": "right-bumper-rear", "x": 0.2431, "y": 0.2619, "width": 0.1075, "height": 0.0394},
+            {"controlId": "left-bumper-front", "x": 0.6894, "y": 0.215, "width": 0.0963, "height": 0.0225},
+            {"controlId": "left-bumper-rear", "x": 0.7594, "y": 0.2625, "width": 0.1075, "height": 0.0406},
+            {"controlId": "rudder", "x": 0.3644, "y": 0.4256, "width": 0.0531, "height": 0.0669}
+          ]
+        },
+        {
+          "id": "xpc",
+          "name": "XPC face and Xbox labels",
+          "image": "Hardware/Images/honeycomb-echo-xpc-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC004339_Echo_Aviation_Controller_XPC_Gallery_1.jpg?v=1795182086&width=1600",
+          "hotspots": [
+            {"controlId": "face-south", "x": 0.3588, "y": 0.3894, "width": 0.0437, "height": 0.045},
+            {"controlId": "face-east", "x": 0.4019, "y": 0.3488, "width": 0.0456, "height": 0.0456},
+            {"controlId": "face-west", "x": 0.3156, "y": 0.3488, "width": 0.045, "height": 0.0456},
+            {"controlId": "face-north", "x": 0.3588, "y": 0.3094, "width": 0.045, "height": 0.0462},
+            {"controlId": "system-lower", "x": 0.4994, "y": 0.3031, "width": 0.0813, "height": 0.0213},
+            {"controlId": "system-right", "x": 0.5681, "y": 0.2913, "width": 0.0238, "height": 0.0319},
+            {"controlId": "system-upper", "x": 0.5006, "y": 0.2519, "width": 0.0556, "height": 0.06},
+            {"controlId": "system-left", "x": 0.435, "y": 0.2938, "width": 0.025, "height": 0.0312},
+            {"controlId": "look-up", "x": 0.2281, "y": 0.3787, "width": 0.0944, "height": 0.0944},
+            {"controlId": "thumb-roll", "x": 0.3563, "y": 0.5075, "width": 0.1244, "height": 0.1256},
+            {"controlId": "slider-1-axis", "x": 0.5244, "y": 0.4444, "width": 0.0475, "height": 0.0981},
+            {"controlId": "slider-2-axis", "x": 0.58, "y": 0.4444, "width": 0.0519, "height": 0.0988},
+            {"controlId": "slider-3-axis", "x": 0.6381, "y": 0.4444, "width": 0.0531, "height": 0.0988},
+            {"controlId": "slider-4-axis", "x": 0.6963, "y": 0.4444, "width": 0.0506, "height": 0.0994},
+            {"controlId": "trim-up", "x": 0.7694, "y": 0.4062, "width": 0.0331, "height": 0.0956},
+            {"controlId": "parking-brake-out", "x": 0.3738, "y": 0.7019, "width": 0.0719, "height": 0.0213},
+            {"controlId": "gear-up", "x": 0.5, "y": 0.7169, "width": 0.0394, "height": 0.0612},
+            {"controlId": "flaps-up", "x": 0.6256, "y": 0.7156, "width": 0.0488, "height": 0.0675}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "face-south", "name": "Action cluster lower button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "face-east", "name": "Action cluster right button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "face-west", "name": "Action cluster left button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "face-north", "name": "Action cluster upper button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "left-bumper-front", "name": "Left front shoulder bumper", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "left-bumper-rear", "name": "Left rear shoulder bumper", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "right-bumper-front", "name": "Right front shoulder bumper", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "right-bumper-rear", "name": "Right rear shoulder bumper", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "system-lower", "name": "Lower center button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "system-right", "name": "Right center button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "system-upper", "name": "Upper center button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "system-left", "name": "Left center button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "gear-up", "name": "Landing gear Up", "kind": "Button", "suggestedInput": "button13", "location": "gear"},
+        {"id": "gear-down", "name": "Landing gear Down", "kind": "Button", "suggestedInput": "button14", "location": "gear"},
+        {"id": "parking-brake-out", "name": "Parking brake Out", "kind": "Button", "suggestedInput": "button15", "location": "parking-brake"},
+        {"id": "parking-brake-in", "name": "Parking brake In", "kind": "Button", "suggestedInput": "button16", "location": "parking-brake"},
+        {"id": "flaps-up", "name": "Flaps Up", "kind": "Button", "suggestedInput": "button17", "location": "flaps"},
+        {"id": "flaps-down", "name": "Flaps Down", "kind": "Button", "suggestedInput": "button18", "location": "flaps"},
+        {"id": "trim-up", "name": "Trim wheel Up", "kind": "Button", "suggestedInput": "button23", "location": "trim"},
+        {"id": "trim-down", "name": "Trim wheel Down", "kind": "Button", "suggestedInput": "button24", "location": "trim"},
+        {"id": "look-up", "name": "Left POV up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "look"},
+        {"id": "look-right", "name": "Left POV right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "look"},
+        {"id": "look-down", "name": "Left POV down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "look"},
+        {"id": "look-left", "name": "Left POV left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "look"},
+        {"id": "thumb-roll", "name": "Thumbstick roll axis", "kind": "Axis", "suggestedInput": "x", "location": "thumbstick"},
+        {"id": "thumb-pitch", "name": "Thumbstick pitch axis", "kind": "Axis", "suggestedInput": "y", "location": "thumbstick"},
+        {"id": "thumb-press", "name": "Thumbstick press", "kind": "Button", "suggestedInput": "button25", "location": "thumbstick"},
+        {"id": "rudder", "name": "Linked rudder paddles axis", "kind": "Axis", "suggestedInput": "rotx"},
+        {"id": "slider-1-axis", "name": "Slider 1 axis", "kind": "Axis", "suggestedInput": "z", "location": "slider-1"},
+        {"id": "slider-1-detent", "name": "Slider 1 detent", "kind": "Button", "suggestedInput": "button19", "location": "slider-1"},
+        {"id": "slider-2-axis", "name": "Slider 2 axis", "kind": "Axis", "suggestedInput": "rotz", "location": "slider-2"},
+        {"id": "slider-2-detent", "name": "Slider 2 detent", "kind": "Button", "suggestedInput": "button20", "location": "slider-2"},
+        {"id": "slider-3-axis", "name": "Slider 3 axis", "kind": "Axis", "suggestedInput": "slider2", "location": "slider-3"},
+        {"id": "slider-3-detent", "name": "Slider 3 detent", "kind": "Button", "suggestedInput": "button21", "location": "slider-3"},
+        {"id": "slider-4-axis", "name": "Slider 4 axis", "kind": "Axis", "suggestedInput": "slider1", "location": "slider-4"},
+        {"id": "slider-4-detent", "name": "Slider 4 detent", "kind": "Button", "suggestedInput": "button22", "location": "slider-4"}
+      ]
+    },
+    {
+      "id": "honeycomb-foxtrot",
+      "references": [
+        "https://flyhoneycomb.com/products/foxtrot-aviation-stick",
+        "https://media.canto.global/v/HoneycombAeronautical/s/QJFB1",
+        "https://media.canto.global/b/N9F80"
+      ],
+      "referenceNotes": [
+        "Set up the stick as a direct USB device to use this template. The OEM chart does not label the index trigger report. Use Input Learn for that control."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip and switch panel",
+          "image": "Hardware/Images/honeycomb-foxtrot-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/FoxtrotProductThumbnail_1_b9813450-7d12-4a4c-9f28-d668b7913684.webp?v=1762289922&width=1600",
+          "hotspots": [
+            {"controlId": "look-up", "x": 0.5069, "y": 0.1675, "width": 0.0531, "height": 0.0413},
+            {"controlId": "grip-red", "x": 0.4531, "y": 0.1906, "width": 0.0269, "height": 0.0288},
+            {"controlId": "grip-white", "x": 0.56, "y": 0.1913, "width": 0.0269, "height": 0.0288},
+            {"controlId": "left-rocker-up", "x": 0.4906, "y": 0.2181, "width": 0.0338, "height": 0.0444},
+            {"controlId": "right-rocker-up", "x": 0.52, "y": 0.2175, "width": 0.0331, "height": 0.045},
+            {"controlId": "stick-twist", "x": 0.4988, "y": 0.3694, "width": 0.0912, "height": 0.0887},
+            {"controlId": "stick-roll", "x": 0.4969, "y": 0.63, "width": 0.1669, "height": 0.0762},
+            {"controlId": "home", "x": 0.305, "y": 0.5837, "width": 0.0406, "height": 0.0238},
+            {"controlId": "view", "x": 0.6494, "y": 0.5787, "width": 0.0256, "height": 0.0112},
+            {"controlId": "toolbar", "x": 0.6756, "y": 0.5787, "width": 0.0238, "height": 0.0112},
+            {"controlId": "checklist", "x": 0.7013, "y": 0.5781, "width": 0.0219, "height": 0.0081},
+            {"controlId": "apu-off", "x": 0.7063, "y": 0.5931, "width": 0.035, "height": 0.0219},
+            {"controlId": "radio-nav2", "x": 0.7063, "y": 0.6175, "width": 0.0444, "height": 0.0281},
+            {"controlId": "autopilot-ias", "x": 0.7113, "y": 0.6613, "width": 0.0475, "height": 0.0469},
+            {"controlId": "action-1", "x": 0.2969, "y": 0.6244, "width": 0.035, "height": 0.0194},
+            {"controlId": "action-2", "x": 0.2931, "y": 0.6425, "width": 0.035, "height": 0.0194},
+            {"controlId": "action-3", "x": 0.2906, "y": 0.66, "width": 0.035, "height": 0.0194},
+            {"controlId": "action-4", "x": 0.2888, "y": 0.6781, "width": 0.035, "height": 0.0194},
+            {"controlId": "beacon-on", "x": 0.3356, "y": 0.7225, "width": 0.0281, "height": 0.045},
+            {"controlId": "landing-on", "x": 0.4181, "y": 0.7225, "width": 0.0281, "height": 0.045},
+            {"controlId": "taxi-on", "x": 0.5, "y": 0.7225, "width": 0.0281, "height": 0.045},
+            {"controlId": "navigation-on", "x": 0.5831, "y": 0.7225, "width": 0.0281, "height": 0.045},
+            {"controlId": "strobe-on", "x": 0.6663, "y": 0.7225, "width": 0.0281, "height": 0.045}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger and right controls",
+          "image": "Hardware/Images/honeycomb-foxtrot-trigger.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/FoxtrotProductThumbnail_2_a7aad96e-f88d-465a-976f-f36a72414c2a.webp?v=1762289922&width=1600",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.6069, "y": 0.2944, "width": 0.0231, "height": 0.0519},
+            {"controlId": "grip-right-rear", "x": 0.6575, "y": 0.2106, "width": 0.0175, "height": 0.0256},
+            {"controlId": "look-up", "x": 0.5806, "y": 0.1575, "width": 0.0456, "height": 0.035},
+            {"controlId": "grip-white", "x": 0.6169, "y": 0.1869, "width": 0.0219, "height": 0.0225},
+            {"controlId": "stick-twist", "x": 0.5319, "y": 0.4156, "width": 0.0869, "height": 0.0919},
+            {"controlId": "stick-roll", "x": 0.4981, "y": 0.5419, "width": 0.1394, "height": 0.0638},
+            {"controlId": "apu-off", "x": 0.7063, "y": 0.6062, "width": 0.0362, "height": 0.0256},
+            {"controlId": "radio-nav2", "x": 0.6713, "y": 0.6294, "width": 0.0362, "height": 0.0275},
+            {"controlId": "autopilot-ias", "x": 0.6319, "y": 0.6619, "width": 0.0394, "height": 0.035}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Rear grip action buttons",
+          "image": "Hardware/Images/honeycomb-foxtrot-rear.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/FoxtrotProductThumbnail_4_dd2eb534-c05b-49f5-b68e-174f90f2c6e6.webp?v=1762289922&width=1600",
+          "hotspots": [
+            {"controlId": "grip-left-rear", "x": 0.6262, "y": 0.2325, "width": 0.0213, "height": 0.0281},
+            {"controlId": "grip-right-rear", "x": 0.5031, "y": 0.2456, "width": 0.0325, "height": 0.0312},
+            {"controlId": "stick-twist", "x": 0.495, "y": 0.3694, "width": 0.09, "height": 0.0862},
+            {"controlId": "stick-roll", "x": 0.4756, "y": 0.5713, "width": 0.1406, "height": 0.0563}
+          ]
+        },
+        {
+          "id": "left",
+          "name": "Left grip and top panel",
+          "image": "Hardware/Images/honeycomb-foxtrot-left.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/FoxtrotProductThumbnail_3_80224a72-3162-4af2-a57e-a2cf98b457a3.webp?v=1762289922&width=1600",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.3931, "y": 0.3019, "width": 0.0269, "height": 0.0506},
+            {"controlId": "grip-left-rear", "x": 0.3244, "y": 0.2106, "width": 0.0181, "height": 0.0269}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-rocker-up", "name": "Left grip rocker Up", "kind": "Button", "location": "left-rocker", "suggestedInput": "button3"},
+        {"id": "left-rocker-down", "name": "Left grip rocker Down", "kind": "Button", "location": "left-rocker", "suggestedInput": "button2"},
+        {"id": "right-rocker-up", "name": "Right grip rocker Up", "kind": "Button", "location": "right-rocker", "suggestedInput": "button4"},
+        {"id": "right-rocker-down", "name": "Right grip rocker Down", "kind": "Button", "location": "right-rocker", "suggestedInput": "button1"},
+        {"id": "grip-red", "name": "Red grip action button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "grip-white", "name": "White grip action button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "grip-left-rear", "name": "Left rear grip action button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "grip-right-rear", "name": "Right rear grip action button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "trigger", "name": "Index trigger", "kind": "Button"},
+        {"id": "view", "name": "Camera button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "toolbar", "name": "Toolbar button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "checklist", "name": "Checklist button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "home", "name": "Honeycomb home button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "action-1", "name": "Action button 1", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "action-2", "name": "Action button 2", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "action-3", "name": "Action button 3", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "action-4", "name": "Action button 4", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "apu-off", "name": "APU off", "kind": "Button", "suggestedInput": "button45", "location": "apu"},
+        {"id": "apu-run", "name": "APU run", "kind": "Button", "suggestedInput": "button18", "location": "apu"},
+        {"id": "apu-start", "name": "APU start", "kind": "Button", "suggestedInput": "button19", "location": "apu"},
+        {"id": "radio-nav2", "name": "Radio selector Nav2", "kind": "Button", "suggestedInput": "button20", "location": "radio"},
+        {"id": "radio-nav1", "name": "Radio selector Nav1", "kind": "Button", "suggestedInput": "button21", "location": "radio"},
+        {"id": "radio-com1", "name": "Radio selector Com1", "kind": "Button", "suggestedInput": "button22", "location": "radio"},
+        {"id": "radio-com2", "name": "Radio selector Com2", "kind": "Button", "suggestedInput": "button23", "location": "radio"},
+        {"id": "radio-clockwise", "name": "Radio encoder Clockwise", "kind": "Button", "suggestedInput": "button24", "location": "radio"},
+        {"id": "radio-counterclockwise", "name": "Radio encoder Counterclockwise", "kind": "Button", "suggestedInput": "button25", "location": "radio"},
+        {"id": "radio-press", "name": "Radio encoder Press", "kind": "Button", "suggestedInput": "button26", "location": "radio"},
+        {"id": "autopilot-ias", "name": "Autopilot selector Ias", "kind": "Button", "suggestedInput": "button27", "location": "autopilot"},
+        {"id": "autopilot-vs", "name": "Autopilot selector Vs", "kind": "Button", "suggestedInput": "button28", "location": "autopilot"},
+        {"id": "autopilot-hdg", "name": "Autopilot selector Hdg", "kind": "Button", "suggestedInput": "button29", "location": "autopilot"},
+        {"id": "autopilot-crs", "name": "Autopilot selector Crs", "kind": "Button", "suggestedInput": "button30", "location": "autopilot"},
+        {"id": "autopilot-alt", "name": "Autopilot selector Alt", "kind": "Button", "suggestedInput": "button31", "location": "autopilot"},
+        {"id": "autopilot-clockwise", "name": "Autopilot encoder Clockwise", "kind": "Button", "suggestedInput": "button32", "location": "autopilot"},
+        {"id": "autopilot-counterclockwise", "name": "Autopilot encoder Counterclockwise", "kind": "Button", "suggestedInput": "button33", "location": "autopilot"},
+        {"id": "autopilot-press", "name": "Autopilot encoder Press", "kind": "Button", "suggestedInput": "button34", "location": "autopilot"},
+        {"id": "beacon-on", "name": "Beacon lights On", "kind": "Button", "suggestedInput": "button35", "location": "beacon"},
+        {"id": "beacon-off", "name": "Beacon lights Off", "kind": "Button", "suggestedInput": "button36", "location": "beacon"},
+        {"id": "landing-on", "name": "Landing lights On", "kind": "Button", "suggestedInput": "button37", "location": "landing"},
+        {"id": "landing-off", "name": "Landing lights Off", "kind": "Button", "suggestedInput": "button38", "location": "landing"},
+        {"id": "taxi-on", "name": "Taxi lights On", "kind": "Button", "suggestedInput": "button39", "location": "taxi"},
+        {"id": "taxi-off", "name": "Taxi lights Off", "kind": "Button", "suggestedInput": "button40", "location": "taxi"},
+        {"id": "navigation-on", "name": "Navigation lights On", "kind": "Button", "suggestedInput": "button41", "location": "navigation"},
+        {"id": "navigation-off", "name": "Navigation lights Off", "kind": "Button", "suggestedInput": "button42", "location": "navigation"},
+        {"id": "strobe-on", "name": "Strobe lights On", "kind": "Button", "suggestedInput": "button43", "location": "strobe"},
+        {"id": "strobe-off", "name": "Strobe lights Off", "kind": "Button", "suggestedInput": "button44", "location": "strobe"},
+        {"id": "look-up", "name": "Grip POV up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "look"},
+        {"id": "look-right", "name": "Grip POV right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "look"},
+        {"id": "look-down", "name": "Grip POV down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "look"},
+        {"id": "look-left", "name": "Grip POV left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "look"},
+        {"id": "stick-roll", "name": "Stick roll axis", "kind": "Axis", "suggestedInput": "x", "location": "stick-travel"},
+        {"id": "stick-pitch", "name": "Stick pitch axis", "kind": "Axis", "suggestedInput": "y", "location": "stick-travel"},
+        {"id": "stick-twist", "name": "Grip twist axis", "kind": "Axis", "suggestedInput": "z"}
+      ]
+    },
+    {
+      "id": "honeycomb-foxtrot-throttle-box",
+      "references": [
+        "https://flyhoneycomb.com/products/foxtrot-takeoff-kit",
+        "https://media.canto.global/b/Q0GQM",
+        "https://media.canto.global/b/GUCF9"
+      ],
+      "referenceNotes": [
+        "This template uses the Throttle Box direct USB report numbers. The engine switches report the on positions only."
+      ],
+      "views": [
+        {
+          "id": "ga",
+          "name": "Throttle Box, general aviation handles",
+          "image": "Hardware/Images/honeycomb-foxtrot-kit-ga.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC004018_FoxtrotTakeoffKit_Product_2.webp?v=1774828998&width=1600",
+          "hotspots": [
+            {"controlId": "lever-1-axis", "x": 0.405, "y": 0.36, "width": 0.0775, "height": 0.0731},
+            {"controlId": "lever-2-axis", "x": 0.4594, "y": 0.3862, "width": 0.08, "height": 0.0731},
+            {"controlId": "lever-3-axis", "x": 0.5088, "y": 0.4169, "width": 0.0794, "height": 0.0769},
+            {"controlId": "lever-4-axis", "x": 0.5806, "y": 0.4412, "width": 0.0669, "height": 0.0681},
+            {"controlId": "gear-up", "x": 0.2863, "y": 0.4437, "width": 0.0619, "height": 0.0706},
+            {"controlId": "engine-left", "x": 0.3619, "y": 0.5112, "width": 0.0312, "height": 0.0406},
+            {"controlId": "engine-right", "x": 0.4119, "y": 0.5331, "width": 0.0294, "height": 0.0394},
+            {"controlId": "parking-brake-engaged", "x": 0.4913, "y": 0.5681, "width": 0.0894, "height": 0.0362}
+          ]
+        },
+        {
+          "id": "jet",
+          "name": "Throttle Box, jet handles",
+          "image": "Hardware/Images/honeycomb-foxtrot-kit-jet.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC004018_FoxtrotTakeoffKit_Product_5.webp?v=1774828998&width=1600",
+          "hotspots": [
+            {"controlId": "lever-1-axis", "x": 0.3769, "y": 0.4831, "width": 0.0694, "height": 0.075},
+            {"controlId": "lever-2-axis", "x": 0.48, "y": 0.4512, "width": 0.0762, "height": 0.0944},
+            {"controlId": "lever-3-axis", "x": 0.5581, "y": 0.4275, "width": 0.08, "height": 0.0981},
+            {"controlId": "lever-4-axis", "x": 0.6369, "y": 0.41, "width": 0.0719, "height": 0.0781},
+            {"controlId": "gear-up", "x": 0.4769, "y": 0.6531, "width": 0.0694, "height": 0.0619},
+            {"controlId": "engine-left", "x": 0.5319, "y": 0.6369, "width": 0.0338, "height": 0.0394},
+            {"controlId": "engine-right", "x": 0.5988, "y": 0.6156, "width": 0.0344, "height": 0.0387},
+            {"controlId": "parking-brake-engaged", "x": 0.6963, "y": 0.5587, "width": 0.0944, "height": 0.0475}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "gear-up", "name": "Landing gear Up", "kind": "Button", "suggestedInput": "button1", "location": "gear"},
+        {"id": "gear-down", "name": "Landing gear Down", "kind": "Button", "suggestedInput": "button2", "location": "gear"},
+        {"id": "engine-left", "name": "Left engine switch on", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "engine-right", "name": "Right engine switch on", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "parking-brake-engaged", "name": "Parking brake Engaged", "kind": "Button", "suggestedInput": "button5", "location": "parking-brake"},
+        {"id": "parking-brake-released", "name": "Parking brake Released", "kind": "Button", "suggestedInput": "button6", "location": "parking-brake"},
+        {"id": "lever-1-axis", "name": "Lever 1 axis", "kind": "Axis", "suggestedInput": "rotz", "location": "lever-1"},
+        {"id": "lever-2-axis", "name": "Lever 2 axis", "kind": "Axis", "suggestedInput": "rotx", "location": "lever-2"},
+        {"id": "lever-3-axis", "name": "Lever 3 axis", "kind": "Axis", "suggestedInput": "roty", "location": "lever-3"},
+        {"id": "lever-4-axis", "name": "Lever 4 axis", "kind": "Axis", "suggestedInput": "slider1", "location": "lever-4"},
+        {"id": "lever-1-detent", "name": "Lever 1 detent", "kind": "Button", "suggestedInput": "button7", "location": "lever-1"},
+        {"id": "lever-2-detent", "name": "Lever 2 detent", "kind": "Button", "suggestedInput": "button8", "location": "lever-2"},
+        {"id": "lever-3-detent", "name": "Lever 3 detent", "kind": "Button", "suggestedInput": "button9", "location": "lever-3"},
+        {"id": "lever-4-detent", "name": "Lever 4 detent", "kind": "Button", "suggestedInput": "button10", "location": "lever-4"}
+      ]
+    },
+    {
+      "id": "honeycomb-foxtrot-linked",
+      "references": [
+        "https://flyhoneycomb.com/products/foxtrot-takeoff-kit",
+        "https://media.canto.global/v/HoneycombAeronautical/s/QJFB1",
+        "https://media.canto.global/b/N9F80",
+        "https://media.canto.global/b/HV8QI",
+        "https://media.canto.global/b/V60LI"
+      ],
+      "referenceNotes": [
+        "Connect the Throttle Box to the stick using its linked port. Windows sees one device with independent axis reports and kit button numbers. Use the individual templates when connected separately."
+      ],
+      "views": [
+        {
+          "id": "linked",
+          "name": "Stick and linked Throttle Box",
+          "image": "Hardware/Images/honeycomb-foxtrot-kit-linked.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC004018_FoxtrotTakeoffKit_Thumbnail_4.webp?v=1774828998&width=1600",
+          "hotspots": [
+            {"controlId": "look-up", "x": 0.3194, "y": 0.1638, "width": 0.045, "height": 0.0306},
+            {"controlId": "grip-red", "x": 0.2737, "y": 0.1806, "width": 0.0213, "height": 0.0187},
+            {"controlId": "grip-white", "x": 0.3669, "y": 0.185, "width": 0.02, "height": 0.0175},
+            {"controlId": "left-rocker-up", "x": 0.3075, "y": 0.2013, "width": 0.0231, "height": 0.0294},
+            {"controlId": "right-rocker-up", "x": 0.3306, "y": 0.2013, "width": 0.0231, "height": 0.0294},
+            {"controlId": "stick-twist", "x": 0.32, "y": 0.3594, "width": 0.0881, "height": 0.0844},
+            {"controlId": "stick-roll", "x": 0.32, "y": 0.5731, "width": 0.1638, "height": 0.0569},
+            {"controlId": "home", "x": 0.1431, "y": 0.565, "width": 0.0319, "height": 0.0119},
+            {"controlId": "apu-off", "x": 0.5031, "y": 0.5556, "width": 0.035, "height": 0.0169},
+            {"controlId": "radio-nav2", "x": 0.5038, "y": 0.5763, "width": 0.0362, "height": 0.0231},
+            {"controlId": "autopilot-ias", "x": 0.5044, "y": 0.6012, "width": 0.0387, "height": 0.03},
+            {"controlId": "beacon-on", "x": 0.1606, "y": 0.635, "width": 0.0244, "height": 0.0356},
+            {"controlId": "landing-on", "x": 0.2344, "y": 0.635, "width": 0.0244, "height": 0.0356},
+            {"controlId": "taxi-on", "x": 0.3088, "y": 0.635, "width": 0.0244, "height": 0.0356},
+            {"controlId": "navigation-on", "x": 0.3837, "y": 0.635, "width": 0.0244, "height": 0.0356},
+            {"controlId": "strobe-on", "x": 0.4612, "y": 0.635, "width": 0.0244, "height": 0.0356},
+            {"controlId": "box-lever-1-axis", "x": 0.6806, "y": 0.5463, "width": 0.0462, "height": 0.0219},
+            {"controlId": "box-lever-2-axis", "x": 0.74, "y": 0.5544, "width": 0.0444, "height": 0.0694},
+            {"controlId": "box-lever-3-axis", "x": 0.8031, "y": 0.5544, "width": 0.0444, "height": 0.0706},
+            {"controlId": "box-lever-4-axis", "x": 0.8706, "y": 0.5513, "width": 0.0544, "height": 0.0294},
+            {"controlId": "box-gear-up", "x": 0.6844, "y": 0.5962, "width": 0.0362, "height": 0.065},
+            {"controlId": "box-engine-left", "x": 0.7388, "y": 0.6425, "width": 0.0275, "height": 0.0181},
+            {"controlId": "box-engine-right", "x": 0.79, "y": 0.6431, "width": 0.0281, "height": 0.0206},
+            {"controlId": "box-parking-brake-engaged", "x": 0.8725, "y": 0.6075, "width": 0.0781, "height": 0.02}
+          ]
+        },
+        {
+          "id": "face",
+          "name": "Grip and switch panel",
+          "image": "Hardware/Images/honeycomb-foxtrot-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/FoxtrotProductThumbnail_1_b9813450-7d12-4a4c-9f28-d668b7913684.webp?v=1762289922&width=1600",
+          "hotspots": [
+            {"controlId": "look-up", "x": 0.5069, "y": 0.1675, "width": 0.0531, "height": 0.0413},
+            {"controlId": "grip-red", "x": 0.4531, "y": 0.1906, "width": 0.0269, "height": 0.0288},
+            {"controlId": "grip-white", "x": 0.56, "y": 0.1913, "width": 0.0269, "height": 0.0288},
+            {"controlId": "left-rocker-up", "x": 0.4906, "y": 0.2181, "width": 0.0338, "height": 0.0444},
+            {"controlId": "right-rocker-up", "x": 0.52, "y": 0.2175, "width": 0.0331, "height": 0.045},
+            {"controlId": "stick-twist", "x": 0.4988, "y": 0.3694, "width": 0.0912, "height": 0.0887},
+            {"controlId": "stick-roll", "x": 0.4969, "y": 0.63, "width": 0.1669, "height": 0.0762},
+            {"controlId": "home", "x": 0.305, "y": 0.5837, "width": 0.0406, "height": 0.0238},
+            {"controlId": "view", "x": 0.6494, "y": 0.5787, "width": 0.0256, "height": 0.0112},
+            {"controlId": "toolbar", "x": 0.6756, "y": 0.5787, "width": 0.0238, "height": 0.0112},
+            {"controlId": "checklist", "x": 0.7013, "y": 0.5781, "width": 0.0219, "height": 0.0081},
+            {"controlId": "apu-off", "x": 0.7063, "y": 0.5931, "width": 0.035, "height": 0.0219},
+            {"controlId": "radio-nav2", "x": 0.7063, "y": 0.6175, "width": 0.0444, "height": 0.0281},
+            {"controlId": "autopilot-ias", "x": 0.7113, "y": 0.6613, "width": 0.0475, "height": 0.0469},
+            {"controlId": "action-1", "x": 0.2969, "y": 0.6244, "width": 0.035, "height": 0.0194},
+            {"controlId": "action-2", "x": 0.2931, "y": 0.6425, "width": 0.035, "height": 0.0194},
+            {"controlId": "action-3", "x": 0.2906, "y": 0.66, "width": 0.035, "height": 0.0194},
+            {"controlId": "action-4", "x": 0.2888, "y": 0.6781, "width": 0.035, "height": 0.0194},
+            {"controlId": "beacon-on", "x": 0.3356, "y": 0.7225, "width": 0.0281, "height": 0.045},
+            {"controlId": "landing-on", "x": 0.4181, "y": 0.7225, "width": 0.0281, "height": 0.045},
+            {"controlId": "taxi-on", "x": 0.5, "y": 0.7225, "width": 0.0281, "height": 0.045},
+            {"controlId": "navigation-on", "x": 0.5831, "y": 0.7225, "width": 0.0281, "height": 0.045},
+            {"controlId": "strobe-on", "x": 0.6663, "y": 0.7225, "width": 0.0281, "height": 0.045}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger and right controls",
+          "image": "Hardware/Images/honeycomb-foxtrot-trigger.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/FoxtrotProductThumbnail_2_a7aad96e-f88d-465a-976f-f36a72414c2a.webp?v=1762289922&width=1600",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.6069, "y": 0.2944, "width": 0.0231, "height": 0.0519},
+            {"controlId": "grip-right-rear", "x": 0.6575, "y": 0.2106, "width": 0.0175, "height": 0.0256},
+            {"controlId": "look-up", "x": 0.5806, "y": 0.1575, "width": 0.0456, "height": 0.035},
+            {"controlId": "grip-white", "x": 0.6169, "y": 0.1869, "width": 0.0219, "height": 0.0225},
+            {"controlId": "stick-twist", "x": 0.5319, "y": 0.4156, "width": 0.0869, "height": 0.0919},
+            {"controlId": "stick-roll", "x": 0.4981, "y": 0.5419, "width": 0.1394, "height": 0.0638},
+            {"controlId": "apu-off", "x": 0.7063, "y": 0.6062, "width": 0.0362, "height": 0.0256},
+            {"controlId": "radio-nav2", "x": 0.6713, "y": 0.6294, "width": 0.0362, "height": 0.0275},
+            {"controlId": "autopilot-ias", "x": 0.6319, "y": 0.6619, "width": 0.0394, "height": 0.035}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Rear grip action buttons",
+          "image": "Hardware/Images/honeycomb-foxtrot-rear.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/FoxtrotProductThumbnail_4_dd2eb534-c05b-49f5-b68e-174f90f2c6e6.webp?v=1762289922&width=1600",
+          "hotspots": [
+            {"controlId": "grip-left-rear", "x": 0.6262, "y": 0.2325, "width": 0.0213, "height": 0.0281},
+            {"controlId": "grip-right-rear", "x": 0.5031, "y": 0.2456, "width": 0.0325, "height": 0.0312},
+            {"controlId": "stick-twist", "x": 0.495, "y": 0.3694, "width": 0.09, "height": 0.0862},
+            {"controlId": "stick-roll", "x": 0.4756, "y": 0.5713, "width": 0.1406, "height": 0.0563}
+          ]
+        },
+        {
+          "id": "left",
+          "name": "Left grip and top panel",
+          "image": "Hardware/Images/honeycomb-foxtrot-left.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/FoxtrotProductThumbnail_3_80224a72-3162-4af2-a57e-a2cf98b457a3.webp?v=1762289922&width=1600",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.3931, "y": 0.3019, "width": 0.0269, "height": 0.0506},
+            {"controlId": "grip-left-rear", "x": 0.3244, "y": 0.2106, "width": 0.0181, "height": 0.0269}
+          ]
+        },
+        {
+          "id": "ga",
+          "name": "Throttle Box, general aviation handles",
+          "image": "Hardware/Images/honeycomb-foxtrot-kit-ga.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC004018_FoxtrotTakeoffKit_Product_2.webp?v=1774828998&width=1600",
+          "hotspots": [
+            {"controlId": "box-lever-1-axis", "x": 0.405, "y": 0.36, "width": 0.0775, "height": 0.0731},
+            {"controlId": "box-lever-2-axis", "x": 0.4594, "y": 0.3862, "width": 0.08, "height": 0.0731},
+            {"controlId": "box-lever-3-axis", "x": 0.5088, "y": 0.4169, "width": 0.0794, "height": 0.0769},
+            {"controlId": "box-lever-4-axis", "x": 0.5806, "y": 0.4412, "width": 0.0669, "height": 0.0681},
+            {"controlId": "box-gear-up", "x": 0.2863, "y": 0.4437, "width": 0.0619, "height": 0.0706},
+            {"controlId": "box-engine-left", "x": 0.3619, "y": 0.5112, "width": 0.0312, "height": 0.0406},
+            {"controlId": "box-engine-right", "x": 0.4119, "y": 0.5331, "width": 0.0294, "height": 0.0394},
+            {"controlId": "box-parking-brake-engaged", "x": 0.4913, "y": 0.5681, "width": 0.0894, "height": 0.0362}
+          ]
+        },
+        {
+          "id": "jet",
+          "name": "Throttle Box, jet handles",
+          "image": "Hardware/Images/honeycomb-foxtrot-kit-jet.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0818/9644/0140/files/HC004018_FoxtrotTakeoffKit_Product_5.webp?v=1774828998&width=1600",
+          "hotspots": [
+            {"controlId": "box-lever-1-axis", "x": 0.3769, "y": 0.4831, "width": 0.0694, "height": 0.075},
+            {"controlId": "box-lever-2-axis", "x": 0.48, "y": 0.4512, "width": 0.0762, "height": 0.0944},
+            {"controlId": "box-lever-3-axis", "x": 0.5581, "y": 0.4275, "width": 0.08, "height": 0.0981},
+            {"controlId": "box-lever-4-axis", "x": 0.6369, "y": 0.41, "width": 0.0719, "height": 0.0781},
+            {"controlId": "box-gear-up", "x": 0.4769, "y": 0.6531, "width": 0.0694, "height": 0.0619},
+            {"controlId": "box-engine-left", "x": 0.5319, "y": 0.6369, "width": 0.0338, "height": 0.0394},
+            {"controlId": "box-engine-right", "x": 0.5988, "y": 0.6156, "width": 0.0344, "height": 0.0387},
+            {"controlId": "box-parking-brake-engaged", "x": 0.6963, "y": 0.5587, "width": 0.0944, "height": 0.0475}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-rocker-up", "name": "Left grip rocker Up", "kind": "Button", "location": "left-rocker", "suggestedInput": "button3"},
+        {"id": "left-rocker-down", "name": "Left grip rocker Down", "kind": "Button", "location": "left-rocker", "suggestedInput": "button2"},
+        {"id": "right-rocker-up", "name": "Right grip rocker Up", "kind": "Button", "location": "right-rocker", "suggestedInput": "button4"},
+        {"id": "right-rocker-down", "name": "Right grip rocker Down", "kind": "Button", "location": "right-rocker", "suggestedInput": "button1"},
+        {"id": "grip-red", "name": "Red grip action button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "grip-white", "name": "White grip action button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "grip-left-rear", "name": "Left rear grip action button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "grip-right-rear", "name": "Right rear grip action button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "trigger", "name": "Index trigger", "kind": "Button"},
+        {"id": "view", "name": "Camera button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "toolbar", "name": "Toolbar button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "checklist", "name": "Checklist button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "home", "name": "Honeycomb home button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "action-1", "name": "Action button 1", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "action-2", "name": "Action button 2", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "action-3", "name": "Action button 3", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "action-4", "name": "Action button 4", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "apu-off", "name": "APU off", "kind": "Button", "suggestedInput": "button45", "location": "apu"},
+        {"id": "apu-run", "name": "APU run", "kind": "Button", "suggestedInput": "button18", "location": "apu"},
+        {"id": "apu-start", "name": "APU start", "kind": "Button", "suggestedInput": "button19", "location": "apu"},
+        {"id": "radio-nav2", "name": "Radio selector Nav2", "kind": "Button", "suggestedInput": "button20", "location": "radio"},
+        {"id": "radio-nav1", "name": "Radio selector Nav1", "kind": "Button", "suggestedInput": "button21", "location": "radio"},
+        {"id": "radio-com1", "name": "Radio selector Com1", "kind": "Button", "suggestedInput": "button22", "location": "radio"},
+        {"id": "radio-com2", "name": "Radio selector Com2", "kind": "Button", "suggestedInput": "button23", "location": "radio"},
+        {"id": "radio-clockwise", "name": "Radio encoder Clockwise", "kind": "Button", "suggestedInput": "button24", "location": "radio"},
+        {"id": "radio-counterclockwise", "name": "Radio encoder Counterclockwise", "kind": "Button", "suggestedInput": "button25", "location": "radio"},
+        {"id": "radio-press", "name": "Radio encoder Press", "kind": "Button", "suggestedInput": "button26", "location": "radio"},
+        {"id": "autopilot-ias", "name": "Autopilot selector Ias", "kind": "Button", "suggestedInput": "button27", "location": "autopilot"},
+        {"id": "autopilot-vs", "name": "Autopilot selector Vs", "kind": "Button", "suggestedInput": "button28", "location": "autopilot"},
+        {"id": "autopilot-hdg", "name": "Autopilot selector Hdg", "kind": "Button", "suggestedInput": "button29", "location": "autopilot"},
+        {"id": "autopilot-crs", "name": "Autopilot selector Crs", "kind": "Button", "suggestedInput": "button30", "location": "autopilot"},
+        {"id": "autopilot-alt", "name": "Autopilot selector Alt", "kind": "Button", "suggestedInput": "button31", "location": "autopilot"},
+        {"id": "autopilot-clockwise", "name": "Autopilot encoder Clockwise", "kind": "Button", "suggestedInput": "button32", "location": "autopilot"},
+        {"id": "autopilot-counterclockwise", "name": "Autopilot encoder Counterclockwise", "kind": "Button", "suggestedInput": "button33", "location": "autopilot"},
+        {"id": "autopilot-press", "name": "Autopilot encoder Press", "kind": "Button", "suggestedInput": "button34", "location": "autopilot"},
+        {"id": "beacon-on", "name": "Beacon lights On", "kind": "Button", "suggestedInput": "button35", "location": "beacon"},
+        {"id": "beacon-off", "name": "Beacon lights Off", "kind": "Button", "suggestedInput": "button36", "location": "beacon"},
+        {"id": "landing-on", "name": "Landing lights On", "kind": "Button", "suggestedInput": "button37", "location": "landing"},
+        {"id": "landing-off", "name": "Landing lights Off", "kind": "Button", "suggestedInput": "button38", "location": "landing"},
+        {"id": "taxi-on", "name": "Taxi lights On", "kind": "Button", "suggestedInput": "button39", "location": "taxi"},
+        {"id": "taxi-off", "name": "Taxi lights Off", "kind": "Button", "suggestedInput": "button40", "location": "taxi"},
+        {"id": "navigation-on", "name": "Navigation lights On", "kind": "Button", "suggestedInput": "button41", "location": "navigation"},
+        {"id": "navigation-off", "name": "Navigation lights Off", "kind": "Button", "suggestedInput": "button42", "location": "navigation"},
+        {"id": "strobe-on", "name": "Strobe lights On", "kind": "Button", "suggestedInput": "button43", "location": "strobe"},
+        {"id": "strobe-off", "name": "Strobe lights Off", "kind": "Button", "suggestedInput": "button44", "location": "strobe"},
+        {"id": "look-up", "name": "Grip POV up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "look"},
+        {"id": "look-right", "name": "Grip POV right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "look"},
+        {"id": "look-down", "name": "Grip POV down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "look"},
+        {"id": "look-left", "name": "Grip POV left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "look"},
+        {"id": "stick-roll", "name": "Stick roll axis", "kind": "Axis", "suggestedInput": "x", "location": "stick-travel"},
+        {"id": "stick-pitch", "name": "Stick pitch axis", "kind": "Axis", "suggestedInput": "y", "location": "stick-travel"},
+        {"id": "stick-twist", "name": "Grip twist axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "box-gear-up", "name": "Landing gear Up", "kind": "Button", "suggestedInput": "button50", "location": "box-gear"},
+        {"id": "box-gear-down", "name": "Landing gear Down", "kind": "Button", "suggestedInput": "button51", "location": "box-gear"},
+        {"id": "box-engine-left", "name": "Left engine switch on", "kind": "Button", "suggestedInput": "button52"},
+        {"id": "box-engine-right", "name": "Right engine switch on", "kind": "Button", "suggestedInput": "button53"},
+        {"id": "box-parking-brake-engaged", "name": "Parking brake Engaged", "kind": "Button", "suggestedInput": "button54", "location": "box-parking-brake"},
+        {"id": "box-parking-brake-released", "name": "Parking brake Released", "kind": "Button", "suggestedInput": "button55", "location": "box-parking-brake"},
+        {"id": "box-lever-1-axis", "name": "Lever 1 axis", "kind": "Axis", "suggestedInput": "rotz", "location": "box-lever-1"},
+        {"id": "box-lever-2-axis", "name": "Lever 2 axis", "kind": "Axis", "suggestedInput": "rotx", "location": "box-lever-2"},
+        {"id": "box-lever-3-axis", "name": "Lever 3 axis", "kind": "Axis", "suggestedInput": "roty", "location": "box-lever-3"},
+        {"id": "box-lever-4-axis", "name": "Lever 4 axis", "kind": "Axis", "suggestedInput": "slider1", "location": "box-lever-4"},
+        {"id": "box-lever-1-detent", "name": "Lever 1 detent", "kind": "Button", "suggestedInput": "button46", "location": "box-lever-1"},
+        {"id": "box-lever-2-detent", "name": "Lever 2 detent", "kind": "Button", "suggestedInput": "button47", "location": "box-lever-2"},
+        {"id": "box-lever-3-detent", "name": "Lever 3 detent", "kind": "Button", "suggestedInput": "button48", "location": "box-lever-3"},
+        {"id": "box-lever-4-detent", "name": "Lever 4 detent", "kind": "Button", "suggestedInput": "button49", "location": "box-lever-4"}
+      ]
+    }
+  ]
+}

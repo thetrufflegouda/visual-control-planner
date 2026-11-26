@@ -1,0 +1,75 @@
+{
+  "manufacturer": "VIRPIL",
+  "devices": [
+    {"id": "virpil-vfx-tomcat", "name": "VIRPIL V.F.X TOMCAT GRIP — LOCKABLE TWIST",
+     "vendorId": 0, "productId": 0, "layout": "virpil-vfx-tomcat"}
+  ],
+  "layouts": [
+    {
+      "id": "virpil-vfx-tomcat",
+      "references": [
+        "https://virpil-controls.eu/vpc-vfx-grip.html",
+        "https://support.virpil.com/en/support/solutions/articles/47001250821-vpc-v-f-x-grip",
+        "https://forums.mudspike.com/t/virpil-vpc-v-f-x-grip/8668/1",
+        "https://uploads.mudspike.com/original/3X/5/4/54295946d45cd553e4d821236cb2d125d7868965.png",
+        "https://uploads.mudspike.com/original/3X/b/e/be6bea4d496d5685d4a3bd767eaa8a1f40caa0ca.png"
+      ],
+      "notes": [
+        "VIRPIL joystick bases support the grip axes. Original Thrustmaster HOTAS Warthog and Cougar are compatible with limitations; grip axis movement can be exposed as buttons on those bases.",
+        "X/Y are base axes. Use Input Learn for the attached base and configured firmware profile."
+      ],
+      "views": [
+        {
+          "id": "face", "name": "Grip face", "image": "Hardware/Images/virpil-vfx-tomcat-front-cutout.png",
+          "hotspots": [
+            {"controlId": "weapon-selector-sp-ph", "x": 0.269, "y": 0.200, "width": 0.122, "height": 0.061},
+            {"controlId": "trim-press", "x": 0.582, "y": 0.101, "width": 0.200, "height": 0.118},
+            {"controlId": "release", "x": 0.780, "y": 0.107, "width": 0.103, "height": 0.063},
+            {"controlId": "dlc-button", "x": 0.406, "y": 0.517, "width": 0.102, "height": 0.075},
+            {"controlId": "twist", "x": 0.639, "y": 0.810, "width": 0.338, "height": 0.072},
+            {"controlId": "stick-x", "x": 0.643, "y": 0.910, "width": 0.318, "height": 0.088}
+          ]
+        },
+        {
+          "id": "trigger", "name": "Trigger and paddle", "image": "Hardware/Images/virpil-vfx-tomcat-trigger-cutout.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.253, "y": 0.413, "width": 0.206, "height": 0.110},
+            {"controlId": "dlc-axis", "x": 0.753, "y": 0.407, "width": 0.111, "height": 0.060},
+            {"controlId": "dlc-button", "x": 0.849, "y": 0.519, "width": 0.077, "height": 0.062},
+            {"controlId": "nosewheel", "x": 0.620, "y": 0.677, "width": 0.114, "height": 0.073},
+            {"controlId": "paddle-axis", "x": 0.253, "y": 0.639, "width": 0.112, "height": 0.179},
+            {"controlId": "twist", "x": 0.641, "y": 0.828, "width": 0.302, "height": 0.066},
+            {"controlId": "stick-x", "x": 0.631, "y": 0.906, "width": 0.318, "height": 0.075}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "weapon-selector-sp-ph", "name": "Weapon selector SP / PH position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-sw", "name": "Weapon selector SW position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-gun", "name": "Weapon selector GUN position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-off", "name": "Weapon selector OFF position", "kind": "Button", "location": "weapon-selector"},
+        {"id": "weapon-selector-press", "name": "Weapon selector press", "kind": "Button", "location": "weapon-selector"},
+        {"id": "trim-up", "name": "Trim POV up", "kind": "Hat", "location": "trim"},
+        {"id": "trim-right", "name": "Trim POV right", "kind": "Hat", "location": "trim"},
+        {"id": "trim-down", "name": "Trim POV down", "kind": "Hat", "location": "trim"},
+        {"id": "trim-left", "name": "Trim POV left", "kind": "Hat", "location": "trim"},
+        {"id": "trim-press", "name": "Trim POV push button", "kind": "Button", "location": "trim"},
+        {"id": "release", "name": "Face momentary push button", "kind": "Button"},
+        {"id": "dlc-axis", "name": "DLC thumbwheel axis", "kind": "Axis", "location": "dlc"},
+        {"id": "dlc-forward", "name": "DLC thumbwheel forward (digital)", "kind": "Button", "location": "dlc"},
+        {"id": "dlc-aft", "name": "DLC thumbwheel aft (digital)", "kind": "Button", "location": "dlc"},
+        {"id": "dlc-button", "name": "DLC / chaff push button", "kind": "Button"},
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "nosewheel", "name": "Autopilot reference / nosewheel steering button", "kind": "Button"},
+        {"id": "paddle-axis", "name": "Paddle lever axis", "kind": "Axis", "location": "paddle"},
+        {"id": "paddle-press", "name": "Paddle lever full-pull switch", "kind": "Button", "location": "paddle"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis", "location": "twist"},
+        {"id": "twist-left", "name": "Grip twist left (digital)", "kind": "Button", "location": "twist"},
+        {"id": "twist-right", "name": "Grip twist right (digital)", "kind": "Button", "location": "twist"},
+        {"id": "stick-x", "name": "Base stick X axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Base stick Y axis", "kind": "Axis", "location": "stick"}
+      ]
+    }
+  ]
+}

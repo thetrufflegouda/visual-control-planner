@@ -1,0 +1,197 @@
+{
+  "manufacturer": "Thrustmaster",
+  "devices": [
+    {"id": "thrustmaster-warthog-stick", "name": "THRUSTMASTER HOTAS WARTHOG FLIGHT STICK", "vendorId": 1103, "productId": 1026, "layout": "thrustmaster-warthog-stick"},
+    {"id": "thrustmaster-warthog-throttle", "name": "THRUSTMASTER HOTAS WARTHOG DUAL THROTTLE", "vendorId": 1103, "productId": 1028, "layout": "thrustmaster-warthog-throttle"}
+  ],
+  "layouts": [
+    {
+      "id": "thrustmaster-warthog-stick",
+      "references": [
+        "https://www.thrustmaster.com/en-us/products/hotas-warthog-flight-stick/",
+        "https://ts.thrustmaster.com/download/accessories/pc/hotas/manual/HOTAS_Warthog/HOTAS_Warthog_FlightStick_Manual.pdf",
+        "https://github.com/libsdl-org/SDL/blob/main/src/joystick/SDL_joystick.c"
+      ],
+      "referenceNotes": [
+        "Original HOTAS Warthog USB stick with A-10C grip and magnetic base.",
+        "The trim POV has eight physical directions. The four cardinal gestures match the planner's current capture.",
+        "TMS, DMS and CMS report the numbered button directions shown in the PC manual."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face and gimbal",
+          "image": "Hardware/Images/tm-warthog-stick-face.jpg",
+          "source": "https://shop.thrustmaster.com/media/catalog/product/h/o/hotaswarthogflightstick_2.jpg",
+          "hotspots": [
+            {"controlId": "weapons-release", "x": 0.4367, "y": 0.1075, "width": 0.0275, "height": 0.0283},
+            {"controlId": "trim-up", "x": 0.5067, "y": 0.1083, "width": 0.0667, "height": 0.0625},
+            {"controlId": "tms-up", "x": 0.4383, "y": 0.1633, "width": 0.0433, "height": 0.0425},
+            {"controlId": "dms-up", "x": 0.5075, "y": 0.17, "width": 0.0475, "height": 0.0458},
+            {"controlId": "master-mode", "x": 0.5433, "y": 0.17, "width": 0.0092, "height": 0.0192},
+            {"controlId": "cms-press", "x": 0.4158, "y": 0.2567, "width": 0.0358, "height": 0.0308},
+            {"controlId": "stick-x", "x": 0.4858, "y": 0.62, "width": 0.0933, "height": 0.0558}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger and pinky controls",
+          "image": "Hardware/Images/tm-warthog-stick-side.jpg",
+          "source": "https://shop.thrustmaster.com/media/catalog/product/h/o/hotaswarthogflightstick_3.jpg",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.42, "y": 0.275, "width": 0.0308, "height": 0.0558},
+            {"controlId": "cms-press", "x": 0.5133, "y": 0.2775, "width": 0.0425, "height": 0.0417},
+            {"controlId": "nosewheel-steering", "x": 0.4883, "y": 0.4617, "width": 0.0233, "height": 0.0267},
+            {"controlId": "pinky-paddle", "x": 0.4158, "y": 0.4867, "width": 0.0158, "height": 0.1092},
+            {"controlId": "stick-x", "x": 0.5417, "y": 0.6492, "width": 0.0883, "height": 0.0383}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger-first", "name": "Main trigger first stage", "kind": "Button", "suggestedInput": "button1", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second stage", "kind": "Button", "suggestedInput": "button6", "location": "trigger"},
+        {"id": "weapons-release", "name": "Weapons release button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "master-mode", "name": "Master mode control button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "nosewheel-steering", "name": "Nosewheel steering button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "pinky-paddle", "name": "Pinky paddle", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "trim-up", "name": "Trim POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "trim"},
+        {"id": "trim-right", "name": "Trim POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "trim"},
+        {"id": "trim-down", "name": "Trim POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "trim"},
+        {"id": "trim-left", "name": "Trim POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "trim"},
+        {"id": "tms-up", "name": "TMS hat up", "kind": "Button", "suggestedInput": "button7", "location": "tms"},
+        {"id": "tms-right", "name": "TMS hat right", "kind": "Button", "suggestedInput": "button8", "location": "tms"},
+        {"id": "tms-down", "name": "TMS hat down", "kind": "Button", "suggestedInput": "button9", "location": "tms"},
+        {"id": "tms-left", "name": "TMS hat left", "kind": "Button", "suggestedInput": "button10", "location": "tms"},
+        {"id": "dms-up", "name": "DMS hat up", "kind": "Button", "suggestedInput": "button11", "location": "dms"},
+        {"id": "dms-right", "name": "DMS hat right", "kind": "Button", "suggestedInput": "button12", "location": "dms"},
+        {"id": "dms-down", "name": "DMS hat down", "kind": "Button", "suggestedInput": "button13", "location": "dms"},
+        {"id": "dms-left", "name": "DMS hat left", "kind": "Button", "suggestedInput": "button14", "location": "dms"},
+        {"id": "cms-up", "name": "CMS hat up", "kind": "Button", "suggestedInput": "button15", "location": "cms"},
+        {"id": "cms-right", "name": "CMS hat right", "kind": "Button", "suggestedInput": "button16", "location": "cms"},
+        {"id": "cms-down", "name": "CMS hat down", "kind": "Button", "suggestedInput": "button17", "location": "cms"},
+        {"id": "cms-left", "name": "CMS hat left", "kind": "Button", "suggestedInput": "button18", "location": "cms"},
+        {"id": "cms-press", "name": "CMS hat center press", "kind": "Button", "suggestedInput": "button19", "location": "cms"},
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"}
+      ]
+    },
+    {
+      "id": "thrustmaster-warthog-throttle",
+      "references": [
+        "https://www.thrustmaster.com/en-us/products/hotas-warthog-dual-throttle/",
+        "https://ts.thrustmaster.com/download/accessories/pc/hotas/manual/HOTAS_Warthog/HOTAS_Warthog_DualThrottles_Manual.pdf",
+        "https://github.com/libsdl-org/SDL/blob/main/src/joystick/SDL_joystick.c"
+      ],
+      "referenceNotes": [
+        "Original dual throttle USB controller. Its left lever sends Rz and its right lever sends Z.",
+        "The front panel's long slider sends Slider 0 in the PC manual. The recessed mechanical friction wheel is separate.",
+        "The stock manual calls the two slew channels mouse axes. Input Learn can assign them when a setup exposes them as joystick axes.",
+        "Numbered switch positions use the PC manual's button numbers. Unnumbered neutral positions release their corresponding signal."
+      ],
+      "views": [
+        {
+          "id": "panel",
+          "name": "Control panel and thumb switches",
+          "image": "Hardware/Images/tm-warthog-throttle-panel.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/d/u/dual_throttle_1000x1000_2.jpg",
+          "hotspots": [
+            {"controlId": "left-throttle", "x": 0.3, "y": 0.229, "width": 0.123, "height": 0.093},
+            {"controlId": "right-throttle", "x": 0.55, "y": 0.232, "width": 0.155, "height": 0.133},
+            {"controlId": "mic-press", "x": 0.69, "y": 0.238, "width": 0.063, "height": 0.067},
+            {"controlId": "speedbrake-1", "x": 0.687, "y": 0.311, "width": 0.048, "height": 0.053},
+            {"controlId": "boat-1", "x": 0.664, "y": 0.353, "width": 0.057, "height": 0.033},
+            {"controlId": "china-1", "x": 0.634, "y": 0.406, "width": 0.05, "height": 0.036},
+            {"controlId": "fuel-flow-left", "x": 0.728, "y": 0.413, "width": 0.022, "height": 0.053},
+            {"controlId": "fuel-flow-right", "x": 0.794, "y": 0.448, "width": 0.022, "height": 0.053},
+            {"controlId": "engine-left-ign", "x": 0.621, "y": 0.471, "width": 0.022, "height": 0.048},
+            {"controlId": "engine-right-ign", "x": 0.693, "y": 0.501, "width": 0.022, "height": 0.052},
+            {"controlId": "apu-start", "x": 0.58, "y": 0.52, "width": 0.02, "height": 0.043},
+            {"controlId": "gear-warning", "x": 0.484, "y": 0.589, "width": 0.031, "height": 0.027},
+            {"controlId": "flaps-up", "x": 0.313, "y": 0.438, "width": 0.045, "height": 0.034},
+            {"controlId": "eac", "x": 0.219, "y": 0.536, "width": 0.019, "height": 0.051},
+            {"controlId": "radar-altimeter", "x": 0.281, "y": 0.571, "width": 0.018, "height": 0.052},
+            {"controlId": "autopilot-engage", "x": 0.328, "y": 0.614, "width": 0.032, "height": 0.031},
+            {"controlId": "autopilot-path", "x": 0.371, "y": 0.632, "width": 0.018, "height": 0.049},
+            {"controlId": "friction-control", "x": 0.625, "y": 0.574, "width": 0.064, "height": 0.059}
+          ]
+        },
+        {
+          "id": "levers",
+          "name": "Throttle levers and pinky switch",
+          "image": "Hardware/Images/tm-warthog-throttle-levers.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/d/u/dual_throttle_1000x1000_3.jpg",
+          "hotspots": [
+            {"controlId": "left-throttle", "x": 0.298, "y": 0.266, "width": 0.112, "height": 0.135},
+            {"controlId": "right-throttle", "x": 0.495, "y": 0.249, "width": 0.173, "height": 0.159},
+            {"controlId": "pinky-1", "x": 0.207, "y": 0.34, "width": 0.053, "height": 0.019},
+            {"controlId": "flaps-up", "x": 0.301, "y": 0.606, "width": 0.053, "height": 0.038},
+            {"controlId": "engine-left-ign", "x": 0.521, "y": 0.471, "width": 0.022, "height": 0.046},
+            {"controlId": "engine-right-ign", "x": 0.617, "y": 0.445, "width": 0.02, "height": 0.048},
+            {"controlId": "apu-start", "x": 0.593, "y": 0.518, "width": 0.02, "height": 0.047},
+            {"controlId": "gear-warning", "x": 0.629, "y": 0.607, "width": 0.038, "height": 0.034},
+            {"controlId": "eac", "x": 0.401, "y": 0.716, "width": 0.023, "height": 0.053},
+            {"controlId": "radar-altimeter", "x": 0.501, "y": 0.702, "width": 0.023, "height": 0.055},
+            {"controlId": "autopilot-engage", "x": 0.599, "y": 0.709, "width": 0.039, "height": 0.039},
+            {"controlId": "autopilot-path", "x": 0.664, "y": 0.678, "width": 0.024, "height": 0.047},
+            {"controlId": "friction-control", "x": 0.699, "y": 0.565, "width": 0.049, "height": 0.054}
+          ]
+        },
+        {
+          "id": "fingers",
+          "name": "Coolie, slew and finger button",
+          "image": "Hardware/Images/tm-warthog-throttle-fingers.jpg",
+          "source": "https://nikktech.com/main/images/pics/reviews/thrustmaster/hotas_warthog/thrustmaster_hotas_warthog_review_27.JPG",
+          "hotspots": [
+            {"controlId": "coolie-up", "x": 0.3857, "y": 0.3964, "width": 0.0845, "height": 0.1313},
+            {"controlId": "slew-press", "x": 0.4952, "y": 0.4027, "width": 0.0946, "height": 0.1384},
+            {"controlId": "left-grip-button", "x": 0.6845, "y": 0.3509, "width": 0.0548, "height": 0.0848},
+            {"controlId": "mic-press", "x": 0.1875, "y": 0.3821, "width": 0.0595, "height": 0.108}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-throttle", "name": "Left throttle lever axis", "kind": "Axis", "suggestedInput": "rotz", "location": "left-throttle"},
+        {"id": "right-throttle", "name": "Right throttle lever axis", "kind": "Axis", "suggestedInput": "z", "location": "right-throttle"},
+        {"id": "left-cutoff", "name": "Left throttle idle cut-off", "kind": "Button", "suggestedInput": "button30", "location": "left-throttle"},
+        {"id": "right-cutoff", "name": "Right throttle idle cut-off", "kind": "Button", "suggestedInput": "button29", "location": "right-throttle"},
+        {"id": "mic-up", "name": "MIC switch up", "kind": "Button", "suggestedInput": "button3", "location": "mic"},
+        {"id": "mic-right", "name": "MIC switch right", "kind": "Button", "suggestedInput": "button4", "location": "mic"},
+        {"id": "mic-down", "name": "MIC switch down", "kind": "Button", "suggestedInput": "button5", "location": "mic"},
+        {"id": "mic-left", "name": "MIC switch left", "kind": "Button", "suggestedInput": "button6", "location": "mic"},
+        {"id": "mic-press", "name": "MIC switch center press", "kind": "Button", "suggestedInput": "button2", "location": "mic"},
+        {"id": "speedbrake-1", "name": "Speedbrake switch position 1", "kind": "Button", "suggestedInput": "button7", "location": "speedbrake"},
+        {"id": "speedbrake-2", "name": "Speedbrake switch position 2", "kind": "Button", "suggestedInput": "button8", "location": "speedbrake"},
+        {"id": "boat-1", "name": "Boat switch position 1", "kind": "Button", "suggestedInput": "button9", "location": "boat"},
+        {"id": "boat-2", "name": "Boat switch position 2", "kind": "Button", "suggestedInput": "button10", "location": "boat"},
+        {"id": "china-1", "name": "China hat position 1", "kind": "Button", "suggestedInput": "button11", "location": "china"},
+        {"id": "china-2", "name": "China hat position 2", "kind": "Button", "suggestedInput": "button12", "location": "china"},
+        {"id": "pinky-1", "name": "Pinky switch position 1", "kind": "Button", "suggestedInput": "button13", "location": "pinky"},
+        {"id": "pinky-2", "name": "Pinky switch position 2", "kind": "Button", "suggestedInput": "button14", "location": "pinky"},
+        {"id": "coolie-up", "name": "Coolie POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "coolie"},
+        {"id": "coolie-right", "name": "Coolie POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "coolie"},
+        {"id": "coolie-down", "name": "Coolie POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "coolie"},
+        {"id": "coolie-left", "name": "Coolie POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "coolie"},
+        {"id": "slew-press", "name": "Slew control center press", "kind": "Button", "suggestedInput": "button1", "location": "slew"},
+        {"id": "slew-x", "name": "Slew control X axis", "kind": "Axis", "location": "slew"},
+        {"id": "slew-y", "name": "Slew control Y axis", "kind": "Axis", "location": "slew"},
+        {"id": "left-grip-button", "name": "Left throttle grip button", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "fuel-flow-left", "name": "Left engine fuel-flow toggle", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "fuel-flow-right", "name": "Right engine fuel-flow toggle", "kind": "Button", "suggestedInput": "button17"},
+        {"id": "engine-left-ign", "name": "Left engine operate IGN", "kind": "Button", "suggestedInput": "button31", "location": "engine-left"},
+        {"id": "engine-left-motor", "name": "Left engine operate MOTOR", "kind": "Button", "suggestedInput": "button18", "location": "engine-left"},
+        {"id": "engine-right-ign", "name": "Right engine operate IGN", "kind": "Button", "suggestedInput": "button32", "location": "engine-right"},
+        {"id": "engine-right-motor", "name": "Right engine operate MOTOR", "kind": "Button", "suggestedInput": "button19", "location": "engine-right"},
+        {"id": "apu-start", "name": "APU start switch", "kind": "Button", "suggestedInput": "button20"},
+        {"id": "gear-warning", "name": "Landing gear warning silence button", "kind": "Button", "suggestedInput": "button21"},
+        {"id": "flaps-up", "name": "Flap switch up", "kind": "Button", "suggestedInput": "button22", "location": "flaps"},
+        {"id": "flaps-down", "name": "Flap switch down", "kind": "Button", "suggestedInput": "button23", "location": "flaps"},
+        {"id": "eac", "name": "EAC toggle switch", "kind": "Button", "suggestedInput": "button24"},
+        {"id": "radar-altimeter", "name": "Radar altimeter toggle switch", "kind": "Button", "suggestedInput": "button25"},
+        {"id": "autopilot-engage", "name": "Autopilot engage / disengage button", "kind": "Button", "suggestedInput": "button26"},
+        {"id": "autopilot-path", "name": "Autopilot mode select PATH", "kind": "Button", "suggestedInput": "button27", "location": "autopilot"},
+        {"id": "autopilot-alt", "name": "Autopilot mode select ALT", "kind": "Button", "suggestedInput": "button28", "location": "autopilot"},
+        {"id": "friction-control", "name": "Throttle friction control slider axis", "kind": "Axis", "suggestedInput": "slider1"}
+      ]
+    }
+  ]
+}

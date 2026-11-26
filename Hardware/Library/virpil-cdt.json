@@ -1,0 +1,280 @@
+{
+  "manufacturer": "VIRPIL",
+  "devices": [
+    {"id": "virpil-cdt-aeromax-l", "name": "VIRPIL CDT-AERO / CDT-AEROMAX L", "vendorId": 13124, "productId": 0, "layout": "virpil-cdt-aeromax-l"},
+    {"id": "virpil-cdt-aeromax-r", "name": "VIRPIL CDT-AERO / CDT-AEROMAX R", "vendorId": 13124, "productId": 0, "layout": "virpil-cdt-aeromax-r"}
+  ],
+  "layouts": [
+    {
+      "id": "virpil-cdt-aeromax-l",
+      "references": [
+        "https://us.virpil-controls.com/products/cdt-aeromax-l-flightstick",
+        "https://support.virpil.com/en/support/solutions/articles/47001285227-vpc-cdt-aeromax-l-flightstick",
+        "https://us.virpil-controls.com/products/cdt-aeromax-lz-flightstick",
+        "https://support.virpil.com/en/support/solutions/articles/47001308116-vpc-cdt-aeromax-lz-flightstick",
+        "https://us.virpil-controls.com/products/cdt-aero-l-grip",
+        "https://support.virpil.com/en/support/solutions/articles/47001285225-vpc-cdt-aero-l-grip"
+      ],
+      "referenceNotes": [
+        "CDT-AERO and CDT-AEROMAX use the same control surface. The upright and angled assemblies are shown in their own manufacturer views.",
+        "Stock button reports differ by firmware or configuration. Use Learn input with the connected device. The separately sold base throttle module adds its own controls."
+      ],
+      "views": [
+        {
+          "id": "upright-face",
+          "name": "AEROMAX upright · Grip and gimbal",
+          "image": "Hardware/Images/virpil-cdt-aeromax-l-flightstick-face.png",
+          "hotspots": [
+            {"controlId": "red-button", "x": 0.71091, "y": 0.0819, "width": 0.03818, "height": 0.03305},
+            {"controlId": "ring-button", "x": 0.56727, "y": 0.0546, "width": 0.03636, "height": 0.03305},
+            {"controlId": "upper-hat-press", "x": 0.62727, "y": 0.07328, "width": 0.04909, "height": 0.04023},
+            {"controlId": "lower-hat-press", "x": 0.53455, "y": 0.12644, "width": 0.04, "height": 0.03017},
+            {"controlId": "mini-press", "x": 0.71273, "y": 0.17529, "width": 0.06182, "height": 0.04598},
+            {"controlId": "mode-slider-up", "x": 0.56545, "y": 0.17672, "width": 0.04182, "height": 0.02443},
+            {"controlId": "side-hat-press", "x": 0.60909, "y": 0.3204, "width": 0.05818, "height": 0.03592},
+            {"controlId": "paddle", "x": 0.50182, "y": 0.43966, "width": 0.06364, "height": 0.05603},
+            {"controlId": "twist", "x": 0.50727, "y": 0.58764, "width": 0.09273, "height": 0.03305},
+            {"controlId": "stick-x", "x": 0.49091, "y": 0.65374, "width": 0.18909, "height": 0.06466}
+          ]
+        },
+        {
+          "id": "upright-trigger",
+          "name": "AEROMAX upright · Triggers and brake lever",
+          "image": "Hardware/Images/virpil-cdt-aeromax-l-flightstick-trigger.png",
+          "hotspots": [
+            {"controlId": "side-button", "x": 0.32657, "y": 0.21766, "width": 0.04244, "height": 0.03805},
+            {"controlId": "trigger-first", "x": 0.34133, "y": 0.33181, "width": 0.05351, "height": 0.05479},
+            {"controlId": "flip-up", "x": 0.28229, "y": 0.37139, "width": 0.03321, "height": 0.05784},
+            {"controlId": "brake", "x": 0.25092, "y": 0.41857, "width": 0.03875, "height": 0.07458}
+          ]
+        },
+        {
+          "id": "angled-face",
+          "name": "AEROMAX angled · Grip and gimbal",
+          "image": "Hardware/Images/virpil-cdt-aeromax-lz-flightstick-face.png",
+          "hotspots": [
+            {"controlId": "red-button", "x": 0.91909, "y": 0.17953, "width": 0.04772, "height": 0.03709},
+            {"controlId": "ring-button", "x": 0.75311, "y": 0.05045, "width": 0.04564, "height": 0.03709},
+            {"controlId": "upper-hat-press", "x": 0.83195, "y": 0.11721, "width": 0.06017, "height": 0.04599},
+            {"controlId": "lower-hat-press", "x": 0.66183, "y": 0.09792, "width": 0.04979, "height": 0.03412},
+            {"controlId": "mini-press", "x": 0.8029, "y": 0.24036, "width": 0.07469, "height": 0.05193},
+            {"controlId": "mode-slider-up", "x": 0.68257, "y": 0.17507, "width": 0.05394, "height": 0.02671},
+            {"controlId": "side-hat-press", "x": 0.62656, "y": 0.32938, "width": 0.07261, "height": 0.04006},
+            {"controlId": "paddle", "x": 0.45021, "y": 0.40059, "width": 0.07884, "height": 0.06231},
+            {"controlId": "twist", "x": 0.14108, "y": 0.47033, "width": 0.11203, "height": 0.0549},
+            {"controlId": "stick-x", "x": 0.44813, "y": 0.68843, "width": 0.21784, "height": 0.07418}
+          ]
+        },
+        {
+          "id": "angled-trigger",
+          "name": "AEROMAX angled · Triggers and brake lever",
+          "image": "Hardware/Images/virpil-cdt-aeromax-lz-flightstick-trigger.png",
+          "hotspots": [
+            {"controlId": "side-button", "x": 0.12976, "y": 0.14369, "width": 0.04325, "height": 0.03919},
+            {"controlId": "trigger-first", "x": 0.26298, "y": 0.27576, "width": 0.05536, "height": 0.0566},
+            {"controlId": "flip-up", "x": 0.22318, "y": 0.31205, "width": 0.0346, "height": 0.05951},
+            {"controlId": "brake", "x": 0.34429, "y": 0.45428, "width": 0.03979, "height": 0.07692}
+          ]
+        },
+        {
+          "id": "grip-face",
+          "name": "CDT-AERO grip · Grip face",
+          "image": "Hardware/Images/virpil-cdt-aero-l-grip-face.png",
+          "hotspots": [
+            {"controlId": "red-button", "x": 0.73301, "y": 0.08633, "width": 0.07767, "height": 0.04892},
+            {"controlId": "ring-button", "x": 0.42718, "y": 0.07914, "width": 0.07282, "height": 0.04892},
+            {"controlId": "upper-hat-press", "x": 0.56311, "y": 0.09784, "width": 0.09709, "height": 0.06043},
+            {"controlId": "lower-hat-press", "x": 0.3665, "y": 0.18273, "width": 0.0801, "height": 0.0446},
+            {"controlId": "mini-press", "x": 0.73786, "y": 0.23741, "width": 0.12136, "height": 0.06906},
+            {"controlId": "mode-slider-up", "x": 0.41262, "y": 0.24173, "width": 0.08495, "height": 0.03597},
+            {"controlId": "side-hat-press", "x": 0.53641, "y": 0.44748, "width": 0.1165, "height": 0.05324},
+            {"controlId": "paddle", "x": 0.34709, "y": 0.6446, "width": 0.12621, "height": 0.08345},
+            {"controlId": "twist", "x": 0.31068, "y": 0.85612, "width": 0.17961, "height": 0.04029},
+            {"controlId": "stick-x", "x": 0.30825, "y": 0.93094, "width": 0.20388, "height": 0.06043}
+          ]
+        },
+        {
+          "id": "grip-trigger",
+          "name": "CDT-AERO grip · Triggers and brake lever",
+          "image": "Hardware/Images/virpil-cdt-aero-l-grip-trigger.png",
+          "hotspots": [
+            {"controlId": "side-button", "x": 0.42208, "y": 0.25959, "width": 0.07143, "height": 0.0531},
+            {"controlId": "trigger-first", "x": 0.44156, "y": 0.46165, "width": 0.09091, "height": 0.07522},
+            {"controlId": "flip-up", "x": 0.329, "y": 0.5177, "width": 0.05628, "height": 0.07965},
+            {"controlId": "brake", "x": 0.27922, "y": 0.63127, "width": 0.06494, "height": 0.10324}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "red-button", "name": "Red face button", "kind": "Button"},
+        {"id": "ring-button", "name": "Ringed face button", "kind": "Button"},
+        {"id": "side-button", "name": "Silver index-side button", "kind": "Button"},
+        {"id": "upper-hat-press", "name": "Upper face hat press", "kind": "Hat", "location": "upper-hat"},
+        {"id": "upper-hat-up", "name": "Upper face hat up", "kind": "Hat", "location": "upper-hat"},
+        {"id": "upper-hat-right", "name": "Upper face hat right", "kind": "Hat", "location": "upper-hat"},
+        {"id": "upper-hat-down", "name": "Upper face hat down", "kind": "Hat", "location": "upper-hat"},
+        {"id": "upper-hat-left", "name": "Upper face hat left", "kind": "Hat", "location": "upper-hat"},
+        {"id": "lower-hat-press", "name": "Lower face hat press", "kind": "Hat", "location": "lower-hat"},
+        {"id": "lower-hat-up", "name": "Lower face hat up", "kind": "Hat", "location": "lower-hat"},
+        {"id": "lower-hat-right", "name": "Lower face hat right", "kind": "Hat", "location": "lower-hat"},
+        {"id": "lower-hat-down", "name": "Lower face hat down", "kind": "Hat", "location": "lower-hat"},
+        {"id": "lower-hat-left", "name": "Lower face hat left", "kind": "Hat", "location": "lower-hat"},
+        {"id": "side-hat-press", "name": "Thumb-side hat press", "kind": "Hat", "location": "side-hat"},
+        {"id": "side-hat-up", "name": "Thumb-side hat up", "kind": "Hat", "location": "side-hat"},
+        {"id": "side-hat-right", "name": "Thumb-side hat right", "kind": "Hat", "location": "side-hat"},
+        {"id": "side-hat-down", "name": "Thumb-side hat down", "kind": "Hat", "location": "side-hat"},
+        {"id": "side-hat-left", "name": "Thumb-side hat left", "kind": "Hat", "location": "side-hat"},
+        {"id": "mini-press", "name": "Ministick press", "kind": "Button", "location": "mini"},
+        {"id": "mini-x", "name": "Ministick horizontal axis", "kind": "Axis", "suggestedInput": "rotx", "location": "mini"},
+        {"id": "mini-y", "name": "Ministick vertical axis", "kind": "Axis", "suggestedInput": "roty", "location": "mini"},
+        {"id": "mode-slider-up", "name": "Mode slider up", "kind": "Switch", "location": "mode-slider"},
+        {"id": "mode-slider-down", "name": "Mode slider down", "kind": "Switch", "location": "mode-slider"},
+        {"id": "paddle", "name": "Grip paddle switch", "kind": "Button"},
+        {"id": "flip-up", "name": "Flip trigger up", "kind": "Switch", "location": "flip"},
+        {"id": "flip-down", "name": "Flip trigger down", "kind": "Switch", "location": "flip"},
+        {"id": "trigger-first", "name": "Main trigger first stage", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second stage", "kind": "Button", "location": "trigger"},
+        {"id": "brake", "name": "Brake lever axis", "kind": "Axis"},
+        {"id": "twist", "name": "Lockable grip twist axis", "kind": "Axis"},
+        {"id": "stick-x", "name": "Gimbal left / right axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Gimbal fore / aft axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"}
+      ]
+    },
+    {
+      "id": "virpil-cdt-aeromax-r",
+      "references": [
+        "https://us.virpil-controls.com/products/cdt-aeromax-r-flightstick",
+        "https://support.virpil.com/en/support/solutions/articles/47001285228-vpc-cdt-aeromax-r-flightstick",
+        "https://edrefcard.info/devices",
+        "https://us.virpil-controls.com/products/cdt-aeromax-rz-flightstick",
+        "https://support.virpil.com/en/support/solutions/articles/47001308115-vpc-cdt-aeromax-rz-flightstick",
+        "https://us.virpil-controls.com/products/cdt-aero-r-grip",
+        "https://support.virpil.com/en/support/solutions/articles/47001285226-vpc-cdt-aero-r-grip"
+      ],
+      "referenceNotes": [
+        "CDT-AERO and CDT-AEROMAX use the same control surface. The upright and angled assemblies are shown in their own manufacturer views.",
+        "Stock button reports differ by firmware or configuration. Use Learn input with the connected device. The separately sold base throttle module adds its own controls."
+      ],
+      "views": [
+        {
+          "id": "upright-face",
+          "name": "AEROMAX upright · Grip and gimbal",
+          "image": "Hardware/Images/virpil-cdt-aeromax-r-flightstick-face.png",
+          "hotspots": [
+            {"controlId": "red-button", "x": 0.29151, "y": 0.08418, "width": 0.03875, "height": 0.03338},
+            {"controlId": "ring-button", "x": 0.43727, "y": 0.05515, "width": 0.0369, "height": 0.03338},
+            {"controlId": "upper-hat-press", "x": 0.35793, "y": 0.07837, "width": 0.04982, "height": 0.04064},
+            {"controlId": "lower-hat-press", "x": 0.46679, "y": 0.13353, "width": 0.04059, "height": 0.03048},
+            {"controlId": "mini-press", "x": 0.30627, "y": 0.17417, "width": 0.06273, "height": 0.04644},
+            {"controlId": "mode-slider-up", "x": 0.43727, "y": 0.17126, "width": 0.04244, "height": 0.02467},
+            {"controlId": "side-hat-press", "x": 0.39852, "y": 0.32075, "width": 0.05904, "height": 0.03628},
+            {"controlId": "paddle", "x": 0.49077, "y": 0.43251, "width": 0.06458, "height": 0.0566},
+            {"controlId": "twist", "x": 0.44649, "y": 0.58926, "width": 0.09594, "height": 0.03338},
+            {"controlId": "stick-x", "x": 0.4797, "y": 0.65457, "width": 0.19188, "height": 0.06531}
+          ]
+        },
+        {
+          "id": "upright-trigger",
+          "name": "AEROMAX upright · Triggers and brake lever",
+          "image": "Hardware/Images/virpil-cdt-aeromax-r-flightstick-trigger.png",
+          "hotspots": [
+            {"controlId": "side-button", "x": 0.67724, "y": 0.22205, "width": 0.04291, "height": 0.03828},
+            {"controlId": "trigger-first", "x": 0.65672, "y": 0.32772, "width": 0.0541, "height": 0.05513},
+            {"controlId": "flip-up", "x": 0.72388, "y": 0.3706, "width": 0.03358, "height": 0.05819},
+            {"controlId": "brake", "x": 0.75, "y": 0.41348, "width": 0.03918, "height": 0.07504}
+          ]
+        },
+        {
+          "id": "angled-face",
+          "name": "AEROMAX angled · Grip and gimbal",
+          "image": "Hardware/Images/virpil-cdt-aeromax-rz-flightstick-face.png",
+          "hotspots": [
+            {"controlId": "red-button", "x": 0.08008, "y": 0.17716, "width": 0.04723, "height": 0.0366},
+            {"controlId": "ring-button", "x": 0.23819, "y": 0.04832, "width": 0.04517, "height": 0.0366},
+            {"controlId": "upper-hat-press", "x": 0.16838, "y": 0.11567, "width": 0.05955, "height": 0.04539},
+            {"controlId": "lower-hat-press", "x": 0.33265, "y": 0.0937, "width": 0.04928, "height": 0.03367},
+            {"controlId": "mini-press", "x": 0.19097, "y": 0.23865, "width": 0.07392, "height": 0.05124},
+            {"controlId": "mode-slider-up", "x": 0.31622, "y": 0.17277, "width": 0.05339, "height": 0.02635},
+            {"controlId": "side-hat-press", "x": 0.36756, "y": 0.32211, "width": 0.07187, "height": 0.03953},
+            {"controlId": "paddle", "x": 0.53183, "y": 0.39678, "width": 0.07803, "height": 0.06149},
+            {"controlId": "twist", "x": 0.84805, "y": 0.46413, "width": 0.11088, "height": 0.05417},
+            {"controlId": "stick-x", "x": 0.52156, "y": 0.67496, "width": 0.21561, "height": 0.07321}
+          ]
+        },
+        {
+          "id": "angled-trigger",
+          "name": "AEROMAX angled · Triggers and brake lever",
+          "image": "Hardware/Images/virpil-cdt-aeromax-rz-flightstick-trigger.png",
+          "hotspots": [
+            {"controlId": "side-button", "x": 0.86964, "y": 0.14184, "width": 0.04288, "height": 0.0383},
+            {"controlId": "trigger-first", "x": 0.72384, "y": 0.27376, "width": 0.05489, "height": 0.05532},
+            {"controlId": "flip-up", "x": 0.77873, "y": 0.30922, "width": 0.03431, "height": 0.05816},
+            {"controlId": "brake", "x": 0.65523, "y": 0.44397, "width": 0.03945, "height": 0.07518}
+          ]
+        },
+        {
+          "id": "grip-face",
+          "name": "CDT-AERO grip · Grip face",
+          "image": "Hardware/Images/virpil-cdt-aero-r-grip-face.png",
+          "hotspots": [
+            {"controlId": "red-button", "x": 0.26942, "y": 0.08633, "width": 0.07767, "height": 0.04892},
+            {"controlId": "ring-button", "x": 0.57767, "y": 0.0777, "width": 0.07282, "height": 0.04892},
+            {"controlId": "upper-hat-press", "x": 0.43204, "y": 0.0964, "width": 0.09709, "height": 0.06043},
+            {"controlId": "lower-hat-press", "x": 0.62621, "y": 0.18273, "width": 0.0801, "height": 0.0446},
+            {"controlId": "mini-press", "x": 0.26942, "y": 0.23597, "width": 0.12136, "height": 0.06906},
+            {"controlId": "mode-slider-up", "x": 0.58738, "y": 0.23885, "width": 0.08495, "height": 0.03597},
+            {"controlId": "side-hat-press", "x": 0.46845, "y": 0.44604, "width": 0.1165, "height": 0.05324},
+            {"controlId": "paddle", "x": 0.64563, "y": 0.6446, "width": 0.12621, "height": 0.08345},
+            {"controlId": "twist", "x": 0.68447, "y": 0.85612, "width": 0.17961, "height": 0.04029},
+            {"controlId": "stick-x", "x": 0.68204, "y": 0.93094, "width": 0.20388, "height": 0.06043}
+          ]
+        },
+        {
+          "id": "grip-trigger",
+          "name": "CDT-AERO grip · Triggers and brake lever",
+          "image": "Hardware/Images/virpil-cdt-aero-r-grip-trigger.png",
+          "hotspots": [
+            {"controlId": "side-button", "x": 0.58442, "y": 0.26068, "width": 0.07143, "height": 0.05302},
+            {"controlId": "trigger-first", "x": 0.57359, "y": 0.46539, "width": 0.09091, "height": 0.07511},
+            {"controlId": "flip-up", "x": 0.6645, "y": 0.51988, "width": 0.05628, "height": 0.07953},
+            {"controlId": "brake", "x": 0.70563, "y": 0.63034, "width": 0.06494, "height": 0.10309}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "red-button", "name": "Red face button", "kind": "Button"},
+        {"id": "ring-button", "name": "Ringed face button", "kind": "Button"},
+        {"id": "side-button", "name": "Silver index-side button", "kind": "Button"},
+        {"id": "upper-hat-press", "name": "Upper face hat press", "kind": "Hat", "location": "upper-hat"},
+        {"id": "upper-hat-up", "name": "Upper face hat up", "kind": "Hat", "location": "upper-hat"},
+        {"id": "upper-hat-right", "name": "Upper face hat right", "kind": "Hat", "location": "upper-hat"},
+        {"id": "upper-hat-down", "name": "Upper face hat down", "kind": "Hat", "location": "upper-hat"},
+        {"id": "upper-hat-left", "name": "Upper face hat left", "kind": "Hat", "location": "upper-hat"},
+        {"id": "lower-hat-press", "name": "Lower face hat press", "kind": "Hat", "location": "lower-hat"},
+        {"id": "lower-hat-up", "name": "Lower face hat up", "kind": "Hat", "location": "lower-hat"},
+        {"id": "lower-hat-right", "name": "Lower face hat right", "kind": "Hat", "location": "lower-hat"},
+        {"id": "lower-hat-down", "name": "Lower face hat down", "kind": "Hat", "location": "lower-hat"},
+        {"id": "lower-hat-left", "name": "Lower face hat left", "kind": "Hat", "location": "lower-hat"},
+        {"id": "side-hat-press", "name": "Thumb-side hat press", "kind": "Hat", "location": "side-hat"},
+        {"id": "side-hat-up", "name": "Thumb-side hat up", "kind": "Hat", "location": "side-hat"},
+        {"id": "side-hat-right", "name": "Thumb-side hat right", "kind": "Hat", "location": "side-hat"},
+        {"id": "side-hat-down", "name": "Thumb-side hat down", "kind": "Hat", "location": "side-hat"},
+        {"id": "side-hat-left", "name": "Thumb-side hat left", "kind": "Hat", "location": "side-hat"},
+        {"id": "mini-press", "name": "Ministick press", "kind": "Button", "location": "mini"},
+        {"id": "mini-x", "name": "Ministick horizontal axis", "kind": "Axis", "suggestedInput": "rotx", "location": "mini"},
+        {"id": "mini-y", "name": "Ministick vertical axis", "kind": "Axis", "suggestedInput": "roty", "location": "mini"},
+        {"id": "mode-slider-up", "name": "Mode slider up", "kind": "Switch", "location": "mode-slider"},
+        {"id": "mode-slider-down", "name": "Mode slider down", "kind": "Switch", "location": "mode-slider"},
+        {"id": "paddle", "name": "Grip paddle switch", "kind": "Button"},
+        {"id": "flip-up", "name": "Flip trigger up", "kind": "Switch", "location": "flip"},
+        {"id": "flip-down", "name": "Flip trigger down", "kind": "Switch", "location": "flip"},
+        {"id": "trigger-first", "name": "Main trigger first stage", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second stage", "kind": "Button", "location": "trigger"},
+        {"id": "brake", "name": "Brake lever axis", "kind": "Axis"},
+        {"id": "twist", "name": "Lockable grip twist axis", "kind": "Axis"},
+        {"id": "stick-x", "name": "Gimbal left / right axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Gimbal fore / aft axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"}
+      ]
+    }
+  ]
+}

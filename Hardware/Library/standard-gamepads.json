@@ -1,0 +1,731 @@
+{
+  "devices": [
+    {
+      "id": "sony-dualshock-3",
+      "name": "SONY DUALSHOCK 3",
+      "manufacturer": "Sony",
+      "vendorId": 1356,
+      "productId": 616,
+      "layout": "sony-dualshock-3"
+    },
+    {
+      "id": "sony-dualshock-4",
+      "name": "SONY DUALSHOCK 4",
+      "manufacturer": "Sony",
+      "vendorId": 1356,
+      "productId": 1476,
+      "layout": "sony-dualshock-4",
+      "alternateProductIds": [
+        2508
+      ]
+    },
+    {
+      "id": "microsoft-xbox-360-controller",
+      "name": "MICROSOFT XBOX 360 CONTROLLER",
+      "manufacturer": "Microsoft",
+      "vendorId": 1118,
+      "productId": 654,
+      "layout": "microsoft-xbox-360-controller"
+    },
+    {
+      "id": "microsoft-xbox-one-controller",
+      "name": "MICROSOFT XBOX ONE CONTROLLER (1537)",
+      "manufacturer": "Microsoft",
+      "vendorId": 1118,
+      "productId": 721,
+      "layout": "microsoft-xbox-one-controller"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "sony-dualshock-3",
+      "references": [
+        "https://www.sony.com/en/SonyInfo/design/gallery/CECH-ZC2/",
+        "https://usb-ids.gowdy.us/read/UD/054c/0268",
+        "https://www.ebay.com/itm/295917608672"
+      ],
+      "referenceNotes": [
+        "PlayStation drivers and USB/Bluetooth interfaces report different axis and button numbers. Use Learn on the connected controller.",
+        "The DualShock 3 may require a compatible Windows controller driver."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front Controls",
+          "image": "Hardware/Images/sony-dualshock-3-face.jpg",
+          "source": "https://dream-consoles.myshopify.com/cdn/shop/files/13757.jpg?v=1732465305",
+          "hotspots": [
+            {"controlId": "dpad-up", "x": 0.206, "y": 0.41, "width": 0.117, "height": 0.162},
+            {"controlId": "left-stick-press", "x": 0.352, "y": 0.654, "width": 0.126, "height": 0.216},
+            {"controlId": "right-stick-press", "x": 0.652, "y": 0.651, "width": 0.127, "height": 0.217},
+            {"controlId": "select", "x": 0.412, "y": 0.409, "width": 0.046, "height": 0.067},
+            {"controlId": "start", "x": 0.589, "y": 0.413, "width": 0.047, "height": 0.065},
+            {"controlId": "home", "x": 0.502, "y": 0.5, "width": 0.061, "height": 0.088},
+            {"controlId": "triangle", "x": 0.799, "y": 0.283, "width": 0.069, "height": 0.104},
+            {"controlId": "circle", "x": 0.879, "y": 0.408, "width": 0.065, "height": 0.103},
+            {"controlId": "cross", "x": 0.799, "y": 0.536, "width": 0.068, "height": 0.106},
+            {"controlId": "square", "x": 0.714, "y": 0.409, "width": 0.067, "height": 0.105},
+            {"controlId": "left-bumper", "x": 0.208, "y": 0.139, "width": 0.111, "height": 0.083},
+            {"controlId": "right-bumper", "x": 0.799, "y": 0.133, "width": 0.108, "height": 0.083}
+          ]
+        },
+        {
+          "id": "shoulders",
+          "name": "Shoulders and Triggers",
+          "image": "Hardware/Images/sony-dualshock-3-shoulders.png",
+          "source": "https://i.ebayimg.com/images/g/dFQAAOSwT19k9rER/s-l1600.png",
+          "hotspots": [
+            {"controlId": "right-trigger", "x": 0.228, "y": 0.15, "width": 0.13, "height": 0.109},
+            {"controlId": "left-trigger", "x": 0.76, "y": 0.149, "width": 0.13, "height": 0.109}
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "left-stick-press",
+          "name": "Left Stick Press",
+          "kind": "Button",
+          "location": "left-stick"
+        },
+        {
+          "id": "left-stick-x",
+          "name": "Left Stick X",
+          "kind": "Axis",
+          "location": "left-stick"
+        },
+        {
+          "id": "left-stick-y",
+          "name": "Left Stick Y",
+          "kind": "Axis",
+          "location": "left-stick"
+        },
+        {
+          "id": "right-stick-press",
+          "name": "Right Stick Press",
+          "kind": "Button",
+          "location": "right-stick"
+        },
+        {
+          "id": "right-stick-x",
+          "name": "Right Stick X",
+          "kind": "Axis",
+          "location": "right-stick"
+        },
+        {
+          "id": "right-stick-y",
+          "name": "Right Stick Y",
+          "kind": "Axis",
+          "location": "right-stick"
+        },
+        {
+          "id": "dpad-up",
+          "name": "D-pad Up",
+          "kind": "Button",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-right",
+          "name": "D-pad Right",
+          "kind": "Button",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-down",
+          "name": "D-pad Down",
+          "kind": "Button",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-left",
+          "name": "D-pad Left",
+          "kind": "Button",
+          "location": "dpad"
+        },
+        {
+          "id": "triangle",
+          "name": "Triangle",
+          "kind": "Button"
+        },
+        {
+          "id": "circle",
+          "name": "Circle",
+          "kind": "Button"
+        },
+        {
+          "id": "cross",
+          "name": "Cross",
+          "kind": "Button"
+        },
+        {
+          "id": "square",
+          "name": "Square",
+          "kind": "Button"
+        },
+        {
+          "id": "select",
+          "name": "Select",
+          "kind": "Button"
+        },
+        {
+          "id": "start",
+          "name": "Start",
+          "kind": "Button"
+        },
+        {
+          "id": "home",
+          "name": "PS Button",
+          "kind": "Button"
+        },
+        {
+          "id": "left-bumper",
+          "name": "L1",
+          "kind": "Button"
+        },
+        {
+          "id": "right-bumper",
+          "name": "R1",
+          "kind": "Button"
+        },
+        {
+          "id": "left-trigger",
+          "name": "L2 Trigger",
+          "kind": "Axis"
+        },
+        {
+          "id": "right-trigger",
+          "name": "R2 Trigger",
+          "kind": "Axis"
+        }
+      ]
+    },
+    {
+      "id": "sony-dualshock-4",
+      "references": [
+        "https://www.playstation.com/en-us/accessories/dualshock-4-wireless-controller/",
+        "https://www.playstation.com/en-us/support/hardware/ps4-dualshock-4-wireless-troubleshooting/"
+      ],
+      "referenceNotes": [
+        "PlayStation drivers and USB/Bluetooth interfaces report different axis and button numbers. Use Learn on the connected controller.",
+        "Sony Jet Black product photos show the front and shoulder controls."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front Controls",
+          "image": "Hardware/Images/sony-dualshock-4-face.jpg",
+          "source": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-accessories-ds4-jet-black-screen-01-en-28oct20",
+          "hotspots": [
+            {"controlId": "dpad-up", "x": 0.317, "y": 0.344, "width": 0.091, "height": 0.195},
+            {"controlId": "left-stick-press", "x": 0.408, "y": 0.487, "width": 0.071, "height": 0.134},
+            {"controlId": "right-stick-press", "x": 0.601, "y": 0.489, "width": 0.073, "height": 0.136},
+            {"controlId": "share", "x": 0.377, "y": 0.234, "width": 0.021, "height": 0.064},
+            {"controlId": "options", "x": 0.628, "y": 0.231, "width": 0.021, "height": 0.064},
+            {"controlId": "home", "x": 0.501, "y": 0.495, "width": 0.031, "height": 0.044},
+            {"controlId": "touchpad", "x": 0.502, "y": 0.281, "width": 0.198, "height": 0.187},
+            {"controlId": "triangle", "x": 0.693, "y": 0.263, "width": 0.038, "height": 0.07},
+            {"controlId": "circle", "x": 0.738, "y": 0.342, "width": 0.037, "height": 0.069},
+            {"controlId": "cross", "x": 0.694, "y": 0.419, "width": 0.037, "height": 0.07},
+            {"controlId": "square", "x": 0.648, "y": 0.342, "width": 0.037, "height": 0.069}
+          ]
+        },
+        {
+          "id": "shoulders",
+          "name": "Shoulders and Triggers",
+          "image": "Hardware/Images/sony-dualshock-4-shoulders.jpg",
+          "source": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-accessories-ds4-jet-black-screen-04-en-28oct20",
+          "hotspots": [
+            {"controlId": "right-bumper", "x": 0.273, "y": 0.51, "width": 0.078, "height": 0.081},
+            {"controlId": "left-bumper", "x": 0.735, "y": 0.509, "width": 0.078, "height": 0.081},
+            {"controlId": "right-trigger", "x": 0.273, "y": 0.632, "width": 0.076, "height": 0.139},
+            {"controlId": "left-trigger", "x": 0.734, "y": 0.632, "width": 0.076, "height": 0.139}
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "left-stick-press",
+          "name": "Left Stick Press",
+          "kind": "Button",
+          "location": "left-stick"
+        },
+        {
+          "id": "left-stick-x",
+          "name": "Left Stick X",
+          "kind": "Axis",
+          "location": "left-stick"
+        },
+        {
+          "id": "left-stick-y",
+          "name": "Left Stick Y",
+          "kind": "Axis",
+          "location": "left-stick"
+        },
+        {
+          "id": "right-stick-press",
+          "name": "Right Stick Press",
+          "kind": "Button",
+          "location": "right-stick"
+        },
+        {
+          "id": "right-stick-x",
+          "name": "Right Stick X",
+          "kind": "Axis",
+          "location": "right-stick"
+        },
+        {
+          "id": "right-stick-y",
+          "name": "Right Stick Y",
+          "kind": "Axis",
+          "location": "right-stick"
+        },
+        {
+          "id": "dpad-up",
+          "name": "D-pad Up",
+          "kind": "Button",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-right",
+          "name": "D-pad Right",
+          "kind": "Button",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-down",
+          "name": "D-pad Down",
+          "kind": "Button",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-left",
+          "name": "D-pad Left",
+          "kind": "Button",
+          "location": "dpad"
+        },
+        {
+          "id": "triangle",
+          "name": "Triangle",
+          "kind": "Button"
+        },
+        {
+          "id": "circle",
+          "name": "Circle",
+          "kind": "Button"
+        },
+        {
+          "id": "cross",
+          "name": "Cross",
+          "kind": "Button"
+        },
+        {
+          "id": "square",
+          "name": "Square",
+          "kind": "Button"
+        },
+        {
+          "id": "share",
+          "name": "Share",
+          "kind": "Button"
+        },
+        {
+          "id": "options",
+          "name": "Options",
+          "kind": "Button"
+        },
+        {
+          "id": "home",
+          "name": "PS Button",
+          "kind": "Button"
+        },
+        {
+          "id": "left-bumper",
+          "name": "L1",
+          "kind": "Button"
+        },
+        {
+          "id": "right-bumper",
+          "name": "R1",
+          "kind": "Button"
+        },
+        {
+          "id": "touchpad",
+          "name": "Touchpad Press",
+          "kind": "Button"
+        },
+        {
+          "id": "left-trigger",
+          "name": "L2 Trigger",
+          "kind": "Axis"
+        },
+        {
+          "id": "right-trigger",
+          "name": "R2 Trigger",
+          "kind": "Axis"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-xbox-360-controller",
+      "references": [
+        "https://learn.microsoft.com/en-us/windows/win32/xinput/directinput-and-xusb-devices",
+        "https://github.com/torvalds/linux/blob/master/drivers/input/joystick/xpad.c",
+        "https://pocketshop.com.au/products/genuine-microsoft-xbox-360-wireless-controller-black",
+        "https://www.ebay.com/itm/364072471921"
+      ],
+      "referenceNotes": [
+        "Microsoft's standard DirectInput gamepad mapping combines the left and right triggers on the Z axis; learn alternate driver mappings in the app. The Guide button may be reserved by Windows."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front Controls",
+          "image": "Hardware/Images/microsoft-xbox-360-face.png",
+          "source": "https://pocketshop.com.au/cdn/shop/files/57_147cf654-adc1-4f46-b398-c051046bcf94.png?v=1776174641&width=1445",
+          "hotspots": [
+            {"controlId": "dpad-up", "x": 0.381, "y": 0.498, "width": 0.146, "height": 0.175},
+            {"controlId": "left-stick-press", "x": 0.267, "y": 0.32, "width": 0.112, "height": 0.133},
+            {"controlId": "right-stick-press", "x": 0.615, "y": 0.505, "width": 0.116, "height": 0.137},
+            {"controlId": "back", "x": 0.423, "y": 0.343, "width": 0.036, "height": 0.042},
+            {"controlId": "start", "x": 0.589, "y": 0.345, "width": 0.036, "height": 0.042},
+            {"controlId": "guide", "x": 0.509, "y": 0.345, "width": 0.087, "height": 0.088},
+            {"controlId": "y", "x": 0.74, "y": 0.277, "width": 0.057, "height": 0.064},
+            {"controlId": "b", "x": 0.797, "y": 0.353, "width": 0.054, "height": 0.06},
+            {"controlId": "a", "x": 0.74, "y": 0.421, "width": 0.057, "height": 0.061},
+            {"controlId": "x", "x": 0.678, "y": 0.35, "width": 0.056, "height": 0.063},
+            {"controlId": "left-bumper", "x": 0.312, "y": 0.19, "width": 0.108, "height": 0.055},
+            {"controlId": "right-bumper", "x": 0.726, "y": 0.204, "width": 0.102, "height": 0.054}
+          ]
+        },
+        {
+          "id": "shoulders",
+          "name": "Shoulders and Triggers",
+          "image": "Hardware/Images/microsoft-xbox-360-shoulders.jpg",
+          "source": "https://i.ebayimg.com/images/g/c9IAAOSwzdZkzqYV/s-l1600.jpg",
+          "hotspots": [
+            {"controlId": "right-trigger", "x": 0.279, "y": 0.222, "width": 0.087, "height": 0.066},
+            {"controlId": "left-trigger", "x": 0.73, "y": 0.218, "width": 0.086, "height": 0.066}
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "left-stick-press",
+          "name": "Left Stick Press",
+          "kind": "Button",
+          "suggestedInput": "button9",
+          "location": "left-stick"
+        },
+        {
+          "id": "left-stick-x",
+          "name": "Left Stick X",
+          "kind": "Axis",
+          "suggestedInput": "x",
+          "location": "left-stick"
+        },
+        {
+          "id": "left-stick-y",
+          "name": "Left Stick Y",
+          "kind": "Axis",
+          "suggestedInput": "y",
+          "location": "left-stick"
+        },
+        {
+          "id": "right-stick-press",
+          "name": "Right Stick Press",
+          "kind": "Button",
+          "suggestedInput": "button10",
+          "location": "right-stick"
+        },
+        {
+          "id": "right-stick-x",
+          "name": "Right Stick X",
+          "kind": "Axis",
+          "suggestedInput": "rotx",
+          "location": "right-stick"
+        },
+        {
+          "id": "right-stick-y",
+          "name": "Right Stick Y",
+          "kind": "Axis",
+          "suggestedInput": "roty",
+          "location": "right-stick"
+        },
+        {
+          "id": "dpad-up",
+          "name": "D-pad Up",
+          "kind": "Button",
+          "suggestedInput": "hat1_up",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-right",
+          "name": "D-pad Right",
+          "kind": "Button",
+          "suggestedInput": "hat1_right",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-down",
+          "name": "D-pad Down",
+          "kind": "Button",
+          "suggestedInput": "hat1_down",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-left",
+          "name": "D-pad Left",
+          "kind": "Button",
+          "suggestedInput": "hat1_left",
+          "location": "dpad"
+        },
+        {
+          "id": "a",
+          "name": "A",
+          "kind": "Button",
+          "suggestedInput": "button1"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "kind": "Button",
+          "suggestedInput": "button2"
+        },
+        {
+          "id": "x",
+          "name": "X",
+          "kind": "Button",
+          "suggestedInput": "button3"
+        },
+        {
+          "id": "y",
+          "name": "Y",
+          "kind": "Button",
+          "suggestedInput": "button4"
+        },
+        {
+          "id": "left-bumper",
+          "name": "Left Bumper (LB)",
+          "kind": "Button",
+          "suggestedInput": "button5"
+        },
+        {
+          "id": "right-bumper",
+          "name": "Right Bumper (RB)",
+          "kind": "Button",
+          "suggestedInput": "button6"
+        },
+        {
+          "id": "back",
+          "name": "Back",
+          "kind": "Button",
+          "suggestedInput": "button7"
+        },
+        {
+          "id": "start",
+          "name": "Start",
+          "kind": "Button",
+          "suggestedInput": "button8"
+        },
+        {
+          "id": "guide",
+          "name": "Xbox Guide",
+          "kind": "Button"
+        },
+        {
+          "id": "left-trigger",
+          "name": "Left Trigger (LT)",
+          "kind": "Axis",
+          "suggestedInput": "z"
+        },
+        {
+          "id": "right-trigger",
+          "name": "Right Trigger (RT)",
+          "kind": "Axis",
+          "suggestedInput": "z"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-xbox-one-controller",
+      "references": [
+        "https://learn.microsoft.com/en-us/windows/win32/xinput/directinput-and-xusb-devices",
+        "https://github.com/torvalds/linux/blob/master/drivers/input/joystick/xpad.c",
+        "https://commons.wikimedia.org/wiki/File:Microsoft-Xbox-One-controller.jpg",
+        "https://www.walmart.com/ip/43243731"
+      ],
+      "referenceNotes": [
+        "Microsoft's standard DirectInput gamepad mapping combines the left and right triggers on the Z axis; learn alternate driver mappings in the app. The Guide button may be reserved by Windows.",
+        "Front photo is by Evan-Amos, released into the public domain. Rear view shows the original model 1537."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front Controls",
+          "image": "Hardware/Images/microsoft-xbox-one-face.jpg",
+          "source": "https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft-Xbox-One-controller.jpg",
+          "hotspots": [
+            {"controlId": "dpad-up", "x": 0.41, "y": 0.468, "width": 0.117, "height": 0.122},
+            {"controlId": "left-stick-press", "x": 0.248, "y": 0.334, "width": 0.11, "height": 0.115},
+            {"controlId": "right-stick-press", "x": 0.625, "y": 0.357, "width": 0.108, "height": 0.112},
+            {"controlId": "view", "x": 0.396, "y": 0.301, "width": 0.031, "height": 0.036},
+            {"controlId": "menu", "x": 0.515, "y": 0.261, "width": 0.033, "height": 0.037},
+            {"controlId": "guide", "x": 0.409, "y": 0.179, "width": 0.066, "height": 0.065},
+            {"controlId": "y", "x": 0.63, "y": 0.153, "width": 0.038, "height": 0.052},
+            {"controlId": "b", "x": 0.706, "y": 0.199, "width": 0.036, "height": 0.048},
+            {"controlId": "a", "x": 0.683, "y": 0.277, "width": 0.038, "height": 0.047},
+            {"controlId": "x", "x": 0.606, "y": 0.23, "width": 0.036, "height": 0.051}
+          ]
+        },
+        {
+          "id": "shoulders",
+          "name": "Shoulders and Triggers",
+          "image": "Hardware/Images/microsoft-xbox-one-shoulders.jpg",
+          "source": "https://i5.walmartimages.com/asr/4e972ea7-50e9-4d37-b8b8-e603a6b8134a.c9c3e4aa757c4fcf41c1e73a029d5c48.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768",
+          "hotspots": [
+            {"controlId": "right-bumper", "x": 0.221, "y": 0.21, "width": 0.134, "height": 0.052},
+            {"controlId": "left-bumper", "x": 0.77, "y": 0.21, "width": 0.134, "height": 0.052},
+            {"controlId": "right-trigger", "x": 0.183, "y": 0.302, "width": 0.085, "height": 0.106},
+            {"controlId": "left-trigger", "x": 0.789, "y": 0.3, "width": 0.085, "height": 0.106}
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "left-stick-press",
+          "name": "Left Stick Press",
+          "kind": "Button",
+          "suggestedInput": "button9",
+          "location": "left-stick"
+        },
+        {
+          "id": "left-stick-x",
+          "name": "Left Stick X",
+          "kind": "Axis",
+          "suggestedInput": "x",
+          "location": "left-stick"
+        },
+        {
+          "id": "left-stick-y",
+          "name": "Left Stick Y",
+          "kind": "Axis",
+          "suggestedInput": "y",
+          "location": "left-stick"
+        },
+        {
+          "id": "right-stick-press",
+          "name": "Right Stick Press",
+          "kind": "Button",
+          "suggestedInput": "button10",
+          "location": "right-stick"
+        },
+        {
+          "id": "right-stick-x",
+          "name": "Right Stick X",
+          "kind": "Axis",
+          "suggestedInput": "rotx",
+          "location": "right-stick"
+        },
+        {
+          "id": "right-stick-y",
+          "name": "Right Stick Y",
+          "kind": "Axis",
+          "suggestedInput": "roty",
+          "location": "right-stick"
+        },
+        {
+          "id": "dpad-up",
+          "name": "D-pad Up",
+          "kind": "Button",
+          "suggestedInput": "hat1_up",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-right",
+          "name": "D-pad Right",
+          "kind": "Button",
+          "suggestedInput": "hat1_right",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-down",
+          "name": "D-pad Down",
+          "kind": "Button",
+          "suggestedInput": "hat1_down",
+          "location": "dpad"
+        },
+        {
+          "id": "dpad-left",
+          "name": "D-pad Left",
+          "kind": "Button",
+          "suggestedInput": "hat1_left",
+          "location": "dpad"
+        },
+        {
+          "id": "a",
+          "name": "A",
+          "kind": "Button",
+          "suggestedInput": "button1"
+        },
+        {
+          "id": "b",
+          "name": "B",
+          "kind": "Button",
+          "suggestedInput": "button2"
+        },
+        {
+          "id": "x",
+          "name": "X",
+          "kind": "Button",
+          "suggestedInput": "button3"
+        },
+        {
+          "id": "y",
+          "name": "Y",
+          "kind": "Button",
+          "suggestedInput": "button4"
+        },
+        {
+          "id": "left-bumper",
+          "name": "Left Bumper (LB)",
+          "kind": "Button",
+          "suggestedInput": "button5"
+        },
+        {
+          "id": "right-bumper",
+          "name": "Right Bumper (RB)",
+          "kind": "Button",
+          "suggestedInput": "button6"
+        },
+        {
+          "id": "view",
+          "name": "View",
+          "kind": "Button",
+          "suggestedInput": "button7"
+        },
+        {
+          "id": "menu",
+          "name": "Menu",
+          "kind": "Button",
+          "suggestedInput": "button8"
+        },
+        {
+          "id": "guide",
+          "name": "Xbox Guide",
+          "kind": "Button"
+        },
+        {
+          "id": "left-trigger",
+          "name": "Left Trigger (LT)",
+          "kind": "Axis",
+          "suggestedInput": "z"
+        },
+        {
+          "id": "right-trigger",
+          "name": "Right Trigger (RT)",
+          "kind": "Axis",
+          "suggestedInput": "z"
+        }
+      ]
+    }
+  ]
+}

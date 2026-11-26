@@ -1,0 +1,333 @@
+{
+  "manufacturer": "VIRPIL",
+  "devices": [
+    {"id": "virpil-vector-yoke-base","name": "VECTOR FLIGHT YOKE BASE","vendorId": 0,"productId": 0,"layout": "virpil-vector-yoke-base","isBase": true,"compatiblePanelIds": ["virpil-vector-gear-mcp","virpil-vector-lighting-mcp","virpil-vector-engine-mcp"]},
+    {"id": "virpil-b-jet-yoke","name": "VIRPIL B-JET YOKE HANDLE","vendorId": 0,"productId": 0,"layout": "virpil-b-jet-yoke","compatibleBaseIds": ["virpil-vector-yoke-base"]},
+    {"id": "virpil-p-jet-yoke","name": "VIRPIL P-JET YOKE HANDLE","vendorId": 0,"productId": 0,"layout": "virpil-p-jet-yoke","compatibleBaseIds": ["virpil-vector-yoke-base"]},
+    {"id": "virpil-vega-yoke","name": "VIRPIL CONSTELLATION VEGA YOKE HANDLE","vendorId": 0,"productId": 0,"layout": "virpil-vega-yoke","compatibleBaseIds": ["virpil-vector-yoke-base"]},
+    {"id": "virpil-vector-gear-mcp","name": "VECTOR GEAR MCP","vendorId": 0,"productId": 0,"layout": "virpil-vector-gear-mcp","isPanel": true},
+    {"id": "virpil-vector-lighting-mcp","name": "VECTOR LIGHTING MCP","vendorId": 0,"productId": 0,"layout": "virpil-vector-lighting-mcp","isPanel": true},
+    {"id": "virpil-vector-engine-mcp","name": "VECTOR ENGINE MCP","vendorId": 0,"productId": 0,"layout": "virpil-vector-engine-mcp","isPanel": true}
+  ],
+  "layouts": [
+    {
+      "id": "virpil-vector-yoke-base",
+      "references": [
+        "https://us.virpil-controls.com/products/vector-flight-yoke-base",
+        "https://support.virpil.com/en/support/solutions/articles/47001301491-vector-flight-yoke-base-user-manual"
+      ],
+      "referenceNotes": [
+        "The Vector base supplies roll and pitch. The two optional faceplate docks attach via internal cables."
+      ],
+      "views": [
+        {
+          "id": "shaft",
+          "name": "Base and shaft",
+          "image": "Hardware/Images/virpil-vector-flight-yoke-base-shaft.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VectorYoke_01.jpg?v=1785903225",
+          "hotspots": [
+            {"controlId": "stick-x","x": 0.76417,"y": 0.54583,"width": 0.10167,"height": 0.03917}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x","name": "Yoke X (roll)","kind": "Axis","location": "yoke-shaft"},
+        {"id": "stick-y","name": "Yoke Y (pitch)","kind": "Axis","location": "yoke-shaft"}
+      ]
+    },
+    {
+      "id": "virpil-b-jet-yoke",
+      "references": [
+        "https://us.virpil-controls.com/products/b-jet-yoke-handle",
+        "https://support.virpil.com/en/support/solutions/articles/47001286739-b-jet-yoke-user-manual"
+      ],
+      "referenceNotes": [
+        "Factory captain configuration with trim on left and both right-side hats. Product supports reversible modules and a separate optional analogue module.",
+        "Connect through the Vector Flight Yoke Base. Use Learn Input for Windows input numbers."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Face",
+          "image": "Hardware/Images/virpil-b-jet-yoke-handle-face-cutout.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/BJET_01.jpg?v=1785903688",
+          "hotspots": [
+            {"controlId": "trim-inner-up","x": 0.20417,"y": 0.3625,"width": 0.06583,"height": 0.07083},
+            {"controlId": "hat8-up","x": 0.72083,"y": 0.32833,"width": 0.04083,"height": 0.04},
+            {"controlId": "hat4-up","x": 0.76667,"y": 0.33333,"width": 0.0375,"height": 0.0375},
+            {"controlId": "left-grip-button","x": 0.34,"y": 0.4625,"width": 0.02417,"height": 0.02667},
+            {"controlId": "right-grip-button","x": 0.7125,"y": 0.4375,"width": 0.035,"height": 0.035}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Rear triggers",
+          "image": "Hardware/Images/virpil-b-jet-yoke-handle-rear-cutout.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/BJET_02.jpg?v=1785903688",
+          "hotspots": [
+            {"controlId": "right-rocker-trigger-up","x": 0.27333,"y": 0.45417,"width": 0.04583,"height": 0.05},
+            {"controlId": "left-rocker-trigger-up","x": 0.715,"y": 0.51333,"width": 0.04667,"height": 0.05583},
+            {"controlId": "right-grip-button","x": 0.39167,"y": 0.41917,"width": 0.03,"height": 0.02917}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trim-inner-up","name": "Trim inner up","kind": "Button","location": "trim"},
+        {"id": "trim-inner-down","name": "Trim inner down","kind": "Button","location": "trim"},
+        {"id": "trim-outer-up","name": "Trim outer up","kind": "Button","location": "trim"},
+        {"id": "trim-outer-down","name": "Trim outer down","kind": "Button","location": "trim"},
+        {"id": "hat8-up","name": "Inner 8-way hat up","kind": "Button","location": "hat8"},
+        {"id": "hat8-ne","name": "Inner 8-way hat up-right","kind": "Button","location": "hat8"},
+        {"id": "hat8-right","name": "Inner 8-way hat right","kind": "Button","location": "hat8"},
+        {"id": "hat8-se","name": "Inner 8-way hat down-right","kind": "Button","location": "hat8"},
+        {"id": "hat8-down","name": "Inner 8-way hat down","kind": "Button","location": "hat8"},
+        {"id": "hat8-sw","name": "Inner 8-way hat down-left","kind": "Button","location": "hat8"},
+        {"id": "hat8-left","name": "Inner 8-way hat left","kind": "Button","location": "hat8"},
+        {"id": "hat8-nw","name": "Inner 8-way hat up-left","kind": "Button","location": "hat8"},
+        {"id": "hat8-press","name": "Inner 8-way hat press","kind": "Button","location": "hat8"},
+        {"id": "hat4-up","name": "Outer 4-way hat up","kind": "Button","location": "hat4"},
+        {"id": "hat4-right","name": "Outer 4-way hat right","kind": "Button","location": "hat4"},
+        {"id": "hat4-down","name": "Outer 4-way hat down","kind": "Button","location": "hat4"},
+        {"id": "hat4-left","name": "Outer 4-way hat left","kind": "Button","location": "hat4"},
+        {"id": "hat4-press","name": "Outer 4-way hat press","kind": "Button","location": "hat4"},
+        {"id": "left-grip-button","name": "Left inner push button","kind": "Button"},
+        {"id": "right-grip-button","name": "Right inner push button","kind": "Button"},
+        {"id": "left-rocker-trigger-up","name": "Left rocker trigger up","kind": "Button","location": "left-rocker-trigger"},
+        {"id": "left-rocker-trigger-down","name": "Left rocker trigger down","kind": "Button","location": "left-rocker-trigger"},
+        {"id": "right-rocker-trigger-up","name": "Right rocker trigger up","kind": "Button","location": "right-rocker-trigger"},
+        {"id": "right-rocker-trigger-down","name": "Right rocker trigger down","kind": "Button","location": "right-rocker-trigger"}
+      ]
+    },
+    {
+      "id": "virpil-p-jet-yoke",
+      "references": [
+        "https://us.virpil-controls.com/products/p-jet-yoke-handle"
+      ],
+      "referenceNotes": [
+        "Gallery configuration shows the two-way/push cap at left, the four-way/push cap at right, and two nested trim switches. VIRPIL also documents optional cap and analogue-module configurations.",
+        "Connect through the Vector Flight Yoke Base. Use Learn Input for Windows input numbers."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Face",
+          "image": "Hardware/Images/virpil-p-jet-yoke-handle-face.jpg",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/PJET_01.jpg?v=1785903510",
+          "hotspots": [
+            {"controlId": "trim-inner-up","x": 0.36,"y": 0.31667,"width": 0.0675,"height": 0.06417},
+            {"controlId": "left-hat-up","x": 0.44083,"y": 0.35083,"width": 0.04,"height": 0.04083},
+            {"controlId": "right-hat-up","x": 0.66083,"y": 0.31333,"width": 0.04583,"height": 0.04667},
+            {"controlId": "red-face-button","x": 0.40667,"y": 0.38833,"width": 0.02833,"height": 0.02833},
+            {"controlId": "white-face-button","x": 0.435,"y": 0.4275,"width": 0.03083,"height": 0.03}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trim-inner-up","name": "Trim inner up","kind": "Button","location": "trim"},
+        {"id": "trim-inner-down","name": "Trim inner down","kind": "Button","location": "trim"},
+        {"id": "trim-outer-up","name": "Trim outer up","kind": "Button","location": "trim"},
+        {"id": "trim-outer-down","name": "Trim outer down","kind": "Button","location": "trim"},
+        {"id": "left-hat-up","name": "Left hat up","kind": "Button","location": "left-hat"},
+        {"id": "left-hat-down","name": "Left hat down","kind": "Button","location": "left-hat"},
+        {"id": "left-hat-press","name": "Left hat press","kind": "Button","location": "left-hat"},
+        {"id": "right-hat-up","name": "Right hat up","kind": "Button","location": "right-hat"},
+        {"id": "right-hat-right","name": "Right hat right","kind": "Button","location": "right-hat"},
+        {"id": "right-hat-down","name": "Right hat down","kind": "Button","location": "right-hat"},
+        {"id": "right-hat-left","name": "Right hat left","kind": "Button","location": "right-hat"},
+        {"id": "right-hat-press","name": "Right hat press","kind": "Button","location": "right-hat"},
+        {"id": "red-face-button","name": "Red face button","kind": "Button"},
+        {"id": "white-face-button","name": "White face button","kind": "Button"}
+      ]
+    },
+    {
+      "id": "virpil-vega-yoke",
+      "references": [
+        "https://us.virpil-controls.com/products/constellation-vega-yoke-handle"
+      ],
+      "referenceNotes": [
+        "The photographed configuration installs the hat on the left and the analogue ministick on the right. VIRPIL documents swappable module positions and additional optional modules.",
+        "The analogue triggers each have a separate full-press button. Six backlit face keys are programmable.",
+        "Connect through the Vector Flight Yoke Base. Use Learn Input for Windows input numbers."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Face",
+          "image": "Hardware/Images/virpil-constellation-vega-yoke-handle-face-cutout.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VEGA_01.jpg?v=1785903299",
+          "hotspots": [
+            {"controlId": "left-face-button","x": 0.27083,"y": 0.28333,"width": 0.0325,"height": 0.03},
+            {"controlId": "right-face-button","x": 0.66,"y": 0.26333,"width": 0.03333,"height": 0.02917},
+            {"controlId": "scroll-wheel-up","x": 0.29917,"y": 0.32083,"width": 0.04,"height": 0.04167},
+            {"controlId": "left-module-up","x": 0.35,"y": 0.3325,"width": 0.04583,"height": 0.04417},
+            {"controlId": "right-module-x","x": 0.61333,"y": 0.31,"width": 0.04917,"height": 0.04833},
+            {"controlId": "left-rgb-1","x": 0.42583,"y": 0.42083,"width": 0.04,"height": 0.04083},
+            {"controlId": "left-rgb-2","x": 0.42333,"y": 0.47917,"width": 0.04,"height": 0.04083},
+            {"controlId": "left-rgb-3","x": 0.4225,"y": 0.535,"width": 0.04083,"height": 0.04083},
+            {"controlId": "right-rgb-1","x": 0.61083,"y": 0.40167,"width": 0.03667,"height": 0.035},
+            {"controlId": "right-rgb-2","x": 0.62667,"y": 0.45333,"width": 0.0375,"height": 0.035},
+            {"controlId": "right-rgb-3","x": 0.645,"y": 0.50417,"width": 0.0375,"height": 0.03583}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Rear triggers",
+          "image": "Hardware/Images/virpil-constellation-vega-yoke-handle-rear-cutout.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VEGA_02.jpg?v=1785903299",
+          "hotspots": [
+            {"controlId": "right-trigger-axis","x": 0.28083,"y": 0.35417,"width": 0.0375,"height": 0.04583},
+            {"controlId": "left-trigger-axis","x": 0.565,"y": 0.36917,"width": 0.03667,"height": 0.0425}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-face-button","name": "Left red push button","kind": "Button"},
+        {"id": "right-face-button","name": "Right black push button","kind": "Button"},
+        {"id": "scroll-wheel-up","name": "Scroll wheel wheel up","kind": "Button","location": "scroll-wheel"},
+        {"id": "scroll-wheel-down","name": "Scroll wheel wheel down","kind": "Button","location": "scroll-wheel"},
+        {"id": "scroll-wheel-press-up","name": "Scroll wheel upper press","kind": "Button","location": "scroll-wheel"},
+        {"id": "scroll-wheel-press-down","name": "Scroll wheel lower press","kind": "Button","location": "scroll-wheel"},
+        {"id": "left-module-up","name": "Left 8-way hat up","kind": "Button","location": "left-module"},
+        {"id": "left-module-ne","name": "Left 8-way hat up-right","kind": "Button","location": "left-module"},
+        {"id": "left-module-right","name": "Left 8-way hat right","kind": "Button","location": "left-module"},
+        {"id": "left-module-se","name": "Left 8-way hat down-right","kind": "Button","location": "left-module"},
+        {"id": "left-module-down","name": "Left 8-way hat down","kind": "Button","location": "left-module"},
+        {"id": "left-module-sw","name": "Left 8-way hat down-left","kind": "Button","location": "left-module"},
+        {"id": "left-module-left","name": "Left 8-way hat left","kind": "Button","location": "left-module"},
+        {"id": "left-module-nw","name": "Left 8-way hat up-left","kind": "Button","location": "left-module"},
+        {"id": "left-module-press","name": "Left 8-way hat press","kind": "Button","location": "left-module"},
+        {"id": "right-module-x","name": "Right analogue ministick X","kind": "Axis","location": "right-module"},
+        {"id": "right-module-y","name": "Right analogue ministick Y","kind": "Axis","location": "right-module"},
+        {"id": "left-rgb-1","name": "Left RGB top button","kind": "Button"},
+        {"id": "left-rgb-2","name": "Left RGB middle button","kind": "Button"},
+        {"id": "left-rgb-3","name": "Left RGB bottom button","kind": "Button"},
+        {"id": "right-rgb-1","name": "Right RGB top button","kind": "Button"},
+        {"id": "right-rgb-2","name": "Right RGB middle button","kind": "Button"},
+        {"id": "right-rgb-3","name": "Right RGB bottom button","kind": "Button"},
+        {"id": "left-trigger-axis","name": "Left trigger axis","kind": "Axis","location": "left-trigger"},
+        {"id": "left-trigger-full","name": "Left trigger full press","kind": "Button","location": "left-trigger"},
+        {"id": "right-trigger-axis","name": "Right trigger axis","kind": "Axis","location": "right-trigger"},
+        {"id": "right-trigger-full","name": "Right trigger full press","kind": "Button","location": "right-trigger"}
+      ]
+    },
+    {
+      "id": "virpil-vector-gear-mcp",
+      "references": [
+        "https://us.virpil-controls.com/products/vector-gear-mcp",
+        "https://support.virpil.com/en/support/solutions/articles/47001286828-vector-gear-mcp-user-manual",
+        "https://us.virpil-controls.com/products/vector-flight-yoke-base"
+      ],
+      "referenceNotes": [
+        "The aeroplane graphics and position indicators are lights. The lever and red emergency-extension button are inputs.",
+        "Installs on either Vector base dock and shares the base USB interface."
+      ],
+      "views": [
+        {
+          "id": "plate",
+          "name": "Panel face",
+          "image": "Hardware/Images/virpil-vector-gear-mcp-plate-cutout.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-414-002_01.jpg?v=1785904048",
+          "hotspots": [
+            {"controlId": "gear-lever-up","x": 0.61583,"y": 0.79667,"width": 0.1425,"height": 0.14333},
+            {"controlId": "emergency-extension","x": 0.64667,"y": 0.52167,"width": 0.055,"height": 0.05333}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "gear-lever-up","name": "Landing gear lever up","kind": "Button","location": "gear-lever"},
+        {"id": "gear-lever-down","name": "Landing gear lever down","kind": "Button","location": "gear-lever"},
+        {"id": "emergency-extension","name": "EMER EXTN push button","kind": "Button"}
+      ]
+    },
+    {
+      "id": "virpil-vector-lighting-mcp",
+      "references": [
+        "https://us.virpil-controls.com/products/vector-lighting-mcp",
+        "https://support.virpil.com/en/support/solutions/articles/47001286827-vector-lighting-mcp-user-manual",
+        "https://us.virpil-controls.com/products/vector-flight-yoke-base"
+      ],
+      "referenceNotes": [
+        "OEM lists six three-way latched toggles. Unlabelled middle positions are named Center.",
+        "Installs on either Vector base dock and shares the base USB interface."
+      ],
+      "views": [
+        {
+          "id": "plate",
+          "name": "Panel face",
+          "image": "Hardware/Images/virpil-vector-lighting-mcp-plate-cutout.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-414-001_01.jpg?v=1785903971",
+          "hotspots": [
+            {"controlId": "nav-up","x": 0.43167,"y": 0.37417,"width": 0.07833,"height": 0.05167},
+            {"controlId": "beacon-up","x": 0.5475,"y": 0.36917,"width": 0.07833,"height": 0.0525},
+            {"controlId": "wing-up","x": 0.65917,"y": 0.35917,"width": 0.07833,"height": 0.05333},
+            {"controlId": "runway-turnoff-up","x": 0.47833,"y": 0.675,"width": 0.07833,"height": 0.05583},
+            {"controlId": "landing-light-up","x": 0.5925,"y": 0.65917,"width": 0.07833,"height": 0.05667},
+            {"controlId": "taxi-light-up","x": 0.69667,"y": 0.64583,"width": 0.07833,"height": 0.05667}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "nav-up","name": "Navigation lights STR & NAV","kind": "Button","location": "nav"},
+        {"id": "nav-center","name": "Navigation lights NAV","kind": "Button","location": "nav"},
+        {"id": "nav-down","name": "Navigation lights OFF","kind": "Button","location": "nav"},
+        {"id": "beacon-up","name": "Beacon ON","kind": "Button","location": "beacon"},
+        {"id": "beacon-center","name": "Beacon center","kind": "Button","location": "beacon"},
+        {"id": "beacon-down","name": "Beacon OFF","kind": "Button","location": "beacon"},
+        {"id": "wing-up","name": "Wing lights ON","kind": "Button","location": "wing"},
+        {"id": "wing-center","name": "Wing lights center","kind": "Button","location": "wing"},
+        {"id": "wing-down","name": "Wing lights OFF","kind": "Button","location": "wing"},
+        {"id": "runway-turnoff-up","name": "Runway turnoff lights ON","kind": "Button","location": "runway-turnoff"},
+        {"id": "runway-turnoff-center","name": "Runway turnoff lights center","kind": "Button","location": "runway-turnoff"},
+        {"id": "runway-turnoff-down","name": "Runway turnoff lights OFF","kind": "Button","location": "runway-turnoff"},
+        {"id": "landing-light-up","name": "Landing light ON","kind": "Button","location": "landing-light"},
+        {"id": "landing-light-center","name": "Landing light center","kind": "Button","location": "landing-light"},
+        {"id": "landing-light-down","name": "Landing light RETRACT","kind": "Button","location": "landing-light"},
+        {"id": "taxi-light-up","name": "Taxi light ON","kind": "Button","location": "taxi-light"},
+        {"id": "taxi-light-center","name": "Taxi light center","kind": "Button","location": "taxi-light"},
+        {"id": "taxi-light-down","name": "Taxi light OFF","kind": "Button","location": "taxi-light"}
+      ]
+    },
+    {
+      "id": "virpil-vector-engine-mcp",
+      "references": [
+        "https://us.virpil-controls.com/products/vector-engine-mcp",
+        "https://support.virpil.com/en/support/solutions/articles/47001286829-vector-engine-mcp-user-manual",
+        "https://us.virpil-controls.com/products/vector-flight-yoke-base"
+      ],
+      "referenceNotes": [
+        "OEM lists three three-way latched toggles and a five-way starter dial with spring-return START.",
+        "Installs on either Vector base dock and shares the base USB interface."
+      ],
+      "views": [
+        {
+          "id": "plate",
+          "name": "Panel face",
+          "image": "Hardware/Images/virpil-vector-engine-mcp-plate-cutout.png",
+          "source": "https://cdn.shopify.com/s/files/1/0950/8264/3722/files/VPC-414-003_01.jpg?v=1785904152",
+          "hotspots": [
+            {"controlId": "engine-master-1-up","x": 0.41667,"y": 0.35,"width": 0.07917,"height": 0.05583},
+            {"controlId": "engine-master-2-up","x": 0.525,"y": 0.34333,"width": 0.07917,"height": 0.05583},
+            {"controlId": "engine-selector-left","x": 0.65083,"y": 0.33583,"width": 0.07917,"height": 0.05583},
+            {"controlId": "starter-off","x": 0.56333,"y": 0.67583,"width": 0.135,"height": 0.08333}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "engine-master-1-up","name": "Engine master 1 ON","kind": "Button","location": "engine-master-1"},
+        {"id": "engine-master-1-center","name": "Engine master 1 center","kind": "Button","location": "engine-master-1"},
+        {"id": "engine-master-1-down","name": "Engine master 1 OFF","kind": "Button","location": "engine-master-1"},
+        {"id": "engine-master-2-up","name": "Engine master 2 ON","kind": "Button","location": "engine-master-2"},
+        {"id": "engine-master-2-center","name": "Engine master 2 center","kind": "Button","location": "engine-master-2"},
+        {"id": "engine-master-2-down","name": "Engine master 2 OFF","kind": "Button","location": "engine-master-2"},
+        {"id": "engine-selector-left","name": "Engine selector L","kind": "Button","location": "engine-selector"},
+        {"id": "engine-selector-both","name": "Engine selector BOTH","kind": "Button","location": "engine-selector"},
+        {"id": "engine-selector-right","name": "Engine selector R","kind": "Button","location": "engine-selector"},
+        {"id": "starter-off","name": "Starter dial OFF","kind": "Button","location": "starter"},
+        {"id": "starter-crank","name": "Starter dial CRANK","kind": "Button","location": "starter"},
+        {"id": "starter-norm","name": "Starter dial NORM","kind": "Button","location": "starter"},
+        {"id": "starter-cont","name": "Starter dial CONT","kind": "Button","location": "starter"},
+        {"id": "starter-start","name": "Starter dial START","kind": "Button","location": "starter"}
+      ]
+    }
+  ]
+}

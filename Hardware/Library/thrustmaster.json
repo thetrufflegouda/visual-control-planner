@@ -1,0 +1,252 @@
+{
+  "manufacturer": "Thrustmaster",
+  "devices": [
+    {"id": "thrustmaster-t16000m-fcs", "name": "THRUSTMASTER T.16000M FCS — RIGHT HAND", "vendorId": 1103, "productId": 45322, "layout": "thrustmaster-t16000m-fcs"},
+    {"id": "thrustmaster-t16000m-fcs-left", "name": "THRUSTMASTER T.16000M FCS — LEFT HAND", "vendorId": 1103, "productId": 45322, "layout": "thrustmaster-t16000m-fcs-left"},
+    {"id": "thrustmaster-twcs", "name": "THRUSTMASTER TWCS THROTTLE", "vendorId": 1103, "productId": 46727, "layout": "thrustmaster-twcs"}
+  ],
+  "layouts": [
+    {
+      "id": "thrustmaster-t16000m-fcs",
+      "references": [
+        "https://www.thrustmaster.com/products/t-16000m-fcs/",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/T16000M/T16000M-User_manual.pdf",
+        "https://github.com/ValveSoftware/steam-devices/blob/master/60-steam-input.rules"
+      ],
+      "referenceNotes": [
+        "Base numbers assume the physical selector under the base is set to RIGHT HANDED.",
+        "From outer to inner: left bank 5,6,7 / 10,9,8. Right bank 11,12,13 / 16,15,14.",
+        "Input Learn overrides the layout default for a different device configuration."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face and base",
+          "image": "Hardware/Images/tm-t16000m-face.png",
+          "source": "https://cdn.shopify.com/s/files/1/0149/2457/8902/files/SF_Gallery-T16000M-FCS-flight-stick-pc-1-2.png",
+          "hotspots": [
+            {"controlId": "pov-up", "x": 0.5, "y": 0.044, "width": 0.045, "height": 0.061},
+            {"controlId": "grip-left", "x": 0.459, "y": 0.072, "width": 0.018, "height": 0.061},
+            {"controlId": "grip-right", "x": 0.543, "y": 0.072, "width": 0.018, "height": 0.061},
+            {"controlId": "grip-center", "x": 0.5, "y": 0.154, "width": 0.046, "height": 0.054},
+            {"controlId": "twist", "x": 0.505, "y": 0.559, "width": 0.09, "height": 0.073},
+            {"controlId": "stick-x", "x": 0.5, "y": 0.654, "width": 0.063, "height": 0.045},
+            {"controlId": "throttle-slider", "x": 0.499, "y": 0.813, "width": 0.041, "height": 0.088},
+            {"controlId": "base-left-upper-outer", "x": 0.342, "y": 0.609, "width": 0.018, "height": 0.027},
+            {"controlId": "base-left-upper-middle", "x": 0.366, "y": 0.606, "width": 0.02, "height": 0.028},
+            {"controlId": "base-left-upper-inner", "x": 0.391, "y": 0.608, "width": 0.021, "height": 0.031},
+            {"controlId": "base-left-lower-outer", "x": 0.335, "y": 0.65, "width": 0.019, "height": 0.036},
+            {"controlId": "base-left-lower-middle", "x": 0.358, "y": 0.656, "width": 0.021, "height": 0.04},
+            {"controlId": "base-left-lower-inner", "x": 0.388, "y": 0.668, "width": 0.028, "height": 0.059},
+            {"controlId": "base-right-upper-inner", "x": 0.607, "y": 0.609, "width": 0.021, "height": 0.034},
+            {"controlId": "base-right-upper-middle", "x": 0.633, "y": 0.604, "width": 0.019, "height": 0.028},
+            {"controlId": "base-right-upper-outer", "x": 0.657, "y": 0.607, "width": 0.018, "height": 0.026},
+            {"controlId": "base-right-lower-inner", "x": 0.611, "y": 0.668, "width": 0.029, "height": 0.061},
+            {"controlId": "base-right-lower-middle", "x": 0.641, "y": 0.657, "width": 0.021, "height": 0.04},
+            {"controlId": "base-right-lower-outer", "x": 0.664, "y": 0.649, "width": 0.019, "height": 0.032}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger side",
+          "image": "Hardware/Images/tm-t16000m-trigger.png",
+          "source": "https://www.thrustmaster.com/products/t-16000m-fcs/",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.346, "y": 0.166, "width": 0.065, "height": 0.122},
+            {"controlId": "pov-up", "x": 0.447, "y": 0.057, "width": 0.073, "height": 0.056},
+            {"controlId": "grip-left", "x": 0.415, "y": 0.117, "width": 0.062, "height": 0.043},
+            {"controlId": "grip-center", "x": 0.532, "y": 0.153, "width": 0.052, "height": 0.054},
+            {"controlId": "twist", "x": 0.538, "y": 0.537, "width": 0.153, "height": 0.093},
+            {"controlId": "stick-x", "x": 0.531, "y": 0.646, "width": 0.089, "height": 0.063},
+            {"controlId": "throttle-slider", "x": 0.777, "y": 0.747, "width": 0.106, "height": 0.075},
+            {"controlId": "base-left-upper-outer", "x": 0.19, "y": 0.764, "width": 0.077, "height": 0.034},
+            {"controlId": "base-left-upper-middle", "x": 0.255, "y": 0.734, "width": 0.067, "height": 0.032},
+            {"controlId": "base-left-upper-inner", "x": 0.332, "y": 0.705, "width": 0.066, "height": 0.031},
+            {"controlId": "base-left-lower-outer", "x": 0.275, "y": 0.79, "width": 0.088, "height": 0.045},
+            {"controlId": "base-left-lower-middle", "x": 0.349, "y": 0.765, "width": 0.084, "height": 0.047},
+            {"controlId": "base-left-lower-inner", "x": 0.432, "y": 0.742, "width": 0.1, "height": 0.06}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger", "name": "Trigger", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "grip-center", "name": "Center grip button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "grip-left", "name": "Left grip button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "grip-right", "name": "Right grip button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "pov-up", "name": "POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "pov"},
+        {"id": "pov-right", "name": "POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "pov"},
+        {"id": "pov-down", "name": "POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "pov"},
+        {"id": "pov-left", "name": "POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "pov"},
+        {"id": "base-left-upper-outer", "name": "Left base upper outer button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "base-left-upper-middle", "name": "Left base upper middle button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "base-left-upper-inner", "name": "Left base upper inner button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "base-left-lower-outer", "name": "Left base lower outer button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "base-left-lower-middle", "name": "Left base lower middle button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "base-left-lower-inner", "name": "Left base lower inner button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "base-right-upper-inner", "name": "Right base upper inner button", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "base-right-upper-middle", "name": "Right base upper middle button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "base-right-upper-outer", "name": "Right base upper outer button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "base-right-lower-inner", "name": "Right base lower inner button", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "base-right-lower-middle", "name": "Right base lower middle button", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "base-right-lower-outer", "name": "Right base lower outer button", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "throttle-slider", "name": "Base throttle slider", "kind": "Axis", "suggestedInput": "slider1"}
+      ]
+    },
+    {
+      "id": "thrustmaster-t16000m-fcs-left",
+      "references": [
+        "https://www.thrustmaster.com/products/t-16000m-fcs-space-sim-duo/",
+        "https://www.thrustmaster.com/products/t-16000m-fcs/",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/T16000M/T16000M-User_manual.pdf",
+        "https://github.com/ValveSoftware/steam-devices/blob/master/60-steam-input.rules"
+      ],
+      "referenceNotes": [
+        "Base numbers assume the physical selector under the base is set to LEFT HANDED.",
+        "From outer to inner: left bank 11,12,13 / 16,15,14. Right bank 5,6,7 / 10,9,8.",
+        "Grip buttons and axes keep their physical numbers in both modes. The trigger detail reflects the corresponding right-hand grip photo."
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face and base",
+          "image": "Hardware/Images/tm-t16000m-left-face-cutout.png",
+          "source": "https://www.thrustmaster.com/wp-content/uploads/2021/09/UTH-t-16000m-fcs-sapcesim-duo-2.png",
+          "hotspots": [
+            {"controlId": "pov-up", "x": 0.5, "y": 0.044, "width": 0.045, "height": 0.061},
+            {"controlId": "grip-left", "x": 0.457, "y": 0.072, "width": 0.018, "height": 0.061},
+            {"controlId": "grip-right", "x": 0.541, "y": 0.072, "width": 0.018, "height": 0.061},
+            {"controlId": "grip-center", "x": 0.5, "y": 0.154, "width": 0.046, "height": 0.054},
+            {"controlId": "twist", "x": 0.495, "y": 0.559, "width": 0.09, "height": 0.073},
+            {"controlId": "stick-x", "x": 0.5, "y": 0.654, "width": 0.063, "height": 0.045},
+            {"controlId": "throttle-slider", "x": 0.501, "y": 0.813, "width": 0.041, "height": 0.088},
+            {"controlId": "base-left-upper-outer", "x": 0.343, "y": 0.607, "width": 0.018, "height": 0.026},
+            {"controlId": "base-left-upper-middle", "x": 0.367, "y": 0.604, "width": 0.019, "height": 0.028},
+            {"controlId": "base-left-upper-inner", "x": 0.393, "y": 0.609, "width": 0.021, "height": 0.034},
+            {"controlId": "base-left-lower-outer", "x": 0.336, "y": 0.649, "width": 0.019, "height": 0.032},
+            {"controlId": "base-left-lower-middle", "x": 0.359, "y": 0.657, "width": 0.021, "height": 0.04},
+            {"controlId": "base-left-lower-inner", "x": 0.389, "y": 0.668, "width": 0.029, "height": 0.061},
+            {"controlId": "base-right-upper-inner", "x": 0.609, "y": 0.608, "width": 0.021, "height": 0.031},
+            {"controlId": "base-right-upper-middle", "x": 0.634, "y": 0.606, "width": 0.02, "height": 0.028},
+            {"controlId": "base-right-upper-outer", "x": 0.658, "y": 0.609, "width": 0.018, "height": 0.027},
+            {"controlId": "base-right-lower-inner", "x": 0.612, "y": 0.668, "width": 0.028, "height": 0.059},
+            {"controlId": "base-right-lower-middle", "x": 0.642, "y": 0.656, "width": 0.021, "height": 0.04},
+            {"controlId": "base-right-lower-outer", "x": 0.665, "y": 0.65, "width": 0.019, "height": 0.036}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger detail",
+          "image": "Hardware/Images/tm-t16000m-left-trigger-cutout.png",
+          "source": "https://www.thrustmaster.com/products/t-16000m-fcs/",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.745, "y": 0.393, "width": 0.119, "height": 0.248},
+            {"controlId": "pov-up", "x": 0.489, "y": 0.154, "width": 0.181, "height": 0.123},
+            {"controlId": "grip-right", "x": 0.569, "y": 0.285, "width": 0.154, "height": 0.094},
+            {"controlId": "grip-center", "x": 0.279, "y": 0.364, "width": 0.129, "height": 0.118}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger", "name": "Trigger", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "grip-center", "name": "Center grip button", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "grip-left", "name": "Left grip button", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "grip-right", "name": "Right grip button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "pov-up", "name": "POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "pov"},
+        {"id": "pov-right", "name": "POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "pov"},
+        {"id": "pov-down", "name": "POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "pov"},
+        {"id": "pov-left", "name": "POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "pov"},
+        {"id": "base-left-upper-outer", "name": "Left base upper outer button", "kind": "Button", "suggestedInput": "button11"},
+        {"id": "base-left-upper-middle", "name": "Left base upper middle button", "kind": "Button", "suggestedInput": "button12"},
+        {"id": "base-left-upper-inner", "name": "Left base upper inner button", "kind": "Button", "suggestedInput": "button13"},
+        {"id": "base-left-lower-outer", "name": "Left base lower outer button", "kind": "Button", "suggestedInput": "button16"},
+        {"id": "base-left-lower-middle", "name": "Left base lower middle button", "kind": "Button", "suggestedInput": "button15"},
+        {"id": "base-left-lower-inner", "name": "Left base lower inner button", "kind": "Button", "suggestedInput": "button14"},
+        {"id": "base-right-upper-inner", "name": "Right base upper inner button", "kind": "Button", "suggestedInput": "button7"},
+        {"id": "base-right-upper-middle", "name": "Right base upper middle button", "kind": "Button", "suggestedInput": "button6"},
+        {"id": "base-right-upper-outer", "name": "Right base upper outer button", "kind": "Button", "suggestedInput": "button5"},
+        {"id": "base-right-lower-inner", "name": "Right base lower inner button", "kind": "Button", "suggestedInput": "button8"},
+        {"id": "base-right-lower-middle", "name": "Right base lower middle button", "kind": "Button", "suggestedInput": "button9"},
+        {"id": "base-right-lower-outer", "name": "Right base lower outer button", "kind": "Button", "suggestedInput": "button10"},
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis", "suggestedInput": "rotz"},
+        {"id": "throttle-slider", "name": "Base throttle slider", "kind": "Axis", "suggestedInput": "slider1"}
+      ]
+    },
+    {
+      "id": "thrustmaster-twcs",
+      "references": [
+        "https://eshop.thrustmaster.com/en_us/twcs-throttle.html",
+        "https://ts.thrustmaster.com/download/pictures/PCMAC/TWCS/TWCS_PC_Generic_Mapping.pdf",
+        "https://github.com/ValveSoftware/steam-devices/blob/master/60-steam-input.rules"
+      ],
+      "referenceNotes": [
+        "The five axes belong to the throttle. The optional TFRP pedals use a separate physical unit.",
+        "Button numbers and axis references are for standalone PC operation."
+      ],
+      "views": [
+        {
+          "id": "thumb",
+          "name": "Thumb controls",
+          "image": "Hardware/Images/tm-twcs-thumb.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/w/twcs-1b_1.jpg",
+          "hotspots": [
+            {"controlId": "throttle-axis", "x": 0.435, "y": 0.362, "width": 0.207, "height": 0.133},
+            {"controlId": "pov-up", "x": 0.652, "y": 0.289, "width": 0.047, "height": 0.061},
+            {"controlId": "upper-hat-up", "x": 0.626, "y": 0.365, "width": 0.058, "height": 0.072},
+            {"controlId": "lower-hat-up", "x": 0.624, "y": 0.457, "width": 0.058, "height": 0.059},
+            {"controlId": "thumb-push", "x": 0.585, "y": 0.524, "width": 0.035, "height": 0.034}
+          ]
+        },
+        {
+          "id": "fingers",
+          "name": "Finger controls and rocker",
+          "image": "Hardware/Images/tm-twcs-fingers.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/w/twcs-3b_1.jpg",
+          "hotspots": [
+            {"controlId": "throttle-axis", "x": 0.503, "y": 0.320, "width": 0.192, "height": 0.092},
+            {"controlId": "pov-up", "x": 0.344, "y": 0.341, "width": 0.035, "height": 0.052},
+            {"controlId": "upper-hat-up", "x": 0.301, "y": 0.385, "width": 0.035, "height": 0.057},
+            {"controlId": "lower-hat-up", "x": 0.276, "y": 0.458, "width": 0.029, "height": 0.042},
+            {"controlId": "thumb-push", "x": 0.269, "y": 0.498, "width": 0.030, "height": 0.024},
+            {"controlId": "ministick-x", "x": 0.501, "y": 0.426, "width": 0.046, "height": 0.055},
+            {"controlId": "finger-slide-up", "x": 0.565, "y": 0.401, "width": 0.027, "height": 0.069},
+            {"controlId": "finger-push-inner", "x": 0.601, "y": 0.390, "width": 0.033, "height": 0.034},
+            {"controlId": "finger-push-outer", "x": 0.648, "y": 0.383, "width": 0.033, "height": 0.034},
+            {"controlId": "antenna-axis", "x": 0.689, "y": 0.334, "width": 0.030, "height": 0.076},
+            {"controlId": "rocker-axis", "x": 0.523, "y": 0.533, "width": 0.079, "height": 0.102},
+            {"controlId": "rocker-axis", "x": 0.695, "y": 0.468, "width": 0.085, "height": 0.081}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "throttle-axis", "name": "Sliding throttle axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "pov-up", "name": "Thumb POV hat up", "kind": "Hat", "suggestedInput": "hat1_up", "location": "pov"},
+        {"id": "pov-right", "name": "Thumb POV hat right", "kind": "Hat", "suggestedInput": "hat1_right", "location": "pov"},
+        {"id": "pov-down", "name": "Thumb POV hat down", "kind": "Hat", "suggestedInput": "hat1_down", "location": "pov"},
+        {"id": "pov-left", "name": "Thumb POV hat left", "kind": "Hat", "suggestedInput": "hat1_left", "location": "pov"},
+        {"id": "upper-hat-up", "name": "Upper thumb hat up", "kind": "Button", "suggestedInput": "button7", "location": "upper-hat"},
+        {"id": "upper-hat-right", "name": "Upper thumb hat right", "kind": "Button", "suggestedInput": "button8", "location": "upper-hat"},
+        {"id": "upper-hat-down", "name": "Upper thumb hat down", "kind": "Button", "suggestedInput": "button9", "location": "upper-hat"},
+        {"id": "upper-hat-left", "name": "Upper thumb hat left", "kind": "Button", "suggestedInput": "button10", "location": "upper-hat"},
+        {"id": "lower-hat-up", "name": "Lower thumb hat up", "kind": "Button", "suggestedInput": "button11", "location": "lower-hat"},
+        {"id": "lower-hat-right", "name": "Lower thumb hat right", "kind": "Button", "suggestedInput": "button12", "location": "lower-hat"},
+        {"id": "lower-hat-down", "name": "Lower thumb hat down", "kind": "Button", "suggestedInput": "button13", "location": "lower-hat"},
+        {"id": "lower-hat-left", "name": "Lower thumb hat left", "kind": "Button", "suggestedInput": "button14", "location": "lower-hat"},
+        {"id": "thumb-push", "name": "Thumb orange push button", "kind": "Button", "suggestedInput": "button1"},
+        {"id": "ministick-x", "name": "Mini-stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "ministick"},
+        {"id": "ministick-y", "name": "Mini-stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "ministick"},
+        {"id": "ministick-press", "name": "Mini-stick press", "kind": "Button", "suggestedInput": "button6", "location": "ministick"},
+        {"id": "finger-slide-up", "name": "Finger slide switch up", "kind": "Button", "suggestedInput": "button4", "location": "finger-slide"},
+        {"id": "finger-slide-down", "name": "Finger slide switch down", "kind": "Button", "suggestedInput": "button5", "location": "finger-slide"},
+        {"id": "finger-push-inner", "name": "Finger orange button next to slide switch", "kind": "Button", "suggestedInput": "button3"},
+        {"id": "finger-push-outer", "name": "Finger orange button next to antenna wheel", "kind": "Button", "suggestedInput": "button2"},
+        {"id": "antenna-axis", "name": "Antenna wheel axis", "kind": "Axis", "suggestedInput": "slider1"},
+        {"id": "rocker-axis", "name": "Rudder rocker axis", "kind": "Axis", "suggestedInput": "rotz"}
+      ]
+    }
+  ]
+}

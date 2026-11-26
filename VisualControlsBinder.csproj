@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>VisualControlPlanner</AssemblyName>
+    <Version>1.0.0</Version>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <RootNamespace>VisualControlsBinder</RootNamespace>
+    <AssemblyTitle>Visual Control Planner</AssemblyTitle>
+    <Product>Visual Control Planner</Product>
+    <ApplicationIcon>Brand\VCP.ico</ApplicationIcon>
+    <DefaultItemExcludes>$(DefaultItemExcludes);Brand\AssetBuilder\**;Tests\**</DefaultItemExcludes>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PathMap>$(MSBuildProjectDirectory)=/_/</PathMap>
+    <CopyOutputSymbolsToPublishDirectory>false</CopyOutputSymbolsToPublishDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="VisualControlPlanner.Tests" />
+    <PackageReference Include="Vortice.DirectInput" Version="3.8.3" />
+    <PackageReference Include="ZstdSharp.Port" Version="0.8.8" />
+    <None Update="Hardware\layouts.json;Hardware\Library\*.json;Hardware\Images\**\*" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+    <None Update="Hardware\Library\virpil-bases.json" CopyToOutputDirectory="Never" CopyToPublishDirectory="Never" />
+    <Resource Include="Brand\VCP-Title.png;Brand\VCP.ico" />
+  </ItemGroup>
+</Project>

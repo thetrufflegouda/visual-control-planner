@@ -1,0 +1,109 @@
+{
+  "manufacturer": "VKB",
+  "devices": [
+    {
+      "id": "vkb-gnx-scg-premium-left",
+      "name": "VKB GNX SCG PREMIUM SIDE HAT — LEFT HAND",
+      "vendorId": 0, "productId": 0,
+      "layout": "vkb-gnx-scg-premium",
+      "compatibleBaseIds": ["vkb-gladiator-evo-button-base"],
+      "mirrorGrip": true
+    },
+    {
+      "id": "vkb-gnx-scg-premium-right",
+      "name": "VKB GNX SCG PREMIUM SIDE HAT — RIGHT HAND",
+      "vendorId": 0, "productId": 0,
+      "layout": "vkb-gnx-scg-premium",
+      "compatibleBaseIds": ["vkb-gladiator-evo-button-base"]
+    }
+  ],
+  "layouts": [
+    {
+      "id": "vkb-gnx-scg-premium",
+      "references": [
+        "https://vkbsimcontrollers.com/products/gnx-scg-add-on-grip-us",
+        "https://flightsimcontrols.com/product/scg-kosmosima-premium-stand-alone-grip-gladiator/",
+        "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/VKB-Gladiator-SCG-RH-v1.0_71140459-4b6c-4cf9-80f9-017d48a7b6f2.pdf?v=1769327113",
+        "https://cdn.shopify.com/s/files/1/0808/7827/2731/files/VKB-Gladiator-SCG-LH-v1.0_7b163c32-85ad-493a-ad90-2d281f285b9e.pdf?v=1769327113"
+      ],
+      "views": [
+        {
+          "id": "thumb",
+          "name": "Thumb hat and grip face",
+          "image": "Hardware/Images/vkb-gnx-scg-premium-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "a1-press", "x": 0.3741, "y": 0.1315, "width": 0.0704, "height": 0.0593},
+            {"controlId": "a2", "x": 0.3685, "y": 0.2241, "width": 0.0593, "height": 0.0556},
+            {"controlId": "a3-press", "x": 0.4537, "y": 0.1981, "width": 0.0815, "height": 0.0722},
+            {"controlId": "a4-press", "x": 0.5019, "y": 0.1278, "width": 0.0704, "height": 0.0667},
+            {"controlId": "c1-press", "x": 0.4315, "y": 0.4074, "width": 0.0926, "height": 0.0741}
+          ]
+        },
+        {
+          "id": "face",
+          "name": "Grip face and twist",
+          "image": "Hardware/Images/vkb-gnx-scg-premium-face-cutout.png",
+          "hotspots": [
+            {"controlId": "a1-press", "x": 0.3870, "y": 0.1204, "width": 0.0704, "height": 0.0630},
+            {"controlId": "a2", "x": 0.3630, "y": 0.2148, "width": 0.0630, "height": 0.0611},
+            {"controlId": "a3-press", "x": 0.4556, "y": 0.1889, "width": 0.0833, "height": 0.0704},
+            {"controlId": "a4-press", "x": 0.5296, "y": 0.1093, "width": 0.0685, "height": 0.0648},
+            {"controlId": "twist", "x": 0.4796, "y": 0.7667, "width": 0.1407, "height": 0.0463}
+          ]
+        },
+        {
+          "id": "index",
+          "name": "B1 and trigger side",
+          "image": "Hardware/Images/vkb-gnx-scg-premium-index-cutout.png",
+          "hotspots": [
+            {"controlId": "b1", "x": 0.7259, "y": 0.2481, "width": 0.0537, "height": 0.0593},
+            {"controlId": "rapid-fire-up", "x": 0.7130, "y": 0.3296, "width": 0.0519, "height": 0.0574},
+            {"controlId": "trigger-first", "x": 0.6222, "y": 0.3667, "width": 0.0704, "height": 0.0889}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Main trigger and pinky",
+          "image": "Hardware/Images/vkb-gnx-scg-premium-trigger-cutout.png",
+          "hotspots": [
+            {"controlId": "rapid-fire-up", "x": 0.4870, "y": 0.3833, "width": 0.0796, "height": 0.0741},
+            {"controlId": "trigger-first", "x": 0.4870, "y": 0.4481, "width": 0.0630, "height": 0.0556},
+            {"controlId": "d1", "x": 0.5481, "y": 0.6852, "width": 0.0611, "height": 0.0593}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "rapid-fire-up", "name": "Rapid Fire Trigger up", "kind": "Button", "location": "rapid-fire"},
+        {"id": "rapid-fire-down", "name": "Rapid Fire Trigger down", "kind": "Button", "location": "rapid-fire"},
+        {"id": "a1-press", "name": "A1 ministick press", "kind": "Button", "location": "a1"},
+        {"id": "a1-up", "name": "A1 ministick POV up", "kind": "Button", "location": "a1"},
+        {"id": "a1-right", "name": "A1 ministick POV right", "kind": "Button", "location": "a1"},
+        {"id": "a1-down", "name": "A1 ministick POV down", "kind": "Button", "location": "a1"},
+        {"id": "a1-left", "name": "A1 ministick POV left", "kind": "Button", "location": "a1"},
+        {"id": "a1-x", "name": "A1 ministick horizontal axis", "kind": "Axis", "location": "a1"},
+        {"id": "a1-y", "name": "A1 ministick vertical axis", "kind": "Axis", "location": "a1"},
+        {"id": "a2", "name": "A2 red face button", "kind": "Button"},
+        {"id": "a3-press", "name": "A3 center hat press", "kind": "Button", "location": "a3"},
+        {"id": "a3-up", "name": "A3 center hat up", "kind": "Button", "location": "a3"},
+        {"id": "a3-right", "name": "A3 center hat right", "kind": "Button", "location": "a3"},
+        {"id": "a3-down", "name": "A3 center hat down", "kind": "Button", "location": "a3"},
+        {"id": "a3-left", "name": "A3 center hat left", "kind": "Button", "location": "a3"},
+        {"id": "a4-press", "name": "A4 upper outer hat press", "kind": "Button", "location": "a4"},
+        {"id": "a4-up", "name": "A4 upper outer hat up", "kind": "Button", "location": "a4"},
+        {"id": "a4-right", "name": "A4 upper outer hat right", "kind": "Button", "location": "a4"},
+        {"id": "a4-down", "name": "A4 upper outer hat down", "kind": "Button", "location": "a4"},
+        {"id": "a4-left", "name": "A4 upper outer hat left", "kind": "Button", "location": "a4"},
+        {"id": "b1", "name": "B1 index button", "kind": "Button"},
+        {"id": "c1-press", "name": "C1 side hat press", "kind": "Button", "location": "c1"},
+        {"id": "c1-up", "name": "C1 side hat up", "kind": "Button", "location": "c1"},
+        {"id": "c1-right", "name": "C1 side hat right", "kind": "Button", "location": "c1"},
+        {"id": "c1-down", "name": "C1 side hat down", "kind": "Button", "location": "c1"},
+        {"id": "c1-left", "name": "C1 side hat left", "kind": "Button", "location": "c1"},
+        {"id": "d1", "name": "D1 pinky button", "kind": "Button"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"}
+      ]
+    }
+  ]
+}

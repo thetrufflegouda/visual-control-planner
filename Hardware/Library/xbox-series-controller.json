@@ -1,0 +1,86 @@
+{
+  "devices": [
+    {
+      "id": "microsoft-xbox-series-controller",
+      "name": "MICROSOFT XBOX WIRELESS CONTROLLER (SERIES X|S)",
+      "manufacturer": "Microsoft",
+      "vendorId": 1118,
+      "productId": 2834,
+      "alternateProductIds": [2835],
+      "layout": "microsoft-xbox-series-controller"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "microsoft-xbox-series-controller",
+      "references": [
+        "https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller",
+        "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/wmcfx/documents/presentations/EU_DoC_1914_062122.pdf",
+        "https://learn.microsoft.com/en-us/windows/win32/xinput/directinput-and-xusb-devices",
+        "https://learn.microsoft.com/en-us/xbox/gdk/docs/reference/input/gameinput/enums/gameinputsystembuttons",
+        "https://github.com/libsdl-org/SDL/blob/main/test/testevdev.c"
+      ],
+      "referenceNotes": [
+        "Model 1914 layout. Learn this control using the same connection you use to play, since USB and Bluetooth can report different input numbers.",
+        "Microsoft's standard DirectInput mapping for USB combines both triggers on the Z axis. Xbox Guide and Share can be reserved as system buttons."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front Controls",
+          "image": "Hardware/Images/microsoft-xbox-series-face.jpg",
+          "source": "https://assets.xboxservices.com/assets/fa/b8/fab86afd-63d6-45a9-862f-798e5e45cda2.jpg?n=111101_Gallery-0_4_1350x759.jpg",
+          "hotspots": [
+            { "controlId": "left-stick-press", "x": 0.314, "y": 0.299, "width": 0.089, "height": 0.153 },
+            { "controlId": "right-stick-press", "x": 0.595, "y": 0.500, "width": 0.089, "height": 0.153 },
+            { "controlId": "dpad-up", "x": 0.405, "y": 0.505, "width": 0.111, "height": 0.193 },
+            { "controlId": "view", "x": 0.447, "y": 0.298, "width": 0.033, "height": 0.059 },
+            { "controlId": "menu", "x": 0.551, "y": 0.298, "width": 0.033, "height": 0.059 },
+            { "controlId": "guide", "x": 0.500, "y": 0.170, "width": 0.055, "height": 0.096 },
+            { "controlId": "share", "x": 0.500, "y": 0.367, "width": 0.037, "height": 0.041 },
+            { "controlId": "y", "x": 0.683, "y": 0.216, "width": 0.045, "height": 0.080 },
+            { "controlId": "b", "x": 0.732, "y": 0.304, "width": 0.045, "height": 0.080 },
+            { "controlId": "a", "x": 0.683, "y": 0.384, "width": 0.045, "height": 0.080 },
+            { "controlId": "x", "x": 0.636, "y": 0.299, "width": 0.045, "height": 0.080 }
+          ]
+        },
+        {
+          "id": "shoulders",
+          "name": "Shoulders and Triggers",
+          "image": "Hardware/Images/microsoft-xbox-series-shoulders.jpg",
+          "source": "https://assets.xboxservices.com/assets/4a/e8/4ae80482-3d9e-4541-9d28-8a7d746cf2f2.jpg?n=111101_Gallery-0_6_1350x759.jpg",
+          "hotspots": [
+            { "controlId": "right-bumper", "x": 0.237, "y": 0.246, "width": 0.142, "height": 0.135 },
+            { "controlId": "left-bumper", "x": 0.765, "y": 0.246, "width": 0.142, "height": 0.135 },
+            { "controlId": "right-trigger", "x": 0.240, "y": 0.434, "width": 0.081, "height": 0.165 },
+            { "controlId": "left-trigger", "x": 0.760, "y": 0.434, "width": 0.081, "height": 0.165 }
+          ]
+        }
+      ],
+      "controls": [
+        { "id": "left-stick-press", "name": "Left Stick Press", "kind": "Button", "location": "left-stick" },
+        { "id": "left-stick-x", "name": "Left Stick X", "kind": "Axis", "location": "left-stick" },
+        { "id": "left-stick-y", "name": "Left Stick Y", "kind": "Axis", "location": "left-stick" },
+        { "id": "right-stick-press", "name": "Right Stick Press", "kind": "Button", "location": "right-stick" },
+        { "id": "right-stick-x", "name": "Right Stick X", "kind": "Axis", "location": "right-stick" },
+        { "id": "right-stick-y", "name": "Right Stick Y", "kind": "Axis", "location": "right-stick" },
+        { "id": "dpad-up", "name": "D-pad Up", "kind": "Button", "location": "dpad" },
+        { "id": "dpad-right", "name": "D-pad Right", "kind": "Button", "location": "dpad" },
+        { "id": "dpad-down", "name": "D-pad Down", "kind": "Button", "location": "dpad" },
+        { "id": "dpad-left", "name": "D-pad Left", "kind": "Button", "location": "dpad" },
+        { "id": "a", "name": "A", "kind": "Button" },
+        { "id": "b", "name": "B", "kind": "Button" },
+        { "id": "x", "name": "X", "kind": "Button" },
+        { "id": "y", "name": "Y", "kind": "Button" },
+        { "id": "left-bumper", "name": "Left Bumper (LB)", "kind": "Button" },
+        { "id": "right-bumper", "name": "Right Bumper (RB)", "kind": "Button" },
+        { "id": "view", "name": "View", "kind": "Button" },
+        { "id": "menu", "name": "Menu", "kind": "Button" },
+        { "id": "guide", "name": "Xbox Guide", "kind": "Button" },
+        { "id": "share", "name": "Share", "kind": "Button" },
+        { "id": "left-trigger", "name": "Left Trigger (LT)", "kind": "Axis" },
+        { "id": "right-trigger", "name": "Right Trigger (RT)", "kind": "Axis" }
+      ]
+    }
+  ]
+}

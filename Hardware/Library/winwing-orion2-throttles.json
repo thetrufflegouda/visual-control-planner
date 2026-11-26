@@ -1,0 +1,196 @@
+{
+  "manufacturer": "WINWING / WINCTRL",
+  "devices": [
+    { "id": "winwing-navyace-throttle", "name": "WINWING NAVYACE THROTTLE GRIP", "vendorId": 16536, "productId": 0, "layout": "winwing-navyace-throttle", "compatibleBaseIds": [ "winwing-orion2-throttle-base" ] },
+    { "id": "winwing-orion2-throttle-base", "name": "ORION2 THROTTLE BASE", "vendorId": 16536, "productId": 0, "layout": "winwing-orion2-throttle-base", "isBase": true }
+  ],
+  "layouts": [
+    {
+      "id": "winwing-navyace-throttle",
+      "references": [
+        "https://winctrl.com/view/goods-details.html?id=306",
+        "https://winctrl.com/view/goods-details.html?id=375",
+        "https://en.winwing.cn/static/file/T2-ORION%20THROTTLE%20BASE-MANUAL%20EN%20V%201.0.pdf",
+        "https://winctrl.com/h5/Orion2_Throttle_Base/en/"
+      ],
+      "referenceNotes": [
+        "Four-direction gestures are available when the grip's analog hat or ministick is configured in button mode. Use Input Learn for axis assignments and configured button modes."
+      ],
+      "views": [
+        {
+          "id": "thumb",
+          "name": "Right-hand thumb controls",
+          "image": "Hardware/Images/winwing-navyace-throttle-thumb.jpg",
+          "hotspots": [
+            { "controlId": "forward-hat-press", "x": 0.38889, "y": 0.45556, "width": 0.10125, "height": 0.115 },
+            { "controlId": "aft-hat-press", "x": 0.28556, "y": 0.47444, "width": 0.080625, "height": 0.12125 },
+            { "controlId": "speed-brake-center", "x": 0.26556, "y": 0.59111, "width": 0.080625, "height": 0.105625 },
+            { "controlId": "thumb-button", "x": 0.20111, "y": 0.63556, "width": 0.065625, "height": 0.076875 },
+            { "controlId": "slew-press", "x": 0.67444, "y": 0.55444, "width": 0.103125, "height": 0.1175 }
+          ]
+        },
+        {
+          "id": "fingers",
+          "name": "Rear and left-hand controls",
+          "image": "Hardware/Images/winwing-navyace-throttle-fingers.jpg",
+          "hotspots": [
+            { "controlId": "slew-press", "x": 0.181875, "y": 0.5, "width": 0.104375, "height": 0.111875 },
+            { "controlId": "friction-wheel", "x": 0.36875, "y": 0.514375, "width": 0.050625, "height": 0.095 },
+            { "controlId": "finger-forward", "x": 0.490625, "y": 0.613125, "width": 0.07, "height": 0.069375 },
+            { "controlId": "finger-aft", "x": 0.6125, "y": 0.668125, "width": 0.07875, "height": 0.069375 },
+            { "controlId": "left-switch-center", "x": 0.8, "y": 0.66875, "width": 0.09625, "height": 0.06375 }
+          ]
+        }
+      ],
+      "controls": [
+        { "id": "forward-hat-up", "name": "Right thumb upper round hat up", "kind": "Hat", "suggestedInput": "button9", "location": "forward-hat" },
+        { "id": "forward-hat-left", "name": "Right thumb upper round hat left", "kind": "Hat", "suggestedInput": "button12", "location": "forward-hat" },
+        { "id": "forward-hat-press", "name": "Right thumb upper round hat press", "kind": "Hat", "suggestedInput": "button8", "location": "forward-hat" },
+        { "id": "forward-hat-right", "name": "Right thumb upper round hat right", "kind": "Hat", "suggestedInput": "button10", "location": "forward-hat" },
+        { "id": "forward-hat-down", "name": "Right thumb upper round hat down", "kind": "Hat", "suggestedInput": "button11", "location": "forward-hat" },
+        { "id": "forward-hat-x", "name": "Right thumb upper round hat X axis", "kind": "Axis", "location": "forward-hat" },
+        { "id": "forward-hat-y", "name": "Right thumb upper round hat Y axis", "kind": "Axis", "location": "forward-hat" },
+        { "id": "aft-hat-up", "name": "Right thumb upper paddle hat up", "kind": "Hat", "suggestedInput": "button14", "location": "aft-hat" },
+        { "id": "aft-hat-left", "name": "Right thumb upper paddle hat left", "kind": "Hat", "suggestedInput": "button17", "location": "aft-hat" },
+        { "id": "aft-hat-press", "name": "Right thumb upper paddle hat press", "kind": "Hat", "suggestedInput": "button13", "location": "aft-hat" },
+        { "id": "aft-hat-right", "name": "Right thumb upper paddle hat right", "kind": "Hat", "suggestedInput": "button15", "location": "aft-hat" },
+        { "id": "aft-hat-down", "name": "Right thumb upper paddle hat down", "kind": "Hat", "suggestedInput": "button16", "location": "aft-hat" },
+        { "id": "aft-hat-x", "name": "Right thumb upper paddle hat X axis", "kind": "Axis", "location": "aft-hat" },
+        { "id": "aft-hat-y", "name": "Right thumb upper paddle hat Y axis", "kind": "Axis", "location": "aft-hat" },
+        { "id": "speed-brake-forward", "name": "Speed brake switch forward", "kind": "Switch", "suggestedInput": "button20", "location": "speed-brake" },
+        { "id": "speed-brake-center", "name": "Speed brake switch center", "kind": "Switch", "suggestedInput": "button19", "location": "speed-brake" },
+        { "id": "speed-brake-aft", "name": "Speed brake switch aft", "kind": "Switch", "suggestedInput": "button18", "location": "speed-brake" },
+        { "id": "thumb-button", "name": "Right thumb pushbutton", "kind": "Button", "suggestedInput": "button21" },
+        { "id": "slew-up", "name": "Rear analog ministick up", "kind": "Hat", "suggestedInput": "button26", "location": "slew" },
+        { "id": "slew-left", "name": "Rear analog ministick left", "kind": "Hat", "suggestedInput": "button29", "location": "slew" },
+        { "id": "slew-press", "name": "Rear analog ministick press", "kind": "Hat", "suggestedInput": "button22", "location": "slew" },
+        { "id": "slew-right", "name": "Rear analog ministick right", "kind": "Hat", "suggestedInput": "button27", "location": "slew" },
+        { "id": "slew-down", "name": "Rear analog ministick down", "kind": "Hat", "suggestedInput": "button28", "location": "slew" },
+        { "id": "slew-x", "name": "Rear analog ministick X axis", "kind": "Axis", "location": "slew" },
+        { "id": "slew-y", "name": "Rear analog ministick Y axis", "kind": "Axis", "location": "slew" },
+        { "id": "friction-wheel", "name": "Antenna elevation thumbwheel axis", "kind": "Axis" },
+        { "id": "finger-forward", "name": "Right grip finger pushbutton", "kind": "Button", "suggestedInput": "button7" },
+        { "id": "finger-aft", "name": "Left grip finger pushbutton", "kind": "Button", "suggestedInput": "button6" },
+        { "id": "left-switch-forward", "name": "Left outer switch forward", "kind": "Switch", "suggestedInput": "button3", "location": "left-switch" },
+        { "id": "left-switch-center", "name": "Left outer switch center", "kind": "Switch", "suggestedInput": "button4", "location": "left-switch" },
+        { "id": "left-switch-aft", "name": "Left outer switch aft", "kind": "Switch", "suggestedInput": "button5", "location": "left-switch" }
+      ]
+    },
+    {
+      "id": "winwing-orion2-throttle-base",
+      "references": [
+        "https://winctrl.com/view/goods-details.html?id=334",
+        "https://eu.winctrl.com/static/assets/files/en/T2-ORION%20THROTTLE%20BASE%20II-User%20MANUAL%20EN%20V1.0.pdf"
+      ],
+      "referenceNotes": [
+        "OEM button numbers are from the Orion2 throttle base diagram. Use Input Learn for axes and for firmware-dependent switch and virtual button assignments."
+      ],
+      "views": [
+        {
+          "id": "deck",
+          "name": "Deck and throttle levers",
+          "image": "Hardware/Images/winwing-orion2-throttle-deck.jpg",
+          "hotspots": [
+            { "controlId": "launch-retract", "x": 0.54778, "y": 0.24556, "width": 0.0325, "height": 0.0425 },
+            { "controlId": "hook-up", "x": 0.59, "y": 0.26222, "width": 0.030625, "height": 0.0425 },
+            { "controlId": "wing-fold", "x": 0.63778, "y": 0.29444, "width": 0.036875, "height": 0.034375 },
+            { "controlId": "gear-up", "x": 0.71111, "y": 0.30556, "width": 0.034375, "height": 0.044375 },
+            { "controlId": "park-on", "x": 0.75778, "y": 0.32667, "width": 0.035625, "height": 0.041875 },
+            { "controlId": "flaps-auto", "x": 0.81889, "y": 0.34556, "width": 0.04, "height": 0.043125 },
+            { "controlId": "left-throttle", "x": 0.36889, "y": 0.36222, "width": 0.054375, "height": 0.086875 },
+            { "controlId": "right-throttle", "x": 0.43, "y": 0.38, "width": 0.051875, "height": 0.085625 },
+            { "controlId": "base-slider", "x": 0.70556, "y": 0.38, "width": 0.04875, "height": 0.066875 },
+            { "controlId": "base-round", "x": 0.61333, "y": 0.39, "width": 0.031875, "height": 0.034375 },
+            { "controlId": "aa", "x": 0.61333, "y": 0.44778, "width": 0.043125, "height": 0.028125 },
+            { "controlId": "hud-press", "x": 0.66556, "y": 0.45556, "width": 0.039375, "height": 0.0425 },
+            { "controlId": "base-dial", "x": 0.57, "y": 0.46556, "width": 0.051875, "height": 0.071875 },
+            { "controlId": "roll-top", "x": 0.22444, "y": 0.44222, "width": 0.03375, "height": 0.04 },
+            { "controlId": "pitch-top", "x": 0.28889, "y": 0.47556, "width": 0.03625, "height": 0.0425 },
+            { "controlId": "ap-mode", "x": 0.36556, "y": 0.47111, "width": 0.035625, "height": 0.03625 },
+            { "controlId": "arm-up", "x": 0.47556, "y": 0.52222, "width": 0.03875, "height": 0.044375 },
+            { "controlId": "jettison", "x": 0.51556, "y": 0.56222, "width": 0.04625, "height": 0.036875 },
+            { "controlId": "hdg-press", "x": 0.33, "y": 0.53889, "width": 0.04, "height": 0.04125 },
+            { "controlId": "crs-press", "x": 0.38222, "y": 0.56444, "width": 0.039375, "height": 0.044375 },
+            { "controlId": "lights-press", "x": 0.45111, "y": 0.59111, "width": 0.041875, "height": 0.040625 }
+          ]
+        },
+        {
+          "id": "deck-opposite",
+          "name": "Opposite deck and A/G switch",
+          "image": "Hardware/Images/winwing-orion2-throttle-deck-opposite.jpg",
+          "hotspots": [
+            { "controlId": "launch-retract", "x": 0.80222, "y": 0.42556, "width": 0.033125, "height": 0.04625 },
+            { "controlId": "hook-up", "x": 0.76778, "y": 0.45, "width": 0.035625, "height": 0.04375 },
+            { "controlId": "wing-fold", "x": 0.71667, "y": 0.48111, "width": 0.04125, "height": 0.041875 },
+            { "controlId": "gear-up", "x": 0.67222, "y": 0.51222, "width": 0.030625, "height": 0.048125 },
+            { "controlId": "park-on", "x": 0.63667, "y": 0.53111, "width": 0.030625, "height": 0.045 },
+            { "controlId": "flaps-auto", "x": 0.59778, "y": 0.57778, "width": 0.0375, "height": 0.04375 },
+            { "controlId": "left-throttle", "x": 0.50667, "y": 0.32667, "width": 0.069375, "height": 0.07125 },
+            { "controlId": "right-throttle", "x": 0.47111, "y": 0.34778, "width": 0.0675, "height": 0.06875 },
+            { "controlId": "base-slider", "x": 0.49333, "y": 0.49333, "width": 0.04, "height": 0.066875 },
+            { "controlId": "base-round", "x": 0.51, "y": 0.46667, "width": 0.02125, "height": 0.03125 },
+            { "controlId": "ag", "x": 0.44778, "y": 0.45556, "width": 0.040625, "height": 0.0275 },
+            { "controlId": "aa", "x": 0.41667, "y": 0.47667, "width": 0.0425, "height": 0.02625 },
+            { "controlId": "hud-press", "x": 0.37778, "y": 0.48333, "width": 0.04, "height": 0.043125 },
+            { "controlId": "base-dial", "x": 0.31222, "y": 0.40778, "width": 0.04125, "height": 0.076875 },
+            { "controlId": "roll-top", "x": 0.38222, "y": 0.25889, "width": 0.03, "height": 0.040625 },
+            { "controlId": "pitch-top", "x": 0.32889, "y": 0.29, "width": 0.030625, "height": 0.040625 },
+            { "controlId": "ap-mode", "x": 0.35556, "y": 0.33333, "width": 0.034375, "height": 0.035625 },
+            { "controlId": "arm-up", "x": 0.24, "y": 0.38, "width": 0.034375, "height": 0.041875 },
+            { "controlId": "jettison", "x": 0.20444, "y": 0.40556, "width": 0.039375, "height": 0.03625 },
+            { "controlId": "hdg-press", "x": 0.23889, "y": 0.32222, "width": 0.0375, "height": 0.038125 },
+            { "controlId": "crs-press", "x": 0.19667, "y": 0.34111, "width": 0.035625, "height": 0.036875 },
+            { "controlId": "lights-press", "x": 0.15667, "y": 0.37444, "width": 0.039375, "height": 0.04 }
+          ]
+        }
+      ],
+      "controls": [
+        { "id": "left-throttle", "name": "Left throttle lever axis", "kind": "Axis" },
+        { "id": "right-throttle", "name": "Right throttle lever axis", "kind": "Axis" },
+        { "id": "launch-retract", "name": "Launch bar retract", "kind": "Switch", "suggestedInput": "button65", "location": "launch" },
+        { "id": "launch-extend", "name": "Launch bar extend", "kind": "Switch", "suggestedInput": "button66", "location": "launch" },
+        { "id": "hook-up", "name": "Arrestor hook up", "kind": "Switch", "suggestedInput": "button67", "location": "hook" },
+        { "id": "hook-down", "name": "Arrestor hook down", "kind": "Switch", "suggestedInput": "button68", "location": "hook" },
+        { "id": "wing-fold", "name": "Wing fold selector fold", "kind": "Switch", "location": "wing" },
+        { "id": "wing-hold", "name": "Wing fold selector hold", "kind": "Switch", "location": "wing" },
+        { "id": "wing-spread", "name": "Wing fold selector spread", "kind": "Switch", "location": "wing" },
+        { "id": "wing-interlock", "name": "Wing fold selector interlock", "kind": "Switch", "location": "wing" },
+        { "id": "gear-up", "name": "Landing gear up", "kind": "Switch", "suggestedInput": "button73", "location": "gear" },
+        { "id": "gear-down", "name": "Landing gear down", "kind": "Switch", "suggestedInput": "button74", "location": "gear" },
+        { "id": "park-on", "name": "Parking brake park", "kind": "Switch", "suggestedInput": "button75", "location": "park" },
+        { "id": "park-off", "name": "Parking brake off", "kind": "Switch", "suggestedInput": "button76", "location": "park" },
+        { "id": "flaps-auto", "name": "Flaps auto", "kind": "Switch", "suggestedInput": "button77", "location": "flaps" },
+        { "id": "flaps-half", "name": "Flaps half", "kind": "Switch", "suggestedInput": "button78", "location": "flaps" },
+        { "id": "flaps-full", "name": "Flaps full", "kind": "Switch", "suggestedInput": "button79", "location": "flaps" },
+        { "id": "base-slider", "name": "Base slider axis", "kind": "Axis" },
+        { "id": "base-round", "name": "Base round pushbutton", "kind": "Button", "suggestedInput": "button80" },
+        { "id": "ag", "name": "A/G button", "kind": "Button", "suggestedInput": "button81" },
+        { "id": "aa", "name": "A/A button", "kind": "Button", "suggestedInput": "button82" },
+        { "id": "hud-ccw", "name": "HUD encoder counterclockwise", "kind": "Encoder", "suggestedInput": "button83", "location": "hud" },
+        { "id": "hud-cw", "name": "HUD encoder clockwise", "kind": "Encoder", "suggestedInput": "button84", "location": "hud" },
+        { "id": "hud-press", "name": "HUD encoder press", "kind": "Encoder", "suggestedInput": "button85", "location": "hud" },
+        { "id": "base-dial", "name": "Base dial axis", "kind": "Axis" },
+        { "id": "roll-top", "name": "Roll mode up", "kind": "Switch", "suggestedInput": "button86", "location": "roll" },
+        { "id": "roll-center", "name": "Roll mode center", "kind": "Switch", "suggestedInput": "button87", "location": "roll" },
+        { "id": "roll-bottom", "name": "Roll mode down", "kind": "Switch", "suggestedInput": "button88", "location": "roll" },
+        { "id": "pitch-top", "name": "Pitch mode up", "kind": "Switch", "suggestedInput": "button89", "location": "pitch" },
+        { "id": "pitch-center", "name": "Pitch mode center", "kind": "Switch", "suggestedInput": "button90", "location": "pitch" },
+        { "id": "pitch-bottom", "name": "Pitch mode down", "kind": "Switch", "suggestedInput": "button91", "location": "pitch" },
+        { "id": "ap-mode", "name": "Autopilot engage / disengage", "kind": "Button", "suggestedInput": "button92" },
+        { "id": "arm-up", "name": "Master arm arm", "kind": "Switch", "suggestedInput": "button93", "location": "arm" },
+        { "id": "arm-middle", "name": "Master arm off", "kind": "Switch", "suggestedInput": "button94", "location": "arm" },
+        { "id": "arm-down", "name": "Master arm sim", "kind": "Switch", "suggestedInput": "button95", "location": "arm" },
+        { "id": "jettison", "name": "Jettison pushbutton", "kind": "Button", "suggestedInput": "button96" },
+        { "id": "hdg-ccw", "name": "Heading encoder counterclockwise", "kind": "Encoder", "suggestedInput": "button97", "location": "hdg" },
+        { "id": "hdg-cw", "name": "Heading encoder clockwise", "kind": "Encoder", "suggestedInput": "button98", "location": "hdg" },
+        { "id": "hdg-press", "name": "Heading encoder press", "kind": "Encoder", "suggestedInput": "button99", "location": "hdg" },
+        { "id": "crs-ccw", "name": "Course encoder counterclockwise", "kind": "Encoder", "suggestedInput": "button100", "location": "crs" },
+        { "id": "crs-cw", "name": "Course encoder clockwise", "kind": "Encoder", "suggestedInput": "button101", "location": "crs" },
+        { "id": "crs-press", "name": "Course encoder press", "kind": "Encoder", "suggestedInput": "button102", "location": "crs" },
+        { "id": "lights-ccw", "name": "Panel lights encoder counterclockwise", "kind": "Encoder", "suggestedInput": "button103", "location": "lights" },
+        { "id": "lights-cw", "name": "Panel lights encoder clockwise", "kind": "Encoder", "suggestedInput": "button104", "location": "lights" },
+        { "id": "lights-press", "name": "Panel lights encoder press", "kind": "Encoder", "suggestedInput": "button105", "location": "lights" }
+      ]
+    }
+  ]
+}

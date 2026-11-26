@@ -1,0 +1,86 @@
+{
+  "manufacturer": "Sony",
+  "devices": [
+    {
+      "id": "sony-dualsense",
+      "name": "SONY DUALSENSE WIRELESS CONTROLLER",
+      "vendorId": 1356,
+      "productId": 3302,
+      "layout": "sony-dualsense"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "sony-dualsense",
+      "references": [
+        "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/accessories/ps5-accessories/dualsense-wireless-controller-cfi-zct1w/CFI-ZCT1W_PS5_Wireless%20Controller_Instruction_Manual%24en.pdf",
+        "https://www.playstation.com/en-us/support/hardware/dualsense-controller-support/",
+        "https://github.com/torvalds/linux/blob/master/drivers/hid/hid-playstation.c",
+        "https://github.com/nondebug/dualsense/blob/main/lsusb-descriptor-info.txt"
+      ],
+      "referenceNotes": [
+        "Standard DualSense controller, CFI-ZCT1W. Use Learn this control with the controller connected because Windows input numbering varies by transport and driver.",
+        "PS, touchpad press, and mute depend on driver exposure. Touch gestures and motion sensors require support outside the standard controller input interface."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Front Controls",
+          "image": "Hardware/Images/sony-dualsense-face-cutout.png",
+          "source": "https://media.direct.playstation.com/is/image/sierialto/dualsense-hero-1?fmt=png-alpha&wid=1200",
+          "hotspots": [
+            {"controlId": "dpad-up", "x": 0.292, "y": 0.388, "width": 0.118, "height": 0.155},
+            {"controlId": "left-stick-press", "x": 0.395, "y": 0.511, "width": 0.085, "height": 0.115},
+            {"controlId": "right-stick-press", "x": 0.611, "y": 0.511, "width": 0.085, "height": 0.115},
+            {"controlId": "create", "x": 0.345, "y": 0.289, "width": 0.019, "height": 0.042},
+            {"controlId": "options", "x": 0.663, "y": 0.289, "width": 0.019, "height": 0.042},
+            {"controlId": "touchpad", "x": 0.504, "y": 0.323, "width": 0.247, "height": 0.188},
+            {"controlId": "home", "x": 0.503, "y": 0.505, "width": 0.047, "height": 0.045},
+            {"controlId": "mute", "x": 0.503, "y": 0.561, "width": 0.034, "height": 0.020},
+            {"controlId": "triangle", "x": 0.715, "y": 0.321, "width": 0.045, "height": 0.060},
+            {"controlId": "circle", "x": 0.764, "y": 0.389, "width": 0.045, "height": 0.060},
+            {"controlId": "cross", "x": 0.715, "y": 0.454, "width": 0.045, "height": 0.060},
+            {"controlId": "square", "x": 0.665, "y": 0.389, "width": 0.045, "height": 0.060}
+          ]
+        },
+        {
+          "id": "shoulders",
+          "name": "Shoulders and Triggers",
+          "image": "Hardware/Images/sony-dualsense-shoulders-cutout.png",
+          "source": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-white-screenshot-04-en-08dec21",
+          "hotspots": [
+            {"controlId": "right-bumper", "x": 0.306, "y": 0.511, "width": 0.085, "height": 0.120},
+            {"controlId": "left-bumper", "x": 0.694, "y": 0.511, "width": 0.085, "height": 0.120},
+            {"controlId": "right-trigger", "x": 0.309, "y": 0.628, "width": 0.076, "height": 0.118},
+            {"controlId": "left-trigger", "x": 0.691, "y": 0.628, "width": 0.076, "height": 0.118}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-stick-press", "name": "Left Stick Press (L3)", "kind": "Button", "location": "left-stick"},
+        {"id": "left-stick-x", "name": "Left Stick X", "kind": "Axis", "location": "left-stick"},
+        {"id": "left-stick-y", "name": "Left Stick Y", "kind": "Axis", "location": "left-stick"},
+        {"id": "right-stick-press", "name": "Right Stick Press (R3)", "kind": "Button", "location": "right-stick"},
+        {"id": "right-stick-x", "name": "Right Stick X", "kind": "Axis", "location": "right-stick"},
+        {"id": "right-stick-y", "name": "Right Stick Y", "kind": "Axis", "location": "right-stick"},
+        {"id": "dpad-up", "name": "D-pad Up", "kind": "Button", "location": "dpad"},
+        {"id": "dpad-right", "name": "D-pad Right", "kind": "Button", "location": "dpad"},
+        {"id": "dpad-down", "name": "D-pad Down", "kind": "Button", "location": "dpad"},
+        {"id": "dpad-left", "name": "D-pad Left", "kind": "Button", "location": "dpad"},
+        {"id": "triangle", "name": "Triangle", "kind": "Button"},
+        {"id": "circle", "name": "Circle", "kind": "Button"},
+        {"id": "cross", "name": "Cross", "kind": "Button"},
+        {"id": "square", "name": "Square", "kind": "Button"},
+        {"id": "create", "name": "Create", "kind": "Button"},
+        {"id": "options", "name": "Options", "kind": "Button"},
+        {"id": "home", "name": "PS Button", "kind": "Button"},
+        {"id": "touchpad", "name": "Touchpad Press", "kind": "Button"},
+        {"id": "mute", "name": "Mute Button", "kind": "Button"},
+        {"id": "left-bumper", "name": "L1", "kind": "Button"},
+        {"id": "right-bumper", "name": "R1", "kind": "Button"},
+        {"id": "left-trigger", "name": "L2 Trigger", "kind": "Axis"},
+        {"id": "right-trigger", "name": "R2 Trigger", "kind": "Axis"}
+      ]
+    }
+  ]
+}

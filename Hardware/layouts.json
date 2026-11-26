@@ -1,0 +1,210 @@
+{
+  "devices": [
+    {"id": "vkb-left", "name": "VKB GUNFIGHTER SCG — LEFT HAND", "manufacturer": "VKB", "vendorId": 8989, "productId": 295, "layout": "vkb-gunfighter-scg", "mirrorGrip": true},
+    {"id": "vkb-right", "name": "VKB GUNFIGHTER SCG — RIGHT HAND", "manufacturer": "VKB", "vendorId": 8989, "productId": 294, "layout": "vkb-gunfighter-scg"},
+    {"id": "virpil-cm3", "name": "VIRPIL MONGOOST-50CM3 THROTTLE", "manufacturer": "VIRPIL", "vendorId": 13124, "productId": 33172, "layout": "virpil-cm3"}
+  ],
+  "layouts": [
+    {
+      "id": "vkb-gunfighter-scg",
+      "references": [
+        "https://vkbsimcontrollers.com/products/scg-add-on-grip-for-gunfighter-iv-copy",
+        "https://vkbsimcontrollers.com/pages/downloads"
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face",
+          "image": "Hardware/Images/vkb-scg-face.png",
+          "hotspots": [
+            {"controlId": "a1-press", "x": 0.393, "y": 0.214, "width": 0.074, "height": 0.064},
+            {"controlId": "a2", "x": 0.376, "y": 0.306, "width": 0.066, "height": 0.064},
+            {"controlId": "a3-press", "x": 0.469, "y": 0.279, "width": 0.075, "height": 0.074},
+            {"controlId": "a4-press", "x": 0.518, "y": 0.202, "width": 0.065, "height": 0.063},
+            {"controlId": "c1", "x": 0.441, "y": 0.494, "width": 0.064, "height": 0.066},
+            {"controlId": "stick-x", "x": 0.568, "y": 0.65, "width": 0.086, "height": 0.112},
+            {"controlId": "twist", "x": 0.542, "y": 0.862, "width": 0.104, "height": 0.061}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger and thumb side",
+          "image": "Hardware/Images/vkb-scg-trigger.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.371, "y": 0.45, "width": 0.075, "height": 0.1},
+            {"controlId": "c1", "x": 0.595, "y": 0.506, "width": 0.056, "height": 0.063},
+            {"controlId": "d1", "x": 0.519, "y": 0.728, "width": 0.026, "height": 0.05},
+            {"controlId": "twist", "x": 0.624, "y": 0.858, "width": 0.115, "height": 0.061}
+          ]
+        },
+        {
+          "id": "index-side",
+          "name": "Index-button side",
+          "image": "Hardware/Images/vkb-scg-index.png",
+          "hotspots": [
+            {"controlId": "b1", "x": 0.732, "y": 0.316, "width": 0.028, "height": 0.062},
+            {"controlId": "trigger-first", "x": 0.607, "y": 0.433, "width": 0.033, "height": 0.076},
+            {"controlId": "a1-press", "x": 0.456, "y": 0.209, "width": 0.057, "height": 0.067},
+            {"controlId": "a4-press", "x": 0.568, "y": 0.181, "width": 0.068, "height": 0.062},
+            {"controlId": "a3-press", "x": 0.497, "y": 0.268, "width": 0.061, "height": 0.067},
+            {"controlId": "a2", "x": 0.438, "y": 0.31, "width": 0.056, "height": 0.055},
+            {"controlId": "twist", "x": 0.44, "y": 0.858, "width": 0.121, "height": 0.061}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "suggestedInput": "button1", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "suggestedInput": "button2", "location": "trigger"},
+        {"id": "a1-press", "name": "A1 top hat press", "kind": "Button", "location": "a1"},
+        {"id": "a1-up", "name": "A1 top hat up", "kind": "Button", "location": "a1"},
+        {"id": "a1-right", "name": "A1 top hat right", "kind": "Button", "location": "a1"},
+        {"id": "a1-down", "name": "A1 top hat down", "kind": "Button", "location": "a1"},
+        {"id": "a1-left", "name": "A1 top hat left", "kind": "Button", "location": "a1"},
+        {"id": "a2", "name": "A2 face button", "kind": "Button"},
+        {"id": "a3-press", "name": "A3 center hat press", "kind": "Button", "location": "a3"},
+        {"id": "a3-up", "name": "A3 center hat up", "kind": "Button", "location": "a3"},
+        {"id": "a3-right", "name": "A3 center hat right", "kind": "Button", "location": "a3"},
+        {"id": "a3-down", "name": "A3 center hat down", "kind": "Button", "location": "a3"},
+        {"id": "a3-left", "name": "A3 center hat left", "kind": "Button", "location": "a3"},
+        {"id": "a4-press", "name": "A4 top hat press", "kind": "Button", "location": "a4"},
+        {"id": "a4-up", "name": "A4 top hat up", "kind": "Button", "location": "a4"},
+        {"id": "a4-right", "name": "A4 top hat right", "kind": "Button", "location": "a4"},
+        {"id": "a4-down", "name": "A4 top hat down", "kind": "Button", "location": "a4"},
+        {"id": "a4-left", "name": "A4 top hat left", "kind": "Button", "location": "a4"},
+        {"id": "b1", "name": "B1 index button", "kind": "Button"},
+        {"id": "c1", "name": "C1 thumb push button", "kind": "Button"},
+        {"id": "d1", "name": "D1 pinky button", "kind": "Button"},
+        {"id": "stick-x", "name": "Stick left / right axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick fore / aft axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis", "suggestedInput": "rotz"}
+      ]
+    },
+    {
+      "id": "virpil-cm3",
+      "references": [
+        "https://simracer.at/en/products/virpil-controls-mongoost-50cm3-schubhebel",
+        "https://support.virpil.com/en/support/solutions/articles/47001285165-vpc-mongoost-50-cm3-throttle"
+      ],
+      "views": [
+        {
+          "id": "base-thumb",
+          "name": "Base and thumb controls",
+          "image": "Hardware/Images/virpil-cm3-base-thumb.png",
+          "hotspots": [
+            {"controlId": "left-throttle", "x": 0.426, "y": 0.353, "width": 0.068, "height": 0.105},
+            {"controlId": "right-throttle", "x": 0.581, "y": 0.367, "width": 0.082, "height": 0.114},
+            {"controlId": "aux-axis", "x": 0.829, "y": 0.404, "width": 0.084, "height": 0.101},
+            {"controlId": "t1-up", "x": 0.678, "y": 0.456, "width": 0.057, "height": 0.051},
+            {"controlId": "t2-up", "x": 0.632, "y": 0.507, "width": 0.061, "height": 0.048},
+            {"controlId": "t3-up", "x": 0.327, "y": 0.472, "width": 0.055, "height": 0.052},
+            {"controlId": "t4-up", "x": 0.275, "y": 0.514, "width": 0.055, "height": 0.05},
+            {"controlId": "t5-up", "x": 0.218, "y": 0.545, "width": 0.041, "height": 0.059},
+            {"controlId": "t6-up", "x": 0.286, "y": 0.58, "width": 0.038, "height": 0.059},
+            {"controlId": "t7-up", "x": 0.359, "y": 0.616, "width": 0.04, "height": 0.061},
+            {"controlId": "b1", "x": 0.38, "y": 0.502, "width": 0.052, "height": 0.048},
+            {"controlId": "b2", "x": 0.45, "y": 0.527, "width": 0.052, "height": 0.048},
+            {"controlId": "b3", "x": 0.512, "y": 0.556, "width": 0.051, "height": 0.045},
+            {"controlId": "b4", "x": 0.34, "y": 0.554, "width": 0.052, "height": 0.05},
+            {"controlId": "b5", "x": 0.401, "y": 0.581, "width": 0.053, "height": 0.05},
+            {"controlId": "b6", "x": 0.464, "y": 0.606, "width": 0.052, "height": 0.05},
+            {"controlId": "e1-press", "x": 0.444, "y": 0.675, "width": 0.057, "height": 0.062},
+            {"controlId": "e2-press", "x": 0.522, "y": 0.717, "width": 0.061, "height": 0.067},
+            {"controlId": "mode-1", "x": 0.583, "y": 0.636, "width": 0.066, "height": 0.097},
+            {"controlId": "thumb-outer-encoder-cw", "x": 0.823, "y": 0.146, "width": 0.044, "height": 0.1},
+            {"controlId": "thumb-outer-hat-press", "x": 0.861, "y": 0.17, "width": 0.031, "height": 0.056},
+            {"controlId": "thumb-front-button", "x": 0.812, "y": 0.252, "width": 0.045, "height": 0.061},
+            {"controlId": "thumb-upper-hat-press", "x": 0.742, "y": 0.179, "width": 0.062, "height": 0.072},
+            {"controlId": "thumb-lower-hat-press", "x": 0.74, "y": 0.264, "width": 0.061, "height": 0.059},
+            {"controlId": "thumb-rear-button", "x": 0.676, "y": 0.22, "width": 0.053, "height": 0.057},
+            {"controlId": "grip-under-button", "x": 0.662, "y": 0.311, "width": 0.057, "height": 0.031}
+          ]
+        },
+        {
+          "id": "index-side",
+          "name": "Index and rear grip controls",
+          "image": "Hardware/Images/virpil-cm3-index-side.jpg",
+          "hotspots": [
+            {"controlId": "slew-press", "x": 0.145, "y": 0.268, "width": 0.05, "height": 0.063},
+            {"controlId": "index-hat-press", "x": 0.229, "y": 0.285, "width": 0.052, "height": 0.06},
+            {"controlId": "grip-slider", "x": 0.304, "y": 0.32, "width": 0.035, "height": 0.067},
+            {"controlId": "index-rocker-press", "x": 0.369, "y": 0.37, "width": 0.064, "height": 0.061},
+            {"controlId": "index-button", "x": 0.405, "y": 0.421, "width": 0.053, "height": 0.069},
+            {"controlId": "index-encoder-press", "x": 0.556, "y": 0.372, "width": 0.093, "height": 0.098}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-throttle", "name": "Left throttle lever", "kind": "Axis", "suggestedInput": "y"},
+        {"id": "right-throttle", "name": "Right throttle lever", "kind": "Axis", "suggestedInput": "x"},
+        {"id": "aux-axis", "name": "Auxiliary / flaps lever", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "t1-up", "name": "T1 toggle up", "kind": "Button", "suggestedInput": "button34", "location": "t1"},
+        {"id": "t1-down", "name": "T1 toggle down", "kind": "Button", "suggestedInput": "button35", "location": "t1"},
+        {"id": "t2-up", "name": "T2 toggle up", "kind": "Button", "suggestedInput": "button36", "location": "t2"},
+        {"id": "t2-down", "name": "T2 toggle down", "kind": "Button", "suggestedInput": "button37", "location": "t2"},
+        {"id": "t3-up", "name": "T3 toggle up", "kind": "Button", "suggestedInput": "button38", "location": "t3"},
+        {"id": "t3-down", "name": "T3 toggle down", "kind": "Button", "suggestedInput": "button39", "location": "t3"},
+        {"id": "t4-up", "name": "T4 toggle up", "kind": "Button", "suggestedInput": "button40", "location": "t4"},
+        {"id": "t4-down", "name": "T4 toggle down", "kind": "Button", "suggestedInput": "button41", "location": "t4"},
+        {"id": "t5-up", "name": "T5 toggle up", "kind": "Button", "suggestedInput": "button48", "location": "t5"},
+        {"id": "t5-down", "name": "T5 toggle down", "kind": "Button", "suggestedInput": "button49", "location": "t5"},
+        {"id": "t6-up", "name": "T6 toggle up", "kind": "Button", "suggestedInput": "button50", "location": "t6"},
+        {"id": "t6-down", "name": "T6 toggle down", "kind": "Button", "suggestedInput": "button51", "location": "t6"},
+        {"id": "t7-up", "name": "T7 toggle up", "kind": "Button", "suggestedInput": "button52", "location": "t7"},
+        {"id": "t7-down", "name": "T7 toggle down", "kind": "Button", "suggestedInput": "button53", "location": "t7"},
+        {"id": "b1", "name": "B1 base button", "kind": "Button", "suggestedInput": "button42"},
+        {"id": "b2", "name": "B2 base button", "kind": "Button", "suggestedInput": "button43"},
+        {"id": "b3", "name": "B3 base button", "kind": "Button", "suggestedInput": "button44"},
+        {"id": "b4", "name": "B4 base button", "kind": "Button", "suggestedInput": "button45"},
+        {"id": "b5", "name": "B5 base button", "kind": "Button", "suggestedInput": "button46"},
+        {"id": "b6", "name": "B6 base button", "kind": "Button", "suggestedInput": "button47"},
+        {"id": "e1-press", "name": "E1 base encoder press", "kind": "Button", "suggestedInput": "button54", "location": "e1"},
+        {"id": "e1-cw", "name": "E1 base encoder clockwise", "kind": "Button", "suggestedInput": "button56", "location": "e1"},
+        {"id": "e1-ccw", "name": "E1 base encoder counterclockwise", "kind": "Button", "suggestedInput": "button55", "location": "e1"},
+        {"id": "e2-press", "name": "E2 base encoder press", "kind": "Button", "suggestedInput": "button57", "location": "e2"},
+        {"id": "e2-cw", "name": "E2 base encoder clockwise", "kind": "Button", "suggestedInput": "button59", "location": "e2"},
+        {"id": "e2-ccw", "name": "E2 base encoder counterclockwise", "kind": "Button", "suggestedInput": "button58", "location": "e2"},
+        {"id": "mode-1", "name": "Mode dial position 1", "kind": "Button", "location": "mode"},
+        {"id": "mode-2", "name": "Mode dial position 2", "kind": "Button", "location": "mode"},
+        {"id": "mode-3", "name": "Mode dial position 3", "kind": "Button", "location": "mode"},
+        {"id": "mode-4", "name": "Mode dial position 4", "kind": "Button", "location": "mode"},
+        {"id": "mode-5", "name": "Mode dial position 5", "kind": "Button", "location": "mode"},
+        {"id": "thumb-outer-encoder-cw", "name": "Thumb outer encoder clockwise", "kind": "Button", "suggestedInput": "button15", "location": "thumb-outer-encoder"},
+        {"id": "thumb-outer-encoder-ccw", "name": "Thumb outer encoder counterclockwise", "kind": "Button", "suggestedInput": "button14", "location": "thumb-outer-encoder"},
+        {"id": "thumb-outer-hat-press", "name": "Thumb outer hat press", "kind": "Button", "suggestedInput": "button16", "location": "thumb-outer-hat"},
+        {"id": "thumb-outer-hat-up", "name": "Thumb outer hat up", "kind": "Button", "suggestedInput": "button17", "location": "thumb-outer-hat"},
+        {"id": "thumb-outer-hat-right", "name": "Thumb outer hat right", "kind": "Button", "suggestedInput": "button18", "location": "thumb-outer-hat"},
+        {"id": "thumb-outer-hat-down", "name": "Thumb outer hat down", "kind": "Button", "suggestedInput": "button19", "location": "thumb-outer-hat"},
+        {"id": "thumb-outer-hat-left", "name": "Thumb outer hat left", "kind": "Button", "suggestedInput": "button20", "location": "thumb-outer-hat"},
+        {"id": "thumb-front-button", "name": "Thumb front push button", "kind": "Button", "suggestedInput": "button21"},
+        {"id": "thumb-upper-hat-press", "name": "Thumb upper hat press", "kind": "Button", "suggestedInput": "button22", "location": "thumb-upper-hat"},
+        {"id": "thumb-upper-hat-up", "name": "Thumb upper hat up", "kind": "Button", "suggestedInput": "button23", "location": "thumb-upper-hat"},
+        {"id": "thumb-upper-hat-right", "name": "Thumb upper hat right", "kind": "Button", "suggestedInput": "button24", "location": "thumb-upper-hat"},
+        {"id": "thumb-upper-hat-down", "name": "Thumb upper hat down", "kind": "Button", "suggestedInput": "button25", "location": "thumb-upper-hat"},
+        {"id": "thumb-upper-hat-left", "name": "Thumb upper hat left", "kind": "Button", "suggestedInput": "button26", "location": "thumb-upper-hat"},
+        {"id": "thumb-lower-hat-press", "name": "Thumb lower hat press", "kind": "Button", "suggestedInput": "button27", "location": "thumb-lower-hat"},
+        {"id": "thumb-lower-hat-up", "name": "Thumb lower hat up", "kind": "Button", "suggestedInput": "button28", "location": "thumb-lower-hat"},
+        {"id": "thumb-lower-hat-right", "name": "Thumb lower hat right", "kind": "Button", "suggestedInput": "button29", "location": "thumb-lower-hat"},
+        {"id": "thumb-lower-hat-down", "name": "Thumb lower hat down", "kind": "Button", "suggestedInput": "button30", "location": "thumb-lower-hat"},
+        {"id": "thumb-lower-hat-left", "name": "Thumb lower hat left", "kind": "Button", "suggestedInput": "button31", "location": "thumb-lower-hat"},
+        {"id": "thumb-rear-button", "name": "Thumb rear push button", "kind": "Button", "suggestedInput": "button32"},
+        {"id": "grip-under-button", "name": "Red underside push button", "kind": "Button", "suggestedInput": "button33"},
+        {"id": "index-encoder-press", "name": "Index-side encoder press", "kind": "Button", "suggestedInput": "button1", "location": "index-encoder"},
+        {"id": "index-encoder-cw", "name": "Index-side encoder clockwise", "kind": "Button", "suggestedInput": "button3", "location": "index-encoder"},
+        {"id": "index-encoder-ccw", "name": "Index-side encoder counterclockwise", "kind": "Button", "suggestedInput": "button2", "location": "index-encoder"},
+        {"id": "index-button", "name": "Index-side push button", "kind": "Button", "suggestedInput": "button4"},
+        {"id": "index-rocker-press", "name": "Index-side rocker press", "kind": "Button", "suggestedInput": "button5", "location": "index-rocker"},
+        {"id": "index-rocker-up", "name": "Index-side rocker up", "kind": "Button", "suggestedInput": "button6", "location": "index-rocker"},
+        {"id": "index-rocker-down", "name": "Index-side rocker down", "kind": "Button", "suggestedInput": "button7", "location": "index-rocker"},
+        {"id": "index-hat-press", "name": "Index-side hat press", "kind": "Button", "suggestedInput": "button8", "location": "index-hat"},
+        {"id": "index-hat-up", "name": "Index-side hat up", "kind": "Button", "suggestedInput": "button9", "location": "index-hat"},
+        {"id": "index-hat-right", "name": "Index-side hat right", "kind": "Button", "suggestedInput": "button10", "location": "index-hat"},
+        {"id": "index-hat-down", "name": "Index-side hat down", "kind": "Button", "suggestedInput": "button11", "location": "index-hat"},
+        {"id": "index-hat-left", "name": "Index-side hat left", "kind": "Button", "suggestedInput": "button12", "location": "index-hat"},
+        {"id": "slew-press", "name": "Slew stick press", "kind": "Button", "suggestedInput": "button13", "location": "slew"},
+        {"id": "slew-horizontal", "name": "Slew stick horizontal axis", "kind": "Axis", "suggestedInput": "rotx", "location": "slew"},
+        {"id": "slew-vertical", "name": "Slew stick vertical axis", "kind": "Axis", "suggestedInput": "roty", "location": "slew"},
+        {"id": "grip-slider", "name": "Grip slider axis", "kind": "Axis", "suggestedInput": "rotz"}
+      ]
+    }
+  ]
+}

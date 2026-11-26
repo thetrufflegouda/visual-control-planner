@@ -1,0 +1,52 @@
+{
+  "manufacturer": "Thrustmaster",
+  "devices": [
+    {"id": "thrustmaster-tfrp", "name": "THRUSTMASTER T.FLIGHT RUDDER PEDALS (TFRP)", "vendorId": 1103, "productId": 46713, "layout": "thrustmaster-tfrp"}
+  ],
+  "layouts": [
+    {
+      "id": "thrustmaster-tfrp",
+      "references": [
+        "https://eshop.thrustmaster.com/en_us/t-flight-rudder-pedals.html",
+        "https://ts.thrustmaster.com/download/accessories/Manuals/TFRP/TFRP_User_Manual.pdf",
+        "https://support.thrustmaster.com/en/kb/1775-en/",
+        "https://github.com/ValveSoftware/steam-devices/blob/master/60-steam-input.rules",
+        "https://forum.dcs.world/topic/226647-thrustmaster-tfrp-pedals-proper-configuration/"
+      ],
+      "referenceNotes": [
+        "Standalone Flight mode uses the T.RJ12 USB adapter's airplane position and is listed as T-Rudder.",
+        "Standalone Windows mappings are left brake Y, rudder Z and right brake X.",
+        "When pedals use a compatible joystick or throttle's RJ12 port, the host exposes the relevant pedal axes. Input Learn can assign the host's axis names."
+      ],
+      "views": [
+        {
+          "id": "front",
+          "name": "Pedal face and sliding linkage",
+          "image": "Hardware/Images/tm-tfrp-front.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/f/tfrp-rudder_4_1.jpg",
+          "hotspots": [
+            {"controlId": "left-brake", "x": 0.25, "y": 0.3842, "width": 0.2633, "height": 0.0542},
+            {"controlId": "right-brake", "x": 0.7483, "y": 0.3867, "width": 0.265, "height": 0.0542},
+            {"controlId": "rudder", "x": 0.4992, "y": 0.5858, "width": 0.1258, "height": 0.0833}
+          ]
+        },
+        {
+          "id": "angled",
+          "name": "Toe brakes and rails",
+          "image": "Hardware/Images/tm-tfrp-angled.jpg",
+          "source": "https://eshop.thrustmaster.com/media/catalog/product/t/f/tfrp-rudder_1_1.jpg",
+          "hotspots": [
+            {"controlId": "left-brake", "x": 0.31, "y": 0.36, "width": 0.233, "height": 0.055},
+            {"controlId": "right-brake", "x": 0.772, "y": 0.42, "width": 0.248, "height": 0.061},
+            {"controlId": "rudder", "x": 0.46, "y": 0.61, "width": 0.145, "height": 0.068}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "left-brake", "name": "Left toe brake axis", "kind": "Axis", "suggestedInput": "y"},
+        {"id": "rudder", "name": "Sliding rudder axis", "kind": "Axis", "suggestedInput": "z"},
+        {"id": "right-brake", "name": "Right toe brake axis", "kind": "Axis", "suggestedInput": "x"}
+      ]
+    }
+  ]
+}

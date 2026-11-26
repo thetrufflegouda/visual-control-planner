@@ -1,0 +1,55 @@
+{
+  "manufacturer": "VIRPIL",
+  "devices": [
+    {"id": "virpil-warbrd-d-base", "name": "VIRPIL WARBRD-D BASE", "vendorId": 0, "productId": 0,
+      "layout": "virpil-warbrd-d-base", "isBase": true},
+    {"id": "virpil-mongoost-cm3-base", "name": "VIRPIL MONGOOST-50CM3 FLIGHTSTICK BASE", "vendorId": 0, "productId": 0,
+      "layout": "virpil-mongoost-cm3-base", "isBase": true}
+  ],
+  "layouts": [
+    {
+      "id": "virpil-warbrd-d-base",
+      "references": [
+        "https://us.virpil-controls.com/products/warbrd-d-base",
+        "https://support.virpil.com/en/support/solutions/articles/47001266942-space-simulation-cockpit-setup-guide-virpil-controls"
+      ],
+      "views": [
+        {
+          "id": "gimbal",
+          "name": "WarBRD-D base",
+          "image": "Hardware/Images/virpil-warbrd-d-base.jpg",
+          "hotspots": [{"controlId": "stick-x", "x": 0.50, "y": 0.29, "width": 0.30, "height": 0.245}]
+        },
+        {
+          "id": "desktop",
+          "name": "WarBRD-D desktop plate",
+          "image": "Hardware/Images/virpil-warbrd-d-desktop.jpg",
+          "hotspots": [{"controlId": "stick-x", "x": 0.49, "y": 0.343, "width": 0.195, "height": 0.19}]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Base stick left / right axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Base stick fore / aft axis", "kind": "Axis", "location": "stick"}
+      ]
+    },
+    {
+      "id": "virpil-mongoost-cm3-base",
+      "references": [
+        "https://us.virpil-controls.com/products/mongoost-50cm3-base",
+        "https://support.virpil.com/en/support/solutions/articles/47001266942-space-simulation-cockpit-setup-guide-virpil-controls"
+      ],
+      "views": [
+        {
+          "id": "gimbal",
+          "name": "MongoosT-50CM3 flightstick base",
+          "image": "Hardware/Images/virpil-mongoost-cm3-flightstick-base.jpg",
+          "hotspots": [{"controlId": "stick-x", "x": 0.50, "y": 0.245, "width": 0.325, "height": 0.255}]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Base stick left / right axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Base stick fore / aft axis", "kind": "Axis", "location": "stick"}
+      ]
+    }
+  ]
+}

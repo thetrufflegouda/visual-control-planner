@@ -1,0 +1,200 @@
+{
+  "manufacturer": "VKB",
+  "devices": [
+    {
+      "id": "vkb-gnx-scg-standard-left",
+      "name": "VKB GNX SCG STANDARD — LEFT HAND",
+      "vendorId": 0, "productId": 0,
+      "layout": "vkb-gnx-scg-standard",
+      "compatibleBaseIds": ["vkb-gladiator-evo-button-base"],
+      "mirrorGrip": true
+    },
+    {
+      "id": "vkb-gnx-scg-standard-right",
+      "name": "VKB GNX SCG STANDARD — RIGHT HAND",
+      "vendorId": 0, "productId": 0,
+      "layout": "vkb-gnx-scg-standard",
+      "compatibleBaseIds": ["vkb-gladiator-evo-button-base"]
+    },
+    {
+      "id": "vkb-gnx-kg12",
+      "name": "VKB GNX KG12 WWII COMBAT GRIP",
+      "vendorId": 0, "productId": 0,
+      "layout": "vkb-gnx-kg12",
+      "compatibleBaseIds": ["vkb-gladiator-evo-button-base"]
+    },
+    {
+      "id": "vkb-gladiator-evo-button-base",
+      "name": "VKB GLADIATOR NXT EVO BUTTON BASE",
+      "vendorId": 0, "productId": 0,
+      "layout": "vkb-gladiator-evo-button-base",
+      "isBase": true
+    }
+  ],
+  "layouts": [
+    {
+      "id": "vkb-gnx-scg-standard",
+      "references": [
+        "https://vkbsimcontrollers.com/products/gnx-scg-add-on-grip",
+        "https://flightsimcontrols.com/product/gladiator-evo-space-combat-edition/"
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face",
+          "image": "Hardware/Images/vkb-gnx-scg-standard-face.png",
+          "hotspots": [
+            {"controlId": "a1-press", "x": 0.411, "y": 0.164, "width": 0.056, "height": 0.057},
+            {"controlId": "a2", "x": 0.391, "y": 0.243, "width": 0.043, "height": 0.045},
+            {"controlId": "a3-press", "x": 0.478, "y": 0.221, "width": 0.064, "height": 0.057},
+            {"controlId": "a4-press", "x": 0.545, "y": 0.152, "width": 0.050, "height": 0.052},
+            {"controlId": "c1", "x": 0.396, "y": 0.402, "width": 0.036, "height": 0.039},
+            {"controlId": "twist", "x": 0.500, "y": 0.738, "width": 0.108, "height": 0.043}
+          ]
+        },
+        {
+          "id": "index",
+          "name": "Index-button side",
+          "image": "Hardware/Images/vkb-gnx-scg-standard-index.png",
+          "hotspots": [
+            {"controlId": "b1", "x": 0.721, "y": 0.273, "width": 0.042, "height": 0.050},
+            {"controlId": "trigger-first", "x": 0.620, "y": 0.393, "width": 0.033, "height": 0.048},
+            {"controlId": "twist", "x": 0.405, "y": 0.737, "width": 0.115, "height": 0.044}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger and pinky",
+          "image": "Hardware/Images/vkb-gnx-scg-standard-trigger.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.497, "y": 0.417, "width": 0.047, "height": 0.098},
+            {"controlId": "d1", "x": 0.552, "y": 0.668, "width": 0.042, "height": 0.041},
+            {"controlId": "twist", "x": 0.504, "y": 0.763, "width": 0.107, "height": 0.041}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "a1-press", "name": "A1 upper inner hat press", "kind": "Button", "location": "a1"},
+        {"id": "a1-up", "name": "A1 upper inner hat up", "kind": "Button", "location": "a1"},
+        {"id": "a1-right", "name": "A1 upper inner hat right", "kind": "Button", "location": "a1"},
+        {"id": "a1-down", "name": "A1 upper inner hat down", "kind": "Button", "location": "a1"},
+        {"id": "a1-left", "name": "A1 upper inner hat left", "kind": "Button", "location": "a1"},
+        {"id": "a2", "name": "A2 red face button", "kind": "Button"},
+        {"id": "a3-press", "name": "A3 center hat press", "kind": "Button", "location": "a3"},
+        {"id": "a3-up", "name": "A3 center hat up", "kind": "Button", "location": "a3"},
+        {"id": "a3-right", "name": "A3 center hat right", "kind": "Button", "location": "a3"},
+        {"id": "a3-down", "name": "A3 center hat down", "kind": "Button", "location": "a3"},
+        {"id": "a3-left", "name": "A3 center hat left", "kind": "Button", "location": "a3"},
+        {"id": "a4-press", "name": "A4 upper outer hat press", "kind": "Button", "location": "a4"},
+        {"id": "a4-up", "name": "A4 upper outer hat up", "kind": "Button", "location": "a4"},
+        {"id": "a4-right", "name": "A4 upper outer hat right", "kind": "Button", "location": "a4"},
+        {"id": "a4-down", "name": "A4 upper outer hat down", "kind": "Button", "location": "a4"},
+        {"id": "a4-left", "name": "A4 upper outer hat left", "kind": "Button", "location": "a4"},
+        {"id": "b1", "name": "B1 index button", "kind": "Button"},
+        {"id": "c1", "name": "C1 thumb push button", "kind": "Button"},
+        {"id": "d1", "name": "D1 pinky button", "kind": "Button"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"}
+      ]
+    },
+    {
+      "id": "vkb-gnx-kg12",
+      "references": [
+        "https://www.vkbcontrollers.com/products/gnx-kg12-add-on-grip",
+        "https://flightsimcontrols.com/product/gladiator-nxt-evo-wwii-combat-edition/"
+      ],
+      "views": [
+        {
+          "id": "thumb",
+          "name": "Grip side",
+          "image": "Hardware/Images/vkb-gnx-kg12-thumb.png",
+          "hotspots": [
+            {"controlId": "bomb-release", "x": 0.513, "y": 0.135, "width": 0.067, "height": 0.039},
+            {"controlId": "thumb-hat-up", "x": 0.534, "y": 0.180, "width": 0.058, "height": 0.050},
+            {"controlId": "side-button", "x": 0.572, "y": 0.464, "width": 0.050, "height": 0.049},
+            {"controlId": "trigger", "x": 0.333, "y": 0.308, "width": 0.029, "height": 0.077},
+            {"controlId": "pinky-lever", "x": 0.382, "y": 0.597, "width": 0.037, "height": 0.078},
+            {"controlId": "twist", "x": 0.562, "y": 0.677, "width": 0.164, "height": 0.052}
+          ]
+        },
+        {
+          "id": "hat",
+          "name": "Hat side",
+          "image": "Hardware/Images/vkb-gnx-kg12-hat.png",
+          "hotspots": [
+            {"controlId": "thumb-hat-up", "x": 0.380, "y": 0.169, "width": 0.079, "height": 0.055},
+            {"controlId": "bomb-release", "x": 0.490, "y": 0.119, "width": 0.055, "height": 0.026},
+            {"controlId": "twist", "x": 0.503, "y": 0.683, "width": 0.166, "height": 0.055}
+          ]
+        },
+        {
+          "id": "index",
+          "name": "Trigger side",
+          "image": "Hardware/Images/vkb-gnx-kg12-index.png",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.621, "y": 0.301, "width": 0.033, "height": 0.088},
+            {"controlId": "pinky-lever", "x": 0.574, "y": 0.598, "width": 0.025, "height": 0.052},
+            {"controlId": "twist", "x": 0.453, "y": 0.687, "width": 0.140, "height": 0.044}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger", "name": "Folding metal trigger", "kind": "Button"},
+        {"id": "pinky-lever", "name": "Pinky lever", "kind": "Button"},
+        {"id": "bomb-release", "name": "Bomb release button", "kind": "Button"},
+        {"id": "thumb-hat-up", "name": "Thumb hat up", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-right", "name": "Thumb hat right", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-down", "name": "Thumb hat down", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-left", "name": "Thumb hat left", "kind": "Button", "location": "thumb-hat"},
+        {"id": "side-button", "name": "Side button", "kind": "Button"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"}
+      ]
+    },
+    {
+      "id": "vkb-gladiator-evo-button-base",
+      "references": ["https://flightsimcontrols.com/product/gladiator-nxt-evo-base-only/"],
+      "views": [
+        {
+          "id": "isometric",
+          "name": "EVO button base",
+          "image": "Hardware/Images/vkb-gladiator-evo-base-isometric.jpg",
+          "hotspots": [
+            {"controlId": "stick-x", "x": 0.550, "y": 0.355, "width": 0.146, "height": 0.056},
+            {"controlId": "evo-f2", "x": 0.237, "y": 0.413, "width": 0.060, "height": 0.027},
+            {"controlId": "evo-f1", "x": 0.327, "y": 0.425, "width": 0.068, "height": 0.030},
+            {"controlId": "evo-f3", "x": 0.431, "y": 0.457, "width": 0.068, "height": 0.031},
+            {"controlId": "evo-sw1-up", "x": 0.147, "y": 0.562, "width": 0.048, "height": 0.102},
+            {"controlId": "evo-throttle", "x": 0.243, "y": 0.595, "width": 0.067, "height": 0.088},
+            {"controlId": "evo-en1-cw", "x": 0.352, "y": 0.616, "width": 0.044, "height": 0.118}
+          ]
+        },
+        {
+          "id": "front",
+          "name": "EVO switches and wheel",
+          "image": "Hardware/Images/vkb-gladiator-evo-base-front.jpg",
+          "hotspots": [
+            {"controlId": "evo-f2", "x": 0.343, "y": 0.411, "width": 0.066, "height": 0.016},
+            {"controlId": "evo-f1", "x": 0.497, "y": 0.403, "width": 0.066, "height": 0.016},
+            {"controlId": "evo-f3", "x": 0.651, "y": 0.412, "width": 0.066, "height": 0.016},
+            {"controlId": "evo-sw1-up", "x": 0.327, "y": 0.569, "width": 0.048, "height": 0.130},
+            {"controlId": "evo-throttle", "x": 0.500, "y": 0.582, "width": 0.076, "height": 0.107},
+            {"controlId": "evo-en1-cw", "x": 0.668, "y": 0.576, "width": 0.042, "height": 0.131}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"},
+        {"id": "evo-f1", "name": "F1 base button", "kind": "Button"},
+        {"id": "evo-f2", "name": "F2 base button", "kind": "Button"},
+        {"id": "evo-f3", "name": "F3 base button", "kind": "Button"},
+        {"id": "evo-sw1-up", "name": "SW1 momentary switch up", "kind": "Button", "location": "evo-sw1"},
+        {"id": "evo-sw1-down", "name": "SW1 momentary switch down", "kind": "Button", "location": "evo-sw1"},
+        {"id": "evo-throttle", "name": "Throttle wheel axis", "kind": "Axis"},
+        {"id": "evo-en1-cw", "name": "EN1 encoder clockwise", "kind": "Button", "location": "evo-en1"},
+        {"id": "evo-en1-ccw", "name": "EN1 encoder counterclockwise", "kind": "Button", "location": "evo-en1"}
+      ]
+    }
+  ]
+}

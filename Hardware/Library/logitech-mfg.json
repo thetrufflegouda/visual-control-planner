@@ -1,0 +1,73 @@
+{
+  "devices": [
+    {"id":"logitech-extreme-3d-pro","name":"LOGITECH EXTREME 3D PRO","manufacturer":"Logitech / Saitek","vendorId":1133,"productId":49685,"layout":"logitech-extreme-3d-pro"},
+    {"id":"mfg-crosswind-v3-combat","name":"MFG CROSSWIND V3 — COMBAT FOOTRESTS","manufacturer":"MFG","vendorId":5840,"productId":2616,"layout":"mfg-crosswind-v3-combat"}
+  ],
+  "layouts": [
+    {
+      "id":"logitech-extreme-3d-pro",
+      "views":[
+        {"id":"overhead","name":"Grip face and base","image":"Hardware/Images/logitech-extreme-3d-pro-overhead-cutout.png","hotspots":[
+          {"controlId":"trigger","x":0.505,"y":0.056,"width":0.045,"height":0.042},
+          {"controlId":"thumb","x":0.435,"y":0.353,"width":0.024,"height":0.068},
+          {"controlId":"head-3","x":0.476,"y":0.327,"width":0.042,"height":0.065},
+          {"controlId":"head-4","x":0.535,"y":0.33,"width":0.039,"height":0.065},
+          {"controlId":"head-5","x":0.457,"y":0.264,"width":0.034,"height":0.06},
+          {"controlId":"head-6","x":0.555,"y":0.266,"width":0.034,"height":0.063},
+          {"controlId":"pov-up","x":0.505,"y":0.254,"width":0.057,"height":0.076},
+          {"controlId":"base-7","x":0.366,"y":0.347,"width":0.049,"height":0.050},
+          {"controlId":"base-8","x":0.389,"y":0.402,"width":0.039,"height":0.052},
+          {"controlId":"base-9","x":0.303,"y":0.475,"width":0.047,"height":0.099},
+          {"controlId":"base-10","x":0.352,"y":0.488,"width":0.039,"height":0.087},
+          {"controlId":"base-11","x":0.306,"y":0.618,"width":0.047,"height":0.109},
+          {"controlId":"base-12","x":0.352,"y":0.606,"width":0.043,"height":0.082},
+          {"controlId":"throttle","x":0.445,"y":0.87,"width":0.09,"height":0.09},
+          {"controlId":"stick-x","x":0.426,"y":0.605,"width":0.074,"height":0.125},
+          {"controlId":"twist","x":0.52,"y":0.54,"width":0.08,"height":0.108}
+        ]},
+        {"id":"side","name":"Trigger and thumb side","image":"Hardware/Images/logitech-extreme-3d-pro-side-cutout.png","hotspots":[
+          {"controlId":"trigger","x":0.320,"y":0.228,"width":0.057,"height":0.074},
+          {"controlId":"thumb","x":0.404,"y":0.205,"width":0.072,"height":0.051},
+          {"controlId":"stick-x","x":0.507,"y":0.659,"width":0.138,"height":0.096},
+          {"controlId":"twist","x":0.476,"y":0.435,"width":0.061,"height":0.115},
+          {"controlId":"throttle","x":0.774,"y":0.737,"width":0.033,"height":0.029}
+        ]}
+      ],
+      "controls":[
+        {"id":"trigger","name":"Trigger · Button 1","kind":"Button","suggestedInput":"button1"},
+        {"id":"thumb","name":"Thumb button · Button 2","kind":"Button","suggestedInput":"button2"},
+        {"id":"head-3","name":"Grip Button 3","kind":"Button","suggestedInput":"button3"},
+        {"id":"head-4","name":"Grip Button 4","kind":"Button","suggestedInput":"button4"},
+        {"id":"head-5","name":"Grip Button 5","kind":"Button","suggestedInput":"button5"},
+        {"id":"head-6","name":"Grip Button 6","kind":"Button","suggestedInput":"button6"},
+        {"id":"pov-up","name":"POV Up","kind":"Button","location":"pov","suggestedInput":"hat1_up"},
+        {"id":"pov-right","name":"POV Right","kind":"Button","location":"pov","suggestedInput":"hat1_right"},
+        {"id":"pov-down","name":"POV Down","kind":"Button","location":"pov","suggestedInput":"hat1_down"},
+        {"id":"pov-left","name":"POV Left","kind":"Button","location":"pov","suggestedInput":"hat1_left"},
+        {"id":"base-7","name":"Base Button 7","kind":"Button","suggestedInput":"button7"},
+        {"id":"base-8","name":"Base Button 8","kind":"Button","suggestedInput":"button8"},
+        {"id":"base-9","name":"Base Button 9","kind":"Button","suggestedInput":"button9"},
+        {"id":"base-10","name":"Base Button 10","kind":"Button","suggestedInput":"button10"},
+        {"id":"base-11","name":"Base Button 11","kind":"Button","suggestedInput":"button11"},
+        {"id":"base-12","name":"Base Button 12","kind":"Button","suggestedInput":"button12"},
+        {"id":"throttle","name":"Throttle lever","kind":"Axis"},
+        {"id":"stick-x","name":"Stick X axis","kind":"Axis","location":"stick","suggestedInput":"x"},
+        {"id":"stick-y","name":"Stick Y axis","kind":"Axis","location":"stick","suggestedInput":"y"},
+        {"id":"twist","name":"Grip twist axis","kind":"Axis"}
+      ]
+    },
+    {
+      "id":"mfg-crosswind-v3-combat",
+      "views":[{"id":"pedals","name":"Pedals and linkage","image":"Hardware/Images/mfg-crosswind-v3-combat.jpg","hotspots":[
+        {"controlId":"left-brake","x":0.202,"y":0.54,"width":0.202,"height":0.29},
+        {"controlId":"right-brake","x":0.805,"y":0.174,"width":0.113,"height":0.206},
+        {"controlId":"rudder","x":0.665,"y":0.765,"width":0.185,"height":0.145}
+      ]}],
+      "controls":[
+        {"id":"rudder","name":"Rudder axis","kind":"Axis","suggestedInput":"rotz"},
+        {"id":"left-brake","name":"Left toe brake","kind":"Axis"},
+        {"id":"right-brake","name":"Right toe brake","kind":"Axis"}
+      ]
+    }
+  ]
+}

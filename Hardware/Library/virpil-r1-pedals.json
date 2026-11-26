@@ -1,0 +1,103 @@
+{
+  "manufacturer": "VIRPIL",
+  "devices": [
+    {
+      "id": "virpil-r1-falcon",
+      "name": "VIRPIL R1-FALCON / R1-LEGEND RUDDER PEDALS",
+      "vendorId": 13124,
+      "productId": 0,
+      "layout": "virpil-r1-falcon"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "virpil-r1-falcon",
+      "references": [
+        "https://us.virpil-controls.com/products/r1-falcon-rudder-pedals",
+        "https://support.virpil.com/en/support/solutions/articles/47001270299-r1-falcon-rudder-pedals-user-manual",
+        "https://us.virpil-controls.com/products/r1-legend-rudder-pedals",
+        "https://support.virpil.com/en/support/solutions/articles/47001286081-r1-legend-rudder-pedals-user-manual"
+      ],
+      "referenceNotes": [
+        "Three physical axes. Use Learn input for the connected standalone or daisy-chained profile."
+      ],
+      "views": [
+        {
+          "id": "pedals",
+          "name": "R1-Falcon pedals",
+          "image": "Hardware/Images/virpil-r1-falcon-pedals.jpg",
+          "source": "https://us.virpil-controls.com/cdn/shop/files/VPC-305-001_04.jpg?v=1785800518&width=1000",
+          "hotspots": [
+            {
+              "controlId": "left-brake",
+              "x": 0.18,
+              "y": 0.57333,
+              "width": 0.2,
+              "height": 0.14667
+            },
+            {
+              "controlId": "rudder",
+              "x": 0.50333,
+              "y": 0.57667,
+              "width": 0.2,
+              "height": 0.16
+            },
+            {
+              "controlId": "right-brake",
+              "x": 0.81333,
+              "y": 0.47667,
+              "width": 0.19,
+              "height": 0.16
+            }
+          ]
+        },
+        {
+          "id": "legend",
+          "name": "R1-Legend pedals",
+          "image": "Hardware/Images/virpil-r1-legend-pedals.jpg",
+          "source": "https://us.virpil-controls.com/cdn/shop/files/VPC-305-002_01.jpg?v=1785801191&width=1200",
+          "hotspots": [
+            {
+              "controlId": "left-brake",
+              "x": 0.20667,
+              "y": 0.60667,
+              "width": 0.17333,
+              "height": 0.25333
+            },
+            {
+              "controlId": "rudder",
+              "x": 0.49,
+              "y": 0.59,
+              "width": 0.19,
+              "height": 0.16667
+            },
+            {
+              "controlId": "right-brake",
+              "x": 0.79667,
+              "y": 0.46,
+              "width": 0.19,
+              "height": 0.22333
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "id": "left-brake",
+          "name": "Left toe brake",
+          "kind": "Axis"
+        },
+        {
+          "id": "rudder",
+          "name": "Rudder axis",
+          "kind": "Axis"
+        },
+        {
+          "id": "right-brake",
+          "name": "Right toe brake",
+          "kind": "Axis"
+        }
+      ]
+    }
+  ]
+}

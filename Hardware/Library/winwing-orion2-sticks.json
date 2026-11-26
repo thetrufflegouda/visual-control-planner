@@ -1,0 +1,286 @@
+{
+  "manufacturer": "WINWING / WINCTRL",
+  "devices": [
+    {
+      "id": "winwing-orion2-viperace-ex",
+      "name": "WINCTRL ORION2 VIPERACE EX JOYSTICK",
+      "vendorId": 16536,
+      "productId": 48808,
+      "layout": "winwing-orion2-viperace-ex"
+    },
+    {
+      "id": "winwing-orion2-viperace",
+      "name": "WINCTRL ORION2 VIPERACE JOYSTICK",
+      "vendorId": 16536,
+      "productId": 48808,
+      "layout": "winwing-orion2-viperace"
+    },
+    {
+      "id": "winwing-orion2-carrierace",
+      "name": "WINCTRL ORION2 CARRIERACE R METAL 2.0 JOYSTICK",
+      "vendorId": 16536,
+      "productId": 48808,
+      "layout": "winwing-orion2-carrierace"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "winwing-orion2-viperace-ex",
+      "references": [
+        "https://ea.winctrl.com/view/goods-details.html?id=341",
+        "https://ea.winctrl.com/mobileview/goods-details.html?id=372",
+        "https://en.winwing.cn/en/download",
+        "https://winctrl.com/static/assets/files/en/SIMAPP%20Pro%201.8.16-User%20Manual%20EN%20V1.1.pdf",
+        "https://forum.falcon-bms.com/topic/23769/problem-with-devicesorting-txt/10?page=2"
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face and Shaker controls",
+          "image": "Hardware/Images/winwing-orion2-viperace-ex-face-cutout.png",
+          "hotspots": [
+            {"controlId": "shaker-hat-press", "x": 0.3871, "y": 0.0471, "width": 0.0764, "height": 0.066},
+            {"controlId": "shaker-mini-press", "x": 0.3701, "y": 0.1181, "width": 0.0705, "height": 0.0622},
+            {"controlId": "face-button", "x": 0.4652, "y": 0.0578, "width": 0.0441, "height": 0.0314},
+            {"controlId": "trim-press", "x": 0.5543, "y": 0.0779, "width": 0.0849, "height": 0.0785},
+            {"controlId": "tms-press", "x": 0.4491, "y": 0.12, "width": 0.0543, "height": 0.0546},
+            {"controlId": "dms-press", "x": 0.5025, "y": 0.1495, "width": 0.0857, "height": 0.0584},
+            {"controlId": "cms-press", "x": 0.7301, "y": 0.1256, "width": 0.0416, "height": 0.0402},
+            {"controlId": "stick-x", "x": 0.5093, "y": 0.5459, "width": 0.2199, "height": 0.0735}
+          ]
+        },
+        {
+          "id": "thumb",
+          "name": "Lower thumb hat and brake lever",
+          "image": "Hardware/Images/winwing-orion2-viperace-ex-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "thumb-hat-press", "x": 0.4019, "y": 0.2616, "width": 0.0677, "height": 0.0581},
+            {"controlId": "brake-lever", "x": 0.3145, "y": 0.3773, "width": 0.0514, "height": 0.0775}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Extension trigger and lower push button",
+          "image": "Hardware/Images/winwing-orion2-viperace-ex-trigger-cutout.png",
+          "hotspots": [
+            {"controlId": "shaker-trigger-axis", "x": 0.3053, "y": 0.2911, "width": 0.0585, "height": 0.06},
+            {"controlId": "pinky", "x": 0.4801, "y": 0.3884, "width": 0.0517, "height": 0.048}
+          ]
+        },
+        {
+          "id": "index",
+          "name": "Two-stage trigger and extension trigger",
+          "image": "Hardware/Images/winwing-orion2-viperace-ex-index-cutout.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.6202, "y": 0.2708, "width": 0.0546, "height": 0.0476},
+            {"controlId": "shaker-trigger-axis", "x": 0.7521, "y": 0.3009, "width": 0.0546, "height": 0.0533}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "location": "stick"},
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "face-button", "name": "Red grip-face button", "kind": "Button"},
+        {"id": "trim-press", "name": "Upper grip-face trim POV press", "kind": "Button", "location": "trim"},
+        {"id": "trim-up", "name": "Upper grip-face trim POV up", "kind": "Button", "location": "trim"},
+        {"id": "trim-right", "name": "Upper grip-face trim POV right", "kind": "Button", "location": "trim"},
+        {"id": "trim-down", "name": "Upper grip-face trim POV down", "kind": "Button", "location": "trim"},
+        {"id": "trim-left", "name": "Upper grip-face trim POV left", "kind": "Button", "location": "trim"},
+        {"id": "tms-press", "name": "TMS rectangular grip-face hat press", "kind": "Button", "location": "tms"},
+        {"id": "tms-up", "name": "TMS rectangular grip-face hat up", "kind": "Button", "location": "tms"},
+        {"id": "tms-right", "name": "TMS rectangular grip-face hat right", "kind": "Button", "location": "tms"},
+        {"id": "tms-down", "name": "TMS rectangular grip-face hat down", "kind": "Button", "location": "tms"},
+        {"id": "tms-left", "name": "TMS rectangular grip-face hat left", "kind": "Button", "location": "tms"},
+        {"id": "dms-press", "name": "DMS lower grip-face hat press", "kind": "Button", "location": "dms"},
+        {"id": "dms-up", "name": "DMS lower grip-face hat up", "kind": "Button", "location": "dms"},
+        {"id": "dms-right", "name": "DMS lower grip-face hat right", "kind": "Button", "location": "dms"},
+        {"id": "dms-down", "name": "DMS lower grip-face hat down", "kind": "Button", "location": "dms"},
+        {"id": "dms-left", "name": "DMS lower grip-face hat left", "kind": "Button", "location": "dms"},
+        {"id": "cms-press", "name": "CMS head-side hat press", "kind": "Button", "location": "cms"},
+        {"id": "cms-up", "name": "CMS head-side hat up", "kind": "Button", "location": "cms"},
+        {"id": "cms-right", "name": "CMS head-side hat right", "kind": "Button", "location": "cms"},
+        {"id": "cms-down", "name": "CMS head-side hat down", "kind": "Button", "location": "cms"},
+        {"id": "cms-left", "name": "CMS head-side hat left", "kind": "Button", "location": "cms"},
+        {"id": "thumb-hat-press", "name": "Lower side thumb hat press", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-up", "name": "Lower side thumb hat up", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-right", "name": "Lower side thumb hat right", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-down", "name": "Lower side thumb hat down", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-left", "name": "Lower side thumb hat left", "kind": "Button", "location": "thumb-hat"},
+        {"id": "pinky", "name": "Lower grip push button", "kind": "Button"},
+        {"id": "brake-lever", "name": "Pinky brake lever axis", "kind": "Axis", "location": "brake"},
+        {"id": "brake-released", "name": "Pinky brake lever released endpoint", "kind": "Button", "location": "brake"},
+        {"id": "brake-pressed", "name": "Pinky brake lever pulled endpoint", "kind": "Button", "location": "brake"},
+        {"id": "shaker-hat-press", "name": "Shaker upper hat press", "kind": "Button", "location": "shaker-hat"},
+        {"id": "shaker-hat-up", "name": "Shaker upper hat up", "kind": "Button", "location": "shaker-hat"},
+        {"id": "shaker-hat-right", "name": "Shaker upper hat right", "kind": "Button", "location": "shaker-hat"},
+        {"id": "shaker-hat-down", "name": "Shaker upper hat down", "kind": "Button", "location": "shaker-hat"},
+        {"id": "shaker-hat-left", "name": "Shaker upper hat left", "kind": "Button", "location": "shaker-hat"},
+        {"id": "shaker-mini-press", "name": "Shaker lower ministick press", "kind": "Button", "location": "shaker-mini"},
+        {"id": "shaker-mini-up", "name": "Shaker lower ministick up", "kind": "Button", "location": "shaker-mini"},
+        {"id": "shaker-mini-right", "name": "Shaker lower ministick right", "kind": "Button", "location": "shaker-mini"},
+        {"id": "shaker-mini-down", "name": "Shaker lower ministick down", "kind": "Button", "location": "shaker-mini"},
+        {"id": "shaker-mini-left", "name": "Shaker lower ministick left", "kind": "Button", "location": "shaker-mini"},
+        {"id": "shaker-mini-x", "name": "Shaker ministick horizontal axis", "kind": "Axis", "location": "shaker-mini"},
+        {"id": "shaker-mini-y", "name": "Shaker ministick vertical axis", "kind": "Axis", "location": "shaker-mini"},
+        {"id": "shaker-trigger-axis", "name": "Extension trigger analog axis", "kind": "Axis", "location": "shaker-trigger"},
+        {"id": "shaker-trigger-limit", "name": "Extension trigger mechanical endpoint", "kind": "Button", "location": "shaker-trigger"},
+        {"id": "shaker-trigger-first", "name": "Extension trigger first pull threshold", "kind": "Button", "location": "shaker-trigger"},
+        {"id": "shaker-trigger-adjustable-1", "name": "Extension trigger first adjustable threshold", "kind": "Button", "location": "shaker-trigger"},
+        {"id": "shaker-trigger-adjustable-2", "name": "Extension trigger second adjustable threshold", "kind": "Button", "location": "shaker-trigger"},
+        {"id": "shaker-trigger-full", "name": "Extension trigger full pull threshold", "kind": "Button", "location": "shaker-trigger"}
+      ]
+    },
+    {
+      "id": "winwing-orion2-viperace",
+      "references": [
+        "https://au.winctrl.com/mobileview/goods-details.html?id=377",
+        "https://winctrl.com/view/goods-details.html?id=340",
+        "https://en.winwing.cn/en/download",
+        "https://forum.falcon-bms.com/topic/23769/problem-with-devicesorting-txt/10?page=2"
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip-face hats and side hat",
+          "image": "Hardware/Images/winwing-orion2-viperace-face-cutout.png",
+          "hotspots": [
+            {"controlId": "face-button", "x": 0.3104, "y": 0.0619, "width": 0.094, "height": 0.0626},
+            {"controlId": "trim-press", "x": 0.5093, "y": 0.0848, "width": 0.1694, "height": 0.1184},
+            {"controlId": "tms-press", "x": 0.2634, "y": 0.1783, "width": 0.1322, "height": 0.1036},
+            {"controlId": "dms-press", "x": 0.4098, "y": 0.2268, "width": 0.1716, "height": 0.1016},
+            {"controlId": "cms-press", "x": 0.9082, "y": 0.1797, "width": 0.0885, "height": 0.0686},
+            {"controlId": "stick-x", "x": 0.3825, "y": 0.9374, "width": 0.2459, "height": 0.0592}
+          ]
+        },
+        {
+          "id": "thumb",
+          "name": "Lower thumb hat and brake lever",
+          "image": "Hardware/Images/winwing-orion2-viperace-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "thumb-hat-press", "x": 0.3913, "y": 0.4696, "width": 0.1215, "height": 0.075},
+            {"controlId": "brake-lever", "x": 0.2132, "y": 0.6878, "width": 0.0865, "height": 0.1615}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Two-stage trigger and lower push button",
+          "image": "Hardware/Images/winwing-orion2-viperace-trigger-cutout.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.4124, "y": 0.4537, "width": 0.1207, "height": 0.0855},
+            {"controlId": "pinky", "x": 0.6474, "y": 0.7272, "width": 0.0997, "height": 0.0791}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "location": "stick"},
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "face-button", "name": "Red grip-face button", "kind": "Button"},
+        {"id": "trim-press", "name": "Upper grip-face trim POV press", "kind": "Button", "location": "trim"},
+        {"id": "trim-up", "name": "Upper grip-face trim POV up", "kind": "Button", "location": "trim"},
+        {"id": "trim-right", "name": "Upper grip-face trim POV right", "kind": "Button", "location": "trim"},
+        {"id": "trim-down", "name": "Upper grip-face trim POV down", "kind": "Button", "location": "trim"},
+        {"id": "trim-left", "name": "Upper grip-face trim POV left", "kind": "Button", "location": "trim"},
+        {"id": "tms-press", "name": "TMS rectangular grip-face hat press", "kind": "Button", "location": "tms"},
+        {"id": "tms-up", "name": "TMS rectangular grip-face hat up", "kind": "Button", "location": "tms"},
+        {"id": "tms-right", "name": "TMS rectangular grip-face hat right", "kind": "Button", "location": "tms"},
+        {"id": "tms-down", "name": "TMS rectangular grip-face hat down", "kind": "Button", "location": "tms"},
+        {"id": "tms-left", "name": "TMS rectangular grip-face hat left", "kind": "Button", "location": "tms"},
+        {"id": "dms-press", "name": "DMS lower grip-face hat press", "kind": "Button", "location": "dms"},
+        {"id": "dms-up", "name": "DMS lower grip-face hat up", "kind": "Button", "location": "dms"},
+        {"id": "dms-right", "name": "DMS lower grip-face hat right", "kind": "Button", "location": "dms"},
+        {"id": "dms-down", "name": "DMS lower grip-face hat down", "kind": "Button", "location": "dms"},
+        {"id": "dms-left", "name": "DMS lower grip-face hat left", "kind": "Button", "location": "dms"},
+        {"id": "cms-press", "name": "CMS head-side hat press", "kind": "Button", "location": "cms"},
+        {"id": "cms-up", "name": "CMS head-side hat up", "kind": "Button", "location": "cms"},
+        {"id": "cms-right", "name": "CMS head-side hat right", "kind": "Button", "location": "cms"},
+        {"id": "cms-down", "name": "CMS head-side hat down", "kind": "Button", "location": "cms"},
+        {"id": "cms-left", "name": "CMS head-side hat left", "kind": "Button", "location": "cms"},
+        {"id": "thumb-hat-press", "name": "Lower side thumb hat press", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-up", "name": "Lower side thumb hat up", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-right", "name": "Lower side thumb hat right", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-down", "name": "Lower side thumb hat down", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-left", "name": "Lower side thumb hat left", "kind": "Button", "location": "thumb-hat"},
+        {"id": "pinky", "name": "Lower grip push button", "kind": "Button"},
+        {"id": "brake-lever", "name": "Pinky brake lever axis", "kind": "Axis", "location": "brake"},
+        {"id": "brake-released", "name": "Pinky brake lever released endpoint", "kind": "Button", "location": "brake"},
+        {"id": "brake-pressed", "name": "Pinky brake lever pulled endpoint", "kind": "Button", "location": "brake"}
+      ]
+    },
+    {
+      "id": "winwing-orion2-carrierace",
+      "references": [
+        "https://winctrl.com/view/goods-details.html?id=1685",
+        "https://winctrl.com/mobileview/goods-details.html?id=1785",
+        "https://forum.falcon-bms.com/topic/23769/problem-with-devicesorting-txt/10?page=2"
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip-face hats, thumbwheel, and brake lever",
+          "image": "Hardware/Images/winwing-orion2-carrierace-face-cutout.png",
+          "hotspots": [
+            {"controlId": "face-button", "x": 0.3386, "y": 0.0912, "width": 0.0852, "height": 0.0462},
+            {"controlId": "face-hat-press", "x": 0.4727, "y": 0.0919, "width": 0.1455, "height": 0.0806},
+            {"controlId": "trim-press", "x": 0.6795, "y": 0.1613, "width": 0.1682, "height": 0.0944},
+            {"controlId": "lower-hat-press", "x": 0.5466, "y": 0.2437, "width": 0.1091, "height": 0.055},
+            {"controlId": "thumbwheel", "x": 0.4625, "y": 0.2406, "width": 0.0477, "height": 0.0694},
+            {"controlId": "brake-lever", "x": 0.6534, "y": 0.665, "width": 0.0739, "height": 0.0906},
+            {"controlId": "stick-x", "x": 0.3295, "y": 0.9225, "width": 0.15, "height": 0.0581}
+          ]
+        },
+        {
+          "id": "thumb",
+          "name": "Side thumb hat",
+          "image": "Hardware/Images/winwing-orion2-carrierace-thumb-cutout.png",
+          "hotspots": [
+            {"controlId": "side-hat-press", "x": 0.413, "y": 0.4494, "width": 0.1157, "height": 0.0912}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Two-stage trigger and lower grip button",
+          "image": "Hardware/Images/winwing-orion2-carrierace-trigger-cutout.png",
+          "hotspots": [
+            {"controlId": "trigger-first", "x": 0.3419, "y": 0.4669, "width": 0.0846, "height": 0.0419},
+            {"controlId": "rear-button", "x": 0.7279, "y": 0.6394, "width": 0.0735, "height": 0.05}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "location": "stick"},
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "face-button", "name": "Red grip-face button", "kind": "Button"},
+        {"id": "rear-button", "name": "Red lower grip button", "kind": "Button"},
+        {"id": "trim-press", "name": "Silver nine-way grip-face POV press", "kind": "Button", "location": "trim"},
+        {"id": "trim-up", "name": "Silver nine-way grip-face POV up", "kind": "Button", "location": "trim"},
+        {"id": "trim-right", "name": "Silver nine-way grip-face POV right", "kind": "Button", "location": "trim"},
+        {"id": "trim-down", "name": "Silver nine-way grip-face POV down", "kind": "Button", "location": "trim"},
+        {"id": "trim-left", "name": "Silver nine-way grip-face POV left", "kind": "Button", "location": "trim"},
+        {"id": "face-hat-press", "name": "Upper black grip-face hat press", "kind": "Button", "location": "face-hat"},
+        {"id": "face-hat-up", "name": "Upper black grip-face hat up", "kind": "Button", "location": "face-hat"},
+        {"id": "face-hat-right", "name": "Upper black grip-face hat right", "kind": "Button", "location": "face-hat"},
+        {"id": "face-hat-down", "name": "Upper black grip-face hat down", "kind": "Button", "location": "face-hat"},
+        {"id": "face-hat-left", "name": "Upper black grip-face hat left", "kind": "Button", "location": "face-hat"},
+        {"id": "lower-hat-press", "name": "Lower black grip-face hat press", "kind": "Button", "location": "lower-hat"},
+        {"id": "lower-hat-up", "name": "Lower black grip-face hat up", "kind": "Button", "location": "lower-hat"},
+        {"id": "lower-hat-right", "name": "Lower black grip-face hat right", "kind": "Button", "location": "lower-hat"},
+        {"id": "lower-hat-down", "name": "Lower black grip-face hat down", "kind": "Button", "location": "lower-hat"},
+        {"id": "lower-hat-left", "name": "Lower black grip-face hat left", "kind": "Button", "location": "lower-hat"},
+        {"id": "side-hat-press", "name": "Side thumb hat press", "kind": "Button", "location": "side-hat"},
+        {"id": "side-hat-up", "name": "Side thumb hat up", "kind": "Button", "location": "side-hat"},
+        {"id": "side-hat-right", "name": "Side thumb hat right", "kind": "Button", "location": "side-hat"},
+        {"id": "side-hat-down", "name": "Side thumb hat down", "kind": "Button", "location": "side-hat"},
+        {"id": "side-hat-left", "name": "Side thumb hat left", "kind": "Button", "location": "side-hat"},
+        {"id": "thumbwheel", "name": "Thumbwheel axis", "kind": "Axis"},
+        {"id": "brake-lever", "name": "Pinky brake lever axis", "kind": "Axis", "location": "brake"},
+        {"id": "brake-pressed", "name": "Pinky brake lever end switch", "kind": "Button", "location": "brake"}
+      ]
+    }
+  ]
+}

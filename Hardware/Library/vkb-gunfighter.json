@@ -1,0 +1,91 @@
+{
+  "manufacturer": "VKB",
+  "devices": [
+    {
+      "id": "vkb-kg12-gen2-revc",
+      "name": "VKB KG12 WWII COMBAT GRIP GEN.2 REV.C",
+      "vendorId": 0,
+      "productId": 0,
+      "layout": "vkb-kg12-gen2-revc",
+      "compatibleBaseIds": ["vkb-gunfighter-mk4-base"]
+    },
+    {
+      "id": "vkb-gunfighter-mk4-base",
+      "name": "VKB GUNFIGHTER MK.IV GIMBAL",
+      "vendorId": 0,
+      "productId": 0,
+      "layout": "vkb-gunfighter-mk4-base",
+      "isBase": true
+    }
+  ],
+  "layouts": [
+    {
+      "id": "vkb-kg12-gen2-revc",
+      "references": ["https://flightsimcontrols.com/product/kg12-gf-gen-2-grip/"],
+      "views": [
+        {
+          "id": "thumb",
+          "name": "Grip side",
+          "image": "Hardware/Images/vkb-kg12-gen2-thumb.jpg",
+          "hotspots": [
+            {"controlId": "bomb-release", "x": 0.461, "y": 0.170, "width": 0.068, "height": 0.043},
+            {"controlId": "thumb-hat-up", "x": 0.472, "y": 0.223, "width": 0.066, "height": 0.056},
+            {"controlId": "side-button", "x": 0.526, "y": 0.482, "width": 0.051, "height": 0.051},
+            {"controlId": "trigger", "x": 0.300, "y": 0.331, "width": 0.028, "height": 0.079},
+            {"controlId": "pinky-lever", "x": 0.358, "y": 0.603, "width": 0.041, "height": 0.084},
+            {"controlId": "twist", "x": 0.555, "y": 0.679, "width": 0.133, "height": 0.049}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Trigger side",
+          "image": "Hardware/Images/vkb-kg12-gen2-trigger.jpg",
+          "hotspots": [
+            {"controlId": "trigger", "x": 0.474, "y": 0.304, "width": 0.062, "height": 0.139},
+            {"controlId": "pinky-lever", "x": 0.513, "y": 0.647, "width": 0.043, "height": 0.128},
+            {"controlId": "twist", "x": 0.455, "y": 0.678, "width": 0.067, "height": 0.048}
+          ]
+        },
+        {
+          "id": "rear",
+          "name": "Hat side",
+          "image": "Hardware/Images/vkb-kg12-gen2-rear.jpg",
+          "hotspots": [
+            {"controlId": "bomb-release", "x": 0.488, "y": 0.149, "width": 0.063, "height": 0.041},
+            {"controlId": "thumb-hat-up", "x": 0.393, "y": 0.200, "width": 0.073, "height": 0.058},
+            {"controlId": "twist", "x": 0.502, "y": 0.655, "width": 0.150, "height": 0.053}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "trigger", "name": "Folding metal trigger", "kind": "Button"},
+        {"id": "pinky-lever", "name": "Pinky lever", "kind": "Button"},
+        {"id": "bomb-release", "name": "Bomb release button", "kind": "Button"},
+        {"id": "thumb-hat-up", "name": "Thumb hat up", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-right", "name": "Thumb hat right", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-down", "name": "Thumb hat down", "kind": "Button", "location": "thumb-hat"},
+        {"id": "thumb-hat-left", "name": "Thumb hat left", "kind": "Button", "location": "thumb-hat"},
+        {"id": "side-button", "name": "Side button", "kind": "Button"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"}
+      ]
+    },
+    {
+      "id": "vkb-gunfighter-mk4-base",
+      "references": ["https://vkb-sim.com.au/products/gunfighter-mk-iv-base-only"],
+      "views": [
+        {
+          "id": "gimbal",
+          "name": "Gunfighter gimbal",
+          "image": "Hardware/Images/vkb-gunfighter-mk4-base-top.jpg",
+          "hotspots": [
+            {"controlId": "stick-x", "x": 0.502, "y": 0.551, "width": 0.133, "height": 0.108}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "stick-x", "name": "Stick X axis", "kind": "Axis", "suggestedInput": "x", "location": "stick"},
+        {"id": "stick-y", "name": "Stick Y axis", "kind": "Axis", "suggestedInput": "y", "location": "stick"}
+      ]
+    }
+  ]
+}

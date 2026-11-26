@@ -1,0 +1,240 @@
+{
+  "devices": [
+    {"id": "winwing-ursa-minor-fighter-r", "name": "WINWING URSA MINOR FIGHTER JOYSTICK R", "manufacturer": "WINWING / WINCTRL", "vendorId": 16536, "productId": 48169, "layout": "winwing-ursa-minor-fighter-r"},
+    {"id": "virpil-constellation-alpha-prime-r", "name": "VIRPIL CONSTELLATION ALPHA PRIME R", "manufacturer": "VIRPIL", "vendorId": 0, "productId": 0,
+      "layout": "virpil-constellation-alpha-prime-r"},
+    {"id": "virpil-constellation-alpha-prime-l", "name": "VIRPIL CONSTELLATION ALPHA PRIME L", "manufacturer": "VIRPIL", "vendorId": 0, "productId": 0,
+      "layout": "virpil-constellation-alpha-prime-r", "mirrorGrip": true}
+  ],
+  "layouts": [
+    {
+      "id": "winwing-ursa-minor-fighter-r",
+      "references": [
+        "https://winctrl.com/mobileview/goods-details.html?id=905",
+        "https://winctrl.com/static/download/QmTvHcYNoR17Ro8AHmA7j6jpqwnHHbaYWS8dXGxM8QbTgh?filename=URSA+MINOR-Fighter-Joystick+R-User+Manual+V1.3+20250708.pdf"
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face and right bank",
+          "image": "Hardware/Images/winwing-ursa-fighter-r-face.jpg",
+          "hotspots": [
+            {"controlId": "red-button", "x": 0.4938, "y": 0.1087, "width": 0.045, "height": 0.0537},
+            {"controlId": "pov-press", "x": 0.555, "y": 0.1175, "width": 0.0437, "height": 0.055},
+            {"controlId": "upper-button", "x": 0.6175, "y": 0.14, "width": 0.0462, "height": 0.0488},
+            {"controlId": "mini-press", "x": 0.4763, "y": 0.1787, "width": 0.0462, "height": 0.055},
+            {"controlId": "face-hat-press", "x": 0.55, "y": 0.1975, "width": 0.0575, "height": 0.0537},
+            {"controlId": "lower-button", "x": 0.6025, "y": 0.2062, "width": 0.0375, "height": 0.0475},
+            {"controlId": "head-side-hat-press", "x": 0.7362, "y": 0.1875, "width": 0.0387, "height": 0.0563},
+            {"controlId": "twist", "x": 0.5262, "y": 0.5475, "width": 0.155, "height": 0.0775},
+            {"controlId": "stick-x", "x": 0.5062, "y": 0.6212, "width": 0.1537, "height": 0.0625},
+            {"controlId": "base-slider", "x": 0.3237, "y": 0.7937, "width": 0.09, "height": 0.1013},
+            {"controlId": "base-8", "x": 0.7262, "y": 0.755, "width": 0.0312, "height": 0.0312},
+            {"controlId": "base-9", "x": 0.6837, "y": 0.71, "width": 0.04, "height": 0.0338},
+            {"controlId": "base-10", "x": 0.705, "y": 0.7762, "width": 0.0312, "height": 0.0275},
+            {"controlId": "base-11", "x": 0.66, "y": 0.7325, "width": 0.0387, "height": 0.025},
+            {"controlId": "base-12", "x": 0.6388, "y": 0.8113, "width": 0.045, "height": 0.0325},
+            {"controlId": "base-13", "x": 0.5988, "y": 0.7638, "width": 0.0512, "height": 0.0387},
+            {"controlId": "base-14", "x": 0.5663, "y": 0.7963, "width": 0.055, "height": 0.0275}
+          ]
+        },
+        {
+          "id": "left-bank",
+          "name": "Left bank",
+          "image": "Hardware/Images/winwing-ursa-fighter-r-left.jpg",
+          "hotspots": [
+            {"controlId": "red-button", "x": 0.315, "y": 0.165, "width": 0.035, "height": 0.045},
+            {"controlId": "pov-press", "x": 0.3563, "y": 0.1388, "width": 0.0387, "height": 0.05},
+            {"controlId": "upper-button", "x": 0.4037, "y": 0.1237, "width": 0.0338, "height": 0.0425},
+            {"controlId": "mini-press", "x": 0.3262, "y": 0.2313, "width": 0.0563, "height": 0.0587},
+            {"controlId": "face-hat-press", "x": 0.38, "y": 0.205, "width": 0.0413, "height": 0.0488},
+            {"controlId": "lower-button", "x": 0.415, "y": 0.1888, "width": 0.0325, "height": 0.0325},
+            {"controlId": "pinky-hat-press", "x": 0.38, "y": 0.3825, "width": 0.0512, "height": 0.0575},
+            {"controlId": "twist", "x": 0.4575, "y": 0.5525, "width": 0.1475, "height": 0.0788},
+            {"controlId": "stick-x", "x": 0.4487, "y": 0.6175, "width": 0.1437, "height": 0.055},
+            {"controlId": "base-slider", "x": 0.6775, "y": 0.775, "width": 0.09, "height": 0.095},
+            {"controlId": "base-1", "x": 0.2662, "y": 0.7662, "width": 0.0338, "height": 0.0362},
+            {"controlId": "base-2", "x": 0.2863, "y": 0.72, "width": 0.04, "height": 0.035},
+            {"controlId": "base-3", "x": 0.2963, "y": 0.7875, "width": 0.0338, "height": 0.0288},
+            {"controlId": "base-4", "x": 0.3075, "y": 0.7388, "width": 0.0387, "height": 0.0275},
+            {"controlId": "base-5", "x": 0.3663, "y": 0.8113, "width": 0.045, "height": 0.035},
+            {"controlId": "base-6", "x": 0.3825, "y": 0.7688, "width": 0.045, "height": 0.0387},
+            {"controlId": "base-7", "x": 0.4387, "y": 0.7913, "width": 0.055, "height": 0.0338}
+          ]
+        },
+        {
+          "id": "triggers",
+          "name": "Triggers and pinky side",
+          "image": "Hardware/Images/winwing-ursa-fighter-r-triggers.jpg",
+          "hotspots": [
+            {"controlId": "flip-first", "x": 0.2838, "y": 0.3912, "width": 0.045, "height": 0.0563},
+            {"controlId": "trigger-first", "x": 0.35, "y": 0.39, "width": 0.0425, "height": 0.0375},
+            {"controlId": "pinky-hat-press", "x": 0.5288, "y": 0.3738, "width": 0.055, "height": 0.0612},
+            {"controlId": "pinky-button", "x": 0.4525, "y": 0.515, "width": 0.0387, "height": 0.0425},
+            {"controlId": "twist", "x": 0.4562, "y": 0.5513, "width": 0.115, "height": 0.0413}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "red-button", "name": "Top left red button", "kind": "Button"},
+        {"id": "pov-press", "name": "Top POV hat press", "kind": "Button", "location": "pov"},
+        {"id": "pov-up", "name": "Top POV hat up", "kind": "Button", "location": "pov"},
+        {"id": "pov-right", "name": "Top POV hat right", "kind": "Button", "location": "pov"},
+        {"id": "pov-down", "name": "Top POV hat down", "kind": "Button", "location": "pov"},
+        {"id": "pov-left", "name": "Top POV hat left", "kind": "Button", "location": "pov"},
+        {"id": "upper-button", "name": "Top right gray button", "kind": "Button"},
+        {"id": "mini-press", "name": "Mini-stick press", "kind": "Button", "location": "mini"},
+        {"id": "mini-x", "name": "Mini-stick left / right axis", "kind": "Axis", "location": "mini"},
+        {"id": "mini-y", "name": "Mini-stick up / down axis", "kind": "Axis", "location": "mini"},
+        {"id": "mini-up", "name": "Mini-stick up · digital mode", "kind": "Button", "location": "mini"},
+        {"id": "mini-right", "name": "Mini-stick right · digital mode", "kind": "Button", "location": "mini"},
+        {"id": "mini-down", "name": "Mini-stick down · digital mode", "kind": "Button", "location": "mini"},
+        {"id": "mini-left", "name": "Mini-stick left · digital mode", "kind": "Button", "location": "mini"},
+        {"id": "face-hat-press", "name": "Lower face hat press", "kind": "Button", "location": "face-hat"},
+        {"id": "face-hat-up", "name": "Lower face hat up", "kind": "Button", "location": "face-hat"},
+        {"id": "face-hat-right", "name": "Lower face hat right", "kind": "Button", "location": "face-hat"},
+        {"id": "face-hat-down", "name": "Lower face hat down", "kind": "Button", "location": "face-hat"},
+        {"id": "face-hat-left", "name": "Lower face hat left", "kind": "Button", "location": "face-hat"},
+        {"id": "lower-button", "name": "Lower right gray button", "kind": "Button"},
+        {"id": "head-side-hat-press", "name": "Index-side head hat press", "kind": "Button", "location": "head-side-hat"},
+        {"id": "head-side-hat-up", "name": "Index-side head hat up", "kind": "Button", "location": "head-side-hat"},
+        {"id": "head-side-hat-right", "name": "Index-side head hat right", "kind": "Button", "location": "head-side-hat"},
+        {"id": "head-side-hat-down", "name": "Index-side head hat down", "kind": "Button", "location": "head-side-hat"},
+        {"id": "head-side-hat-left", "name": "Index-side head hat left", "kind": "Button", "location": "head-side-hat"},
+        {"id": "flip-first", "name": "Flip switch position 1", "kind": "Button", "location": "flip"},
+        {"id": "flip-second", "name": "Flip switch position 2", "kind": "Button", "location": "flip"},
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "pinky-hat-press", "name": "Lower side hat press", "kind": "Button", "location": "pinky-hat"},
+        {"id": "pinky-hat-up", "name": "Lower side hat up", "kind": "Button", "location": "pinky-hat"},
+        {"id": "pinky-hat-right", "name": "Lower side hat right", "kind": "Button", "location": "pinky-hat"},
+        {"id": "pinky-hat-down", "name": "Lower side hat down", "kind": "Button", "location": "pinky-hat"},
+        {"id": "pinky-hat-left", "name": "Lower side hat left", "kind": "Button", "location": "pinky-hat"},
+        {"id": "pinky-button", "name": "Pinky button", "kind": "Button"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis", "location": "twist"},
+        {"id": "twist-left", "name": "Grip twist left · digital mode", "kind": "Button", "location": "twist"},
+        {"id": "twist-center", "name": "Grip twist center · digital mode", "kind": "Button", "location": "twist"},
+        {"id": "twist-right", "name": "Grip twist right · digital mode", "kind": "Button", "location": "twist"},
+        {"id": "stick-x", "name": "Stick left / right axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Stick fore / aft axis", "kind": "Axis", "location": "stick"},
+        {"id": "base-slider", "name": "Base throttle slider axis", "kind": "Axis"},
+        {"id": "base-1", "name": "Base 01 · left bank", "kind": "Button"},
+        {"id": "base-2", "name": "Base 02 · left bank", "kind": "Button"},
+        {"id": "base-3", "name": "Base 03 · left bank", "kind": "Button"},
+        {"id": "base-4", "name": "Base 04 · left bank", "kind": "Button"},
+        {"id": "base-5", "name": "Base 05 · left bank", "kind": "Button"},
+        {"id": "base-6", "name": "Base 06 · left bank", "kind": "Button"},
+        {"id": "base-7", "name": "Base 07 · left bank", "kind": "Button"},
+        {"id": "base-8", "name": "Base 08 · right bank", "kind": "Button"},
+        {"id": "base-9", "name": "Base 09 · right bank", "kind": "Button"},
+        {"id": "base-10", "name": "Base 10 · right bank", "kind": "Button"},
+        {"id": "base-11", "name": "Base 11 · right bank", "kind": "Button"},
+        {"id": "base-12", "name": "Base 12 · right bank", "kind": "Button"},
+        {"id": "base-13", "name": "Base 13 · right bank", "kind": "Button"},
+        {"id": "base-14", "name": "Base 14 · right bank", "kind": "Button"}
+      ]
+    },
+    {
+      "id": "virpil-constellation-alpha-prime-r",
+      "references": [
+        "https://us.virpil-controls.com/products/constellation-alpha-prime-r",
+        "https://us.virpil-controls.com/products/constellation-alpha-prime-l",
+        "https://support.virpil.com/en/support/solutions/articles/47001228835-constellation-alpha-prime-grip-user-manual",
+        "https://support.virpil.com/en/support/solutions/articles/47001285231-vpc-constellation-alpha-prime-r-grip",
+        "https://support.virpil.com/en/support/solutions/articles/47001250814-vpc-constellation-alpha-prime-r"
+      ],
+      "views": [
+        {
+          "id": "face",
+          "name": "Grip face",
+          "image": "Hardware/Images/virpil-alpha-prime-r-face.jpg",
+          "hotspots": [
+            {"controlId": "mini-press", "x": 0.42, "y": 0.22, "width": 0.06, "height": 0.0638},
+            {"controlId": "upper-button", "x": 0.5288, "y": 0.175, "width": 0.0462, "height": 0.0475},
+            {"controlId": "upper-hat-press", "x": 0.5988, "y": 0.1875, "width": 0.0575, "height": 0.0663},
+            {"controlId": "center-hat-press", "x": 0.5012, "y": 0.26, "width": 0.055, "height": 0.0575},
+            {"controlId": "lower-button", "x": 0.5775, "y": 0.275, "width": 0.05, "height": 0.05},
+            {"controlId": "scroll-up", "x": 0.5225, "y": 0.3438, "width": 0.0525, "height": 0.0387},
+            {"controlId": "cheek-hat-press", "x": 0.745, "y": 0.305, "width": 0.0425, "height": 0.0675},
+            {"controlId": "flip-up", "x": 0.6225, "y": 0.4612, "width": 0.0387, "height": 0.0437},
+            {"controlId": "brake-axis", "x": 0.595, "y": 0.6112, "width": 0.0488, "height": 0.1187},
+            {"controlId": "twist", "x": 0.4487, "y": 0.8337, "width": 0.1475, "height": 0.04},
+            {"controlId": "stick-x", "x": 0.4462, "y": 0.9137, "width": 0.1475, "height": 0.05}
+          ]
+        },
+        {
+          "id": "trigger",
+          "name": "Triggers and brake lever",
+          "image": "Hardware/Images/virpil-alpha-prime-r-triggers.jpg",
+          "hotspots": [
+            {"controlId": "mini-press", "x": 0.3525, "y": 0.2612, "width": 0.0537, "height": 0.0525},
+            {"controlId": "upper-button", "x": 0.41, "y": 0.1837, "width": 0.045, "height": 0.0512},
+            {"controlId": "upper-hat-press", "x": 0.4775, "y": 0.1787, "width": 0.0537, "height": 0.0575},
+            {"controlId": "center-hat-press", "x": 0.4288, "y": 0.2662, "width": 0.0563, "height": 0.0525},
+            {"controlId": "lower-button", "x": 0.4925, "y": 0.2587, "width": 0.045, "height": 0.0512},
+            {"controlId": "scroll-up", "x": 0.48, "y": 0.3375, "width": 0.05, "height": 0.0312},
+            {"controlId": "flip-up", "x": 0.3738, "y": 0.4487, "width": 0.0413, "height": 0.0612},
+            {"controlId": "trigger-first", "x": 0.4213, "y": 0.4575, "width": 0.035, "height": 0.05},
+            {"controlId": "brake-axis", "x": 0.3987, "y": 0.605, "width": 0.05, "height": 0.1025},
+            {"controlId": "twist", "x": 0.5625, "y": 0.8313, "width": 0.13, "height": 0.0425},
+            {"controlId": "stick-x", "x": 0.5563, "y": 0.9087, "width": 0.1375, "height": 0.06}
+          ]
+        },
+        {
+          "id": "index-side",
+          "name": "Index and pinky side",
+          "image": "Hardware/Images/virpil-alpha-prime-r-index.jpg",
+          "hotspots": [
+            {"controlId": "flip-up", "x": 0.3725, "y": 0.5413, "width": 0.0387, "height": 0.0488},
+            {"controlId": "trigger-first", "x": 0.415, "y": 0.4863, "width": 0.035, "height": 0.04},
+            {"controlId": "index-hat-press", "x": 0.6088, "y": 0.4537, "width": 0.06, "height": 0.06},
+            {"controlId": "pinky-button", "x": 0.5663, "y": 0.6725, "width": 0.04, "height": 0.0437},
+            {"controlId": "brake-axis", "x": 0.395, "y": 0.6813, "width": 0.0537, "height": 0.0887},
+            {"controlId": "twist", "x": 0.5525, "y": 0.8087, "width": 0.12, "height": 0.0437},
+            {"controlId": "stick-x", "x": 0.5587, "y": 0.8625, "width": 0.1325, "height": 0.0525}
+          ]
+        }
+      ],
+      "controls": [
+        {"id": "mini-press", "name": "Analog mini-stick press", "kind": "Button", "location": "mini"},
+        {"id": "mini-x", "name": "Analog mini-stick left / right axis", "kind": "Axis", "location": "mini"},
+        {"id": "mini-y", "name": "Analog mini-stick up / down axis", "kind": "Axis", "location": "mini"},
+        {"id": "upper-button", "name": "Upper face button", "kind": "Button"},
+        {"id": "upper-hat-press", "name": "Upper face hat press", "kind": "Button", "location": "upper-hat"},
+        {"id": "upper-hat-up", "name": "Upper face hat up", "kind": "Button", "location": "upper-hat"},
+        {"id": "upper-hat-right", "name": "Upper face hat right", "kind": "Button", "location": "upper-hat"},
+        {"id": "upper-hat-down", "name": "Upper face hat down", "kind": "Button", "location": "upper-hat"},
+        {"id": "upper-hat-left", "name": "Upper face hat left", "kind": "Button", "location": "upper-hat"},
+        {"id": "center-hat-press", "name": "Lower face hat press", "kind": "Button", "location": "center-hat"},
+        {"id": "center-hat-up", "name": "Lower face hat up", "kind": "Button", "location": "center-hat"},
+        {"id": "center-hat-right", "name": "Lower face hat right", "kind": "Button", "location": "center-hat"},
+        {"id": "center-hat-down", "name": "Lower face hat down", "kind": "Button", "location": "center-hat"},
+        {"id": "center-hat-left", "name": "Lower face hat left", "kind": "Button", "location": "center-hat"},
+        {"id": "lower-button", "name": "Lower face button", "kind": "Button"},
+        {"id": "scroll-up", "name": "Face scroll wheel roll up", "kind": "Button", "location": "scroll"},
+        {"id": "scroll-down", "name": "Face scroll wheel roll down", "kind": "Button", "location": "scroll"},
+        {"id": "scroll-first", "name": "Face scroll wheel first press detent", "kind": "Button", "location": "scroll"},
+        {"id": "scroll-second", "name": "Face scroll wheel second press detent", "kind": "Button", "location": "scroll"},
+        {"id": "cheek-hat-press", "name": "Side thumb hat press", "kind": "Button", "location": "cheek-hat"},
+        {"id": "cheek-hat-up", "name": "Side thumb hat up", "kind": "Button", "location": "cheek-hat"},
+        {"id": "cheek-hat-down", "name": "Side thumb hat down", "kind": "Button", "location": "cheek-hat"},
+        {"id": "flip-up", "name": "Flip trigger raised switch", "kind": "Button", "location": "flip"},
+        {"id": "flip-pull", "name": "Flip trigger pull", "kind": "Button", "location": "flip"},
+        {"id": "flip-combined", "name": "Flip trigger full pull with main trigger", "kind": "Button", "location": "flip"},
+        {"id": "trigger-first", "name": "Main trigger first detent", "kind": "Button", "location": "trigger"},
+        {"id": "trigger-second", "name": "Main trigger second detent", "kind": "Button", "location": "trigger"},
+        {"id": "index-hat-press", "name": "Index-side hat press", "kind": "Button", "location": "index-hat"},
+        {"id": "index-hat-up", "name": "Index-side hat up", "kind": "Button", "location": "index-hat"},
+        {"id": "index-hat-right", "name": "Index-side hat right", "kind": "Button", "location": "index-hat"},
+        {"id": "index-hat-down", "name": "Index-side hat down", "kind": "Button", "location": "index-hat"},
+        {"id": "index-hat-left", "name": "Index-side hat left", "kind": "Button", "location": "index-hat"},
+        {"id": "pinky-button", "name": "Pinky button", "kind": "Button"},
+        {"id": "brake-axis", "name": "Brake lever axis", "kind": "Axis", "location": "brake"},
+        {"id": "brake-press", "name": "Brake lever full-pull button", "kind": "Button", "location": "brake"},
+        {"id": "twist", "name": "Grip twist axis", "kind": "Axis"},
+        {"id": "stick-x", "name": "Stick left / right axis", "kind": "Axis", "location": "stick"},
+        {"id": "stick-y", "name": "Stick fore / aft axis", "kind": "Axis", "location": "stick"}
+      ]
+    }
+  ]
+}
